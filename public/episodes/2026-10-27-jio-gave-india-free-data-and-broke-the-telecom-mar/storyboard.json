@@ -5,7 +5,7 @@
   "topic": "Jio gave India free data and broke the telecom market",
   "title": "Jio Gave India Free Internet. Who Paid the Price?",
   "theme": {
-    "accent": "#F26A1B",
+    "accent": "#D62828",
     "look": "vox",
     "captionStyle": "pop",
     "transition": "zoom",
@@ -86,47 +86,227 @@
     {
       "id": 1,
       "text": "One company gave India free internet. Who paid the price?",
-      "scene": {"type": "vox"}
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a1-queue.png",
+        "fg": "assets/a2-sim-hand.png",
+        "headline": "FREE INTERNET.|WHO PAID?",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push"
+      },
+      "visual": "Locked paper grid. MID: flat editorial illustration of a long queue of people (back view, no faces) outside a small Indian mobile phone shop, 2016, red marker outline. FG: a hand holding a blank SIM card rising from the bottom. Headline top from frame 0.",
+      "onScreen": "FREE INTERNET. WHO PAID?",
+      "motionNotes": "f0 headline visible; queue pops in with marker stroke f0-10; SIM hand slides up f12; slow push. Punch on \"who paid\" (~f70).",
+      "beats": [
+        {
+          "at": 70,
+          "do": "punch"
+        }
+      ],
+      "fx": [],
+      "sfx": "whoosh.mp3"
     },
     {
       "id": 2,
       "text": "Not the users. In 2016, Jio made everything free.",
       "voice": "Not the users. In twenty sixteen, Jio made everything free.",
-      "scene": {"type": "vox"}
+      "scene": {
+        "type": "vox",
+        "mid": "assets/ambani.png",
+        "mid2": "assets/logo-jio.png",
+        "headline": "2016:|EVERYTHING FREE",
+        "sub": "Calls, data, SMS",
+        "halftone": true,
+        "stroke": true,
+        "motion": "pull"
+      },
+      "visual": "Halftone B&W newsprint portrait of Mukesh Ambani (real licensed Wikimedia photo, CC BY-SA 2.0, World Economic Forum) with red marker outline, the Jio logo (PD text logo, as-is) beside him. Headline above.",
+      "onScreen": "2016: EVERYTHING FREE / Calls, data, SMS",
+      "motionNotes": "Portrait slides up with stroke f0-12, logo drops in f10; slow pull. Punch on \"free\" (~f75).",
+      "beats": [
+        {
+          "at": 75,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
       "id": 3,
       "text": "Reliance said it had already invested ₹1.5 lakh crore.",
       "voice": "Reliance said it had already invested one and a half lakh crore rupees.",
-      "scene": {"type": "counter"}
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 1.5,
+        "prefix": "₹",
+        "suffix": " LAKH CR",
+        "decimals": 1,
+        "label": "INVESTED, PER RELIANCE",
+        "icon": "assets/a3-tower.png"
+      },
+      "visual": "Flat editorial cell tower cut-out drops in at the top; big ₹1.5 LAKH CR counter below; label notes it is Reliance's own figure.",
+      "onScreen": "₹1.5 LAKH CR / INVESTED, PER RELIANCE",
+      "motionNotes": "Tower drops in f2; counter climbs 0 to 1.5 across the line; calm, no beats.",
+      "beats": [],
+      "fx": []
     },
     {
       "id": 4,
       "text": "Jio hit 100 million users in 170 days.",
       "voice": "Jio hit a hundred million users in a hundred and seventy days.",
-      "scene": {"type": "counter"}
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 100,
+        "suffix": "M",
+        "label": "USERS IN 170 DAYS",
+        "icon": "assets/a4-phone.png"
+      },
+      "visual": "Generic cheap smartphone (no brand) showing a loading bar, drops in at top; 100M counter below.",
+      "onScreen": "100M / USERS IN 170 DAYS",
+      "motionNotes": "Phone drops in f2; counter races to 100M; punch when it lands on \"170 days\" (~f75).",
+      "beats": [
+        {
+          "at": 75,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ]
     },
     {
       "id": 5,
       "text": "A GB cost about ₹269 in 2014. By 2018, about ₹12.",
       "voice": "A gigabyte cost about two hundred sixty-nine rupees in twenty fourteen. By twenty eighteen, about twelve rupees.",
-      "scene": {"type": "line"}
+      "scene": {
+        "type": "line",
+        "title": "PRICE OF 1 GB IN INDIA",
+        "points": [
+          269,
+          75.57,
+          19.35,
+          11.78
+        ],
+        "labels": [
+          "2014",
+          "2016",
+          "2017",
+          "2018"
+        ],
+        "callout": "₹269 → ₹12|-95%",
+        "unit": "₹ per GB"
+      },
+      "visual": "Cream chart card: red line drawing itself down from ₹269 (2014) to ₹12 (2018), TRAI averages; callout bubble with -95%.",
+      "onScreen": "PRICE OF 1 GB IN INDIA / ₹269 → ₹12 / -95%",
+      "motionNotes": "Line draws f0-90 following the voice; callout pops when the line bottoms out (~f150) with THE one flash of the Short on \"twelve rupees\".",
+      "beats": [
+        {
+          "at": 150,
+          "do": "flash"
+        }
+      ],
+      "fx": [],
+      "sfx": "hit.mp3",
+      "sfxAt": 5
     },
     {
       "id": 6,
       "text": "That year, Aircel filed for insolvency, blaming a \"disruptive\" new player.",
-      "scene": {"type": "vox"}
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a6-shutter.png",
+        "headline": "AIRCEL:|INSOLVENT",
+        "sub": "Feb 2018",
+        "halftone": false,
+        "stroke": true,
+        "motion": "drift"
+      },
+      "visual": "Flat editorial illustration of a small Indian phone shop with its metal shutter pulled down (no signage, no logos), red marker outline; smoke haze.",
+      "onScreen": "AIRCEL: INSOLVENT / Feb 2018",
+      "motionNotes": "Shutter shop rises in with stroke; slow drift; punch on \"insolvency\" (~f45).",
+      "beats": [
+        {
+          "at": 45,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "smoke"
+      ],
+      "sfx": "shutter.mp3",
+      "sfxAt": 0.3
     },
     {
       "id": 7,
       "text": "Jio now has over 500 million users. Who paid the price?",
       "voice": "Jio now has over five hundred million users. Who paid the price?",
-      "scene": {"type": "typewriter"}
+      "scene": {
+        "type": "typewriter",
+        "text": "500M+ USERS.|WHO PAID?",
+        "prop": "assets/a7-rupees.png"
+      },
+      "visual": "Closing typed question on paper; a stack of generic banknotes (no portraits, no text) rises from the bottom. Loops back to the hook.",
+      "onScreen": "500M+ USERS. WHO PAID?",
+      "motionNotes": "Types line 1 then line 2 with block cursor; notes rise f0-24. Calm, no beats.",
+      "beats": [],
+      "fx": []
     }
   ],
-  "assets": [],
+  "assets": [
+    {
+      "file": "assets/logo-jio.png",
+      "query": "Reliance Jio Logo (October 2015).svg",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/ambani.png",
+      "query": "Flickr - World Economic Forum - Ambani.jpg",
+      "kind": "person",
+      "cutout": true,
+      "allowShareAlike": true
+    },
+    {
+      "file": "assets/a1-queue.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Flat front-on editorial illustration of a long queue of ordinary Indian people seen from behind, waiting outside a small neighbourhood mobile phone shop in 2016, clean vector style, warm soft shadow, plain white background, no faces visible, no text, no logos"
+    },
+    {
+      "file": "assets/a2-sim-hand.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Flat illustration of a hand holding up a blank plain SIM card, seen from the front, bold outline, plain white background, no text, no logos"
+    },
+    {
+      "file": "assets/a3-tower.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Flat isometric illustration of a tall mobile phone cell tower with antennas, warm black and steel grey, bold outline, plain white background, no text, no logos"
+    },
+    {
+      "file": "assets/a4-phone.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Flat illustration of a cheap generic smartphone, front view, screen showing a simple loading bar, bold outline, plain white background, no text, no logos, no brand"
+    },
+    {
+      "file": "assets/a6-shutter.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Flat front-on editorial illustration of a small Indian street shop with its metal rolling shutter pulled down and closed, blank signboard, clean vector style, warm soft shadow, plain white background, no text, no logos"
+    },
+    {
+      "file": "assets/a7-rupees.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Flat illustration of a tall stack of generic banknotes in muted pink and green, no portraits, no numbers, no text, bold outline, plain white background"
+    }
+  ],
   "music": {
-    "file": "",
+    "file": "open-thread.mp3",
     "volume": 0.16
   },
   "voice": {

@@ -1,0 +1,80 @@
+{
+  "assets/logo-jio.png": {
+    "query": "Reliance Jio Logo (October 2015).svg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Reliance_Jio_Logo_%28October_2015%29.svg/1280px-Reliance_Jio_Logo_%28October_2015%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Reliance_Jio_Logo_%28October_2015%29.svg/1280px-Reliance_Jio_Logo_%28October_2015%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Reliance_Jio_Logo_(October_2015).svg",
+    "author": "Reliance Jio",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 512,
+    "h": 512
+  },
+  "assets/ambani.png": {
+    "query": "Flickr - World Economic Forum - Ambani.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flickr_-_World_Economic_Forum_-_Ambani.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flickr_-_World_Economic_Forum_-_Ambani.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Flickr_-_World_Economic_Forum_-_Ambani.jpg",
+    "author": "World Economic Forum from Cologny, Switzerland",
+    "license": "CC BY-SA 2.0",
+    "provider": "wikimedia",
+    "w": 800,
+    "h": 533,
+    "modified": "Cropped to head and shoulders and upscaled; halftone/outline added at render time"
+  },
+  "assets/a1-queue.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "jio-cut-queue.png"
+  },
+  "assets/a2-sim-hand.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "jio-cut-0.png"
+  },
+  "assets/a3-tower.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "jio-cut-1.png"
+  },
+  "assets/a4-phone.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "jio-cut-2.png"
+  },
+  "assets/a6-shutter.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "jio-cut-3.png"
+  },
+  "assets/a7-rupees.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "jio-cut-4.png"
+  }
+}

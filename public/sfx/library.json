@@ -10,5 +10,11 @@
     "license": "Original (synthesised with ffmpeg) — free",
     "url": "",
     "author": "shorts-factory"
+  },
+  {
+    "file": "shutter.mp3",
+    "license": "ElevenLabs SFX",
+    "url": "",
+    "author": ""
   }
 ]
