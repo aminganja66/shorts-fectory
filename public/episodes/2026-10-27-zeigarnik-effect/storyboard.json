@@ -6,7 +6,10 @@
   "title": "रात को अधूरा काम ही क्यों याद आता है?",
   "theme": {
     "accent": "#7C5CFF",
-    "grade": "cold"
+    "grade": "warm",
+    "look": "paper",
+    "captionStyle": "pop",
+    "transition": "whip"
   },
   "facts": [
     {
@@ -52,41 +55,230 @@
   ],
   "lines": [
     {
-      "text": "रात को अधूरा काम ही क्यों याद आता है?"
+      "text": "रात को अधूरा काम ही क्यों याद आता है?",
+      "id": 1,
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s1-bg.jpg",
+        "headline": "रात को|अधूरा काम?",
+        "motion": "push",
+        "goldFrame": true
+      },
+      "visual": "BG: bright lamp-lit bedroom at night, a person sitting up in bed seen from behind/side, face hidden, phone glow on the blanket, warm light so the subject stays readable. Headline from frame 0.",
+      "onScreen": "रात को अधूरा काम?",
+      "motionNotes": "f0-8 soft entrance; headline already on screen at f0; slow push; punch f24 on \"अधूरा\".",
+      "beats": [
+        {
+          "at": 10,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
       "text": "यह Zeigarnik effect है: अधूरा काम अटक जाता है।",
-      "voice": "यह ज़ाइगार्निक effect है: अधूरा काम अटक जाता है।"
+      "voice": "यह ज़ाइगार्निक effect है: अधूरा काम अटक जाता है।",
+      "id": 2,
+      "scene": {
+        "type": "kinetic",
+        "bg": "assets/s2-bg.jpg",
+        "text": "ZEIGARNIK|EFFECT",
+        "highlight": [
+          "ZEIGARNIK"
+        ]
+      },
+      "visual": "Soft lilac/cream paper-texture backdrop, big two-line effect name, ZEIGARNIK in purple accent.",
+      "onScreen": "ZEIGARNIK EFFECT",
+      "motionNotes": "Words slide up one by one; punch f14 on \"Zeigarnik\"; calm scene.",
+      "beats": [
+        {
+          "at": 5,
+          "do": "punch"
+        }
+      ],
+      "fx": [],
+      "sfx": "whoosh.mp3"
     },
     {
-      "text": "कहते हैं, एक waiter को सिर्फ unpaid orders याद रहते थे।"
+      "text": "कहते हैं, एक waiter को सिर्फ unpaid orders याद रहते थे।",
+      "id": 3,
+      "scene": {
+        "type": "stack",
+        "images": [
+          "assets/s3-a.jpg",
+          "assets/s3-b.jpg"
+        ],
+        "caption": "कहते हैं · एक CAFÉ",
+        "bg": "assets/s2-bg.jpg"
+      },
+      "visual": "Two polaroids drop in: a vintage 1920s-style European café interior, then a hand holding a small order pad and pencil on a café table (no readable text).",
+      "onScreen": "कहते हैं · एक CAFÉ",
+      "motionNotes": "Polaroid A drops at f6, B at f48; no punch (anecdote, not proven); dust drifting.",
+      "beats": [],
+      "fx": [
+        "dust"
+      ]
     },
     {
       "text": "1927 में Zeigarnik के test में अधूरे tasks लगभग दोगुने याद रहे।",
-      "voice": "nineteen twenty seven में ज़ाइगार्निक के test में अधूरे tasks लगभग दोगुने याद रहे।"
+      "voice": "nineteen twenty seven में ज़ाइगार्निक के test में अधूरे tasks लगभग दोगुने याद रहे।",
+      "id": 4,
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s4-bg.jpg",
+        "headline": "1927 · लगभग दोगुना",
+        "motion": "pan-right"
+      },
+      "visual": "BG: top-down desk with a half-finished jigsaw puzzle and a few small task cards in warm daylight, a hand reaching in. Headline gives the year and result.",
+      "onScreen": "1927 · लगभग दोगुना",
+      "motionNotes": "Slow pan-right; punch f100 on \"दोगुने\".",
+      "beats": [
+        {
+          "at": 140,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
       "text": "पर 2025 की meta-analysis में यह फायदा नहीं दिखा।",
-      "voice": "पर twenty twenty five की meta-analysis में यह फायदा नहीं दिखा।"
+      "voice": "पर twenty twenty five की meta-analysis में यह फायदा नहीं दिखा।",
+      "id": 5,
+      "scene": {
+        "type": "kinetic",
+        "text": "2025 की|META-ANALYSIS|फायदा नहीं?",
+        "highlight": [
+          "META-ANALYSIS"
+        ],
+        "bg": "assets/s2-bg.jpg"
+      },
+      "visual": "Clean paper backdrop, big text: 2025 की / META-ANALYSIS / फायदा नहीं? The twist moment.",
+      "onScreen": "2025 की META-ANALYSIS: फायदा नहीं?",
+      "motionNotes": "Three words-blocks pop in; soft punch f70 on \"फायदा नहीं\" (no flash, no shake) + soft hit sfx.",
+      "beats": [
+        {
+          "at": 94,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
       "text": "हाँ, अधूरा goal खटकता है, 2011 की study में दिखा।",
-      "voice": "हाँ, अधूरा goal खटकता है, twenty eleven की study में दिखा।"
+      "voice": "हाँ, अधूरा goal खटकता है, twenty eleven की study में दिखा।",
+      "id": 6,
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s6-bg.jpg",
+        "headline": "अधूरा GOAL = खटकता है",
+        "motion": "drift"
+      },
+      "visual": "BG: monitor edge and desk covered with colourful sticky notes in soft daylight, hand adding one more; busy but bright.",
+      "onScreen": "अधूरा GOAL = खटकता है",
+      "motionNotes": "Gentle drift; punch f45 on \"खटकता\".",
+      "beats": [
+        {
+          "at": 45,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
-      "text": "उसी study में कब-कहाँ का plan बनते ही असर गया।"
+      "text": "उसी study में कब-कहाँ का plan बनते ही असर गया।",
+      "id": 7,
+      "scene": {
+        "type": "stack",
+        "images": [
+          "assets/s7-a.jpg",
+          "assets/s7-b.jpg"
+        ],
+        "caption": "कब · कहाँ · PLAN",
+        "bg": "assets/s2-bg.jpg"
+      },
+      "visual": "Polaroids: open planner with a hand-written weekly plan (scribbles, no readable text) and a wall calendar with one day circled.",
+      "onScreen": "कब · कहाँ · PLAN",
+      "motionNotes": "Polaroid A at f6, B at f40; punch f57 on \"plan\"; calm, relieving.",
+      "beats": [
+        {
+          "at": 46,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
-      "text": "आज रात कौन सा अधूरा काम plan करोगे?"
+      "text": "आज रात कौन सा अधूरा काम plan करोगे?",
+      "id": 8,
+      "scene": {
+        "type": "end",
+        "bg": "assets/s8-bg.jpg",
+        "text": "आज रात|कौन सा काम?",
+        "sub": "Comment करो 👇"
+      },
+      "visual": "Calm bedside lamp glow and a night window with soft city lights, bright enough to read, text over it.",
+      "onScreen": "आज रात कौन सा काम? Comment करो",
+      "motionNotes": "Slow push, text fades in at f6, soft light leak; loops to the hook.",
+      "beats": [],
+      "fx": [
+        "lightleak"
+      ]
     }
   ],
-  "assets": [],
+  "assets": [
+    {
+      "file": "assets/s1-bg.jpg",
+      "generate": "Person sitting up in bed at night seen from behind, face not visible, warm bedside lamp on, glow of a smartphone in hand, cosy bedroom, bright and readable, calm. Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no faces",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s2-bg.jpg",
+      "generate": "Soft lilac and cream textured paper background, subtle light vignette, empty, no objects. Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no faces",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s3-a.jpg",
+      "generate": "Vintage 1920s European café interior in warm daylight, empty marble tables, bentwood chairs, large windows, nostalgic and bright. Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no faces",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s3-b.jpg",
+      "generate": "Close-up of a waiter's hand holding a small blank order pad and pencil beside a coffee cup on a café table, warm daylight, no readable writing. Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no faces",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s4-bg.jpg",
+      "generate": "Top-down view of a wooden desk with a half-finished jigsaw puzzle and a few blank cards, a hand placing a piece, warm daylight. Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no faces",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s6-bg.jpg",
+      "generate": "Desk with a monitor edge and many colourful blank sticky notes, a hand adding one more, bright daylight, shallow depth of field. Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no faces",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s7-a.jpg",
+      "generate": "Open paper planner on a bright desk with a hand-written weekly schedule shown as loose scribbles, a pen beside it, soft daylight, no readable text. Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no faces",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s7-b.jpg",
+      "generate": "Wall calendar with one day circled in red marker, bright room, soft light, grid unreadable and blurred numbers. Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no faces",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s8-bg.jpg",
+      "generate": "Calm bedside lamp glowing softly next to a window showing blurred city lights at dusk, cosy room, bright enough, empty. Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no faces",
+      "orientation": "portrait"
+    }
+  ],
   "music": {
-    "file": "",
+    "file": "quiet-curiosity.mp3",
     "volume": 0.14
   },
   "voice": {
-    "file": "voice.mp3"
+    "file": "voice.mp3",
+    "source": "elevenlabs-web"
   },
   "upload": {
     "title": "रात को अधूरा काम ही क्यों याद आता है? (सच कितना?)",
@@ -98,5 +290,6 @@
       "#psychologyfacts",
       "#हिंदी"
     ]
-  }
+  },
+  "imageStyle": "Photorealistic, bright soft natural light, calm clean colours, documentary photo, no text, no letters, no logos, no watermark, no recognisable faces"
 }

@@ -331,13 +331,13 @@ export const End: React.FC<{s: EndScene; dur: number}> = ({s, dur}) => {
         <div
           style={{
             position: 'absolute',
-            top: 1000,
+            top: 980,
             left: 80,
             right: 80,
             textAlign: 'center',
             fontFamily: headlineFont,
-            fontSize: 72,
-            color: '#ddd',
+            fontSize: 104,
+            color: '#fff', textShadow: '0 4px 18px rgba(0,0,0,.7)',
             opacity: fadeIn(frame, 18, 12),
           }}
         >

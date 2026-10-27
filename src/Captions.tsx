@@ -39,7 +39,7 @@ export const Captions: React.FC<{words: Word[]; style?: CaptionStyle}> = ({words
     const p = interpolate(t, [w.start - 0.03, w.start + 0.06, w.start + 0.14], [0.6, 1.15, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
     return (
       <div style={{position: 'absolute', top: 1180, left: 40, right: 40, textAlign: 'center', transform: `scale(${p})`}}>
-        <span style={{fontFamily: captionFont, fontWeight: 800, fontSize: 118, color: '#fff', WebkitTextStroke: '5px #000', paintOrder: 'stroke fill', textShadow: `0 8px 0 ${hl}`}}>{w.text}</span>
+        <span style={{fontFamily: captionFont, fontWeight: 800, fontSize: 118, color: '#fff', background: 'rgba(20,16,42,0.55)', padding: '4px 30px 10px', borderRadius: 28, display: 'inline-block', WebkitTextStroke: '10px #14102a', paintOrder: 'stroke fill', textShadow: `0 8px 0 ${hl}, 0 0 26px rgba(0,0,0,0.6)`}}>{w.text}</span>
       </div>
     );
   }
