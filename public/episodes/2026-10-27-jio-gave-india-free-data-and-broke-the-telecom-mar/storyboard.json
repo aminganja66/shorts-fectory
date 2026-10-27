@@ -3,7 +3,7 @@
   "channel": "brand",
   "language": "en",
   "topic": "Jio gave India free data and broke the telecom market",
-  "title": "",
+  "title": "Jio Gave India Free Internet. Who Paid the Price?",
   "theme": {
     "accent": "#F26A1B",
     "look": "vox",
@@ -11,8 +11,119 @@
     "transition": "zoom",
     "progressBar": true
   },
-  "facts": [],
-  "lines": [],
+  "facts": [
+    {
+      "claim": "Reliance Jio began commercial service on September 5, 2016 with a 'Welcome Offer': free voice calls, data and messaging until December 31, 2016 (announced by Mukesh Ambani at the Reliance AGM on September 1, 2016).",
+      "source": [
+        "https://www.businesstoday.in/industry/telecom/story/all-about-free-welcome-offer-from-mukesh-ambani-s-reliance-jio-145941-2016-09-01",
+        "https://canalys.com/resources/Jio-launch-a-turning-point-in-the-Indian-market"
+      ]
+    },
+    {
+      "claim": "Jio reached 100 million subscribers in 170 days, about 7 new subscribers every second (Jio's own media release, Mumbai, February 21, 2017). The 'fastest of any tech start-up, faster than Facebook/WhatsApp/Skype' line is Jio's own claim.",
+      "source": [
+        "https://www.ril.com/sites/default/files/2023-01/Media-Release-JIO-21022017.pdf"
+      ]
+    },
+    {
+      "claim": "Per TRAI data (reported by PTI, August 2019), the average cost of mobile data in India fell from Rs 269 per GB in 2014 to Rs 11.78 per GB in 2018, a drop of about 95%. Intermediate years: Rs 75.57 (2016), Rs 19.35 (2017). The government later told Parliament it was Rs 8.31 per GB in June 2024. Conservative script wording: 'from about Rs 269 to about Rs 12 a GB'.",
+      "source": [
+        "https://www.business-standard.com/article/pti-stories/mobile-data-price-down-by-95-but-revenue-up-2-5-times-in-5-yrs-trai-119082101291_1.html",
+        "https://www.newsonair.gov.in/cost-of-data-drastically-reduced-from-%e2%82%b9269-gb-in-march-2014-to-%e2%82%b98-31-gb-in-june-2024-govt"
+      ]
+    },
+    {
+      "claim": "Mukesh Ambani said in March 2016 (FICCI Frames, Mumbai) that Reliance had invested Rs 1.5 lakh crore in Jio, calling it the biggest investment in any digital start-up globally. This is Reliance's own stated figure (reported), before the launch.",
+      "source": [
+        "https://www.businesstoday.in/latest/corporate/story/reliance-jio-biggest-startup-investment-mukesh-ambani-57894-2016-03-30"
+      ]
+    },
+    {
+      "claim": "Aircel filed for insolvency at the NCLT on February 28, 2018, citing 'intense competition after the disruptive entry of a new player', unsustainable debt and losses. Bharti Airtel completed its takeover of Telenor India in May 2018.",
+      "source": [
+        "https://www.businesstoday.in/sectors/telecom/aircel-files-for-bankruptcy-insolvency-reliance-jio-entry/story/271674.html",
+        "https://www.mobileworldlive.com/asia-pacific/airtel-completes-acquisition-of-telenor-india/"
+      ]
+    },
+    {
+      "claim": "Vodafone India and Idea Cellular completed their merger on August 31, 2018, forming Vodafone Idea with about 408 million customers; reports framed the deal as a response to pressure from Jio.",
+      "source": [
+        "https://www.telecomtv.com/content/vodafone/vodafone-announces-the-completion-of-the-merger-between-vodafone-india-and-idea-32198",
+        "https://www.theweek.in/news/biz-tech/2018/08/31/Idea-Vodafone-complete-merger-to-become-India-largest-telecom-operator.html"
+      ]
+    },
+    {
+      "claim": "Jio had 533.3 million subscribers as of June 30, 2026 (Q1 FY27, reported from Reliance's quarterly results). Safe script wording: 'over 500 million'.",
+      "source": [
+        "https://telecomtalk.info/jio-adds-million-subscribers-q1fy27-arpu-rs215/1009790/",
+        "https://indiantelevision.com/mam/jio-platforms-q1-profit-rises-9-2-per-cent-as-subscriber-base-tops-533-million/"
+      ]
+    },
+    {
+      "claim": "Jio's February 2017 release claimed it 'contributed to India becoming the leading country in the world for mobile data usage'. Ambani later said India went from 155th in mobile broadband penetration to No. 1 in mobile data consumption (India Mobile Congress, October 2018). This is Reliance's own framing, not an independent ranking (he also used 150th in 2017), so if used, say 'according to Ambani'.",
+      "source": [
+        "https://www.ril.com/sites/default/files/2023-01/Media-Release-JIO-21022017.pdf",
+        "https://www.digit.in/news/general/india-will-be-a-fully-4g-country-by-2020-and-ready-for-5g-ahead-of-others-mukesh-ambani-at-india-mob-44313.html"
+      ]
+    }
+  ],
+  "hookType": "cold-open",
+  "hookCandidates": [
+    {
+      "hookType": "cold-open",
+      "text": "One company gave India free internet. Who paid the price?"
+    },
+    {
+      "hookType": "shock-number",
+      "text": "Reliance said it invested ₹1.5 lakh crore. To give away what?"
+    },
+    {
+      "hookType": "what-if",
+      "text": "What if a phone network gave everything away? Who loses?"
+    }
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "text": "One company gave India free internet. Who paid the price?",
+      "scene": {"type": "vox"}
+    },
+    {
+      "id": 2,
+      "text": "Not the users. In 2016, Jio made everything free.",
+      "voice": "Not the users. In twenty sixteen, Jio made everything free.",
+      "scene": {"type": "vox"}
+    },
+    {
+      "id": 3,
+      "text": "Reliance said it had already invested ₹1.5 lakh crore.",
+      "voice": "Reliance said it had already invested one and a half lakh crore rupees.",
+      "scene": {"type": "counter"}
+    },
+    {
+      "id": 4,
+      "text": "Jio hit 100 million users in 170 days.",
+      "voice": "Jio hit a hundred million users in a hundred and seventy days.",
+      "scene": {"type": "counter"}
+    },
+    {
+      "id": 5,
+      "text": "A GB cost about ₹269 in 2014. By 2018, about ₹12.",
+      "voice": "A gigabyte cost about two hundred sixty-nine rupees in twenty fourteen. By twenty eighteen, about twelve rupees.",
+      "scene": {"type": "line"}
+    },
+    {
+      "id": 6,
+      "text": "That year, Aircel filed for insolvency, blaming a \"disruptive\" new player.",
+      "scene": {"type": "vox"}
+    },
+    {
+      "id": 7,
+      "text": "Jio now has over 500 million users. Who paid the price?",
+      "voice": "Jio now has over five hundred million users. Who paid the price?",
+      "scene": {"type": "typewriter"}
+    }
+  ],
   "assets": [],
   "music": {
     "file": "",
@@ -22,8 +133,8 @@
     "file": "voice.mp3"
   },
   "upload": {
-    "title": "",
-    "description": "",
+    "title": "Jio Gave India Free Internet. Who Paid the Price?",
+    "description": "In 2016 Reliance Jio made calls and data free until December 31, and hit 100 million users in 170 days.\nIndia's average data price fell from about ₹269 a GB (2014) to about ₹12 (2018, TRAI). Who do you think paid for it?",
     "hashtags": [
       "#shorts",
       "#businessstory",
