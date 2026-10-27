@@ -23,6 +23,7 @@ if ((sb.facts ?? []).length < 3) problems.push('fewer than 3 facts with sources'
 (sb.facts ?? []).forEach((f, i) => !f.source && problems.push(`fact ${i + 1} has no source`));
 const first = sb.lines[0]?.text.split(/\s+/).length ?? 0;
 if (first > 12) problems.push(`hook line is ${first} words — max 12 so it lands in ~3s`);
+if (!/[?？]/.test(sb.lines[0]?.text ?? '')) problems.push('hook (line 1) must be an open question ending with ? — big stake first, key noun withheld, answered in line 2 (CLAUDE.md → Hook)');
 if ((sb.hookCandidates ?? []).length < 3) problems.push('hookCandidates: write 3 different hooks in storyboard.json and pick the best one as line 1 (see scriptwriter agent)');
 
 // Anything the narrator must pronounce differently from how it is written needs a `voice` line (spoken form).
