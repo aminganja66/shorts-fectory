@@ -29,7 +29,7 @@
     "volume": 0.16
   },
   "voice": {
-    "name": "PASTE_ELEVENLABS_VOICE_NAME (deep storyteller)",
+    "name": "Rudra - Intense Documentary Narrator",
     "voiceId": "PASTE_ELEVENLABS_VOICE_ID",
     "model": "eleven_multilingual_v2",
     "languageCode": "hi",

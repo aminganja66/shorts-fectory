@@ -29,7 +29,7 @@
     "volume": 0.14
   },
   "voice": {
-    "name": "PASTE_ELEVENLABS_VOICE_NAME (calm, warm)",
+    "name": "Monika Sogam - Calm and Natural",
     "voiceId": "PASTE_ELEVENLABS_VOICE_ID",
     "model": "eleven_multilingual_v2",
     "languageCode": "hi",
