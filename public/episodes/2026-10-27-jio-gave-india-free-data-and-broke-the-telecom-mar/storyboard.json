@@ -1,0 +1,35 @@
+{
+  "id": "2026-10-27-jio-gave-india-free-data-and-broke-the-telecom-mar",
+  "channel": "brand",
+  "language": "en",
+  "topic": "Jio gave India free data and broke the telecom market",
+  "title": "",
+  "theme": {
+    "accent": "#F26A1B",
+    "look": "vox",
+    "captionStyle": "pop",
+    "transition": "zoom",
+    "progressBar": true
+  },
+  "facts": [],
+  "lines": [],
+  "assets": [],
+  "music": {
+    "file": "",
+    "volume": 0.16
+  },
+  "voice": {
+    "file": "voice.mp3"
+  },
+  "upload": {
+    "title": "",
+    "description": "",
+    "hashtags": [
+      "#shorts",
+      "#businessstory",
+      "#brandstory",
+      "#business",
+      "#storytime"
+    ]
+  }
+}
