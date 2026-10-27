@@ -3,7 +3,7 @@
   "channel": "brand",
   "language": "en",
   "topic": "Kodak built the first digital camera, then buried it",
-  "title": "",
+  "title": "Kodak Invented the Digital Camera. Then What?",
   "theme": {
     "accent": "#F26A1B",
     "look": "vox",
@@ -12,14 +12,91 @@
     "progressBar": true
   },
   "facts": [
-    {"claim": "In December 1975 Kodak engineer Steven Sasson built a self-contained digital camera prototype: about 8 lb (3.6 kg), toaster-sized, black and white, 100x100 pixels (0.01 megapixel), saved to a cassette tape.", "source": ["https://spectrum.ieee.org/first-digital-camera-history", "https://www.nbcnews.com/id/wbna9261340"]},
-    {"claim": "Recording one photo to tape took 23 seconds (about as long again to play it back on a TV). Sasson got a US patent in 1978; the camera was never put into production.", "source": ["https://spectrum.ieee.org/first-digital-camera-history", "https://www.nbcnews.com/id/wbna9261340"]},
-    {"claim": "Reportedly, Kodak executives saw no market for it after several demos, and Sasson was not allowed to show it outside Kodak. Sasson later said demos drew curiosity and some annoyance. No verified direct quote from a named manager; do not quote 'cute, but don't tell anyone'.", "source": ["https://spectrum.ieee.org/first-digital-camera-history", "https://www.nbcnews.com/id/wbna9261340"]},
-    {"claim": "Kodak's global workforce peaked at about 145,300 in 1988. By 1996 it had 94,800 employees and about $16.0 billion in sales ($15,968M).", "source": ["https://rbj.net/2012/01/19/kodaks-growth-and-decline-a-timeline/", "https://www.sec.gov/Archives/edgar/data/0000031235/000003123597000001/0000031235-97-000001.txt"]},
-    {"claim": "Kodak did go digital: pocket-sized consumer digital cameras in 1996 and the 'You've Got Pictures' service with AOL in 1998. It still filed for Chapter 11 on January 19, 2012, with about $5.1 billion in assets and about $6.75 billion in liabilities (Bloomberg rounds to $6.8B).", "source": ["https://rbj.net/2012/01/19/kodaks-growth-and-decline-a-timeline/", "https://www.bloomberg.com/news/2012-01-19/kodak-photography-pioneer-files-for-bankruptcy-protection-1-.html"]},
-    {"claim": "Facebook agreed to buy Instagram for $1 billion, announced April 9, 2012, about three months after Kodak's filing. Instagram was reported to have about a dozen employees (13 in some outlets).", "source": ["https://money.cnn.com/2012/04/09/technology/facebook_acquires_instagram/index.htm", "https://www.npr.org/transcripts/150335237"]}
+    {
+      "claim": "In December 1975 Kodak engineer Steven Sasson built a self-contained digital camera prototype: about 8 lb (3.6 kg), toaster-sized, black and white, 100x100 pixels (0.01 megapixel), saved to a cassette tape.",
+      "source": [
+        "https://spectrum.ieee.org/first-digital-camera-history",
+        "https://www.nbcnews.com/id/wbna9261340"
+      ]
+    },
+    {
+      "claim": "Recording one photo to tape took 23 seconds (about as long again to play it back on a TV). Sasson got a US patent in 1978; the camera was never put into production.",
+      "source": [
+        "https://spectrum.ieee.org/first-digital-camera-history",
+        "https://www.nbcnews.com/id/wbna9261340"
+      ]
+    },
+    {
+      "claim": "Reportedly, Kodak executives saw no market for it after several demos, and Sasson was not allowed to show it outside Kodak. Sasson later said demos drew curiosity and some annoyance. No verified direct quote from a named manager; do not quote 'cute, but don't tell anyone'.",
+      "source": [
+        "https://spectrum.ieee.org/first-digital-camera-history",
+        "https://www.nbcnews.com/id/wbna9261340"
+      ]
+    },
+    {
+      "claim": "Kodak's global workforce peaked at about 145,300 in 1988. By 1996 it had 94,800 employees and about $16.0 billion in sales ($15,968M).",
+      "source": [
+        "https://rbj.net/2012/01/19/kodaks-growth-and-decline-a-timeline/",
+        "https://www.sec.gov/Archives/edgar/data/0000031235/000003123597000001/0000031235-97-000001.txt"
+      ]
+    },
+    {
+      "claim": "Kodak did go digital: pocket-sized consumer digital cameras in 1996 and the 'You've Got Pictures' service with AOL in 1998. It still filed for Chapter 11 on January 19, 2012, with about $5.1 billion in assets and about $6.75 billion in liabilities (Bloomberg rounds to $6.8B).",
+      "source": [
+        "https://rbj.net/2012/01/19/kodaks-growth-and-decline-a-timeline/",
+        "https://www.bloomberg.com/news/2012-01-19/kodak-photography-pioneer-files-for-bankruptcy-protection-1-.html"
+      ]
+    },
+    {
+      "claim": "Facebook agreed to buy Instagram for $1 billion, announced April 9, 2012, about three months after Kodak's filing. Instagram was reported to have about a dozen employees (13 in some outlets).",
+      "source": [
+        "https://money.cnn.com/2012/04/09/technology/facebook_acquires_instagram/index.htm",
+        "https://www.npr.org/transcripts/150335237"
+      ]
+    }
   ],
-  "lines": [],
+  "hookType": "contradiction",
+  "hookCandidates": [
+    {
+      "hookType": "contradiction",
+      "text": "Kodak invented the digital camera. What did it do with it?"
+    },
+    {
+      "hookType": "cold-open",
+      "text": "In 1975, one engineer held Kodak's future. Where did it end up?"
+    },
+    {
+      "hookType": "what-if",
+      "text": "What if Kodak had sold the camera it built in 1975?"
+    }
+  ],
+  "lines": [
+    {
+      "text": "Kodak invented the digital camera. What did it do with it?"
+    },
+    {
+      "text": "Engineer Steven Sasson built it in 1975. One photo took 23 seconds.",
+      "voice": "Engineer Steven Sasson built it in nineteen seventy-five. One photo took twenty-three seconds."
+    },
+    {
+      "text": "Reportedly, bosses saw no market and kept it inside Kodak."
+    },
+    {
+      "text": "At its 1988 peak, Kodak had about 145,000 employees.",
+      "voice": "At its nineteen eighty-eight peak, Kodak had about one hundred forty-five thousand employees."
+    },
+    {
+      "text": "It sold digital cameras from 1996. Still, it filed for bankruptcy in January 2012.",
+      "voice": "It sold digital cameras from nineteen ninety-six. Still, it filed for bankruptcy in January twenty twelve."
+    },
+    {
+      "text": "Three months later, Facebook agreed to buy Instagram, about a dozen employees, for $1 billion.",
+      "voice": "Three months later, Facebook agreed to buy Instagram, about a dozen employees, for one billion dollars."
+    },
+    {
+      "text": "Was Kodak's mistake missing digital, or hiding it?"
+    }
+  ],
   "assets": [],
   "music": {
     "file": "",
@@ -29,8 +106,8 @@
     "file": "voice.mp3"
   },
   "upload": {
-    "title": "",
-    "description": "",
+    "title": "Kodak Invented the Digital Camera. Then What?",
+    "description": "In 1975 a Kodak engineer built the first digital camera. What happened next, and why did Kodak file for bankruptcy in 2012?\nSources: IEEE Spectrum, NBC News, Bloomberg, CNN Money.",
     "hashtags": [
       "#shorts",
       "#businessstory",
