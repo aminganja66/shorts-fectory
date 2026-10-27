@@ -1,0 +1,377 @@
+{
+  "id": "2026-10-27-nokia-android-en",
+  "channel": "brand",
+  "language": "en",
+  "topic": "Nokia said no to Android",
+  "title": "Nokia once sold 49.4% of all smartphones. What did it turn down?",
+  "theme": {
+    "accent": "#00B3FF",
+    "grade": "cold",
+    "look": "noir",
+    "captionStyle": "outline",
+    "transition": "glitch"
+  },
+  "facts": [
+    {
+      "claim": "3 सितंबर 2013 को Microsoft ने Nokia का Devices & Services business 3.79 billion euro में और patents license के 1.65 billion euro, यानी कुल 5.44 billion euro cash में खरीदने का deal announce किया",
+      "source": "https://news.microsoft.com/source/2013/09/03/microsoft-to-acquire-nokias-devices-services-business-license-nokias-patents-and-mapping-services/"
+    },
+    {
+      "claim": "फरवरी 2011 में CEO Stephen Elop का 'burning platform' memo आया (North Sea oil platform की मिसाल), और 11 फरवरी 2011 को Nokia ने Windows Phone को अपना primary smartphone platform बनाने का ऐलान किया; share price तेज़ गिरा (secondary sources)",
+      "source": [
+        "https://www.engadget.com/2011/02/08/nokia-ceo-stephen-elop-rallies-troops-in-brutally-honest-burnin/",
+        "https://techcrunch.com/2011/02/07/nokia-heading-to-silicon-valley-and-the-standing-on-a-burning-platform-memo-2"
+      ]
+    },
+    {
+      "claim": "रिपोर्ट्स के मुताबिक Elop ने बाद में कहा कि Android चुनने पर Samsung से सीधी टक्कर होती, और late entry में अलग पहचान बनाना मुश्किल था",
+      "source": [
+        "https://www.computing.co.uk/news/2341940/nokia-picked-windows-phone-over-android-to-avoid-samsung-collision",
+        "https://www.techradar.com/news/phone-and-communications/mobile-phones/elop-admits-that-nokia-was-scared-to-go-head-to-head-with-samsung-1245745"
+      ]
+    },
+    {
+      "claim": "Gartner के मुताबिक smartphones में Nokia का share 2007 में 49.4% था और 2008 में 43.7%; Symbian का हिस्सा Q2 2011 तक 22.1% रह गया (एक साल पहले 40.9%)",
+      "source": [
+        "https://www.fierce-network.com/developer/smartphone-sales-increase-13-9-2008",
+        "https://www.allaboutsymbian.com/news/item/13181_Worldwide_Q2_2011_stats_out_fr.php"
+      ]
+    },
+    {
+      "claim": "Gartner के मुताबिक Q3 2011 में Samsung smartphone sales में Nokia से आगे निकला (लगभग 24-25 million vs 19.5 million); 2011 में कुल phones में Nokia फिर भी 422 million units (23.8%) के साथ आगे था",
+      "source": "https://www.businesstoday.in/story/nokia-loses-top-handset-maker-position-to-samsung-gartner/1/184596.html"
+    }
+  ],
+  "hookType": "question",
+  "lines": [
+    {
+      "id": 1,
+      "text": "Nokia once sold 49.4% of all smartphones. What did it turn down?",
+      "visual": "BG: crowded 2000s mobile phone shop wall of candy-bar phones, warm shop light. MID: none. FG: Nokia logo pops over it inside a gold frame.",
+      "onScreen": "49.4% SHARE | SAID NO TO WHAT?",
+      "motionNotes": "f0-8 whip in. Logo pops f10. Slow push; punch f129 on \"49.4%\" (voice 4.31s). Last 12 frames zoom-through into the chart.",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s1-bg.jpg",
+        "logo": "assets/logo-nokia-w.png",
+        "logoPos": "bottom",
+        "headline": "49.4% SHARE|SAID NO TO WHAT?",
+        "motion": "push",
+        "goldFrame": true
+      },
+      "beats": [
+        {
+          "at": 139,
+          "do": "punch"
+        },
+        {
+          "at": -12,
+          "do": "zoom-through",
+          "len": 12
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ],
+      "sfx": "whoosh.mp3",
+      "voice": "Nokia once sold forty-nine point four percent of all smartphones. What did it turn down?"
+    },
+    {
+      "id": 2,
+      "text": "Android. By 2008, Nokia held 43.7%, and Symbian's share fell from 40.9% to 22.1% in a year.",
+      "visual": "Dark tech texture; four bars: Nokia 2007 49.4, Nokia 2008 43.7, Symbian 2010 40.9, Symbian Q2 2011 22.1, counting up; last bar drops red.",
+      "onScreen": "Nokia 49.4 → 43.7 | Symbian 40.9 → 22.1",
+      "motionNotes": "Bars grow ease-out; numbers count up; shake at f197 when \"22.1%\" is spoken.",
+      "scene": {
+        "type": "chart",
+        "title": "SMARTPHONE SHARE (NOKIA / SYMBIAN OS)",
+        "unit": "%",
+        "bars": [
+          {
+            "label": "NOKIA 2007",
+            "value": 49.4
+          },
+          {
+            "label": "NOKIA 2008",
+            "value": 43.7
+          },
+          {
+            "label": "SYMBIAN Q2 2010",
+            "value": 40.9
+          },
+          {
+            "label": "SYMBIAN Q2 2011",
+            "value": 22.1,
+            "color": "#E50914"
+          }
+        ]
+      },
+      "beats": [
+        {
+          "at": 239,
+          "do": "shake",
+          "len": 8
+        }
+      ],
+      "fx": [
+        "glitch"
+      ],
+      "voice": "Android. By two thousand eight, Nokia held forty-three point seven percent, and Symbian's share fell from forty point nine to twenty-two point one percent in a year."
+    },
+    {
+      "id": 3,
+      "text": "February 2011. CEO Stephen Elop wrote a memo: Nokia stands on a burning oil platform.",
+      "visual": "BG: burning oil platform at night, stormy North Sea. FG cut-out: generic man in a dark suit seen from behind (stands for CEO Stephen Elop; no real face). Headline 'BURNING PLATFORM'.",
+      "onScreen": "BURNING PLATFORM",
+      "motionNotes": "Cut-out springs up f4. Embers rise, slow pull. Punch f35 on \"Elop\", punch f141 on \"जलते हुए\".",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s3-bg.jpg",
+        "fg": "assets/s3-silhouette.png",
+        "fgStyle": "cutout",
+        "headline": "FEBRUARY 2011|BURNING PLATFORM",
+        "motion": "pull"
+      },
+      "beats": [
+        {
+          "at": 77,
+          "do": "punch"
+        },
+        {
+          "at": 170,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "embers",
+        "smoke"
+      ],
+      "voice": "February twenty eleven. CEO Stephen Elop wrote a memo: Nokia stands on a burning oil platform."
+    },
+    {
+      "id": 4,
+      "text": "Windows Phone became Nokia's main platform on February 11. Not Android.",
+      "visual": "Split: left Windows Phone logo on dark blue, right Android robot logo on dark; Windows side wins.",
+      "onScreen": "WINDOWS PHONE vs ANDROID",
+      "motionNotes": "Halves slide in; punch f115 on \"Windows Phone\"; flash f158 on \"Android नहीं\".",
+      "scene": {
+        "type": "versus",
+        "left": {
+          "image": "assets/s4-left.png",
+          "label": "WINDOWS PHONE"
+        },
+        "right": {
+          "image": "assets/s4-right.png",
+          "label": "ANDROID"
+        },
+        "winner": "left"
+      },
+      "beats": [
+        {
+          "at": 4,
+          "do": "punch"
+        },
+        {
+          "at": 124,
+          "do": "flash"
+        }
+      ],
+      "sfx": "hit.mp3",
+      "voice": "Windows Phone became Nokia's main platform on February eleventh. Not Android."
+    },
+    {
+      "id": 5,
+      "text": "Elop later said Android meant a head-on clash with Samsung.",
+      "visual": "Dark smoky background; huge words 'सीधी टक्कर' / 'LATE ENTRY' slam in, accent colour on key words.",
+      "onScreen": "HEAD-ON CLASH WITH SAMSUNG",
+      "motionNotes": "Words pop 4 frames apart; shake f55 on \"Samsung\". Calm scene.",
+      "scene": {
+        "type": "kinetic",
+        "bg": "assets/s5-bg.jpg",
+        "text": "A HEAD-ON|CLASH WITH|SAMSUNG",
+        "highlight": [
+          "HEAD-ON",
+          "SAMSUNG"
+        ]
+      },
+      "beats": [
+        {
+          "at": 84,
+          "do": "shake",
+          "len": 8
+        }
+      ],
+      "fx": [
+        "smoke"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Q3 2011: Samsung passed Nokia in smartphone sales, according to Gartner.",
+      "visual": "Dark desk; three smartphone photos drop like polaroids, caption 'Q3 2011: SAMSUNG > NOKIA'.",
+      "onScreen": "Q3 2011 | SAMSUNG AHEAD",
+      "motionNotes": "Photos fall staggered; punch f50 on \"Samsung\".",
+      "scene": {
+        "type": "stack",
+        "images": [
+          "assets/s6-a.jpg",
+          "assets/s6-b.jpg",
+          "assets/s6-c.jpg"
+        ],
+        "caption": "Q3 2011: SAMSUNG AHEAD"
+      },
+      "beats": [
+        {
+          "at": 42,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "glitch"
+      ],
+      "voice": "Q three, twenty eleven: Samsung passed Nokia in smartphone sales, according to Gartner."
+    },
+    {
+      "id": 7,
+      "text": "September 2013. Microsoft announced a deal for Nokia's phone business: 5.44 billion euros, patents included.",
+      "visual": "BG: glass corporate boardroom, signing table, cold light. Microsoft logo over it, headline 5.44 billion euro.",
+      "onScreen": "SEPTEMBER 2013 | €5.44B",
+      "motionNotes": "Slow pan-left; flash f219 + shake f222 on \"5.44 billion\" - the deal slam.",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s7-bg.jpg",
+        "logo": "assets/logo-microsoft-w.png",
+        "logoPos": "center",
+        "headline": "SEPTEMBER 2013|€5.44 BILLION",
+        "motion": "pan-left"
+      },
+      "beats": [
+        {
+          "at": 167,
+          "do": "flash"
+        },
+        {
+          "at": 167,
+          "do": "shake",
+          "len": 10
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ],
+      "voice": "September twenty thirteen. Microsoft announced a deal for Nokia's phone business: five point four four billion euros, patents included."
+    },
+    {
+      "id": 8,
+      "text": "From 49.4% to a deal. Was saying no to Android right? Tell me below.",
+      "visual": "Dark empty street at night, old phone silhouette glow; punchline huge, sub 'Nokia · 2007-2013'.",
+      "onScreen": "RIGHT CALL OR MISTAKE?",
+      "motionNotes": "Slow pull-back; headline pops f4; sub fades f18; smoke.",
+      "scene": {
+        "type": "end",
+        "bg": "assets/s8-bg.jpg",
+        "text": "RIGHT CALL|OR A MISTAKE?",
+        "sub": "Nokia · 2007-2013"
+      },
+      "fx": [
+        "smoke",
+        "dust"
+      ],
+      "voice": "From forty-nine point four percent to a deal. Was saying no to Android right? Tell me below."
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/s1-bg.jpg",
+      "generate": "Crowded mobile phone shop around 2007, glass counter and wall displays full of candy-bar and keypad phones, warm shop lighting, no brand names",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/logo-nokia.png",
+      "query": "Nokia logo",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s3-bg.jpg",
+      "generate": "Offshore oil platform on fire at night in a stormy North Sea, flames reflected on black waves, dramatic",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/logo-winphone.png",
+      "query": "Windows Phone logo",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s3-silhouette.png",
+      "generate": "man in dark suit seen from behind, full body, plain grey background (generic, no real person)",
+      "cutout": true,
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/logo-android.png",
+      "query": "Android logo robot",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s5-bg.jpg",
+      "query": "dark smoke black background",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s6-a.jpg",
+      "query": "smartphone touchscreen",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s6-b.jpg",
+      "query": "Samsung Galaxy smartphone",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s6-c.jpg",
+      "query": "Nokia mobile phone",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s7-bg.jpg",
+      "generate": "Empty glass corporate boardroom with long table and signed documents, cold blue morning light, city skyline behind",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/logo-microsoft.png",
+      "query": "Microsoft logo 2012",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s8-bg.jpg",
+      "query": "empty street night rain",
+      "orientation": "portrait"
+    }
+  ],
+  "music": {
+    "file": "unresolved-evidence.mp3",
+    "volume": 0.16
+  },
+  "voice": {
+    "file": "voice.mp3",
+    "source": "elevenlabs-web"
+  },
+  "upload": {
+    "title": "Nokia said no to Android. Then came a €5.44 billion deal",
+    "description": "Nokia sold 49.4% of all smartphones in 2007 (Gartner). In 2011 it chose Windows Phone over Android, and in September 2013 Microsoft announced a deal to buy its phone business: €5.44 billion in total, patents included.\nWas saying no to Android the right call? Tell me in the comments.",
+    "hashtags": [
+      "#shorts",
+      "#businessstory",
+      "#nokia",
+      "#android",
+      "#brandstory"
+    ]
+  },
+  "imageStyle": "Photorealistic, cinematic documentary lighting, 35mm film grain, muted colors, no text, no logos, no watermark",
+  "variantOf": "2026-10-27-nokia-android",
+  "hookCandidates": [
+    "Nokia once sold 49.4% of all smartphones. What did it turn down?",
+    "Nokia turned something down in 2011. It cost them their phone business.",
+    "What did the world's biggest smartphone maker say no to?"
+  ]
+}

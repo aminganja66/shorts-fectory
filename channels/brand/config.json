@@ -48,7 +48,11 @@
     ],
     "pauseBetweenLines": "1.1s",
     "note": "Natural speed 1.0 — never speed the voice up to fit; cut words instead. <break time=\"0.5s\" /> after every sentence end (। ? !) and <break time=\"1.1s\" /> between lines, so sentences never blur into each other and align.mjs can find the line boundaries.",
-    "pauseBetweenSentences": "0.5s"
+    "pauseBetweenSentences": "0.5s",
+    "english": {
+      "name": "Jon - Warm & Grounded Storyteller",
+      "note": "English editions (storyboard.language=en, variantOf=<hindi id>): speed 1.0, stability 0.5, similarity 0.8, style 0.15; ~0.38 s/word + breaks"
+    }
   },
   "hashtags": [
     "#shorts",

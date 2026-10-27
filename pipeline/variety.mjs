@@ -31,6 +31,8 @@ const previous = (sb, n = 6) =>
 export const varietyCheck = (sb) => {
   const problems = [];
   const warn = [];
+  // A language edition of an existing Short (storyboard.variantOf = <episode id>) intentionally reuses its look/music/scenes.
+  if (sb.variantOf) return {problems, warn, recent: [`(language edition of ${sb.variantOf}: variety rules skipped)`]};
   const me = signature(sb);
   for (const k of ['look', 'captionStyle', 'transition', 'hookType']) if (!me[k]) problems.push(`variety: set ${k === 'hookType' ? 'hookType' : `theme.${k}`} (pick one different from recent episodes)`);
   const prev = previous(sb);

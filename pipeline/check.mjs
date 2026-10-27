@@ -16,7 +16,7 @@ if (!sb.lines?.length) problems.push('no lines');
 if (sb.lines?.length < 5 || sb.lines?.length > 9) warn.push(`${sb.lines?.length} lines (aim for 6–8)`);
 const words = sb.lines.reduce((n, l) => n + l.text.split(/\s+/).length, 0);
 // real Hindi narration at natural speed ≈ 0.5 s/word + ~0.8 s between lines (measured on the first Nokia Short: 119 words = 56 s even at 1.2× speed)
-const est = words * 0.5 + sb.lines.length * 0.8;
+const est = words * (sb.language === 'en' ? 0.38 : 0.5) + sb.lines.length * 0.8; // English is spoken faster than Hindi/Hinglish
 if (est > 48) problems.push(`estimated length ${est.toFixed(0)}s — over 45s. Cut words (max ~75) instead of speeding the voice up.`);
 else if (est < 24) warn.push(`estimated length ${est.toFixed(0)}s (aim 30–42s)`);
 if ((sb.facts ?? []).length < 3) problems.push('fewer than 3 facts with sources');

@@ -1,0 +1,572 @@
+{
+  "words": [
+    {
+      "text": "Nokia",
+      "start": 0,
+      "end": 0.371
+    },
+    {
+      "text": "once",
+      "start": 0.371,
+      "end": 0.678
+    },
+    {
+      "text": "sold",
+      "start": 0.678,
+      "end": 0.985
+    },
+    {
+      "text": "49.4%",
+      "start": 0.985,
+      "end": 2.008
+    },
+    {
+      "text": "of",
+      "start": 2.008,
+      "end": 2.187
+    },
+    {
+      "text": "all",
+      "start": 2.187,
+      "end": 2.43
+    },
+    {
+      "text": "smartphones.",
+      "start": 2.43,
+      "end": 3.345
+    },
+    {
+      "text": "What",
+      "start": 3.345,
+      "end": 3.652
+    },
+    {
+      "text": "did",
+      "start": 3.652,
+      "end": 3.895
+    },
+    {
+      "text": "it",
+      "start": 4.448,
+      "end": 4.629
+    },
+    {
+      "text": "turn",
+      "start": 4.629,
+      "end": 4.941
+    },
+    {
+      "text": "down?",
+      "start": 4.941,
+      "end": 5.414
+    },
+    {
+      "text": "Android.",
+      "start": 6.406,
+      "end": 6.941
+    },
+    {
+      "text": "By",
+      "start": 7.497,
+      "end": 7.695
+    },
+    {
+      "text": "2008,",
+      "start": 7.695,
+      "end": 8.881
+    },
+    {
+      "text": "Nokia",
+      "start": 8.881,
+      "end": 9.291
+    },
+    {
+      "text": "held",
+      "start": 9.291,
+      "end": 9.63
+    },
+    {
+      "text": "43.7%,",
+      "start": 9.63,
+      "end": 10.999
+    },
+    {
+      "text": "and",
+      "start": 10.999,
+      "end": 11.268
+    },
+    {
+      "text": "Symbian's",
+      "start": 11.268,
+      "end": 11.96
+    },
+    {
+      "text": "share",
+      "start": 11.96,
+      "end": 12.369
+    },
+    {
+      "text": "fell",
+      "start": 12.369,
+      "end": 12.708
+    },
+    {
+      "text": "from",
+      "start": 12.708,
+      "end": 13.047
+    },
+    {
+      "text": "40.9%",
+      "start": 13.047,
+      "end": 14.177
+    },
+    {
+      "text": "to",
+      "start": 14.177,
+      "end": 14.374
+    },
+    {
+      "text": "22.1%",
+      "start": 14.374,
+      "end": 15.504
+    },
+    {
+      "text": "in",
+      "start": 15.504,
+      "end": 15.702
+    },
+    {
+      "text": "a",
+      "start": 15.702,
+      "end": 15.829
+    },
+    {
+      "text": "year.",
+      "start": 15.829,
+      "end": 16.344
+    },
+    {
+      "text": "February",
+      "start": 17.414,
+      "end": 17.784
+    },
+    {
+      "text": "2011.",
+      "start": 17.784,
+      "end": 18.521
+    },
+    {
+      "text": "CEO",
+      "start": 19.012,
+      "end": 19.325
+    },
+    {
+      "text": "Stephen",
+      "start": 19.325,
+      "end": 19.968
+    },
+    {
+      "text": "Elop",
+      "start": 19.968,
+      "end": 20.364
+    },
+    {
+      "text": "wrote",
+      "start": 20.364,
+      "end": 20.842
+    },
+    {
+      "text": "a",
+      "start": 20.842,
+      "end": 20.99
+    },
+    {
+      "text": "memo:",
+      "start": 20.99,
+      "end": 21.534
+    },
+    {
+      "text": "Nokia",
+      "start": 22.023,
+      "end": 22.379
+    },
+    {
+      "text": "stands",
+      "start": 22.379,
+      "end": 22.797
+    },
+    {
+      "text": "on",
+      "start": 22.797,
+      "end": 22.969
+    },
+    {
+      "text": "a",
+      "start": 22.969,
+      "end": 23.089
+    },
+    {
+      "text": "burning",
+      "start": 23.08,
+      "end": 23.559
+    },
+    {
+      "text": "oil",
+      "start": 23.559,
+      "end": 23.792
+    },
+    {
+      "text": "platform.",
+      "start": 23.792,
+      "end": 24.486
+    },
+    {
+      "text": "Windows",
+      "start": 25.488,
+      "end": 25.896
+    },
+    {
+      "text": "Phone",
+      "start": 25.896,
+      "end": 26.199
+    },
+    {
+      "text": "became",
+      "start": 26.199,
+      "end": 26.554
+    },
+    {
+      "text": "Nokia's",
+      "start": 26.554,
+      "end": 26.961
+    },
+    {
+      "text": "main",
+      "start": 26.961,
+      "end": 27.212
+    },
+    {
+      "text": "platform",
+      "start": 27.212,
+      "end": 27.672
+    },
+    {
+      "text": "on",
+      "start": 27.672,
+      "end": 27.818
+    },
+    {
+      "text": "February",
+      "start": 27.818,
+      "end": 28.277
+    },
+    {
+      "text": "11.",
+      "start": 28.277,
+      "end": 28.92
+    },
+    {
+      "text": "Not",
+      "start": 29.37,
+      "end": 29.61
+    },
+    {
+      "text": "Android.",
+      "start": 29.61,
+      "end": 30.261
+    },
+    {
+      "text": "Elop",
+      "start": 31.412,
+      "end": 31.686
+    },
+    {
+      "text": "later",
+      "start": 31.686,
+      "end": 32.018
+    },
+    {
+      "text": "said",
+      "start": 32.018,
+      "end": 32.292
+    },
+    {
+      "text": "Android",
+      "start": 32.292,
+      "end": 32.738
+    },
+    {
+      "text": "meant",
+      "start": 32.738,
+      "end": 33.07
+    },
+    {
+      "text": "a",
+      "start": 33.07,
+      "end": 33.19
+    },
+    {
+      "text": "head-on",
+      "start": 33.173,
+      "end": 33.619
+    },
+    {
+      "text": "clash",
+      "start": 33.619,
+      "end": 33.951
+    },
+    {
+      "text": "with",
+      "start": 33.951,
+      "end": 34.225
+    },
+    {
+      "text": "Samsung.",
+      "start": 34.225,
+      "end": 34.815
+    },
+    {
+      "text": "Q3",
+      "start": 35.858,
+      "end": 36.32
+    },
+    {
+      "text": "2011:",
+      "start": 36.32,
+      "end": 37.265
+    },
+    {
+      "text": "Samsung",
+      "start": 37.265,
+      "end": 37.704
+    },
+    {
+      "text": "passed",
+      "start": 37.704,
+      "end": 38.087
+    },
+    {
+      "text": "Nokia",
+      "start": 38.087,
+      "end": 38.413
+    },
+    {
+      "text": "in",
+      "start": 38.413,
+      "end": 38.571
+    },
+    {
+      "text": "smartphone",
+      "start": 38.571,
+      "end": 39.179
+    },
+    {
+      "text": "sales,",
+      "start": 39.179,
+      "end": 39.606
+    },
+    {
+      "text": "according",
+      "start": 39.606,
+      "end": 40.158
+    },
+    {
+      "text": "to",
+      "start": 40.158,
+      "end": 40.315
+    },
+    {
+      "text": "Gartner.",
+      "start": 40.315,
+      "end": 40.895
+    },
+    {
+      "text": "September",
+      "start": 41.909,
+      "end": 42.395
+    },
+    {
+      "text": "2013.",
+      "start": 42.395,
+      "end": 43.263
+    },
+    {
+      "text": "Microsoft",
+      "start": 43.779,
+      "end": 44.401
+    },
+    {
+      "text": "announced",
+      "start": 44.401,
+      "end": 45.024
+    },
+    {
+      "text": "a",
+      "start": 45.024,
+      "end": 45.144
+    },
+    {
+      "text": "deal",
+      "start": 45.138,
+      "end": 45.443
+    },
+    {
+      "text": "for",
+      "start": 45.443,
+      "end": 45.684
+    },
+    {
+      "text": "Nokia's",
+      "start": 45.684,
+      "end": 46.179
+    },
+    {
+      "text": "phone",
+      "start": 46.179,
+      "end": 46.547
+    },
+    {
+      "text": "business:",
+      "start": 46.91,
+      "end": 47.477
+    },
+    {
+      "text": "5.44",
+      "start": 47.477,
+      "end": 48.195
+    },
+    {
+      "text": "billion",
+      "start": 48.195,
+      "end": 48.613
+    },
+    {
+      "text": "euros,",
+      "start": 48.613,
+      "end": 49.02
+    },
+    {
+      "text": "patents",
+      "start": 49.02,
+      "end": 49.438
+    },
+    {
+      "text": "included.",
+      "start": 49.438,
+      "end": 50.043
+    },
+    {
+      "text": "From",
+      "start": 51.038,
+      "end": 51.313
+    },
+    {
+      "text": "49.4%",
+      "start": 51.313,
+      "end": 52.228
+    },
+    {
+      "text": "to",
+      "start": 52.228,
+      "end": 52.388
+    },
+    {
+      "text": "a",
+      "start": 52.388,
+      "end": 52.508
+    },
+    {
+      "text": "deal.",
+      "start": 52.491,
+      "end": 52.908
+    },
+    {
+      "text": "Was",
+      "start": 52.908,
+      "end": 53.126
+    },
+    {
+      "text": "saying",
+      "start": 53.126,
+      "end": 53.515
+    },
+    {
+      "text": "no",
+      "start": 54.121,
+      "end": 54.315
+    },
+    {
+      "text": "to",
+      "start": 54.315,
+      "end": 54.509
+    },
+    {
+      "text": "Android",
+      "start": 54.509,
+      "end": 55.05
+    },
+    {
+      "text": "right?",
+      "start": 55.05,
+      "end": 55.625
+    },
+    {
+      "text": "Tell",
+      "start": 56.145,
+      "end": 56.348
+    },
+    {
+      "text": "me",
+      "start": 56.348,
+      "end": 56.468
+    },
+    {
+      "text": "below.",
+      "start": 56.466,
+      "end": 56.817
+    }
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 5.414
+    },
+    {
+      "id": 2,
+      "start": 6.406,
+      "end": 16.344
+    },
+    {
+      "id": 3,
+      "start": 17.414,
+      "end": 24.486
+    },
+    {
+      "id": 4,
+      "start": 25.488,
+      "end": 30.261
+    },
+    {
+      "id": 5,
+      "start": 31.412,
+      "end": 34.815
+    },
+    {
+      "id": 6,
+      "start": 35.858,
+      "end": 40.895
+    },
+    {
+      "id": 7,
+      "start": 41.909,
+      "end": 50.043
+    },
+    {
+      "id": 8,
+      "start": 51.038,
+      "end": 56.817
+    }
+  ],
+  "duration": 56.817
+}
