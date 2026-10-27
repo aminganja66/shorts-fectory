@@ -1,0 +1,72 @@
+{
+  "assets/sasson.png": {
+    "query": "Steve Sasson",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Steve_sasson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/95/Steve_sasson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Steve_sasson.jpg",
+    "author": "Aljawad",
+    "license": "CC BY 3.0",
+    "provider": "wikimedia",
+    "w": 1156,
+    "h": 1542
+  },
+  "assets/sasson-prototype.png": {
+    "query": "Kodak Sasson BL.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Kodak_Sasson_BL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/47/Kodak_Sasson_BL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Kodak_Sasson_BL.jpg",
+    "author": "Bertrand Labévue",
+    "license": "CC BY-SA 4.0",
+    "provider": "wikimedia",
+    "w": 1587,
+    "h": 1686
+  },
+  "assets/logo-kodak.png": {
+    "query": "Logo of the Eastman Kodak Company (1987–2006)",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Logo_of_the_Eastman_Kodak_Company_%281987%E2%80%932006%29.svg/1280px-Logo_of_the_Eastman_Kodak_Company_%281987%E2%80%932006%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Logo_of_the_Eastman_Kodak_Company_%281987%E2%80%932006%29.svg/1280px-Logo_of_the_Eastman_Kodak_Company_%281987%E2%80%932006%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Eastman_Kodak_Company_(1987%E2%80%932006).svg",
+    "author": "Eastman Kodak",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 187,
+    "h": 169
+  },
+  "assets/a1-boxes.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Stacked Cardboard Shipping Boxes.png"
+  },
+  "assets/a3-drawer.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Minimal Three-Drawer Filing Cabinet.png"
+  },
+  "assets/a5-courthouse.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Neoclassical Courthouse on White Background.png"
+  },
+  "assets/a6-phone.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Minimal Black Smartphone Rear View.png"
+  }
+}

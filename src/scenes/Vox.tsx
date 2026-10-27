@@ -105,10 +105,12 @@ const VoxHeadline: React.FC<{text: string; sub?: string; top?: number; size?: nu
   const s = interpolate(frame, [0, 10], [0.86, 1], {...CLAMP, easing: Easing.out(Easing.cubic)});
   const bar = interpolate(frame, [6, 22], [0, 1], {...CLAMP, easing: Easing.out(Easing.cubic)});
   const lines = text.split('|');
+  const longest = Math.max(...lines.map((l) => l.length));
+  const fit = Math.min(size, Math.floor(940 / (longest * 0.47))); // never wrap: shrink long lines to fit the phone width
   return (
     <div style={{position: 'absolute', top, left: 50, right: 50, textAlign: 'center', transform: `scale(${s})`, opacity: fadeIn(frame, 0, 6)}}>
       {lines.map((l, i) => (
-        <div key={i} style={{fontFamily: headlineFont, fontWeight: 700, fontSize: size, lineHeight: 0.92, color: INK, textTransform: 'uppercase', letterSpacing: -1}}>
+        <div key={i} style={{fontFamily: headlineFont, fontWeight: 700, fontSize: fit, lineHeight: 0.92, color: INK, textTransform: 'uppercase', letterSpacing: -1}}>
           {l}
         </div>
       ))}
@@ -136,11 +138,11 @@ export const Vox: React.FC<{s: VoxScene; dur: number}> = ({s, dur}) => {
             delay={4}
             from={two ? 'left' : 'bottom'}
             rot={two ? -3 : 0}
-            box={two ? {left: '2%', width: '50%', top: '30%', height: '52%'} : {left: '6%', width: '88%', top: '28%', height: '54%'}}
+            box={two ? {left: '2%', width: '50%', top: s.sub ? '34%' : '30%', height: s.sub ? '48%' : '52%'} : {left: '6%', width: '88%', top: s.sub ? '33%' : '28%', height: s.sub ? '49%' : '54%'}}
           />
         )}
         {s.mid2 && <Cut src={s.mid2} halftone={s.halftone ?? false} stroke={s.stroke ?? true} delay={10} from="right" rot={3} box={{left: '48%', width: '50%', top: '30%', height: '52%'}} />}
-        {s.fg && <Cut src={s.fg} stroke={s.fgStroke ?? false} delay={14} from="bottom" box={{left: '0%', width: '100%', top: '62%', height: '36%'}} />}
+        {s.fg && <Cut src={s.fg} stroke={s.fgStroke ?? false} delay={14} from="bottom" box={{left: '0%', width: '100%', top: '75%', height: '21%'}} />}
       </AbsoluteFill>
       {s.headline && <VoxHeadline text={s.headline} sub={s.sub} />}
     </AbsoluteFill>
@@ -166,7 +168,7 @@ export const Typewriter: React.FC<{s: TypewriterScene; dur: number}> = ({s, dur}
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <VoxBg />
-      <div style={{position: 'absolute', top: 520, left: 70, right: 70, fontFamily: '"Courier New", "DejaVu Sans Mono", monospace', fontWeight: 700, fontSize: 92, lineHeight: 1.18, color: INK}}>
+      <div style={{position: 'absolute', top: 640, left: 70, right: 70, fontFamily: '"Courier New", "DejaVu Sans Mono", monospace', fontWeight: 700, fontSize: 92, lineHeight: 1.18, color: INK}}>
         {shown.map((l, i) => (
           <div key={i} style={{minHeight: 108}}>
             {l}
@@ -174,10 +176,10 @@ export const Typewriter: React.FC<{s: TypewriterScene; dur: number}> = ({s, dur}
           </div>
         ))}
       </div>
-      {s.sub && <div style={{position: 'absolute', top: 400, left: 70, fontFamily: headlineFont, fontWeight: 700, fontSize: 64, color: accent, opacity: fadeIn(frame, 8, 8)}}>{s.sub}</div>}
+      {s.sub && <div style={{position: 'absolute', top: 520, left: 70, fontFamily: headlineFont, fontWeight: 700, fontSize: 64, color: accent, opacity: fadeIn(frame, 8, 8)}}>{s.sub}</div>}
       {s.prop && (
-        <div style={{position: 'absolute', left: 0, right: 0, bottom: -80, height: 620, transform: `translateY(${prop}px)`, perspective: 1100}}>
-          <div style={{width: '100%', height: '100%', transform: 'rotateX(52deg) scale(1.15)', transformOrigin: 'center bottom', filter: 'drop-shadow(0 30px 30px rgba(0,0,0,0.25))'}}>
+        <div style={{position: 'absolute', left: 0, right: 0, bottom: 10, height: 520, transform: `translateY(${prop}px)`, perspective: 1100}}>
+          <div style={{width: '100%', height: '100%', transform: 'rotateX(24deg) scale(1)', transformOrigin: 'center bottom', filter: 'drop-shadow(0 30px 30px rgba(0,0,0,0.25))'}}>
             <Photo src={s.prop} fit="contain" />
           </div>
         </div>
@@ -197,12 +199,12 @@ export const Counter: React.FC<{s: CounterScene; dur: number}> = ({s, dur}) => {
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <VoxBg />
-      {s.icon && <Cut src={s.icon} stroke delay={2} from="top" rot={-4} box={{left: '22%', width: '56%', top: '10%', height: '28%'}} pos="center center" />}
-      <div style={{position: 'absolute', top: 640, left: 30, right: 30, textAlign: 'center', transform: `scale(${pop})`}}>
+      {s.icon && <Cut src={s.icon} stroke delay={2} from="top" rot={-4} box={{left: '22%', width: '56%', top: '7%', height: '25%'}} pos="center center" />}
+      <div style={{position: 'absolute', top: 700, left: 30, right: 30, textAlign: 'center', transform: `scale(${pop})`}}>
         <div style={{fontFamily: headlineFont, fontWeight: 700, fontSize: 300, lineHeight: 0.95, color: INK, letterSpacing: -2}}>
           {s.prefix}
           {txt}
-          <span style={{color: accent}}>{s.suffix}</span>
+          <span style={{color: accent, fontSize: (s.suffix ?? '').trim().length > 2 ? 150 : undefined, letterSpacing: 0}}>{s.suffix}</span>
         </div>
         <div style={{height: 14, width: `${interpolate(frame, [6, 22], [0, 70], CLAMP)}%`, margin: '10px auto 0', background: accent, borderRadius: 7}} />
         {s.label && <div style={{marginTop: 30, fontFamily: headlineFont, fontWeight: 700, fontSize: 84, color: '#3b342a', textTransform: 'uppercase', opacity: fadeIn(frame, 12, 10)}}>{s.label}</div>}

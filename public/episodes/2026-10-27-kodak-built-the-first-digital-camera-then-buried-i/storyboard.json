@@ -3,7 +3,7 @@
   "channel": "brand",
   "language": "en",
   "topic": "Kodak built the first digital camera, then buried it",
-  "title": "Kodak Invented the Digital Camera. Then What?",
+  "title": "Kodak Built the First Digital Camera. Then What?",
   "theme": {
     "accent": "#F26A1B",
     "look": "vox",
@@ -57,10 +57,7 @@
   ],
   "hookType": "contradiction",
   "hookCandidates": [
-    {
-      "hookType": "contradiction",
-      "text": "Kodak invented the digital camera. What did it do with it?"
-    },
+    "Kodak built the first digital camera. What did it do with it?",
     {
       "hookType": "cold-open",
       "text": "In 1975, one engineer held Kodak's future. Where did it end up?"
@@ -72,41 +69,204 @@
   ],
   "lines": [
     {
-      "text": "Kodak invented the digital camera. What did it do with it?"
+      "text": "Kodak built the first digital camera. What did it do with it?",
+      "id": 1,
+      "scene": {
+        "type": "vox",
+        "mid": "assets/sasson-prototype.png",
+        "fg": "assets/a1-boxes.png",
+        "headline": "KODAK BUILT IT.|THEN WHAT?",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push"
+      },
+      "visual": "Locked paper grid. MID: pencil sketch of the first digital camera prototype (boxy, lens, cassette) with orange marker outline. FG: stack of yellow film-style boxes anchoring the bottom. Headline top, black uppercase, from frame 0.",
+      "onScreen": "KODAK BUILT IT. THEN WHAT?",
+      "motionNotes": "f0 headline visible; prototype pops in with marker stroke f0-10; boxes slide up from bottom f14; slow push. Punch on 'invented' (~f30).",
+      "beats": [
+        {
+          "at": 30,
+          "do": "punch"
+        }
+      ],
+      "fx": [],
+      "sfx": "whoosh.mp3"
     },
     {
-      "text": "Engineer Steven Sasson built it in 1975. One photo took 23 seconds.",
-      "voice": "Engineer Steven Sasson built it in nineteen seventy-five. One photo took twenty-three seconds."
+      "text": "Engineer Steven Sasson made it in 1975. Reportedly, Kodak kept it inside the company.",
+      "id": 2,
+      "scene": {
+        "type": "vox",
+        "mid": "assets/sasson.png",
+        "headline": "1975|KEPT INSIDE",
+        "halftone": true,
+        "stroke": true,
+        "motion": "pull",
+        "sub": "Reportedly"
+      },
+      "visual": "Halftone B&W newsprint portrait of Kodak engineer Steven Sasson (real licensed photo, CC BY 3.0 Aljawad) with orange marker outline. Headline above.",
+      "onScreen": "1975 | KEPT INSIDE (reportedly)",
+      "motionNotes": "Portrait slides in from the bottom with stroke; slow pull. Punch on 'twenty-three seconds' (~f140).",
+      "beats": [
+        {
+          "at": 140,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "dust"
+      ],
+      "voice": "Engineer Steven Sasson made it in nineteen seventy-five. Reportedly, Kodak kept it inside the company."
     },
     {
-      "text": "Reportedly, bosses saw no market and kept it inside Kodak."
+      "text": "One photo took 23 seconds, and bosses reportedly saw no market.",
+      "id": 3,
+      "scene": {
+        "type": "typewriter",
+        "text": "23 SECONDS|PER PHOTO.",
+        "sub": "No market, reportedly",
+        "prop": "assets/a3-drawer.png"
+      },
+      "visual": "Typed black mono quote on paper; small sub-line 'Reportedly' (reported, not a verified quote). A closed grey filing cabinet rises from the bottom.",
+      "onScreen": "23 SECONDS PER PHOTO. No market, reportedly",
+      "motionNotes": "Text types out f0-50 with block cursor; cabinet rises f0-24 and sits behind the lower text. Calm scene, no beats.",
+      "beats": [],
+      "fx": [],
+      "voice": "One photo took twenty-three seconds, and bosses reportedly saw no market."
     },
     {
       "text": "At its 1988 peak, Kodak had about 145,000 employees.",
-      "voice": "At its nineteen eighty-eight peak, Kodak had about one hundred forty-five thousand employees."
+      "voice": "At its nineteen eighty-eight peak, Kodak had about one hundred forty-five thousand employees.",
+      "id": 4,
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 145000,
+        "label": "EMPLOYEES AT ITS 1988 PEAK",
+        "icon": "assets/logo-kodak.png"
+      },
+      "visual": "Kodak 1987-2006 logo shown as-is (public-domain text logo, identification) dropping in at the top; big number counting up beneath.",
+      "onScreen": "145,000 / EMPLOYEES AT ITS 1988 PEAK",
+      "motionNotes": "Logo drops from top f2 with slight tilt; counter runs 0 to 145,000 across the line; settles on the number.",
+      "beats": [],
+      "fx": []
     },
     {
       "text": "It sold digital cameras from 1996. Still, it filed for bankruptcy in January 2012.",
-      "voice": "It sold digital cameras from nineteen ninety-six. Still, it filed for bankruptcy in January twenty twelve."
+      "voice": "It sold digital cameras from nineteen ninety-six. Still, it filed for bankruptcy in January twenty twelve.",
+      "id": 5,
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a5-courthouse.png",
+        "headline": "CHAPTER 11|JAN 2012",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push"
+      },
+      "visual": "Flat editorial neoclassical courthouse (generic, no text) with marker outline, headline above.",
+      "onScreen": "CHAPTER 11 / JAN 2012",
+      "motionNotes": "Courthouse rises in with stroke; slow push in; punch on 'bankruptcy' (~f175). Smoke haze for the fall.",
+      "beats": [
+        {
+          "at": 175,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "smoke"
+      ],
+      "sfx": "hit.mp3"
     },
     {
       "text": "Three months later, Facebook agreed to buy Instagram, about a dozen employees, for $1 billion.",
-      "voice": "Three months later, Facebook agreed to buy Instagram, about a dozen employees, for one billion dollars."
+      "voice": "Three months later, Facebook agreed to buy Instagram, about a dozen employees, for one billion dollars.",
+      "id": 6,
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 1,
+        "prefix": "$",
+        "suffix": " BILLION",
+        "decimals": 0,
+        "label": "INSTAGRAM · ~12 EMPLOYEES",
+        "icon": "assets/a6-phone.png"
+      },
+      "visual": "Generic black smartphone (rear, camera lens, no brand) at top; big '$1 BILLION' counter below. No Instagram logo.",
+      "onScreen": "$1 BILLION / INSTAGRAM · ~12 EMPLOYEES",
+      "motionNotes": "Phone drops in; counter climbs to $1; THE one flash of the Short on the reveal 'one billion dollars' (~f110).",
+      "beats": [
+        {
+          "at": 110,
+          "do": "flash"
+        }
+      ],
+      "fx": [],
+      "sfx": "whoosh.mp3"
     },
     {
-      "text": "Was Kodak's mistake missing digital, or hiding it?"
+      "text": "Was Kodak's mistake missing digital, or hiding it?",
+      "id": 7,
+      "scene": {
+        "type": "typewriter",
+        "text": "MISSED DIGITAL?|OR HID IT?"
+      },
+      "visual": "Closing typed question on paper, no props; loops back to the hook.",
+      "onScreen": "MISSED DIGITAL? / OR HID IT?",
+      "motionNotes": "Typed line 1 then line 2 with cursor; hold. No beats.",
+      "beats": [],
+      "fx": []
     }
   ],
-  "assets": [],
+  "assets": [
+    {
+      "file": "assets/sasson.png",
+      "query": "Steve Sasson",
+      "kind": "person",
+      "cutout": true,
+      "allowShareAlike": true
+    },
+    {
+      "file": "assets/sasson-prototype.png",
+      "query": "Kodak Sasson BL.jpg",
+      "kind": "person",
+      "cutout": true,
+      "allowShareAlike": true
+    },
+    {
+      "file": "assets/logo-kodak.png",
+      "query": "Logo of the Eastman Kodak Company (1987–2006)",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/a1-boxes.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a3-drawer.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a5-courthouse.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a6-phone.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo"
+    }
+  ],
   "music": {
-    "file": "",
+    "file": "quiet-motion.mp3",
     "volume": 0.16
   },
   "voice": {
     "file": "voice.mp3"
   },
   "upload": {
-    "title": "Kodak Invented the Digital Camera. Then What?",
+    "title": "Kodak Built the First Digital Camera. Then What?",
     "description": "In 1975 a Kodak engineer built the first digital camera. What happened next, and why did Kodak file for bankruptcy in 2012?\nSources: IEEE Spectrum, NBC News, Bloomberg, CNN Money.",
     "hashtags": [
       "#shorts",
