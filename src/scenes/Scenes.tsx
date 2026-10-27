@@ -180,7 +180,7 @@ export const Chart: React.FC<{s: ChartScene; dur: number}> = ({s, dur}) => {
       <AbsoluteFill style={{filter: 'brightness(0.35)'}}>{s.bg ? <Photo src={s.bg} /> : <PaperBg />}</AbsoluteFill>
       <Headline text={s.title} start={0} top={250} size={100} />
       {/* chart lives between the title (y≈250-360) and the captions (y≈1230) */}
-      <div style={{position: 'absolute', top: 430, height: 720, left: 90, right: 90, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: 70}}>
+      <div style={{position: 'absolute', top: 430, height: 720, left: 90, right: 90, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: 20}}>
         {s.bars.map((b, i) => {
           const g = interpolate(frame, [8 + i * 8, 8 + i * 8 + dur * 0.45], [0, 1], {
             extrapolateLeft: 'clamp',
@@ -190,7 +190,7 @@ export const Chart: React.FC<{s: ChartScene; dur: number}> = ({s, dur}) => {
           const h = Math.max(6, (b.value / max) * 470 * g);
           const val = b.value * g;
           return (
-            <div key={i} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: 240}}>
+            <div key={i} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: 210}}>
               <div style={{fontFamily: headlineFont, fontSize: 96, lineHeight: 1, color: '#fff', fontWeight: 700, textShadow: '0 6px 20px rgba(0,0,0,0.8)'}}>
                 {val >= 100 ? Math.round(val) : val >= 1 ? val.toFixed(1) : val.toFixed(2)}
                 <span style={{fontSize: 56}}>{s.unit ?? ''}</span>

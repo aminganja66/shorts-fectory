@@ -3,24 +3,355 @@
   "channel": "brand",
   "language": "hi",
   "topic": "Nokia ने Android को ना कहा",
-  "title": "",
+  "title": "49.4% share वाली Nokia ने Android को ना क्यों कहा?",
   "theme": {
-    "accent": "#E50914",
-    "grade": "warm"
+    "accent": "#00B3FF",
+    "grade": "cold",
+    "look": "noir",
+    "captionStyle": "outline",
+    "transition": "glitch"
   },
-  "facts": [],
-  "lines": [],
-  "assets": [],
+  "facts": [
+    {
+      "claim": "3 सितंबर 2013 को Microsoft ने Nokia का Devices & Services business 3.79 billion euro में और patents license के 1.65 billion euro, यानी कुल 5.44 billion euro cash में खरीदने का deal announce किया",
+      "source": "https://news.microsoft.com/source/2013/09/03/microsoft-to-acquire-nokias-devices-services-business-license-nokias-patents-and-mapping-services/"
+    },
+    {
+      "claim": "फरवरी 2011 में CEO Stephen Elop का 'burning platform' memo आया (North Sea oil platform की मिसाल), और 11 फरवरी 2011 को Nokia ने Windows Phone को अपना primary smartphone platform बनाने का ऐलान किया; share price तेज़ गिरा (secondary sources)",
+      "source": [
+        "https://www.engadget.com/2011/02/08/nokia-ceo-stephen-elop-rallies-troops-in-brutally-honest-burnin/",
+        "https://techcrunch.com/2011/02/07/nokia-heading-to-silicon-valley-and-the-standing-on-a-burning-platform-memo-2"
+      ]
+    },
+    {
+      "claim": "रिपोर्ट्स के मुताबिक Elop ने बाद में कहा कि Android चुनने पर Samsung से सीधी टक्कर होती, और late entry में अलग पहचान बनाना मुश्किल था",
+      "source": [
+        "https://www.computing.co.uk/news/2341940/nokia-picked-windows-phone-over-android-to-avoid-samsung-collision",
+        "https://www.techradar.com/news/phone-and-communications/mobile-phones/elop-admits-that-nokia-was-scared-to-go-head-to-head-with-samsung-1245745"
+      ]
+    },
+    {
+      "claim": "Gartner के मुताबिक smartphones में Nokia का share 2007 में 49.4% था और 2008 में 43.7%; Symbian का हिस्सा Q2 2011 तक 22.1% रह गया (एक साल पहले 40.9%)",
+      "source": [
+        "https://www.fierce-network.com/developer/smartphone-sales-increase-13-9-2008",
+        "https://www.allaboutsymbian.com/news/item/13181_Worldwide_Q2_2011_stats_out_fr.php"
+      ]
+    },
+    {
+      "claim": "Gartner के मुताबिक Q3 2011 में Samsung smartphone sales में Nokia से आगे निकला (लगभग 24-25 million vs 19.5 million); 2011 में कुल phones में Nokia फिर भी 422 million units (23.8%) के साथ आगे था",
+      "source": "https://www.businesstoday.in/story/nokia-loses-top-handset-maker-position-to-samsung-gartner/1/184596.html"
+    }
+  ],
+  "hookType": "shock-number",
+  "lines": [
+    {
+      "id": 1,
+      "text": "2007 में लगभग हर दूसरा smartphone Nokia का बिकता था। 49.4% share।",
+      "visual": "BG: crowded 2000s mobile phone shop wall of candy-bar phones, warm shop light. MID: none. FG: Nokia logo pops over it inside a gold frame.",
+      "onScreen": "49.4%",
+      "motionNotes": "f0-8 whip in. Logo pops f10. Slow push; punch f129 on \"49.4%\" (voice 4.31s). Last 12 frames zoom-through into the chart.",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s1-bg.jpg",
+        "logo": "assets/logo-nokia-w.png",
+        "logoPos": "bottom",
+        "headline": "49.4%|SHARE",
+        "motion": "push",
+        "goldFrame": true
+      },
+      "beats": [
+        {
+          "at": 129,
+          "do": "punch"
+        },
+        {
+          "at": -12,
+          "do": "zoom-through",
+          "len": 12
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ],
+      "sfx": "whoosh.mp3"
+    },
+    {
+      "id": 2,
+      "text": "2008 में भी Nokia का 43.7%। फिर Symbian का हिस्सा 40.9% से 22.1% पर आ गया।",
+      "visual": "Dark tech texture; four bars: Nokia 2007 49.4, Nokia 2008 43.7, Symbian 2010 40.9, Symbian Q2 2011 22.1, counting up; last bar drops red.",
+      "onScreen": "Nokia 49.4 → 43.7 | Symbian 40.9 → 22.1",
+      "motionNotes": "Bars grow ease-out; numbers count up; shake at f197 when \"22.1%\" is spoken.",
+      "scene": {
+        "type": "chart",
+        "title": "SMARTPHONE SHARE (NOKIA / SYMBIAN OS)",
+        "unit": "%",
+        "bars": [
+          {
+            "label": "NOKIA 2007",
+            "value": 49.4
+          },
+          {
+            "label": "NOKIA 2008",
+            "value": 43.7
+          },
+          {
+            "label": "SYMBIAN Q2 2010",
+            "value": 40.9
+          },
+          {
+            "label": "SYMBIAN Q2 2011",
+            "value": 22.1,
+            "color": "#E50914"
+          }
+        ]
+      },
+      "beats": [
+        {
+          "at": 197,
+          "do": "shake",
+          "len": 8
+        }
+      ],
+      "fx": [
+        "glitch"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "फरवरी 2011। CEO Stephen Elop ने memo लिखा: Nokia जलते हुए oil platform पर खड़ी है।",
+      "visual": "BG: burning oil platform at night, stormy North Sea. FG cut-out: generic man in a dark suit seen from behind (stands for CEO Stephen Elop; no real face). Headline 'BURNING PLATFORM'.",
+      "onScreen": "BURNING PLATFORM",
+      "motionNotes": "Cut-out springs up f4. Embers rise, slow pull. Punch f35 on \"Elop\", punch f141 on \"जलते हुए\".",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s3-bg.jpg",
+        "fg": "assets/s3-silhouette.png",
+        "fgStyle": "cutout",
+        "headline": "फरवरी 2011|BURNING PLATFORM",
+        "motion": "pull"
+      },
+      "beats": [
+        {
+          "at": 35,
+          "do": "punch"
+        },
+        {
+          "at": 141,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "embers",
+        "smoke"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "11 फरवरी को ऐलान हुआ। Nokia का primary platform होगा Windows Phone। Android नहीं।",
+      "visual": "Split: left Windows Phone logo on dark blue, right Android robot logo on dark; Windows side wins.",
+      "onScreen": "WINDOWS PHONE vs ANDROID",
+      "motionNotes": "Halves slide in; punch f115 on \"Windows Phone\"; flash f158 on \"Android नहीं\".",
+      "scene": {
+        "type": "versus",
+        "left": {
+          "image": "assets/s4-left.png",
+          "label": "WINDOWS PHONE"
+        },
+        "right": {
+          "image": "assets/s4-right.png",
+          "label": "ANDROID"
+        },
+        "winner": "left"
+      },
+      "beats": [
+        {
+          "at": 115,
+          "do": "punch"
+        },
+        {
+          "at": 158,
+          "do": "flash"
+        }
+      ],
+      "sfx": "hit.mp3"
+    },
+    {
+      "id": 5,
+      "text": "Elop ने बाद में कहा, Android में Samsung से सीधी टक्कर होती।",
+      "visual": "Dark smoky background; huge words 'सीधी टक्कर' / 'LATE ENTRY' slam in, accent colour on key words.",
+      "onScreen": "SAMSUNG से सीधी टक्कर | LATE ENTRY",
+      "motionNotes": "Words pop 4 frames apart; shake f55 on \"Samsung\". Calm scene.",
+      "scene": {
+        "type": "kinetic",
+        "bg": "assets/s5-bg.jpg",
+        "text": "SAMSUNG से|सीधी टक्कर|LATE ENTRY",
+        "highlight": [
+          "SAMSUNG",
+          "LATE"
+        ]
+      },
+      "beats": [
+        {
+          "at": 55,
+          "do": "shake",
+          "len": 8
+        }
+      ],
+      "fx": [
+        "smoke"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Q3 2011 में smartphone sales में Samsung, Nokia से आगे निकल गया, Gartner के मुताबिक।",
+      "visual": "Dark desk; three smartphone photos drop like polaroids, caption 'Q3 2011: SAMSUNG > NOKIA'.",
+      "onScreen": "Q3 2011 | SAMSUNG आगे",
+      "motionNotes": "Photos fall staggered; punch f50 on \"Samsung\".",
+      "scene": {
+        "type": "stack",
+        "images": [
+          "assets/s6-a.jpg",
+          "assets/s6-b.jpg",
+          "assets/s6-c.jpg"
+        ],
+        "caption": "Q3 2011: SAMSUNG आगे"
+      },
+      "beats": [
+        {
+          "at": 50,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "glitch"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "सितंबर 2013। Microsoft ने Nokia का phone business खरीदने का सौदा किया। कुल 5.44 billion euro, patents समेत।",
+      "visual": "BG: glass corporate boardroom, signing table, cold light. Microsoft logo over it, headline 5.44 billion euro.",
+      "onScreen": "सितंबर 2013 | €5.44B",
+      "motionNotes": "Slow pan-left; flash f219 + shake f222 on \"5.44 billion\" - the deal slam.",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s7-bg.jpg",
+        "logo": "assets/logo-microsoft-w.png",
+        "logoPos": "center",
+        "headline": "सितंबर 2013|€5.44 BILLION",
+        "motion": "pan-left"
+      },
+      "beats": [
+        {
+          "at": 219,
+          "do": "flash"
+        },
+        {
+          "at": 222,
+          "do": "shake",
+          "len": 10
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "49.4% से सीधे सौदे तक। Android को ना कहना सही था, या गलती? Comment में बताओ।",
+      "visual": "Dark empty street at night, old phone silhouette glow; punchline huge, sub 'Nokia · 2007-2013'.",
+      "onScreen": "सही या गलती?",
+      "motionNotes": "Slow pull-back; headline pops f4; sub fades f18; smoke.",
+      "scene": {
+        "type": "end",
+        "bg": "assets/s8-bg.jpg",
+        "text": "सही फैसला|या गलती?",
+        "sub": "Nokia · 2007-2013"
+      },
+      "fx": [
+        "smoke",
+        "dust"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/s1-bg.jpg",
+      "generate": "Crowded mobile phone shop around 2007, glass counter and wall displays full of candy-bar and keypad phones, warm shop lighting, no brand names",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/logo-nokia.png",
+      "query": "Nokia logo",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s3-bg.jpg",
+      "generate": "Offshore oil platform on fire at night in a stormy North Sea, flames reflected on black waves, dramatic",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/logo-winphone.png",
+      "query": "Windows Phone logo",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s3-silhouette.png",
+      "generate": "man in dark suit seen from behind, full body, plain grey background (generic, no real person)",
+      "cutout": true,
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/logo-android.png",
+      "query": "Android logo robot",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s5-bg.jpg",
+      "query": "dark smoke black background",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s6-a.jpg",
+      "query": "smartphone touchscreen",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s6-b.jpg",
+      "query": "Samsung Galaxy smartphone",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s6-c.jpg",
+      "query": "Nokia mobile phone",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s7-bg.jpg",
+      "generate": "Empty glass corporate boardroom with long table and signed documents, cold blue morning light, city skyline behind",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/logo-microsoft.png",
+      "query": "Microsoft logo 2012",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s8-bg.jpg",
+      "query": "empty street night rain",
+      "orientation": "portrait"
+    }
+  ],
   "music": {
-    "file": "",
+    "file": "unresolved-evidence.mp3",
     "volume": 0.16
   },
   "voice": {
-    "file": "voice.mp3"
+    "file": "voice.mp3",
+    "source": "elevenlabs-web"
   },
   "upload": {
-    "title": "",
-    "description": "",
+    "title": "Nokia ने Android को ना कहा, फिर Microsoft से 5.44 billion euro का सौदा",
+    "description": "2007 में smartphones का 49.4% Nokia के पास था। 2011 में Windows Phone चुना और सितंबर 2013 में Microsoft ने Nokia का phone business खरीदने का सौदा किया, कुल 5.44 billion euro, patents समेत।\nआपको क्या लगता है, Android लेना सही होता? Comment करें।",
     "hashtags": [
       "#shorts",
       "#businessstory",
@@ -28,5 +359,6 @@
       "#startup",
       "#brandstory"
     ]
-  }
+  },
+  "imageStyle": "Photorealistic, cinematic documentary lighting, 35mm film grain, muted colors, no text, no logos, no watermark"
 }

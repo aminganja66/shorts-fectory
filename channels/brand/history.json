@@ -20,7 +20,31 @@
       "symbian",
       "microsoft"
     ],
-    "status": "in-progress",
-    "date": "2026-10-27"
+    "status": "rendered",
+    "date": "2026-10-27",
+    "signature": {
+      "look": "noir",
+      "captionStyle": "outline",
+      "transition": "glitch",
+      "accent": "#00B3FF",
+      "hookType": "shock-number",
+      "music": "unresolved-evidence.mp3",
+      "scenes": [
+        "collage",
+        "chart",
+        "collage",
+        "versus",
+        "kinetic",
+        "stack",
+        "collage",
+        "end"
+      ],
+      "motions": [
+        "push",
+        "pull",
+        "pan-left"
+      ]
+    },
+    "updated": "2026-10-27"
   }
 ]
