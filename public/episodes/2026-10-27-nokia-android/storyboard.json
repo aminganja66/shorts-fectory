@@ -61,7 +61,7 @@
       },
       "beats": [
         {
-          "at": 129,
+          "at": 134,
           "do": "punch"
         },
         {
@@ -73,7 +73,8 @@
       "fx": [
         "lightleak"
       ],
-      "sfx": "whoosh.mp3"
+      "sfx": "whoosh.mp3",
+      "voice": "two thousand seven में लगभग हर दूसरा smartphone Nokia का बिकता था। forty nine point four percent share।"
     },
     {
       "id": 2,
@@ -114,7 +115,8 @@
       ],
       "fx": [
         "glitch"
-      ]
+      ],
+      "voice": "two thousand eight में भी Nokia का forty three point seven percent। फिर Symbian का हिस्सा forty point nine percent से twenty two point one percent पर आ गया।"
     },
     {
       "id": 3,
@@ -132,18 +134,19 @@
       },
       "beats": [
         {
-          "at": 35,
+          "at": 67,
           "do": "punch"
         },
         {
-          "at": 141,
+          "at": 125,
           "do": "punch"
         }
       ],
       "fx": [
         "embers",
         "smoke"
-      ]
+      ],
+      "voice": "फरवरी twenty eleven। CEO Stephen Elop ने memo लिखा: Nokia जलते हुए oil platform पर खड़ी है।"
     },
     {
       "id": 4,
@@ -165,15 +168,16 @@
       },
       "beats": [
         {
-          "at": 115,
+          "at": 118,
           "do": "punch"
         },
         {
-          "at": 158,
+          "at": 163,
           "do": "flash"
         }
       ],
-      "sfx": "hit.mp3"
+      "sfx": "hit.mp3",
+      "voice": "ग्यारह फरवरी को ऐलान हुआ। Nokia का primary platform होगा Windows Phone। Android नहीं।"
     },
     {
       "id": 5,
@@ -192,7 +196,7 @@
       },
       "beats": [
         {
-          "at": 55,
+          "at": 45,
           "do": "shake",
           "len": 8
         }
@@ -218,13 +222,14 @@
       },
       "beats": [
         {
-          "at": 50,
+          "at": 90,
           "do": "punch"
         }
       ],
       "fx": [
         "glitch"
-      ]
+      ],
+      "voice": "क्यू थ्री twenty eleven में smartphone sales में Samsung, Nokia से आगे निकल गया, Gartner के मुताबिक।"
     },
     {
       "id": 7,
@@ -242,18 +247,19 @@
       },
       "beats": [
         {
-          "at": 219,
+          "at": 186,
           "do": "flash"
         },
         {
-          "at": 222,
+          "at": 189,
           "do": "shake",
           "len": 10
         }
       ],
       "fx": [
         "lightleak"
-      ]
+      ],
+      "voice": "सितंबर twenty thirteen। Microsoft ने Nokia का phone business खरीदने का सौदा किया। कुल five point four four billion euro, patents समेत।"
     },
     {
       "id": 8,
@@ -270,7 +276,8 @@
       "fx": [
         "smoke",
         "dust"
-      ]
+      ],
+      "voice": "forty nine point four percent से सीधे सौदे तक। Android को ना कहना सही था, या गलती? Comment में बताओ।"
     }
   ],
   "assets": [
