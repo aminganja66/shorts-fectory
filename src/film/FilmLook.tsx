@@ -11,6 +11,7 @@ export const gradeFilter = (grade?: 'warm' | 'cold' | 'mono', look?: Look) => {
   if (look === 'gold') return 'contrast(1.12) saturate(0.95) sepia(0.22) brightness(0.98)';
   if (look === 'paper') return 'contrast(1.05) saturate(0.75) sepia(0.2) brightness(1.02)';
   if (look === 'clean') return 'contrast(1.05) saturate(1.05)';
+  if (look === 'vox') return 'none'; // flat, bright editorial colour — no grading
   if (grade === 'cold') return 'contrast(1.1) saturate(0.8) hue-rotate(-8deg) brightness(0.95)';
   return 'contrast(1.05) saturate(0.95) sepia(0.1) brightness(1.0)'; // archive / warm
 };
@@ -139,6 +140,8 @@ export const FilmOverlay: React.FC<{look?: Look}> = ({look = 'archive'}) => {
       );
     case 'clean':
       return <Vignette />;
+    case 'vox':
+      return null; // paper grain is part of the scene background
     case 'archive':
     default:
       return (

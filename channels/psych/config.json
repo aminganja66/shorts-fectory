@@ -1,25 +1,28 @@
 {
-  "name": "Psychology Effects (Hindi)",
-  "language": "hi",
-  "style": "Hinglish in Devanagari, the way a friend tells a story: everyday Hindi + English words Indians really say in English (CEO, deal, billion, percent, share, market). Captions keep digits; the `voice` field spells every number/symbol/abbreviation as spoken in Hinglish (e.g. 2011 → twenty eleven, Q3 → क्यू थ्री, 49.4% → forty nine point four percent).",
+  "name": "Psychology Effects (English)",
+  "language": "en",
+  "style": "Conversational English, the way a smart friend tells a story: short sentences, concrete numbers, no jargon, no filler openers. Captions keep digits. The `voice` field is only needed where the narrator could misread a token (Q3 → 'Q three', €5.44B → 'five point four four billion euros', '&').",
   "length": {
     "lines": "6-8",
     "seconds": "30-42",
     "maxWords": 75
   },
   "structure": [
-    "1 HOOK (<=14 words): 'क्या आपके साथ भी...' style relatable moment or surprising question",
+    "1 HOOK (<=12 words): an open QUESTION about a relatable moment — the effect's name withheld",
     "2 NAME THE EFFECT + one-line meaning",
-    "3 THE STUDY: researcher, year, what they found (real, sourced)",
-    "4 EVERYDAY EXAMPLE the viewer recognises (phone, exams, relationships, shopping)",
-    "5 WHY IT HAPPENS (brain reason, simple)",
-    "6 HOW TO USE IT / PROTECT YOURSELF (one practical tip)",
-    "7 PUNCHLINE / question that makes them comment"
+    "3 THE STUDY: researcher, year, what they found (real, sourced; say so when replications are mixed)",
+    "4 EVERYDAY EXAMPLE the viewer recognises",
+    "5 WHY IT HAPPENS (simple brain reason) or the honest caveat",
+    "6 HOW TO USE IT / PROTECT YOURSELF (one practical, sourced tip)",
+    "7 PUNCHLINE: a question that makes them comment"
   ],
-  "sceneMix": "Mostly collage with people/emotion photos + kinetic for the effect name; one chart only if the study has numbers; end scene last. Avoid medical/diagnostic claims.",
+  "sceneMix": "VOX look: scene types vox (headline + halftone cut-outs + foreground prop), line/counter for numbers, typewriter for a quote or punchline; one chart/counter with a real number; close with typewriter or vox. Never 3 same types in a row. See docs/vox-style.md.",
   "theme": {
     "accent": "#7C5CFF",
-    "grade": "cold"
+    "look": "vox",
+    "captionStyle": "pop",
+    "transition": "zoom",
+    "progressBar": true
   },
   "music": {
     "moods": [
@@ -30,10 +33,10 @@
     "volume": 0.14
   },
   "voice": {
-    "name": "Monika Sogam - Calm and Natural",
+    "name": "Ellis - Clear, Professional Storyteller",
     "voiceId": "PASTE_ELEVENLABS_VOICE_ID",
     "model": "eleven_multilingual_v2",
-    "languageCode": "hi",
+    "languageCode": "en",
     "settings": {
       "stability": 0.5,
       "similarity_boost": 0.8,
@@ -43,23 +46,29 @@
     },
     "say": {},
     "pauseBetweenLines": "1.1s",
-    "note": "Natural speed 1.0 — never speed the voice up to fit; cut words instead. Put a long pause (<break time=\"1.1s\" />) between lines so captions and scene cuts line up."
+    "note": "Natural speed 1.0 — never speed the voice up to fit; cut words instead. Put a long pause (<break time=\"1.1s\" />) between lines so captions and scene cuts line up.",
+    "alternatives": [
+      "Jon - Warm & Grounded Storyteller",
+      "Ellis - Clear, Professional Storyteller",
+      "Veda Sky - Cozy Late Night Storyteller"
+    ]
   },
   "hashtags": [
     "#shorts",
     "#psychology",
-    "#मनोविज्ञान",
     "#psychologyfacts",
-    "#हिंदी"
+    "#mindset",
+    "#learnontiktok"
   ],
   "variety": {
     "looks": [
-      "noir",
-      "neon",
-      "paper",
-      "clean",
+      "vox",
+      "archive",
       "gold",
-      "archive"
+      "noir",
+      "paper",
+      "neon",
+      "clean"
     ],
     "accents": [
       "#7C5CFF",
@@ -92,6 +101,7 @@
       "myth-bust",
       "cold-open"
     ],
-    "rule": "Every episode picks a NEW combination: look ≠ previous Short, hookType not in last 2, captionStyle+transition not in last 3, opening 3 scene types not in last 5, music not in last 5. Choose by the story's emotion, not at random: rise/success → gold/lightleak; fall/failure → noir or archive + smoke/embers; tech/internet → neon + glitch; history/old India → paper or archive; modern startup → clean."
+    "rule": "House style = vox (locked on purpose; see docs/vox-style.md). Still vary: hookType not in the last 2 Shorts, opening 3 scene types not in the last 5, music not in the last 5, accent colour may change per story.",
+    "lockLook": "vox"
   }
 }

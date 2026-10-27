@@ -46,7 +46,24 @@ export type EndScene = {
   sub?: string;
 };
 
-export type Scene = CollageScene | KineticScene | ChartScene | VersusScene | StackScene | EndScene;
+// ---- "Vox" explainer scenes (paper-grid background, cut-outs with marker outline, typewriter, counters, drawn charts) ----
+export type VoxScene = {
+  type: 'vox';
+  mid?: string; // midground cut-out (transparent PNG): person, building, object
+  mid2?: string; // optional second cut-out, shown side by side (e.g. two leaders)
+  fg?: string; // foreground cut-out anchoring the bottom (props, tools, hands)
+  headline?: string; // big black type, | = line break
+  sub?: string; // small line under the headline
+  halftone?: boolean; // B&W newsprint-dot portrait look for mid/mid2
+  stroke?: boolean; // hand-drawn marker outline in the accent colour (default true)
+  fgStroke?: boolean;
+  motion?: Motion;
+};
+export type TypewriterScene = {type: 'typewriter'; text: string; sub?: string; prop?: string};
+export type CounterScene = {type: 'counter'; from?: number; to: number; prefix?: string; suffix?: string; decimals?: number; label?: string; icon?: string};
+export type LineScene = {type: 'line'; title: string; points: number[]; labels?: string[]; previous?: number[]; callout?: string; unit?: string};
+
+export type Scene = CollageScene | KineticScene | ChartScene | VersusScene | StackScene | EndScene | VoxScene | TypewriterScene | CounterScene | LineScene;
 
 // Frame-exact moments inside a scene (frame 0 = scene start)
 export type Beat = {
@@ -83,7 +100,7 @@ export type Storyboard = {
 };
 
 // ---- Variety system: every episode gets its own combination (checked by `npm run check`) ----
-export type Look = 'archive' | 'noir' | 'neon' | 'paper' | 'gold' | 'clean';
+export type Look = 'archive' | 'noir' | 'neon' | 'paper' | 'gold' | 'clean' | 'vox';
 export type CaptionStyle = 'highlight' | 'outline' | 'pop' | 'boxed' | 'karaoke';
 export type Transition = 'whip' | 'flash' | 'zoom' | 'glitch' | 'cut';
 export type HookType = 'date-drop' | 'shock-number' | 'question' | 'contradiction' | 'quote' | 'what-if' | 'myth-bust' | 'cold-open';
@@ -93,6 +110,7 @@ export type Theme = {
   look?: Look;
   captionStyle?: CaptionStyle;
   transition?: Transition;
+  progressBar?: boolean; // thin accent-colour progress bar along the bottom (default on for the vox look)
 };
 
 export type Word = {text: string; start: number; end: number};

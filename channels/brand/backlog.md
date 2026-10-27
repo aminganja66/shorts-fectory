@@ -1,23 +1,23 @@
-# Brand stories backlog (Claude picks from the top; add ideas anytime)
-Rule: one company per Short; a clear twist (rejection, near-death, comeback, mistake, crazy bet).
+# Brand stories backlog (Claude picks from the top; add ideas anytime) — English only
+Rule: one company per Short; a clear twist (rejection, near-death, comeback, mistake, crazy bet); one verifiable hard number.
 
-- Nokia ने Android को ना कहा (2010s) — leader to irrelevant
-- Kodak ने digital camera खुद बनाया, फिर छुपा दिया (1975)
-- Airbnb founders ने cereal boxes बेचकर company बचाई (2008)
-- Zomato की शुरुआत: office में menu cards scan करना (Foodiebay, 2008)
-- Nirma: साइकिल पर detergent बेचकर HUL को टक्कर
-- Parle-G: 1 रुपये के बिस्किट ने कैसे देश जीता (price strategy)
-- Yahoo ने Google को 1 million dollar में खरीदने से मना किया (1998)
-- Amul: एक cooperative जिसने milk brands को हरा दिया
-- Rasna: 5 रुपये का pack और cold drinks से लड़ाई
+- Nokia said no to Android (2010s) — leader to irrelevant  [made: 2026-10-27-nokia-android]
+- Kodak built the first digital camera, then buried it (1975)
+- Airbnb founders paid the rent by selling cereal boxes (2008)
+- Zomato started as menu-card scanning (Foodiebay, 2008)
+- Nirma: detergent sold from a bicycle that took on HUL
+- Parle-G: how a 1-rupee biscuit conquered India (price strategy)
+- Yahoo turned down Google for $1 million (1998)
+- Amul: a cooperative that beat the big milk brands
+- Rasna: a 5-rupee pack vs the cold-drink giants
 - Ola vs Uber India price war
-- Dream11: 8 साल failure, फिर IPL
-- Maggi ban 2015 और comeback
-- Lenskart: optical shop से unicorn
-- Boat (boAt): India में earphones brand कैसे बना
-- Royal Enfield: बंद होने वाली company की वापसी
-- Tata Nano: सबसे सस्ती car क्यों fail हुई
-- Blackberry: keyboard पर अड़े रहे
-- Xerox PARC: GUI बनाया, Apple ले गया
+- Dream11: 8 years of failure, then the IPL
+- Maggi ban 2015 and the comeback
+- Lenskart: from optical shop to unicorn
+- boAt: how an earphone brand was built in India
+- Royal Enfield: the company that was supposed to shut down, and came back
+- Tata Nano: why the cheapest car failed
+- BlackBerry: refusing to give up the keyboard
+- Xerox PARC invented the GUI; Apple took it
 - Myspace vs Facebook
-- Patanjali: बिना ads बड़ी FMCG बनी? (careful with claims)
+- Patanjali: a big FMCG brand without ads? (careful with claims)

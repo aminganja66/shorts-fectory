@@ -1,8 +1,9 @@
 import React from 'react';
-import {AbsoluteFill, Sequence, Audio, staticFile, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Sequence, Audio, staticFile, useVideoConfig, useCurrentFrame} from 'remotion';
 import {ShortProps, Line, Scene, Timing, Storyboard} from './types';
 import {EpisodeCtx} from './scenes/common';
 import {Collage, Kinetic, Chart, Versus, Stack, End} from './scenes/Scenes';
+import {Vox, Typewriter, Counter, LineChart} from './scenes/Vox';
 import {FilmOverlay, GateWeave, gradeFilter} from './film/FilmLook';
 import {Captions} from './Captions';
 import {BeatCamera} from './film/Beats';
@@ -42,6 +43,14 @@ const renderScene = (s: Scene, dur: number) => {
       return <Stack s={s} dur={dur} />;
     case 'end':
       return <End s={s} dur={dur} />;
+    case 'vox':
+      return <Vox s={s} dur={dur} />;
+    case 'typewriter':
+      return <Typewriter s={s} dur={dur} />;
+    case 'counter':
+      return <Counter s={s} dur={dur} />;
+    case 'line':
+      return <LineChart s={s} dur={dur} />;
   }
 };
 
@@ -58,6 +67,12 @@ const Music: React.FC<{file: string; volume: number; timing: Timing; total: numb
       }}
     />
   );
+};
+
+const ProgressBar: React.FC<{color: string}> = ({color}) => {
+  const frame = useCurrentFrame();
+  const {durationInFrames} = useVideoConfig();
+  return <div style={{position: 'absolute', left: 0, bottom: 0, height: 16, width: `${(frame / Math.max(1, durationInFrames - 1)) * 100}%`, background: color}} />;
 };
 
 export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing}) => {
@@ -88,6 +103,7 @@ export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing}) => 
           </AbsoluteFill>
         </GateWeave>
         <FilmOverlay look={storyboard.theme?.look} />
+        {(storyboard.theme?.progressBar ?? storyboard.theme?.look === 'vox') && <ProgressBar color={accent} />}
         <Captions words={tm.words} style={storyboard.theme?.captionStyle} />
         {timing && storyboard.voice?.file && <Audio src={staticFile(`episodes/${episodeId}/${storyboard.voice.file}`)} />}
         {storyboard.music?.file && <Music file={storyboard.music.file} volume={storyboard.music.volume ?? 0.16} timing={tm} total={durationInFrames} />}

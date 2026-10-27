@@ -1,25 +1,28 @@
 {
-  "name": "Brand Stories (Hindi)",
-  "language": "hi",
-  "style": "Hinglish in Devanagari, the way a friend tells a story: everyday Hindi + English words Indians really say in English (CEO, deal, billion, percent, share, market). Captions keep digits; the `voice` field spells every number/symbol/abbreviation as spoken in Hinglish (e.g. 2011 → twenty eleven, Q3 → क्यू थ्री, 49.4% → forty nine point four percent).",
+  "name": "Brand Stories (English)",
+  "language": "en",
+  "style": "Conversational English, the way a smart friend tells a story: short sentences, concrete numbers, no jargon, no filler openers. Captions keep digits. The `voice` field is only needed where the narrator could misread a token (Q3 → 'Q three', €5.44B → 'five point four four billion euros', '&').",
   "length": {
     "lines": "6-8",
     "seconds": "30-42",
     "maxWords": 75
   },
   "structure": [
-    "1 HOOK (<=14 words): the shocking moment/number. Never start with 'आज हम बात करेंगे'.",
-    "2 CONTEXT: who was big, who was small",
+    "1 HOOK (<=12 words): an open QUESTION (ends with ?) — big stake first, the key noun withheld",
+    "2 ANSWER in one word/phrase, then the context: who was big, what they had (one hard number)",
     "3 THE DECISION / MISTAKE / BOLD MOVE",
-    "4 TURN: what changed",
-    "5 RESULT with one hard number",
-    "6 TODAY: where they are now (number)",
-    "7 PUNCHLINE: one-line lesson that loops back to the hook"
+    "4 TURN: what changed (date + name)",
+    "5 RESULT with one hard number (use 'reportedly' when it is reported, not proven)",
+    "6 WHERE THEY ARE NOW",
+    "7 PUNCHLINE: a question that loops to the hook and invites a comment"
   ],
-  "sceneMix": "Start with collage (goldFrame push) or versus; include exactly one chart with a real number; one kinetic line; end scene last. Never 3 same types in a row.",
+  "sceneMix": "VOX look: scene types vox (headline + halftone cut-outs + foreground prop), line/counter for numbers, typewriter for a quote or punchline; one chart/counter with a real number; close with typewriter or vox. Never 3 same types in a row. See docs/vox-style.md.",
   "theme": {
-    "accent": "#E50914",
-    "grade": "warm"
+    "accent": "#F26A1B",
+    "look": "vox",
+    "captionStyle": "pop",
+    "transition": "zoom",
+    "progressBar": true
   },
   "music": {
     "moods": [
@@ -30,10 +33,10 @@
     "volume": 0.16
   },
   "voice": {
-    "name": "Gaurav - Warm Documentary Storyteller",
+    "name": "Jon - Warm & Grounded Storyteller",
     "voiceId": "PASTE_ELEVENLABS_VOICE_ID",
     "model": "eleven_multilingual_v2",
-    "languageCode": "hi",
+    "languageCode": "en",
     "settings": {
       "stability": 0.5,
       "similarity_boost": 0.8,
@@ -43,26 +46,24 @@
     },
     "say": {},
     "alternatives": [
-      "Viraj - Energetic, Clear Narrator",
-      "Rudra - Intense Documentary Narrator (dramatic, can sound acted)"
+      "Jon - Warm & Grounded Storyteller",
+      "Ellis - Clear, Professional Storyteller",
+      "Veda Sky - Cozy Late Night Storyteller"
     ],
     "pauseBetweenLines": "1.1s",
     "note": "Natural speed 1.0 — never speed the voice up to fit; cut words instead. <break time=\"0.5s\" /> after every sentence end (। ? !) and <break time=\"1.1s\" /> between lines, so sentences never blur into each other and align.mjs can find the line boundaries.",
-    "pauseBetweenSentences": "0.5s",
-    "english": {
-      "name": "Jon - Warm & Grounded Storyteller",
-      "note": "English editions (storyboard.language=en, variantOf=<hindi id>): speed 1.0, stability 0.5, similarity 0.8, style 0.15; ~0.38 s/word + breaks"
-    }
+    "pauseBetweenSentences": "0.5s"
   },
   "hashtags": [
     "#shorts",
     "#businessstory",
-    "#हिंदी",
-    "#startup",
-    "#brandstory"
+    "#brandstory",
+    "#business",
+    "#storytime"
   ],
   "variety": {
     "looks": [
+      "vox",
       "archive",
       "gold",
       "noir",
@@ -102,6 +103,7 @@
       "myth-bust",
       "cold-open"
     ],
-    "rule": "Every episode picks a NEW combination: look ≠ previous Short, hookType not in last 2, captionStyle+transition not in last 3, opening 3 scene types not in last 5, music not in last 5. Choose by the story's emotion, not at random: rise/success → gold/lightleak; fall/failure → noir or archive + smoke/embers; tech/internet → neon + glitch; history/old India → paper or archive; modern startup → clean."
+    "rule": "House style = vox (locked on purpose; see docs/vox-style.md). Still vary: hookType not in the last 2 Shorts, opening 3 scene types not in the last 5, music not in the last 5, accent colour may change per story.",
+    "lockLook": "vox"
   }
 }

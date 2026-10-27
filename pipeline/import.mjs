@@ -6,6 +6,7 @@
 //   target = sfx:<name>         → public/sfx/<name>.mp3
 // Looks in DOWNLOADS_DIR (default ~/Downloads) for files modified in the last 20 minutes.
 // --file picks a specific file name in Downloads instead of the newest one.
+// --upscale  2× Lanczos + light sharpen (free replacement for Magnific); also happens automatically when the image is smaller than 1200 px on its long side.
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -78,6 +79,16 @@ if (target === 'voice') {
   } else if (ext !== path.extname(dest).toLowerCase() && !(ext === '.jpeg' && /\.jpg$/i.test(dest))) {
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', src.p, dest]);
   } else fs.copyFileSync(src.p, dest);
+  // free upscale (keeps PNG transparency)
+  try {
+    const dim = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', dest]).toString().trim().split(',').map(Number);
+    if (args.includes('--upscale') || Math.max(...dim) < 1200) {
+      const tmp = dest.replace(/(\.\w+)$/, '.up$1');
+      execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', dest, '-vf', 'scale=iw*2:ih*2:flags=lanczos,unsharp=5:5:0.7:5:5:0.0', tmp]);
+      fs.renameSync(tmp, dest);
+      info(`upscaled ${dim.join('×')} → ${dim[0] * 2}×${dim[1] * 2}`);
+    }
+  } catch {}
   const credits = readJSON(path.join(dir, 'credits.json'), {});
   const ai = args.includes('--ai');
   credits[target] = {

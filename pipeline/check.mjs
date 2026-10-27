@@ -16,8 +16,9 @@ if (!sb.lines?.length) problems.push('no lines');
 if (sb.lines?.length < 5 || sb.lines?.length > 9) warn.push(`${sb.lines?.length} lines (aim for 6–8)`);
 const words = sb.lines.reduce((n, l) => n + l.text.split(/\s+/).length, 0);
 // real Hindi narration at natural speed ≈ 0.5 s/word + ~0.8 s between lines (measured on the first Nokia Short: 119 words = 56 s even at 1.2× speed)
-const est = words * (sb.language === 'en' ? 0.38 : 0.5) + sb.lines.length * 0.8; // English is spoken faster than Hindi/Hinglish
-if (est > 48) problems.push(`estimated length ${est.toFixed(0)}s — over 45s. Cut words (max ~75) instead of speeding the voice up.`);
+const en = sb.language === 'en';
+const est = en ? words * 0.45 + sb.lines.length * 1.1 : words * 0.5 + sb.lines.length * 0.8; // measured: Jon (English) 105 words + 8 lines = 57 s
+if (est > 48) problems.push(`estimated length ${est.toFixed(0)}s — over 45s. Cut words (max ~${en ? 75 : 75}) instead of speeding the voice up.`);
 else if (est < 24) warn.push(`estimated length ${est.toFixed(0)}s (aim 30–42s)`);
 if ((sb.facts ?? []).length < 3) problems.push('fewer than 3 facts with sources');
 (sb.facts ?? []).forEach((f, i) => !f.source && problems.push(`fact ${i + 1} has no source`));
@@ -30,14 +31,15 @@ if ((sb.hookCandidates ?? []).length < 3) problems.push('hookCandidates: write 3
 // Digits, %, symbols and abbreviations like Q3 / CEO / 5.44B must be spelled the way an Indian says them in Hinglish.
 sb.lines.forEach((l, i) => {
   const raw = l.text;
-  const risky = /\d|%|\$|€|₹|&|\bQ[1-4]\b/.test(raw);
-  if (risky && !l.voice) problems.push(`line ${i + 1} has digits/symbols but no \`voice\` (spoken form), e.g. "2011" → "twenty eleven", "Q3" → "क्यू थ्री", "49.4%" → "forty nine point four percent"`);
+  // English: TTS reads plain numbers/years/percent fine; only fiscal quarters, currency symbols, '&' and big comma-numbers need a spoken spelling
+  const risky = en ? /\bQ[1-4]\b|[€₹£&]|\d{1,3}(,\d{3})+|\b[A-Z]{2,}\d+\b/.test(raw) : /\d|%|\$|€|₹|&|\bQ[1-4]\b/.test(raw);
+  if (risky && !l.voice) problems.push(en ? `line ${i + 1} has a token the narrator may misread (Q3, €/₹, &, big numbers) but no \`voice\` spelling, e.g. "Q3" → "Q three", "€5.44B" → "five point four four billion euros"` : `line ${i + 1} has digits/symbols but no \`voice\` (spoken form), e.g. "2011" → "twenty eleven", "Q3" → "क्यू थ्री", "49.4%" → "forty nine point four percent"`);
 });
 
 const used = new Set();
 sb.lines.forEach((l) => {
   const s = l.scene;
-  [s.bg, s.mid, s.fg, s.fg2, s.logo, s.left?.image, s.right?.image, ...(s.images ?? [])].filter(Boolean).forEach((f) => used.add(f));
+  [s.bg, s.mid, s.mid2, s.fg, s.fg2, s.logo, s.prop, s.icon, s.left?.image, s.right?.image, ...(s.images ?? [])].filter(Boolean).forEach((f) => used.add(f));
   if (l.sfx && !fs.existsSync(path.join(ROOT, 'public/sfx', l.sfx))) problems.push(`sfx missing: public/sfx/${l.sfx}`);
 });
 used.forEach((f) => {

@@ -28,6 +28,14 @@ const previous = (sb, n = 6) =>
     .filter((x) => x && x.scenes?.length)
     .slice(0, n);
 
+const lockedLook = (sb) => {
+  try {
+    return readJSON(path.join(chDir(sb.channel), 'config.json'), {}).variety?.lockLook;
+  } catch {
+    return undefined;
+  }
+};
+
 export const varietyCheck = (sb) => {
   const problems = [];
   const warn = [];
@@ -37,17 +45,18 @@ export const varietyCheck = (sb) => {
   for (const k of ['look', 'captionStyle', 'transition', 'hookType']) if (!me[k]) problems.push(`variety: set ${k === 'hookType' ? 'hookType' : `theme.${k}`} (pick one different from recent episodes)`);
   const prev = previous(sb);
   const last = prev[0];
+  const locked = lockedLook(sb) && lockedLook(sb) === me.look; // house style: same look every time on purpose
   if (last) {
-    if (me.look && me.look === last.look) problems.push(`variety: look "${me.look}" was used in the previous Short (${last.id})`);
+    if (!locked && me.look && me.look === last.look) problems.push(`variety: look "${me.look}" was used in the previous Short (${last.id})`);
     if (me.hookType && prev.slice(0, 2).some((p) => p.hookType === me.hookType)) problems.push(`variety: hookType "${me.hookType}" used in the last 2 Shorts`);
-    if (prev.slice(0, 3).some((p) => p.captionStyle === me.captionStyle && p.transition === me.transition))
+    if (!locked && prev.slice(0, 3).some((p) => p.captionStyle === me.captionStyle && p.transition === me.transition))
       problems.push(`variety: caption style + transition "${me.captionStyle}/${me.transition}" repeats one of the last 3 Shorts`);
     if (me.music && prev.slice(0, 5).some((p) => p.music === me.music)) problems.push(`variety: music "${me.music}" used in the last 5 Shorts`);
     const head = me.scenes.slice(0, 3).join('>');
     const twin = prev.slice(0, 5).find((p) => p.scenes.slice(0, 3).join('>') === head);
     if (twin) problems.push(`variety: opening scene order ${head} is the same as ${twin.id}`);
     if (me.accent && me.accent === last.accent) warn.push('variety: same accent colour as the previous Short');
-    if (prev.slice(0, 3).filter((p) => p.look === me.look).length >= 1) warn.push(`variety: look "${me.look}" appeared in the last 3 Shorts`);
+    if (!locked && prev.slice(0, 3).filter((p) => p.look === me.look).length >= 1) warn.push(`variety: look "${me.look}" appeared in the last 3 Shorts`);
   }
   return {problems, warn, recent: prev.map((p) => `${p.id}: ${p.look}/${p.captionStyle}/${p.transition}/${p.hookType} · ${p.scenes.join('>')}`)};
 };
