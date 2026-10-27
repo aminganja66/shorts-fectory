@@ -1,0 +1,95 @@
+{
+  "name": "Brand Stories (Hindi)",
+  "language": "hi",
+  "style": "Hinglish in Devanagari: everyday Hindi, English business words kept in English (CEO, startup, revenue, billion). Numbers as digits.",
+  "length": {
+    "lines": "6-8",
+    "seconds": "30-45"
+  },
+  "structure": [
+    "1 HOOK (<=14 words): the shocking moment/number. Never start with 'आज हम बात करेंगे'.",
+    "2 CONTEXT: who was big, who was small",
+    "3 THE DECISION / MISTAKE / BOLD MOVE",
+    "4 TURN: what changed",
+    "5 RESULT with one hard number",
+    "6 TODAY: where they are now (number)",
+    "7 PUNCHLINE: one-line lesson that loops back to the hook"
+  ],
+  "sceneMix": "Start with collage (goldFrame push) or versus; include exactly one chart with a real number; one kinetic line; end scene last. Never 3 same types in a row.",
+  "theme": {
+    "accent": "#E50914",
+    "grade": "warm"
+  },
+  "music": {
+    "moods": [
+      "documentary",
+      "tension",
+      "cinematic"
+    ],
+    "volume": 0.16
+  },
+  "voice": {
+    "name": "PASTE_ELEVENLABS_VOICE_NAME (deep storyteller)",
+    "voiceId": "PASTE_ELEVENLABS_VOICE_ID",
+    "model": "eleven_multilingual_v2",
+    "languageCode": "hi",
+    "settings": {
+      "stability": 0.38,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 1.03
+    },
+    "say": {}
+  },
+  "hashtags": [
+    "#shorts",
+    "#businessstory",
+    "#हिंदी",
+    "#startup",
+    "#brandstory"
+  ],
+  "variety": {
+    "looks": [
+      "archive",
+      "gold",
+      "noir",
+      "paper",
+      "neon",
+      "clean"
+    ],
+    "accents": [
+      "#E50914",
+      "#FFB000",
+      "#00B3FF",
+      "#2ECC71",
+      "#FF5A1F",
+      "#C9A24A"
+    ],
+    "captionStyles": [
+      "highlight",
+      "outline",
+      "pop",
+      "boxed",
+      "karaoke"
+    ],
+    "transitions": [
+      "whip",
+      "flash",
+      "zoom",
+      "glitch",
+      "cut"
+    ],
+    "hookTypes": [
+      "date-drop",
+      "shock-number",
+      "question",
+      "contradiction",
+      "quote",
+      "what-if",
+      "myth-bust",
+      "cold-open"
+    ],
+    "rule": "Every episode picks a NEW combination: look ≠ previous Short, hookType not in last 2, captionStyle+transition not in last 3, opening 3 scene types not in last 5, music not in last 5. Choose by the story's emotion, not at random: rise/success → gold/lightleak; fall/failure → noir or archive + smoke/embers; tech/internet → neon + glitch; history/old India → paper or archive; modern startup → clean."
+  }
+}

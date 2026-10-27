@@ -1,0 +1,52 @@
+{
+  "_note": "EXAMPLE for the psych channel. Claude writes a file like this for every psych Short.",
+  "id": "YYYY-MM-DD-zeigarnik-effect",
+  "channel": "psych",
+  "language": "hi",
+  "topic": "Zeigarnik Effect",
+  "title": "अधूरा काम दिमाग से जाता क्यों नहीं?",
+  "angle": "Why unfinished tasks keep popping up in your head — and how to use it to beat procrastination.",
+  "theme": {"accent": "#7C5CFF", "grade": "cold"},
+  "facts": [
+    {"claim": "Bluma Zeigarnik ने 1927 में study की: लोग अधूरे (interrupted) tasks को पूरे किए गए tasks से बेहतर याद रखते थे", "source": "https://en.wikipedia.org/wiki/Zeigarnik_effect"},
+    {"claim": "Idea की शुरुआत: Kurt Lewin ने देखा कि waiter अधूरे orders याद रखते थे, payment के बाद भूल जाते थे", "source": "https://en.wikipedia.org/wiki/Zeigarnik_effect"},
+    {"claim": "Masicampo & Baumeister (2011): अधूरे goal के लिए सिर्फ plan लिख देने से दिमाग की बेचैनी कम हुई", "source": "https://doi.org/10.1037/a0024192"}
+  ],
+  "lines": [
+    {"id": 1, "text": "रात को सोने लगो, और वो अधूरा काम दिमाग में घूमने लगता है?",
+     "scene": {"type": "collage", "bg": "assets/s1-bg.jpg", "fg": "assets/s1-fg.jpg", "fgStyle": "card", "motion": "push", "goldFrame": true}},
+    {"id": 2, "text": "इसे कहते हैं Zeigarnik Effect.",
+     "scene": {"type": "kinetic", "bg": "assets/s2-bg.jpg", "text": "ZEIGARNIK | EFFECT", "highlight": ["ZEIGARNIK"]}},
+    {"id": 3, "text": "1927 में Bluma Zeigarnik ने देखा, waiter अधूरे orders याद रखते थे, पर bill के बाद सब भूल जाते थे।",
+     "scene": {"type": "stack", "bg": "assets/s3-bg.jpg", "images": ["assets/s3-a.jpg", "assets/s3-b.jpg", "assets/s3-c.jpg"], "caption": "1927 · BERLIN"}},
+    {"id": 4, "text": "आपका दिमाग अधूरी चीज़ों पर एक tab खुला छोड़ देता है।",
+     "scene": {"type": "collage", "bg": "assets/s4-bg.jpg", "headline": "OPEN TAB", "motion": "drift"}},
+    {"id": 5, "text": "इसीलिए web series cliffhanger पर खत्म होती है।",
+     "scene": {"type": "collage", "bg": "assets/s5-bg.jpg", "fg": "assets/s5-fg.jpg", "fgStyle": "card", "motion": "pan-right"}},
+    {"id": 6, "text": "Trick: काम बस पाँच मिनट के लिए शुरू कर दो। अधूरापन खुद आपको वापस खींचेगा।",
+     "scene": {"type": "kinetic", "bg": "assets/s6-bg.jpg", "text": "बस 5 MINUTE | शुरू करो", "highlight": ["5"]}},
+    {"id": 7, "text": "अब बताओ, आपके दिमाग में कौन सा tab खुला है?",
+     "scene": {"type": "end", "bg": "assets/s7-bg.jpg", "text": "कौन सा TAB|खुला है?", "sub": "Comment करो 👇"}}
+  ],
+  "assets": [
+    {"file": "assets/s1-bg.jpg", "query": "person awake in bed at night", "orientation": "portrait"},
+    {"file": "assets/s1-fg.jpg", "query": "to do list notebook", "orientation": "portrait"},
+    {"file": "assets/s2-bg.jpg", "query": "brain illustration dark", "orientation": "portrait"},
+    {"file": "assets/s3-bg.jpg", "query": "old cafe interior vintage", "orientation": "portrait"},
+    {"file": "assets/s3-a.jpg", "query": "waiter taking order", "orientation": "portrait"},
+    {"file": "assets/s3-b.jpg", "query": "restaurant bill receipt", "orientation": "portrait"},
+    {"file": "assets/s3-c.jpg", "query": "vintage notebook handwriting", "orientation": "portrait"},
+    {"file": "assets/s4-bg.jpg", "query": "many browser tabs laptop screen", "orientation": "portrait"},
+    {"file": "assets/s5-bg.jpg", "query": "watching tv series night couch", "orientation": "portrait"},
+    {"file": "assets/s5-fg.jpg", "query": "tv remote hand", "orientation": "portrait"},
+    {"file": "assets/s6-bg.jpg", "query": "timer clock desk", "orientation": "portrait"},
+    {"file": "assets/s7-bg.jpg", "query": "person thinking window", "orientation": "portrait"}
+  ],
+  "music": {"file": "", "volume": 0.14},
+  "voice": {"file": "voice.mp3"},
+  "upload": {
+    "title": "अधूरा काम दिमाग से जाता क्यों नहीं? 🧠 #shorts",
+    "description": "Zeigarnik Effect: हमारा दिमाग अधूरे कामों को ज़्यादा याद रखता है (Bluma Zeigarnik, 1927)। इसी trick से procrastination हराओ: बस 5 minute शुरू करो।\n\nअगला psychology effect कौन सा? 👇",
+    "hashtags": ["#shorts", "#psychology", "#मनोविज्ञान", "#zeigarnikeffect", "#हिंदी"]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "shorts-factory",
+  "version": "1.0.0",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "node pipeline/render.mjs",
+    "new": "node pipeline/new-episode.mjs",
+    "assets": "node pipeline/fetch-assets.mjs",
+    "voice": "node pipeline/tts.mjs",
+    "timing": "node pipeline/transcribe.mjs",
+    "board": "node pipeline/storyboard.mjs",
+    "history": "node pipeline/history.mjs",
+    "check": "node pipeline/check.mjs",
+    "setup": "node pipeline/setup.mjs",
+    "frames": "node pipeline/frames.mjs",
+    "music": "node pipeline/music.mjs",
+    "import": "node pipeline/import.mjs",
+    "voice:local": "python pipeline/tts_local.py"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  },
+  "dependencies": {
+    "@fontsource/mukta": "5.1.0",
+    "@fontsource/teko": "5.1.0",
+    "@remotion/bundler": "4.0.534",
+    "@remotion/cli": "4.0.534",
+    "@remotion/fonts": "4.0.534",
+    "@remotion/google-fonts": "4.0.534",
+    "@remotion/install-whisper-cpp": "4.0.534",
+    "@remotion/media-utils": "4.0.534",
+    "@remotion/motion-blur": "4.0.534",
+    "@remotion/renderer": "4.0.534",
+    "dotenv": "16.4.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.534"
+  },
+  "private": true,
+  "type": "module"
+}

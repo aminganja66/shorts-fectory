@@ -1,0 +1,103 @@
+{
+  "assets/s1-reed.png": {
+    "query": "Reed Hastings",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Reed_Hastings_2010_A.jpg/1920px-Reed_Hastings_2010_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Reed_Hastings_2010_A.jpg/1920px-Reed_Hastings_2010_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Reed_Hastings_2010_A.jpg",
+    "author": "JD Lasica",
+    "license": "CC BY 2.0",
+    "provider": "wikimedia",
+    "w": 2800,
+    "h": 1860
+  },
+  "assets/s1-marc.png": {
+    "query": "Marc Randolph",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Marc_Randolph_by_Gage_Skidmore.jpg/1920px-Marc_Randolph_by_Gage_Skidmore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Marc_Randolph_by_Gage_Skidmore.jpg/1920px-Marc_Randolph_by_Gage_Skidmore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Marc_Randolph_by_Gage_Skidmore.jpg",
+    "author": "Gage Skidmore",
+    "license": "CC BY-SA 3.0",
+    "provider": "wikimedia",
+    "w": 4296,
+    "h": 3700
+  },
+  "assets/logo-netflix.png": {
+    "query": "Netflix 2015 logo",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Netflix_2015_logo.svg",
+    "author": "TM/®Netflix Inc.",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 1024,
+    "h": 277
+  },
+  "assets/s4-bg.jpg": {
+    "query": "living room television night",
+    "url": "https://live.staticflickr.com/4118/5439996103_74727f61a5_b.jpg",
+    "thumb": "https://api.openverse.org/v1/images/0aaeb9b2-ef19-49dd-8fc2-17ac73e37538/thumb/",
+    "page": "https://www.flickr.com/photos/42736403@N08/5439996103",
+    "author": "creecher94",
+    "license": "BY 2.0",
+    "provider": "openverse/flickr",
+    "w": 1024,
+    "h": 683
+  },
+  "assets/s4-a.jpg": {
+    "query": "DVD case movie",
+    "url": "https://live.staticflickr.com/3266/3217657200_54df6142bd_b.jpg",
+    "thumb": "https://api.openverse.org/v1/images/512108cb-3ea2-4e90-8a66-01fc34cf2131/thumb/",
+    "page": "https://www.flickr.com/photos/78552401@N00/3217657200",
+    "author": "zieak",
+    "license": "BY 2.0",
+    "provider": "openverse/flickr",
+    "w": 1024,
+    "h": 819
+  },
+  "assets/s4-c.jpg": {
+    "query": "watching movie laptop",
+    "url": "https://live.staticflickr.com/3266/3217657200_54df6142bd_b.jpg",
+    "thumb": "https://api.openverse.org/v1/images/512108cb-3ea2-4e90-8a66-01fc34cf2131/thumb/",
+    "page": "https://www.flickr.com/photos/78552401@N00/3217657200",
+    "author": "zieak",
+    "license": "BY 2.0",
+    "provider": "openverse/flickr",
+    "w": 1024,
+    "h": 819
+  },
+  "assets/logo-blockbuster.png": {
+    "query": "Blockbuster logo",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Blockbuster_logo.svg/1280px-Blockbuster_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Blockbuster_logo.svg/1280px-Blockbuster_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Blockbuster_logo.svg",
+    "author": "Blockbuster Entertainment, Inc.",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 594,
+    "h": 356
+  },
+  "assets/s6-bg.jpg": {
+    "query": "dollar banknotes",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Confederate_100_Dollars.jpg/1920px-Confederate_100_Dollars.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Confederate_100_Dollars.jpg/1920px-Confederate_100_Dollars.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Confederate_100_Dollars.jpg",
+    "author": "Confederate States of America.",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "w": 4476,
+    "h": 1908
+  },
+  "assets/s7-bg.jpg": {
+    "query": "empty cinema seats dark",
+    "url": "https://live.staticflickr.com/4150/5018479649_511f66012f_b.jpg",
+    "thumb": "https://api.openverse.org/v1/images/c7c39f5b-c063-44fe-a127-226c7f85e506/thumb/",
+    "page": "https://www.flickr.com/photos/53664247@N00/5018479649",
+    "author": "Tay",
+    "license": "BY 2.0",
+    "provider": "openverse/flickr",
+    "w": 1000,
+    "h": 667
+  }
+}

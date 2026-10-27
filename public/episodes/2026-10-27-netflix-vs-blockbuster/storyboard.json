@@ -1,0 +1,314 @@
+{
+  "id": "2026-10-27-netflix-vs-blockbuster",
+  "channel": "brand",
+  "language": "hi",
+  "topic": "Netflix vs Blockbuster",
+  "title": "50 Million की वो 'ना' जो Blockbuster को ले डूबी",
+  "angle": "The $50M rejection in 2000 vs Netflix's $45.2B revenue in 2025 — one 'no' as the most expensive decision in business.",
+  "theme": {
+    "accent": "#E50914",
+    "grade": "warm",
+    "look": "archive",
+    "captionStyle": "highlight",
+    "transition": "whip"
+  },
+  "imageStyle": "Photorealistic, cinematic documentary lighting, 35mm film grain, muted colors, no text, no logos, no watermark",
+  "facts": [
+    {
+      "claim": "2000 में Netflix के founders (Reed Hastings, Marc Randolph) ने Dallas में Blockbuster को company 50 million dollar में बेचने का offer दिया, Blockbuster ने मना कर दिया",
+      "source": [
+        "https://fortune.com/2023/04/14/netflix-cofounder-marc-randolph-recalls-blockbuster-rejecting-chance-to-buy-it",
+        "https://www.nbcsandiego.com/news/business/money-report/netflix-didnt-kill-blockbuster-how-netflix-almost-lost-the-movie-rental-wars/2493680/?amp=1"
+      ]
+    },
+    {
+      "claim": "Blockbuster के पास peak पर लगभग 9,000 stores थे",
+      "source": "https://www.nbcsandiego.com/news/business/money-report/netflix-didnt-kill-blockbuster-how-netflix-almost-lost-the-movie-rental-wars/2493680/?amp=1"
+    },
+    {
+      "claim": "Blockbuster ने 2010 में bankruptcy file की",
+      "source": "https://www.nbcsandiego.com/news/business/money-report/netflix-didnt-kill-blockbuster-how-netflix-almost-lost-the-movie-rental-wars/2493680/?amp=1"
+    },
+    {
+      "claim": "Netflix की 2025 revenue 45.2 billion dollar, 325 million+ paid memberships",
+      "source": "https://www.advanced-television.com/2026/01/21/netflix-2025-revenue-at-45-2bn/"
+    }
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "text": "साल 2000. Netflix ने Blockbuster से कहा, हमें 50 million dollar में खरीद लो।",
+      "visual": "Dallas office tower at dusk. Reed Hastings and Marc Randolph (cut-outs) rise into frame side by side, Netflix logo pops above them, all inside a gold picture frame.",
+      "onScreen": "$50 MILLION?",
+      "motionNotes": "f0–8 whip in with motion blur + flash. Founders spring up from bottom (f4, f9). Logo pops at f10 with overshoot. Slow push the whole time; last 12 frames: zoom-through: camera dives into the gold frame and straight into scene 2 (motion blur).",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s1-bg.jpg",
+        "fg": "assets/s1-reed.png",
+        "fg2": "assets/s1-marc.png",
+        "fgStyle": "cutout",
+        "logo": "assets/logo-netflix.png",
+        "logoPos": "top",
+        "headline": "$50 MILLION?",
+        "motion": "push",
+        "goldFrame": true
+      },
+      "beats": [
+        {
+          "at": -12,
+          "do": "zoom-through",
+          "len": 12
+        }
+      ],
+      "fx": [
+        "dust"
+      ],
+      "sfx": "whoosh.mp3"
+    },
+    {
+      "id": 2,
+      "text": "Blockbuster वाले हँस पड़े। उनके पास 9,000 stores थे।",
+      "visual": "Split screen: top = huge 2000-era video rental store glowing at night; bottom = a single red DVD mail envelope on a doormat.",
+      "onScreen": "BLOCKBUSTER vs NETFLIX",
+      "motionNotes": "Top half slides in from left, bottom from right (5-frame offset). VS badge pops at f10. Punch-in at f24 on the word 'हँस पड़े'.",
+      "scene": {
+        "type": "versus",
+        "left": {
+          "image": "assets/s2-store.jpg",
+          "label": "BLOCKBUSTER"
+        },
+        "right": {
+          "image": "assets/s2-mail.jpg",
+          "label": "NETFLIX"
+        }
+      },
+      "beats": [
+        {
+          "at": 24,
+          "do": "punch"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "तो Netflix ने बिल्कुल उल्टा किया। न late fees, न store.",
+      "visual": "Blurred pile of DVDs; giant white words slam in one by one, the two 'न' in red.",
+      "onScreen": "न LATE FEES | न STORE",
+      "motionNotes": "Each word pops 4 frames apart with overshoot; camera shake at f14 when 'STORE' lands.",
+      "scene": {
+        "type": "kinetic",
+        "bg": "assets/s3-bg.jpg",
+        "text": "न LATE FEES | न STORE",
+        "highlight": [
+          "न"
+        ]
+      },
+      "beats": [
+        {
+          "at": 14,
+          "do": "shake"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "पहले DVD घर तक आई, फिर पूरी film internet पर।",
+      "visual": "Polaroids drop onto a dark living-room table: DVD case → mailbox → laptop playing a film. Digital glitch tears hint at the internet.",
+      "onScreen": "DVD → STREAMING",
+      "motionNotes": "Polaroids fall from 2× scale with springy bounce, staggered; caption fades in at half-way; glitch tears flicker throughout.",
+      "scene": {
+        "type": "stack",
+        "bg": "assets/s4-bg.jpg",
+        "images": [
+          "assets/s4-a.jpg",
+          "assets/s4-b.jpg",
+          "assets/s4-c.jpg"
+        ],
+        "caption": "DVD → STREAMING"
+      },
+      "fx": [
+        "glitch"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "और 2010 में, Blockbuster bankrupt हो गया।",
+      "visual": "Empty, closed video rental store with 'STORE CLOSING' paper signs, smoke drifting and embers rising; Blockbuster logo pops in, then the 2010 BANKRUPT stamp.",
+      "onScreen": "2010 | BANKRUPT",
+      "motionNotes": "Flash + hard shake on entry (f0–8) like a hit. Slow pan left. Smoke rises from the bottom, embers float up.",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s5-bg.jpg",
+        "logo": "assets/logo-blockbuster.png",
+        "logoPos": "center",
+        "headline": "2010|BANKRUPT",
+        "motion": "pan-left"
+      },
+      "beats": [
+        {
+          "at": 0,
+          "do": "flash"
+        },
+        {
+          "at": 6,
+          "do": "shake",
+          "len": 10
+        }
+      ],
+      "fx": [
+        "smoke",
+        "embers"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "आज Netflix की एक साल की कमाई, 45 billion dollar से ज़्यादा।",
+      "visual": "Dark money texture; two bars: tiny grey '2000 offer $0.05B' and a towering red '2025 कमाई $45.2B', numbers counting up.",
+      "onScreen": "DEAL vs आज",
+      "motionNotes": "Bars grow with ease-out over ~45% of the scene; numbers count up; punch-in at f30 when the red bar tops out. Warm light leak sweeps across.",
+      "scene": {
+        "type": "chart",
+        "bg": "assets/s6-bg.jpg",
+        "title": "DEAL vs आज",
+        "unit": "$B",
+        "bars": [
+          {
+            "label": "2000 OFFER",
+            "value": 0.05,
+            "color": "#777"
+          },
+          {
+            "label": "2025 कमाई",
+            "value": 45.2
+          }
+        ]
+      },
+      "beats": [
+        {
+          "at": 30,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "कभी कभी सबसे महँगी गलती, बस एक 'ना' होती है।",
+      "visual": "Empty dark cinema; the punchline in huge type, subtitle 'Blockbuster · 2000' fades in under it.",
+      "onScreen": "सबसे महँगी 'ना'",
+      "motionNotes": "Slow pull-back; headline pops at f4; subtitle fades in at f18; soft smoke for a final mood.",
+      "scene": {
+        "type": "end",
+        "bg": "assets/s7-bg.jpg",
+        "text": "सबसे महँगी|'ना'",
+        "sub": "Blockbuster · 2000"
+      },
+      "fx": [
+        "smoke",
+        "dust"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/s1-bg.jpg",
+      "generate": "Glass corporate office tower in Dallas at dusk in the year 2000, low angle, warm sky",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s1-reed.png",
+      "query": "Reed Hastings",
+      "kind": "person",
+      "cutout": true,
+      "allowShareAlike": true
+    },
+    {
+      "file": "assets/s1-marc.png",
+      "query": "Marc Randolph",
+      "kind": "person",
+      "cutout": true,
+      "allowShareAlike": true
+    },
+    {
+      "file": "assets/logo-netflix.png",
+      "query": "Netflix 2015 logo",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s2-store.jpg",
+      "generate": "Huge American video rental superstore at night around 2000, bright blue and yellow lights, rows of VHS and DVD shelves visible through glass, generic signage without any brand name",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s2-mail.jpg",
+      "query": "red envelope on doormat",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s3-bg.jpg",
+      "query": "DVD discs pile",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s4-bg.jpg",
+      "query": "living room television night",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s4-a.jpg",
+      "query": "DVD case movie",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s4-b.jpg",
+      "query": "mailbox letters",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s4-c.jpg",
+      "query": "watching movie laptop",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s5-bg.jpg",
+      "generate": "Abandoned closed video rental store interior, empty shelves, paper 'STORE CLOSING' signs on the glass, dusty floor, dim light",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/logo-blockbuster.png",
+      "query": "Blockbuster logo",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/s6-bg.jpg",
+      "query": "dollar banknotes",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s7-bg.jpg",
+      "query": "empty cinema seats dark",
+      "orientation": "portrait"
+    }
+  ],
+  "music": {
+    "file": "",
+    "volume": 0.16
+  },
+  "voice": {
+    "file": "voice.mp3"
+  },
+  "upload": {
+    "title": "Netflix को 50 Million में खरीद सकते थे… पर हँस दिए 😶 #shorts",
+    "description": "2000 में Netflix ने खुद को Blockbuster को 50 million dollar में बेचने का offer दिया था। Blockbuster ने मना कर दिया। 10 साल बाद Blockbuster bankrupt, और आज Netflix 45 billion dollar कमाती है।\n\nअगली कहानी किस brand की चाहिए? Comment करो 👇",
+    "hashtags": [
+      "#shorts",
+      "#netflix",
+      "#blockbuster",
+      "#businessstory",
+      "#हिंदी"
+    ]
+  },
+  "hookType": "date-drop"
+}

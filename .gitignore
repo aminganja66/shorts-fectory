@@ -1,0 +1,9 @@
+node_modules/
+.env
+.whisper/
+exports/
+public/episodes/*/assets/
+public/episodes/*/voice-16k.wav
+public/episodes/*/voice-take*.mp3
+.DS_Store
+public/episodes/*/frames/

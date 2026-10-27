@@ -1,0 +1,94 @@
+{
+  "name": "Psychology Effects (Hindi)",
+  "language": "hi",
+  "style": "Hinglish in Devanagari, talks to the viewer as 'आप'. Warm, curious, slightly mysterious. Psychology terms in English (Zeigarnik Effect) followed by simple Hindi meaning.",
+  "length": {
+    "lines": "6-8",
+    "seconds": "30-45"
+  },
+  "structure": [
+    "1 HOOK (<=14 words): 'क्या आपके साथ भी...' style relatable moment or surprising question",
+    "2 NAME THE EFFECT + one-line meaning",
+    "3 THE STUDY: researcher, year, what they found (real, sourced)",
+    "4 EVERYDAY EXAMPLE the viewer recognises (phone, exams, relationships, shopping)",
+    "5 WHY IT HAPPENS (brain reason, simple)",
+    "6 HOW TO USE IT / PROTECT YOURSELF (one practical tip)",
+    "7 PUNCHLINE / question that makes them comment"
+  ],
+  "sceneMix": "Mostly collage with people/emotion photos + kinetic for the effect name; one chart only if the study has numbers; end scene last. Avoid medical/diagnostic claims.",
+  "theme": {
+    "accent": "#7C5CFF",
+    "grade": "cold"
+  },
+  "music": {
+    "moods": [
+      "mysterious",
+      "ambient",
+      "lofi"
+    ],
+    "volume": 0.14
+  },
+  "voice": {
+    "name": "PASTE_ELEVENLABS_VOICE_NAME (calm, warm)",
+    "voiceId": "PASTE_ELEVENLABS_VOICE_ID",
+    "model": "eleven_multilingual_v2",
+    "languageCode": "hi",
+    "settings": {
+      "stability": 0.42,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "say": {}
+  },
+  "hashtags": [
+    "#shorts",
+    "#psychology",
+    "#मनोविज्ञान",
+    "#psychologyfacts",
+    "#हिंदी"
+  ],
+  "variety": {
+    "looks": [
+      "noir",
+      "neon",
+      "paper",
+      "clean",
+      "gold",
+      "archive"
+    ],
+    "accents": [
+      "#7C5CFF",
+      "#00D1B2",
+      "#FF4D8D",
+      "#FFC857",
+      "#4D9DFF"
+    ],
+    "captionStyles": [
+      "outline",
+      "karaoke",
+      "pop",
+      "boxed",
+      "highlight"
+    ],
+    "transitions": [
+      "whip",
+      "flash",
+      "zoom",
+      "glitch",
+      "cut"
+    ],
+    "hookTypes": [
+      "date-drop",
+      "shock-number",
+      "question",
+      "contradiction",
+      "quote",
+      "what-if",
+      "myth-bust",
+      "cold-open"
+    ],
+    "rule": "Every episode picks a NEW combination: look ≠ previous Short, hookType not in last 2, captionStyle+transition not in last 3, opening 3 scene types not in last 5, music not in last 5. Choose by the story's emotion, not at random: rise/success → gold/lightleak; fall/failure → noir or archive + smoke/embers; tech/internet → neon + glitch; history/old India → paper or archive; modern startup → clean."
+  }
+}
