@@ -5,7 +5,7 @@ description: Designs the episode's visual identity and fills every scene with th
 Skills to load: `remotion-best-practices` (for what the scenes can do), `music` + `sound-effects` (ElevenLabs) when an API key exists.
 
 1. **Episode look** — read `channels/<ch>/config.json → variety` and the "Recent Shorts" list from `npm run check`. Pick `theme.look`, `theme.accent`, `theme.captionStyle`, `theme.transition` as a NEW combination that fits the emotion of THIS story:
-   rise/success → gold · fall/failure → noir or archive · tech/internet → neon · old India/history → paper · modern startup → clean.
+   rise/success → gold · fall/failure → archive or (lifted) noir · tech/internet → neon · old India/history → paper · modern startup → clean. **Eye comfort first** (CLAUDE.md → Viewer-first rules): when two looks fit, choose the brighter, calmer one (`clean`, `gold`, `paper`); `glitch` transition only for tech stories and never with `noir`; first scene = the strongest, brightest image of the story (not a logo), readable at phone size.
 2. **Per scene** fill `visual` (layer by layer) and the asset entries. Pick the asset kind by what the scene needs:
    logo → `kind:"logo"` · real founder → `kind:"person"`, `cutout:true` · building/place/era/mood with no free photo → `generate` (generic, no brand names, no real faces) · objects/textures/generic people → stock `query` · nothing good → Browser mode.
    Write specific queries/prompts with era, light and mood ("1998 Mumbai street at dusk, sodium lights, light rain") — not generic words.

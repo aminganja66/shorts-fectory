@@ -15,12 +15,23 @@ if (!sb.title) problems.push('title is empty');
 if (!sb.lines?.length) problems.push('no lines');
 if (sb.lines?.length < 5 || sb.lines?.length > 9) warn.push(`${sb.lines?.length} lines (aim for 6–8)`);
 const words = sb.lines.reduce((n, l) => n + l.text.split(/\s+/).length, 0);
-const est = words * 0.38;
-if (est < 22 || est > 55) warn.push(`estimated length ${est.toFixed(0)}s (aim 30–45s)`);
+// real Hindi narration at natural speed ≈ 0.5 s/word + ~0.8 s between lines (measured on the first Nokia Short: 119 words = 56 s even at 1.2× speed)
+const est = words * 0.5 + sb.lines.length * 0.8;
+if (est > 48) problems.push(`estimated length ${est.toFixed(0)}s — over 45s. Cut words (max ~75) instead of speeding the voice up.`);
+else if (est < 24) warn.push(`estimated length ${est.toFixed(0)}s (aim 30–42s)`);
 if ((sb.facts ?? []).length < 3) problems.push('fewer than 3 facts with sources');
 (sb.facts ?? []).forEach((f, i) => !f.source && problems.push(`fact ${i + 1} has no source`));
 const first = sb.lines[0]?.text.split(/\s+/).length ?? 0;
-if (first > 14) warn.push(`hook line is ${first} words — keep it under 14 so it lands in ~3s`);
+if (first > 12) problems.push(`hook line is ${first} words — max 12 so it lands in ~3s`);
+if ((sb.hookCandidates ?? []).length < 3) problems.push('hookCandidates: write 3 different hooks in storyboard.json and pick the best one as line 1 (see scriptwriter agent)');
+
+// Anything the narrator must pronounce differently from how it is written needs a `voice` line (spoken form).
+// Digits, %, symbols and abbreviations like Q3 / CEO / 5.44B must be spelled the way an Indian says them in Hinglish.
+sb.lines.forEach((l, i) => {
+  const raw = l.text;
+  const risky = /\d|%|\$|€|₹|&|\bQ[1-4]\b/.test(raw);
+  if (risky && !l.voice) problems.push(`line ${i + 1} has digits/symbols but no \`voice\` (spoken form), e.g. "2011" → "twenty eleven", "Q3" → "क्यू थ्री", "49.4%" → "forty nine point four percent"`);
+});
 
 const used = new Set();
 sb.lines.forEach((l) => {

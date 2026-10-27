@@ -9,7 +9,7 @@ const c = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 // Default entrance used by every scene (frames 0-8): whip in with motion blur + flash.
 const ENTRANCES: Record<string, Beat[]> = {
   whip: [{at: 0, do: 'blur-in', len: 8}],
-  flash: [{at: 0, do: 'flash', len: 6}, {at: 0, do: 'punch', len: 8}],
+  flash: [{at: 0, do: 'flash', len: 5}, {at: 0, do: 'punch', len: 10}],
   zoom: [{at: 0, do: 'zoom-in', len: 12}],
   glitch: [{at: 0, do: 'glitch-in', len: 7}],
   cut: [],
@@ -29,9 +29,9 @@ const camFor = (beats: Beat[], frame: number) => {
     if (t < 0) continue;
     switch (b.do) {
       case 'blur-in':
-        scale *= interpolate(t, [0, len], [1.14, 1], c);
-        blurPx += interpolate(t, [0, len * 0.9], [16, 0], c);
-        flash += interpolate(t, [0, 5], [0.45, 0], c);
+        scale *= interpolate(t, [0, len], [1.06, 1], c);
+        blurPx += interpolate(t, [0, len * 0.9], [7, 0], c);
+        flash += interpolate(t, [0, 4], [0.08, 0], c); // soft: a hard white flash on every cut is tiring
         break;
       case 'zoom-through': // push hard into the image (gold frame "detach" moment)
         scale *= interpolate(t, [0, len], [1, 1.9], {...c, easing: Easing.in(Easing.cubic)});
@@ -43,23 +43,23 @@ const camFor = (beats: Beat[], frame: number) => {
         break;
       case 'glitch-in':
         if (t < len) {
-          x += (random(`gx${b.at}-${t}`) - 0.5) * 70 * (1 - t / len);
-          blurPx += t % 2 ? 4 : 0;
-          flash += t === 0 ? 0.35 : 0;
+          x += (random(`gx${b.at}-${t}`) - 0.5) * 28 * (1 - t / len);
+          blurPx += t % 2 ? 2 : 0;
+          flash += t === 0 ? 0.1 : 0;
         }
         break;
       case 'punch':
-        scale *= interpolate(t, [0, len * 0.4, len], [1, 1.12, 1.05], c);
+        scale *= interpolate(t, [0, len * 0.4, len], [1, 1.08, 1.03], c);
         break;
       case 'shake':
         if (t < len) {
-          const a = interpolate(t, [0, len], [18, 0], c);
+          const a = interpolate(t, [0, len], [8, 0], c);
           x += (random(`sx${b.at}-${t}`) - 0.5) * a * 2;
           y += (random(`sy${b.at}-${t}`) - 0.5) * a * 2;
         }
         break;
       case 'flash':
-        flash += interpolate(t, [0, len], [0.7, 0], c);
+        flash += interpolate(t, [0, len], [0.38, 0], c);
         break;
       case 'whip-out':
         x += interpolate(t, [0, len], [0, -1400], {...c, easing: Easing.in(Easing.quad)});

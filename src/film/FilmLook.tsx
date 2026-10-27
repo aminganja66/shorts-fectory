@@ -6,21 +6,21 @@ import type {Look} from '../types';
 // colour grade (applied on content) + gate weave + grain + scan lines + vignette + corner blur.
 
 export const gradeFilter = (grade?: 'warm' | 'cold' | 'mono', look?: Look) => {
-  if (look === 'noir' || grade === 'mono') return 'grayscale(1) contrast(1.25) brightness(0.92)';
-  if (look === 'neon') return 'contrast(1.15) saturate(1.25) hue-rotate(-12deg) brightness(0.9)';
+  if (look === 'noir' || grade === 'mono') return 'grayscale(0.7) contrast(1.08) brightness(1.02)'; // soft noir: keeps a little colour, no crushed blacks
+  if (look === 'neon') return 'contrast(1.08) saturate(1.15) hue-rotate(-12deg) brightness(0.98)';
   if (look === 'gold') return 'contrast(1.12) saturate(0.95) sepia(0.22) brightness(0.98)';
   if (look === 'paper') return 'contrast(1.05) saturate(0.75) sepia(0.2) brightness(1.02)';
   if (look === 'clean') return 'contrast(1.05) saturate(1.05)';
   if (grade === 'cold') return 'contrast(1.1) saturate(0.8) hue-rotate(-8deg) brightness(0.95)';
-  return 'contrast(1.1) saturate(0.85) sepia(0.14) brightness(0.96)'; // archive / warm
+  return 'contrast(1.05) saturate(0.95) sepia(0.1) brightness(1.0)'; // archive / warm
 };
 
 // Gate weave: the whole frame wobbles a tiny bit like film in a projector gate.
 export const GateWeave: React.FC<{children: React.ReactNode}> = ({children}) => {
   const frame = useCurrentFrame();
-  const f = Math.floor(frame / 2);
-  const x = (random(`gw-x-${f}`) - 0.5) * 2.4;
-  const y = (random(`gw-y-${f}`) - 0.5) * 2.4;
+  const f = Math.floor(frame / 4); // slow, tiny wobble: constant jitter tires the eyes
+  const x = (random(`gw-x-${f}`) - 0.5) * 0.8;
+  const y = (random(`gw-y-${f}`) - 0.5) * 0.8;
   return <AbsoluteFill style={{transform: `translate(${x}px, ${y}px) scale(1.01)`}}>{children}</AbsoluteFill>;
 };
 
@@ -28,7 +28,7 @@ const Grain: React.FC = () => {
   const frame = useCurrentFrame();
   const seed = Math.floor(frame / 2) % 50; // grain changes every 2 frames
   return (
-    <AbsoluteFill style={{mixBlendMode: 'overlay', opacity: 0.32, pointerEvents: 'none'}}>
+    <AbsoluteFill style={{mixBlendMode: 'overlay', opacity: 0.12, pointerEvents: 'none'}}>
       <svg width="100%" height="100%">
         <filter id={`grain-${seed}`}>
           <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed={seed} stitchTiles="stitch" />
@@ -44,7 +44,7 @@ const Grunge: React.FC = () => {
   const frame = useCurrentFrame();
   const seed = 100 + (Math.floor(frame / 6) % 8);
   return (
-    <AbsoluteFill style={{mixBlendMode: 'multiply', opacity: 0.18, pointerEvents: 'none'}}>
+    <AbsoluteFill style={{mixBlendMode: 'multiply', opacity: 0.08, pointerEvents: 'none'}}>
       <svg width="100%" height="100%">
         <filter id={`grunge-${seed}`}>
           <feTurbulence type="turbulence" baseFrequency="0.012" numOctaves="3" seed={seed} />
@@ -61,7 +61,7 @@ const ScanLines: React.FC = () => (
     style={{
       pointerEvents: 'none',
       // 1.6px black line at 16% opacity every 4px
-      backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.16) 0px, rgba(0,0,0,0.16) 1.6px, transparent 1.6px, transparent 4px)',
+      backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 1.6px, transparent 1.6px, transparent 4px)',
     }}
   />
 );
@@ -70,14 +70,14 @@ const Vignette: React.FC = () => (
   <AbsoluteFill
     style={{
       pointerEvents: 'none',
-      background: 'radial-gradient(ellipse at center, rgba(0,0,0,0) 45%, rgba(0,0,0,0.55) 100%)',
+      background: 'radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.28) 100%)',
     }}
   />
 );
 
 const Flicker: React.FC = () => {
   const frame = useCurrentFrame();
-  const o = 0.03 + random(`fl-${frame}`) * 0.04;
+  const o = 0.01 + random(`fl-${Math.floor(frame / 6)}`) * 0.015; // barely-there, slow
   return <AbsoluteFill style={{background: '#fff8e7', opacity: o, mixBlendMode: 'soft-light', pointerEvents: 'none'}} />;
 };
 
@@ -109,9 +109,6 @@ export const FilmOverlay: React.FC<{look?: Look}> = ({look = 'archive'}) => {
       return (
         <>
           <Grain />
-          <Grain />
-          <Flicker />
-          <Vignette />
           <Vignette />
         </>
       );
@@ -148,8 +145,6 @@ export const FilmOverlay: React.FC<{look?: Look}> = ({look = 'archive'}) => {
         <>
           <Grunge />
           <Grain />
-          <ScanLines />
-          <Flicker />
           <Vignette />
         </>
       );

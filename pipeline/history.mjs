@@ -9,7 +9,8 @@ import fs from 'node:fs';
 import {chDir, epDir, readJSON, writeJSON, die, ok, info, today} from './lib.mjs';
 import {signature} from './variety.mjs';
 
-const [cmd, a, b, c, d] = process.argv.slice(2);
+const RETRY = process.argv.includes('--retry');
+const [cmd, a, b, c, d] = process.argv.slice(2).filter((x) => x !== '--retry');
 const file = (ch) => path.join(chDir(ch), 'history.json');
 const load = (ch) => readJSON(file(ch), []);
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9ऀ-ॿ ]/g, ' ').split(/\s+/).filter((w) => w.length > 2);
@@ -48,6 +49,10 @@ switch (cmd) {
     if (m.length) {
       console.log(`DUPLICATE RISK for "${b}":`);
       m.forEach((x) => console.log(`  ${Math.round(x.score * 100)}%  ${x.topic} (${x.date}, ${x.status})`));
+      if (RETRY) {
+        console.log('--retry given: making a new version of the same topic on purpose.');
+        break;
+      }
       process.exit(2);
     }
     ok(`"${b}" is new for ${a}`);
@@ -57,9 +62,9 @@ switch (cmd) {
     if (!a || !b || !c) die('claim <channel> "<topic>" <episodeId> "kw1,kw2"');
     const kws = (d || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
     const m = similar(a, b, kws);
-    if (m.length) die(`Topic too close to: ${m[0].topic} (${m[0].episodeId})`);
+    if (m.length && !RETRY) die(`Topic too close to: ${m[0].topic} (${m[0].episodeId})`);
     const h = load(a);
-    h.push({topic: b, episodeId: c, keywords: kws, status: 'in-progress', date: today()});
+    h.push({topic: b, episodeId: c, keywords: kws, status: 'in-progress', date: today(), ...(RETRY && m.length ? {retryOf: m[0].episodeId} : {})});
     writeJSON(file(a), h);
     ok(`Claimed "${b}" → ${c}`);
     break;

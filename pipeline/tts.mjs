@@ -19,7 +19,9 @@ if (!voiceId) die('No voiceId in channels/<channel>/config.json');
 // Optional pronunciation fixes: {"Netflix":"नेटफ्लिक्स"} in config.voice.say
 const say = (t) => Object.entries(cfg.say ?? {}).reduce((s, [k, v]) => s.replaceAll(k, v), t);
 const spoken = sb.lines.map((l) => say(l.voice ?? l.text));
-const text = spoken.join(' ');
+// A long <break> between lines (longer than a sentence pause) lets pipeline/align.mjs and the viewer hear where each line ends.
+const BREAK = '<break time="1.1s" />';
+const text = spoken.join(` ${BREAK} `);
 
 const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}/with-timestamps?output_format=mp3_44100_128`, {
   method: 'POST',
@@ -28,7 +30,7 @@ const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}/
     text,
     model_id: cfg.model ?? 'eleven_multilingual_v2',
     language_code: cfg.languageCode,
-    voice_settings: cfg.settings ?? {stability: 0.38, similarity_boost: 0.8, style: 0.35, use_speaker_boost: true, speed: 1.0},
+    voice_settings: cfg.settings ?? {stability: 0.5, similarity_boost: 0.8, style: 0.15, use_speaker_boost: true, speed: 1.0},
   }),
 });
 if (!res.ok) die(`ElevenLabs ${res.status}: ${await res.text()}`);
@@ -40,6 +42,7 @@ fs.writeFileSync(path.join(dir, file), Buffer.from(j.audio_base64, 'base64'));
 const al = j.alignment;
 const words = [];
 let cur = null;
+const isTag = (t) => /^<break|^time=|^\/?>$|^"?\d+(\.\d+)?s"$|^\/>$/.test(t);
 al.characters.forEach((ch, i) => {
   if (/\s/.test(ch)) {
     if (cur) words.push(cur);
@@ -51,6 +54,7 @@ al.characters.forEach((ch, i) => {
   cur.end = al.character_end_times_seconds[i];
 });
 if (cur) words.push(cur);
+for (let i = words.length - 1; i >= 0; i--) if (isTag(words[i].text)) words.splice(i, 1);
 
 // Captions show the ORIGINAL script words (correct spelling), timed by the spoken words.
 const lines = [];

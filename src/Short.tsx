@@ -19,10 +19,10 @@ export const estimateTiming = (sb: Storyboard): Timing => {
     const ws = l.text.split(/\s+/).filter(Boolean);
     const start = t;
     ws.forEach((w) => {
-      words.push({text: w, start: t, end: t + 0.33});
-      t += 0.38;
+      words.push({text: w, start: t, end: t + 0.42});
+      t += 0.5;
     });
-    t += 0.35;
+    t += 0.6; // pause between lines
     return {id: l.id, start, end: t};
   });
   return {words, lines, duration: t};

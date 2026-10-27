@@ -5,12 +5,13 @@ Two Hindi YouTube Shorts channels, made with Remotion. Owner: Amin (uploads to Y
 - `brand` — business & brand stories (Netflix vs Blockbuster style)
 - `psych` — psychology effects explained with real studies
 
-## The one-click flow (`/short <brand|psych> [auto] [browser]`)
+## The one-click flow (`/short <brand|psych> [auto] [browser] [retry]`)
+`retry` = make the SAME topic again as a new version (`npm run new -- <ch> "<topic>" "<kw>" --retry` → id `...-v2`, `npm run history -- check ... --retry`) so Amin can compare old vs new. Everything below still applies; variety rules force a different look than the previous Short.
 1. **Sync**: `git pull --rebase`. Never skip — the other laptop may have used a topic.
 2. **Pick topic**: read `channels/<ch>/history.json` + `backlog.md`. Take the first backlog idea not in history. Run `npm run history -- check <ch> "<topic>" "<kw>"` (exit 2 = duplicate → next idea). Prefer ideas with a twist + a hard number.
 3. **Claim**: `npm run new -- <ch> "<topic>" "<keywords>"` then `git add channels public/episodes/<id>/storyboard.json && git commit -m "claim: <topic>" && git push` (this locks the topic for the other laptop).
 4. **Research**: WebSearch/WebFetch. Minimum 3 facts, each with a source URL from a reliable outlet (company filings/press releases, Reuters, BBC, Fortune, Economic Times, Mint, the original study/paper for psych). If sources disagree, use the conservative number or drop it. Never invent quotes, numbers, dates, or study results.
-5. **Script** (`lines[].text`): follow `channels/<ch>/config.json` → `structure` + `style`. 6–8 lines, 30–45s, hook ≤ 14 words. Then humanize (see below). Optional `lines[].voice` = how ElevenLabs should pronounce it if different from captions.
+5. **Script** (`lines[].text`): follow `channels/<ch>/config.json` → `structure` + `style`. 6–8 lines, **30–42 s, max 75 words** (real narration ≈ 0.5 s/word + 0.8 s per line; `npm run check` fails over 48 s — cut words, never speed the voice up). **Hook = the viewer test below**, ≤ 12 words; write 3 candidates into `storyboard.hookCandidates` and use the best as line 1. Then humanize (see below). **`lines[].voice` is REQUIRED for any line with digits, %, $/€, years or abbreviations** — spell it the way Indians say it in Hinglish (see "Spoken form").
 6. **Scene script + motion spec** — for EVERY line fill: `visual` (what we see, layer by layer: background / middle / foreground / logo), `onScreen` (on-screen text), `motionNotes` (frame-by-frame choreography in words), `beats` (frame-exact camera moments), `fx` (atmosphere), `sfx`. See "Motion grammar" below.
    **Scenes** (`lines[].scene`): types `collage | kinetic | chart | versus | stack | end` (see `src/types.ts`). Follow `sceneMix`. Vary motions (push, pull, pan-left, pan-right, drift). Reference storyboards: `public/episodes/2026-10-27-netflix-vs-blockbuster/storyboard.json` (brand) and `docs/examples/psych-zeigarnik.storyboard.json` (psych). Copy their shape, never their wording.
 7. **Assets** (`storyboard.assets[]`): one entry per file. Kinds (details in `pipeline/fetch-assets.mjs` header):
@@ -24,13 +25,21 @@ Two Hindi YouTube Shorts channels, made with Remotion. Owner: Amin (uploads to Y
 8. **Music + SFX** (art-director): original track per episode — key → `npm run music`, no key → ElevenLabs Music tab + `npm run import -- <id> music`; otherwise a fitting unused track from `public/music/library.json` or Pixabay tab. SFX the same way (`sfx:<name>`).
 9. **Check + plan file**: `npm run check -- <id>` (fix every ✖) → `npm run frames -- <id>` (renders key frames of every scene/beat) → **look at the frames yourself** (Read tool on `public/episodes/<id>/frames/*.jpg`) and fix anything ugly: text overlapping captions (captions live at y≈1230–1400), faces cut off, logo on top of headline, empty frames → re-run frames → `npm run board -- <id>` (writes `storyboard.html` with filmstrip + `script.md`) → `npm run render -- <id> --draft` (silent animatic).
 10. **STOP for approval** unless the argument was `auto`. Tell Amin: topic, hook line, length, and the path of `storyboard.html` + `exports/<id>/draft.mp4`.
-11. **Voice**: key set → `npm run voice -- <id>`. No key → ElevenLabs tab (Browser mode) → `npm run import -- <id> voice` → `npm run timing -- <id>`. No ElevenLabs at all → `npm run voice:local -- <id>` (Kokoro) or Amin records `voice.m4a` → `npm run timing -- <id> voice.m4a`.
+11. **Voice**: key set → `npm run voice -- <id>`. No key → ElevenLabs tab (Browser mode, exact recipe in the table) → `npm run import -- <id> voice` → `npm run timing -- <id>` (now `align.mjs`: finds the real pauses, no Whisper). Read the printed line table: every line must start after a clear pause; ⚠ lines = re-generate or tell Amin. No ElevenLabs at all → `npm run voice:local -- <id>` (Kokoro) or Amin records `voice.m4a` → `npm run timing -- <id> voice.m4a`.
 12. **Re-sync beats to the real voice**: read `timing.json`, move each beat onto its key word, then `npm run frames -- <id>` and look again.
     **Render**: `npm run render -- <id>` → `exports/<id>/short.mp4`, `thumbnail.jpg`, `upload.txt`. Look at 3–4 stills (`npx remotion still ... --frame=N`) to verify nothing is broken.
 13. **Save**: `git add channels public/episodes/<id>/{storyboard.json,timing.json,credits.json,voice.mp3} && git commit -m "rendered: <topic>" && git push`.
 14. Report in 3 lines: file paths, length, anything Amin should double-check.
 
 After Amin uploads: `npm run history -- published <id> <youtube-url>` (keeps stats for choosing future topics).
+
+## Viewer-first rules (Amin's feedback on the first Short: "no hook, not eye-comfortable, robotic, subtitles drift")
+**Hook (first 3 seconds decide everything).** Line 1 must open a curiosity gap a stranger can't ignore — a surprising fact, a contradiction or a "what happened next?" — in plain spoken Hinglish, ≤ 12 words. NOT a bare statistic ("2007 में 49.4% share…"), NOT a date-drop that needs context. Pattern: *impossible-sounding result + who/what* ("दुनिया की नंबर 1 phone company ने free में मिल रहा Android ठुकरा दिया।" / "इस एक 'ना' ने 10 साल में Nokia खत्म कर दी।"). Test: would you stop scrolling if a friend said this? Show the strongest image + a 2–4 word headline from frame 0 (no logo-only opening). The payoff of the hook must come before the end.
+**Spoken form** (`lines[].voice`): captions may show digits, the narrator must say them like a Hinglish speaker: years → English words ("2011" → "twenty eleven", "2007" → "two thousand seven"), numbers/percent → English ("49.4%" → "forty nine point four percent", "5.44 billion euro" → "five point four four billion euro"), abbreviations letter by letter in Devanagari ("Q3" → "क्यू थ्री", "CEO" → "सी ई ओ" or keep CEO). Prefer rewriting to avoid awkward ones ("तीसरी तिमाही" is pure Hindi — don't). Never leave a number for the TTS to guess. Keep the English words in Latin script in `voice` too when the voice reads them fine.
+**One idea per line, one sentence per line where possible.** The narrator pauses 1.1 s between lines; a line that runs on or merges two thoughts sounds mixed up and breaks caption sync.
+**Natural voice.** Conversational narrator voice, speed 1.0, stability ≈ 0.5, style ≤ 0.2 (config). Intense/dramatic "documentary" voices and fast speeds sound acted/robotic. If a take sounds robotic, change the voice name in `channels/<ch>/config.json` (alternatives listed) before spending credits again.
+**Eye comfort.** Subject bright and readable, soft grain only, no scanlines/flicker stacks, no full-black frames. Flash/shake only on THE one big moment (max 1 per Short), `glitch` transition only for tech stories, never with `noir`. Prefer `clean`, `gold`, `paper` looks; `noir` only for failure/ending stories and then lifted (it keeps some colour). Max 1 fx per scene, calm scenes between loud ones, text ≥ 90 px, high contrast.
+**Captions in sync.** `npm run timing` aligns to real pauses. After import, read its line table; if any line starts mid-sentence or a ⚠ shows, fix the voice (longer break), not the captions.
 
 ## Humanize (every script, before assets)
 Use the installed `humanizer` skill if present (it is English-focused), AND these Hindi rules:
@@ -49,11 +58,11 @@ Use the installed `humanizer` skill if present (it is English-focused), AND thes
 - Don't commit `.env`, `exports/`, `public/episodes/*/assets/` (re-downloadable from credits.json).
 
 ## Motion grammar (frame-wise animation — 30 fps, frame 0 = start of the scene)
-- Every scene already has an entrance: frames 0–8 whip-in with motion blur + flash. Don't add another.
+- Every scene already has a soft entrance (frames 0–8, gentle push + light blur, barely any flash). Don't add another.
 - `beats`: `{"at": 24, "do": "punch"}` · `do` = `zoom-through` (dive into the image, motion-blurred; use `"at": -12` = last 12 frames to dive into the next scene) · `punch` (quick 12% push on a key word) · `shake` (impact, 8–10 frames) · `flash` (white hit) · `whip-out` (fast exit left) · `blur-in`.
 - Put beats ON the word that matters: find the word's time in `timing.json` (after the voice exists) → frame = (word.start − scene.start) × 30. Before the voice exists, estimate 0.38 s per word.
 - `fx`: `smoke` (rising haze — failures, mystery, endings), `embers` (destruction, bankruptcy, fights), `dust` (old times, history), `lightleak` (success, money, nostalgia), `glitch` (internet, tech, digital).
-- Max 2 beats + 2 fx per scene. Calm scenes make loud scenes hit harder.
+- Max 2 beats + 1–2 fx per scene (comfort: 1 is better). `flash`/`shake` at most ONCE per Short on the biggest reveal. Calm scenes make loud scenes hit harder.
 - Layering like the reference reel: background (place) → middle (building/object) → foreground cut-out (person) → logo → headline. Each layer drifts at its own speed; cut-outs "boil" (stop-motion jitter) automatically.
 - Editing a scene precisely: open Remotion Studio (`npm run studio`), read the frame number in the timeline, and change `beats`/scene values in storyboard.json — the Studio hot-reloads.
 
@@ -85,7 +94,7 @@ Before each generation/download say in one line what you're doing. Never type pa
 
 | Need | Tab | What to do | Then |
 |---|---|---|---|
-| **Voiceover** | elevenlabs.io/app/speech-synthesis | Pick the channel voice (name in config `voice.name`), model "Eleven Multilingual v2", settings from config (stability ≈ 0.38, similarity 0.8, style 0.35). Paste the full script (all `lines[].text`/`voice` in order, one per line). Generate → listen → Download. | `npm run import -- <id> voice` → `npm run timing -- <id>` |
+| **Voiceover** | elevenlabs.io/app/speech-synthesis | Dismiss the promo popup first (it shifts the layout), pick the channel voice (Voice → search the name from config `voice.name` → *Use*), model "Eleven Multilingual v2", Speed 1.0 (never faster), Stability ≈ 0.5, Similarity 0.8, Style ≈ 0.15. Paste `lines[].voice ?? text` for every line, **separated by `<break time="1.1s" />`** (type it on its own between lines). Generate (one click = 2 takes; the player shows the length — must be ≤ 44 s, else shorten the script) → Download. Amin picks by ear if he wants; otherwise take Generation 1. | `npm run import -- <id> voice` → `npm run timing -- <id>` |
 | **Original music** | elevenlabs.io/app/music | Prompt = genre, instruments, tempo, energy curve, "instrumental, no vocals", length ≈ script length + 5 s. Generate → Download. | `npm run import -- <id> music --title "<name>" --mood "<mood>" --license "ElevenLabs Music (paid plan)"` |
 | **Sound effect** | elevenlabs.io/app/sound-effects | Short prompt ("deep cinematic whoosh", "cash register ding", "typewriter clack"), 1–3 s. | `npm run import -- <id> sfx:<name> --license "ElevenLabs SFX"` |
 | **AI image** (building, place, era) | chatgpt.com | "Create a vertical 2:3 photorealistic image: <asset.generate> — <imageStyle>". No real people's faces, no logos. Download. | `npm run import -- <id> assets/<file> --ai` |

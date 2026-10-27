@@ -1,10 +1,11 @@
 {
   "name": "Brand Stories (Hindi)",
   "language": "hi",
-  "style": "Hinglish in Devanagari: everyday Hindi, English business words kept in English (CEO, startup, revenue, billion). Numbers as digits.",
+  "style": "Hinglish in Devanagari, the way a friend tells a story: everyday Hindi + English words Indians really say in English (CEO, deal, billion, percent, share, market). Captions keep digits; the `voice` field spells every number/symbol/abbreviation as spoken in Hinglish (e.g. 2011 → twenty eleven, Q3 → क्यू थ्री, 49.4% → forty nine point four percent).",
   "length": {
     "lines": "6-8",
-    "seconds": "30-45"
+    "seconds": "30-42",
+    "maxWords": 75
   },
   "structure": [
     "1 HOOK (<=14 words): the shocking moment/number. Never start with 'आज हम बात करेंगे'.",
@@ -29,18 +30,23 @@
     "volume": 0.16
   },
   "voice": {
-    "name": "Rudra - Intense Documentary Narrator",
+    "name": "Viraj - Energetic, Clear Narrator",
     "voiceId": "PASTE_ELEVENLABS_VOICE_ID",
     "model": "eleven_multilingual_v2",
     "languageCode": "hi",
     "settings": {
-      "stability": 0.38,
+      "stability": 0.5,
       "similarity_boost": 0.8,
-      "style": 0.35,
+      "style": 0.15,
       "use_speaker_boost": true,
-      "speed": 1.03
+      "speed": 1.0
     },
-    "say": {}
+    "say": {},
+    "alternatives": [
+      "Rudra - Intense Documentary Narrator (more dramatic, can sound acted)"
+    ],
+    "pauseBetweenLines": "1.1s",
+    "note": "Natural speed 1.0 — never speed the voice up to fit; cut words instead. Put a long pause (<break time=\"1.1s\" />) between lines so captions and scene cuts line up."
   },
   "hashtags": [
     "#shorts",
