@@ -5,7 +5,7 @@ import {Photo, PaperBg, Card, useEpisode} from './common';
 import {boil, camera, pop, fadeIn, drift} from '../film/motion';
 import {headlineFont} from '../fonts';
 
-const Headline: React.FC<{text: string; start?: number; top?: number; size?: number}> = ({text, start = 6, top = 220, size = 120}) => {
+const Headline: React.FC<{text: string; start?: number; top?: number; size?: number}> = ({text, start = 0, top = 220, size = 120}) => {
   const frame = useCurrentFrame();
   const {accent} = useEpisode();
   const s = pop(frame, start, 12);
@@ -25,7 +25,9 @@ const Headline: React.FC<{text: string; start?: number; top?: number; size?: num
         textTransform: 'uppercase',
         transform: `scale(${s})`,
         opacity: Math.min(1, s),
-        textShadow: `0 6px 0 ${accent}, 0 12px 30px rgba(0,0,0,0.8)`,
+        textShadow: `0 6px 0 ${accent}, 0 0 24px rgba(0,0,0,0.9), 0 12px 30px rgba(0,0,0,0.8)`,
+        WebkitTextStroke: '3px rgba(20,12,0,0.85)',
+        paintOrder: 'stroke fill',
       }}
     >
       {text.split('|').map((l, i) => (
@@ -177,7 +179,7 @@ export const Chart: React.FC<{s: ChartScene; dur: number}> = ({s, dur}) => {
   const max = Math.max(...s.bars.map((b) => b.value));
   return (
     <AbsoluteFill>
-      <AbsoluteFill style={{filter: 'brightness(0.35)'}}>{s.bg ? <Photo src={s.bg} /> : <PaperBg />}</AbsoluteFill>
+      <AbsoluteFill style={{filter: s.bg ? 'brightness(0.62)' : 'brightness(0.35)'}}>{s.bg ? <Photo src={s.bg} /> : <PaperBg />}</AbsoluteFill>
       <Headline text={s.title} start={0} top={250} size={100} />
       {/* chart lives between the title (y≈250-360) and the captions (y≈1230) */}
       <div style={{position: 'absolute', top: 430, height: 720, left: 90, right: 90, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: 20}}>
@@ -240,9 +242,11 @@ export const Versus: React.FC<{s: VersusScene; dur: number}> = ({s, dur}) => {
             top: which === 'right' ? 30 : undefined,
             left: 40,
             fontFamily: headlineFont,
-            fontSize: 110,
+            fontSize: 84,
             fontWeight: 700,
             color: '#fff',
+            background: 'rgba(0,0,0,0.55)',
+            padding: '0 18px',
             textShadow: '0 8px 24px rgba(0,0,0,0.9)',
             textDecoration: loser && verdict > 0.5 ? `line-through 10px ${accent}` : undefined,
           }}
@@ -256,7 +260,7 @@ export const Versus: React.FC<{s: VersusScene; dur: number}> = ({s, dur}) => {
     <AbsoluteFill style={{background: '#000'}}>
       {side('left')}
       {side('right')}
-      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
+      <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', flexDirection: 'row', paddingRight: 50}}>
         <div
           style={{
             fontFamily: headlineFont,
@@ -290,7 +294,7 @@ export const Stack: React.FC<{s: StackScene; dur: number}> = ({s, dur}) => {
   ];
   return (
     <AbsoluteFill>
-      <AbsoluteFill style={{transform: `scale(${cam.scale})`, filter: 'brightness(0.55)'}}>{s.bg ? <Photo src={s.bg} /> : <PaperBg />}</AbsoluteFill>
+      <AbsoluteFill style={{transform: `scale(${cam.scale})`, filter: s.bg ? 'brightness(0.8)' : 'brightness(0.55)'}}>{s.bg ? <Photo src={s.bg} /> : <PaperBg />}</AbsoluteFill>
       <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
         {s.images.slice(0, 4).map((img, i) => {
           const start = 2 + i * Math.max(6, Math.floor(dur / (s.images.length + 2)));
@@ -310,7 +314,7 @@ export const Stack: React.FC<{s: StackScene; dur: number}> = ({s, dur}) => {
           );
         })}
       </AbsoluteFill>
-      {s.caption && <Headline text={s.caption} start={dur * 0.5} top={1380} size={100} />}
+      {s.caption && <Headline text={s.caption} start={dur * 0.5} top={110} size={100} />}
     </AbsoluteFill>
   );
 };

@@ -56,8 +56,30 @@
       "symbian",
       "microsoft"
     ],
-    "status": "in-progress",
+    "status": "rendered",
     "date": "2026-10-27",
-    "retryOf": "2026-10-27-nokia-android"
+    "retryOf": "2026-10-27-nokia-android",
+    "signature": {
+      "look": "gold",
+      "captionStyle": "boxed",
+      "transition": "zoom",
+      "accent": "#FFB000",
+      "hookType": "question",
+      "music": "warm-reflection.mp3",
+      "scenes": [
+        "collage",
+        "chart",
+        "versus",
+        "kinetic",
+        "stack",
+        "collage",
+        "end"
+      ],
+      "motions": [
+        "push",
+        "pan-left"
+      ]
+    },
+    "updated": "2026-10-27"
   }
 ]

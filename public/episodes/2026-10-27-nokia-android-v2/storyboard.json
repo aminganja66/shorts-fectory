@@ -5,8 +5,11 @@
   "topic": "Nokia ने Android को ना कहा",
   "title": "Nokia ने Android को ना कहा, फिर क्या हुआ",
   "theme": {
-    "accent": "#E50914",
-    "grade": "warm"
+    "accent": "#FFB000",
+    "grade": "warm",
+    "look": "gold",
+    "captionStyle": "boxed",
+    "transition": "zoom"
   },
   "facts": [
     {
@@ -39,56 +42,242 @@
       "source": "https://www.businesstoday.in/story/nokia-loses-top-handset-maker-position-to-samsung-gartner/1/184596.html"
     }
   ],
-  "hookType": "contradiction",
+  "hookType": "question",
   "hookCandidates": [
-    "आधा smartphone market Nokia का था, फिर भी Android को ना बोला।",
-    "Nokia ने Android को ना क्यों कहा?",
-    "अगर Nokia ने Android चुन लिया होता तो?"
+    "कभी आधा market Nokia का था। फिर उसने किसे 'ना' कह दिया?",
+    "Nokia की एक 'ना' ने सब बदल दिया। वो 'ना' किसे थी?",
+    "Nokia के पास सब था, फिर उसने किसे ठुकरा दिया?"
   ],
   "lines": [
     {
       "id": 1,
-      "text": "आधा smartphone market Nokia का था, फिर भी Android को ना बोला।"
+      "text": "कभी आधा market Nokia का था। फिर उसने किसे 'ना' कह दिया?",
+      "visual": "BG: bright daylight crowd of customers at a 2000s mobile phone shop counter, warm sun, glass cases full of candy-bar phones. FG: Nokia wordmark small on a plate. Headline from frame 0.",
+      "onScreen": "Nokia ने किसे 'ना' कहा?",
+      "motionNotes": "f0-8 whip in; headline already on screen at f0; slow push; punch f98 on \"किसे\"; last 12 frames zoom-through into the chart.",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s1-bg.jpg",
+        "logo": "assets/logo-nokia-w.png",
+        "logoPos": "bottom",
+        "headline": "Nokia ने किसे|'ना' कहा?",
+        "motion": "push",
+        "goldFrame": true
+      },
+      "beats": [
+        {
+          "at": 105,
+          "do": "punch"
+        },
+        {
+          "at": -12,
+          "do": "zoom-through",
+          "len": 12
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ],
+      "sfx": "whoosh.mp3"
     },
     {
       "id": 2,
-      "text": "2007 में Gartner के मुताबिक share 49.4% था।",
-      "voice": "twenty oh seven में Gartner के मुताबिक share forty nine point four percent था।"
+      "text": "Android को। 2007 में Nokia का smartphone share 49.4% था।",
+      "voice": "Android को। twenty oh seven में Nokia का smartphone share forty nine point four percent था।",
+      "visual": "Bright warm backdrop; two bars counting up: Nokia 2007 49.4, Nokia 2008 43.7. Title makes clear: Gartner, smartphone share.",
+      "onScreen": "NOKIA SMARTPHONE SHARE (GARTNER)",
+      "motionNotes": "Bars grow ease-out; numbers count up; punch f157 on \"49.4\". Calm scene.",
+      "scene": {
+        "type": "chart",
+        "title": "NOKIA का SMARTPHONE SHARE (GARTNER)",
+        "unit": "%",
+        "bars": [
+          {
+            "label": "2007",
+            "value": 49.4
+          },
+          {
+            "label": "2008",
+            "value": 43.7
+          }
+        ],
+        "bg": "assets/s4-bg.jpg"
+      },
+      "beats": [
+        {
+          "at": 155,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
       "id": 3,
       "text": "फरवरी 2011 में Elop ने Windows Phone चुन लिया।",
-      "voice": "फरवरी twenty eleven में Elop ने Windows Phone चुन लिया।"
+      "voice": "फरवरी twenty eleven में Elop ने Windows Phone चुन लिया।",
+      "visual": "Split: left Windows Phone logo on its plate, right Android robot on its plate; Windows side wins (Feb 2011).",
+      "onScreen": "फरवरी 2011 | WINDOWS PHONE vs ANDROID",
+      "motionNotes": "Halves slide in; punch f47 on \"Windows Phone\". No flash.",
+      "scene": {
+        "type": "versus",
+        "left": {
+          "image": "assets/s4-left.png",
+          "label": "WINDOWS PHONE"
+        },
+        "right": {
+          "image": "assets/s4-right.png",
+          "label": "ANDROID"
+        },
+        "winner": "left"
+      },
+      "beats": [
+        {
+          "at": 47,
+          "do": "punch"
+        }
+      ],
+      "fx": [],
+      "sfx": "whoosh.mp3"
     },
     {
       "id": 4,
-      "text": "Elop ने बाद में कहा, Android पर Samsung से सीधी टक्कर होती।"
+      "text": "Elop ने बाद में कहा, Android पर Samsung से सीधी टक्कर होती।",
+      "visual": "Bright warm paper-like backdrop with soft light; huge words slam in, accent on SAMSUNG and टक्कर.",
+      "onScreen": "SAMSUNG से|सीधी टक्कर",
+      "motionNotes": "Words pop 4 frames apart; punch f66 on \"Samsung\". Calm.",
+      "scene": {
+        "type": "kinetic",
+        "bg": "assets/s4-bg.jpg",
+        "text": "SAMSUNG से|सीधी टक्कर|होती",
+        "highlight": [
+          "SAMSUNG",
+          "टक्कर"
+        ]
+      },
+      "beats": [
+        {
+          "at": 64,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "dust"
+      ]
     },
     {
       "id": 5,
       "text": "2011 में Samsung, smartphone बिक्री में Nokia से आगे निकल गया।",
-      "voice": "twenty eleven में Samsung, smartphone बिक्री में Nokia से आगे निकल गया।"
+      "voice": "twenty eleven में Samsung, smartphone बिक्री में Nokia से आगे निकल गया।",
+      "visual": "Bright table, three smartphone photos drop like polaroids; caption 2011: Samsung आगे.",
+      "onScreen": "2011: SAMSUNG आगे",
+      "motionNotes": "Photos fall staggered; punch f27 on \"Samsung\".",
+      "scene": {
+        "type": "stack",
+        "images": [
+          "assets/s5-b.jpg",
+          "assets/s5-a.jpg"
+        ],
+        "caption": "2011: SAMSUNG आगे",
+        "bg": "assets/s4-bg.jpg"
+      },
+      "beats": [
+        {
+          "at": 26,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
       "id": 6,
       "text": "2013 में Microsoft ने Nokia का फोन बिज़नेस, patents समेत, 5.44 billion euro में लेने का deal announce किया।",
-      "voice": "twenty thirteen में Microsoft ने Nokia का फोन बिज़नेस, patents समेत, five point four four billion euro में लेने का deal announce किया।"
+      "voice": "twenty thirteen में Microsoft ने Nokia का फोन बिज़नेस, patents समेत, five point four four billion euro में लेने का deal announce किया।",
+      "visual": "BG: bright modern glass office with a signing table, morning sun. Microsoft logo centered on a plate, headline €5.44 billion.",
+      "onScreen": "2013 | €5.44 BILLION",
+      "motionNotes": "Slow pan-left; the ONE big moment: flash + shake on \"5.44 billion\" f127.",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s6-bg.jpg",
+        "logo": "assets/logo-microsoft-w.png",
+        "logoPos": "center",
+        "headline": "2013|€5.44 BILLION",
+        "motion": "pan-left"
+      },
+      "beats": [
+        {
+          "at": 145,
+          "do": "flash"
+        },
+        {
+          "at": 147,
+          "do": "shake",
+          "len": 8
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ],
+      "sfx": "hit.mp3"
     },
     {
       "id": 7,
-      "text": "Android को ना कहना सही था? Comment में बताओ।"
+      "text": "Android को ना कहना सही था? Comment करो।",
+      "visual": "Warm golden-hour street, soft light, an old phone resting on a ledge. Punchline huge, sub Nokia 2007-2013.",
+      "onScreen": "सही या गलती?",
+      "motionNotes": "Slow pull-back; headline pops f4; sub fades f18.",
+      "scene": {
+        "type": "end",
+        "bg": "assets/s7-bg.jpg",
+        "text": "Android को ना:|सही या गलती?",
+        "sub": "Nokia · 2007-2013"
+      },
+      "fx": [
+        "dust"
+      ]
     }
   ],
-  "assets": [],
+  "assets": [
+    {
+      "file": "assets/s1-bg.jpg",
+      "generate": "Bustling mobile phone shop around 2007 in bright daylight, customers crowded at a glass counter, shelves of candy-bar and keypad phones, warm sunlight, people seen from behind or small in frame, no brand names",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s4-bg.jpg",
+      "orientation": "portrait",
+      "generate": "Soft warm golden bokeh light background, abstract blurred warm sunlit room, cream and amber tones, empty, no objects"
+    },
+    {
+      "file": "assets/s5-a.jpg",
+      "orientation": "portrait",
+      "generate": "Two modern smartphones lying on a bright light wooden table seen from above, soft daylight, clean minimal, blank dark screens, no brand names"
+    },
+    {
+      "file": "assets/s5-b.jpg",
+      "query": "Samsung Galaxy S II",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s6-bg.jpg",
+      "generate": "Bright modern glass corporate office meeting room with a long table and a pen on documents, morning sunshine, clean and airy, city view, empty of people",
+      "orientation": "portrait"
+    },
+    {
+      "file": "assets/s7-bg.jpg",
+      "generate": "An old silver candy-bar mobile phone resting on a stone ledge in a quiet street at golden hour, warm soft sunlight, shallow depth of field, no brand name",
+      "orientation": "portrait"
+    }
+  ],
   "music": {
-    "file": "",
+    "file": "warm-reflection.mp3",
     "volume": 0.16
   },
   "voice": {
-    "file": "voice.mp3"
+    "file": "voice.mp3",
+    "source": "elevenlabs-web"
   },
   "upload": {
-    "title": "आधा market था, फिर भी Nokia ने Android को ना कहा",
+    "title": "Nokia ने किसे 'ना' कहा? कभी आधा market था उसके पास",
     "description": "Nokia ने Android छोड़कर Windows Phone चुना, और Microsoft ने सितंबर 2013 में 5.44 billion euro का deal announce किया, patents समेत।\nSources: Gartner, Microsoft press release, Engadget, Computing.",
     "hashtags": [
       "#shorts",
@@ -97,5 +286,6 @@
       "#startup",
       "#brandstory"
     ]
-  }
+  },
+  "imageStyle": "Photorealistic, bright natural daylight, warm and clean colours, documentary photo, no text, no logos, no watermark, no recognisable faces"
 }

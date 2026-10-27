@@ -1,0 +1,162 @@
+{
+  "assets/logo-android.png": {
+    "query": "Android logo robot",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/1280px-Android_robot.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/1280px-Android_robot.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Android_robot.svg",
+    "author": "Google Inc., employer for hire; designed by Irina Blok",
+    "license": "CC BY 3.0",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 512,
+    "h": 601
+  },
+  "assets/logo-microsoft.png": {
+    "query": "Microsoft logo 2012",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Microsoft_logo_(2012).svg",
+    "author": "Microsoft Corporation — Jason Wells",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 512,
+    "h": 109
+  },
+  "assets/logo-microsoft-w.png": {
+    "query": "Microsoft logo 2012",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Microsoft_logo_(2012).svg",
+    "author": "Microsoft Corporation — Jason Wells",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 512,
+    "h": 109,
+    "derivedFrom": "assets/logo-microsoft.png",
+    "note": "recoloured/placed on plate for contrast; logo shown for identification"
+  },
+  "assets/logo-nokia.png": {
+    "query": "Nokia logo",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nokia_wordmark.svg/1280px-Nokia_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nokia_wordmark.svg/1280px-Nokia_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nokia_wordmark.svg",
+    "author": "Nokia Corporation",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 313,
+    "h": 53
+  },
+  "assets/logo-nokia-w.png": {
+    "query": "Nokia logo",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nokia_wordmark.svg/1280px-Nokia_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nokia_wordmark.svg/1280px-Nokia_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nokia_wordmark.svg",
+    "author": "Nokia Corporation",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 313,
+    "h": 53,
+    "derivedFrom": "assets/logo-nokia.png",
+    "note": "recoloured/placed on plate for contrast; logo shown for identification"
+  },
+  "assets/logo-winphone.png": {
+    "query": "Windows Phone logo",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Windows_Phone_7_logo_and_wordmark.svg/1280px-Windows_Phone_7_logo_and_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Windows_Phone_7_logo_and_wordmark.svg/1280px-Windows_Phone_7_logo_and_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Windows_Phone_7_logo_and_wordmark.svg",
+    "author": "Original work: Microsoft Corporation\nThis SVG version: JCRules from English Wikipedia",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 320,
+    "h": 44
+  },
+  "assets/s4-left.png": {
+    "query": "Windows Phone logo",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Windows_Phone_7_logo_and_wordmark.svg/1280px-Windows_Phone_7_logo_and_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Windows_Phone_7_logo_and_wordmark.svg/1280px-Windows_Phone_7_logo_and_wordmark.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Windows_Phone_7_logo_and_wordmark.svg",
+    "author": "Original work: Microsoft Corporation\nThis SVG version: JCRules from English Wikipedia",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 320,
+    "h": 44,
+    "derivedFrom": "assets/logo-winphone.png",
+    "note": "recoloured/placed on plate for contrast; logo shown for identification"
+  },
+  "assets/s4-right.png": {
+    "query": "Android logo robot",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/1280px-Android_robot.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/1280px-Android_robot.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Android_robot.svg",
+    "author": "Google Inc., employer for hire; designed by Irina Blok",
+    "license": "CC BY 3.0",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 512,
+    "h": 601,
+    "derivedFrom": "assets/logo-android.png",
+    "note": "recoloured/placed on plate for contrast; logo shown for identification"
+  },
+  "assets/s6-bg.jpg": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Sunlit Executive Boardroom Skyline.png"
+  },
+  "assets/s7-bg.jpg": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Nostalgic Phone in Golden Hour.png"
+  },
+  "assets/s4-bg.jpg": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Sunlit Golden Interior Bokeh.png"
+  },
+  "assets/s5-a.jpg": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Modern Smartphones on a Sunlit Wood Desk.png"
+  },
+  "assets/s1-bg.jpg": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Busy Sunlit Mobile Phone Shop.png"
+  },
+  "assets/s5-b.jpg": {
+    "query": "Samsung Galaxy S II",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Samsung_Galaxy_S_II_-_Front.jpg/1920px-Samsung_Galaxy_S_II_-_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Samsung_Galaxy_S_II_-_Front.jpg/1920px-Samsung_Galaxy_S_II_-_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S_II_-_Front.jpg",
+    "author": "Beamish4",
+    "license": "CC BY 4.0",
+    "provider": "wikimedia",
+    "w": 4020,
+    "h": 5360
+  }
+}

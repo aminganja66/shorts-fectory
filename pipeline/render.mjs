@@ -22,6 +22,14 @@ execFileSync(bin, ['render', 'src/index.ts', 'Short', video, `--props=${props}`,
   stdio: 'inherit',
 });
 
+// Final cut: normalise loudness to YouTube's ≈ -14 LUFS (audio only, video stream copied untouched).
+if (!draft) {
+  const tmp = video.replace(/\.mp4$/, '.norm.mp4');
+  const r = spawnSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-i', video, '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '192k', tmp]);
+  if (r.status === 0) fs.renameSync(tmp, video);
+  else info('Loudness normalisation skipped (ffmpeg loudnorm failed)');
+}
+
 // Thumbnail = first frame after the hook text has landed
 const thumbFrame = sb.thumbnailFrame ?? 20;
 execFileSync(bin, ['still', 'src/index.ts', 'Short', path.join(out, 'thumbnail.jpg'), `--props=${props}`, `--frame=${thumbFrame}`, '--image-format=jpeg'], {

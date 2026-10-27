@@ -149,17 +149,44 @@ lines.forEach((l, i) => {
     cum += lineW[i];
     segs = [[ax.at(u0), ax.at(u1, true)]];
   }
-  const ax = axisFor(segs);
   const shown = l.text.split(/\s+/).filter(Boolean);
   const ww = shown.map(wordWeight);
   const sw = ww.reduce((a, b) => a + b, 0);
-  let c = 0;
-  shown.forEach((w, k) => {
-    const start = ax.at((c / sw) * ax.G);
-    c += ww[k];
-    const end = ax.at((c / sw) * ax.G, true);
-    words.push({text: w, start: +start.toFixed(3), end: +Math.max(end, start + 0.12).toFixed(3)});
-  });
+  // A line can contain several sentences = several speech segments. Give each segment WHOLE words
+  // (cut at the word boundary closest to the segment's share of speech), then spread the words inside their own
+  // segment only — so a word never stretches across a sentence pause and a sentence never leaks into the next.
+  const segLens = segs.map(([a, b]) => b - a);
+  const segTotal = segLens.reduce((a, b) => a + b, 0);
+  const cumW = [0];
+  ww.forEach((x, k) => cumW.push(cumW[k] + x));
+  const cuts = [0];
+  const sentEnd = new Set(shown.map((w, k) => (/[।?!]$/.test(w) ? k + 1 : -1)).filter((k) => k > 0 && k < shown.length));
+  let acc = 0;
+  for (let j = 0; j < segs.length - 1; j++) {
+    acc += segLens[j] / segTotal;
+    const target = acc * sw;
+    const hi = shown.length - (segs.length - 1 - j);
+    let bestK = cuts[j] + 1;
+    for (let k = cuts[j] + 1; k <= hi; k++) if (Math.abs(cumW[k] - target) < Math.abs(cumW[bestK] - target)) bestK = k;
+    // a pause that follows a sentence end is a sentence boundary: snap to the nearest sentence end if it is plausible
+    let sentK = -1;
+    for (const k of sentEnd) if (k > cuts[j] && k <= hi && (sentK < 0 || Math.abs(cumW[k] - target) < Math.abs(cumW[sentK] - target))) sentK = k;
+    cuts.push(sentK > 0 && Math.abs(cumW[sentK] - target) <= 0.15 * sw ? sentK : Math.min(bestK, hi));
+  }
+  cuts.push(shown.length);
+  for (let j = 0; j < segs.length; j++) {
+    const [wa, wb] = [cuts[j], cuts[j + 1]];
+    if (wb <= wa) continue;
+    const base = cumW[wa];
+    const span = cumW[wb] - base;
+    const ax = axisFor([segs[j]]);
+    for (let k = wa; k < wb; k++) {
+      const start = ax.at(((cumW[k] - base) / span) * ax.G);
+      const end = ax.at(((cumW[k + 1] - base) / span) * ax.G, true);
+      words.push({text: shown[k], start: +start.toFixed(3), end: +Math.max(end, start + 0.12).toFixed(3)});
+    }
+  }
+  const ax = axisFor(segs);
   const ls = segs[0][0];
   const le = segs[segs.length - 1][1];
   lineOut.push({id: l.id, start: +ls.toFixed(3), end: +le.toFixed(3)});
