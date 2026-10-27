@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {loadEpisode, readJSON, writeJSON, chDir, die, ok} from './lib.mjs';
+import {speak} from './spoken.mjs';
 
 const args = process.argv.slice(2);
 const id = args.find((a) => !a.startsWith('--'));
@@ -18,7 +19,7 @@ if (!voiceId) die('No voiceId in channels/<channel>/config.json');
 
 // Optional pronunciation fixes: {"Netflix":"नेटफ्लिक्स"} in config.voice.say
 const say = (t) => Object.entries(cfg.say ?? {}).reduce((s, [k, v]) => s.replaceAll(k, v), t);
-const spoken = sb.lines.map((l) => say(l.voice ?? l.text));
+const spoken = sb.lines.map((l) => say(l.voice ?? (sb.language === 'en' ? speak(l.text) : l.text)));
 // A long <break> between lines (longer than a sentence pause) lets pipeline/align.mjs and the viewer hear where each line ends.
 const BREAK = '<break time="1.1s" />';
 const text = spoken.join(` ${BREAK} `);

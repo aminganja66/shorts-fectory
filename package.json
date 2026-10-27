@@ -16,7 +16,10 @@
     "frames": "node pipeline/frames.mjs",
     "music": "node pipeline/music.mjs",
     "import": "node pipeline/import.mjs",
-    "voice:local": "python pipeline/tts_local.py"
+    "voice:local": "python pipeline/tts_local.py",
+    "spoken": "node pipeline/spoken.mjs",
+    "spoken:test": "node pipeline/spoken.mjs --test",
+    "tts-text": "node pipeline/tts-text.mjs"
   },
   "devDependencies": {
     "@types/react": "18.3.12",
