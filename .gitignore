@@ -7,3 +7,4 @@ public/episodes/*/voice-16k.wav
 public/episodes/*/voice-take*.mp3
 .DS_Store
 public/episodes/*/frames/
+public/episodes/*/tts-text.txt
