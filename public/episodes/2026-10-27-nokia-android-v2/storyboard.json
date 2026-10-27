@@ -3,7 +3,7 @@
   "channel": "brand",
   "language": "hi",
   "topic": "Nokia ने Android को ना कहा",
-  "title": "",
+  "title": "Nokia ने Android को ना कहा, फिर क्या हुआ",
   "theme": {
     "accent": "#E50914",
     "grade": "warm"
@@ -39,7 +39,46 @@
       "source": "https://www.businesstoday.in/story/nokia-loses-top-handset-maker-position-to-samsung-gartner/1/184596.html"
     }
   ],
-  "lines": [],
+  "hookType": "contradiction",
+  "hookCandidates": [
+    "आधा smartphone market Nokia का था, फिर भी Android को ना बोला।",
+    "Nokia ने Android को ना क्यों कहा?",
+    "अगर Nokia ने Android चुन लिया होता तो?"
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "text": "आधा smartphone market Nokia का था, फिर भी Android को ना बोला।"
+    },
+    {
+      "id": 2,
+      "text": "2007 में Gartner के मुताबिक share 49.4% था।",
+      "voice": "twenty oh seven में Gartner के मुताबिक share forty nine point four percent था।"
+    },
+    {
+      "id": 3,
+      "text": "फरवरी 2011 में Elop ने Windows Phone चुन लिया।",
+      "voice": "फरवरी twenty eleven में Elop ने Windows Phone चुन लिया।"
+    },
+    {
+      "id": 4,
+      "text": "Elop ने बाद में कहा, Android पर Samsung से सीधी टक्कर होती।"
+    },
+    {
+      "id": 5,
+      "text": "2011 में Samsung, smartphone बिक्री में Nokia से आगे निकल गया।",
+      "voice": "twenty eleven में Samsung, smartphone बिक्री में Nokia से आगे निकल गया।"
+    },
+    {
+      "id": 6,
+      "text": "2013 में Microsoft ने Nokia का फोन बिज़नेस, patents समेत, 5.44 billion euro में लेने का deal announce किया।",
+      "voice": "twenty thirteen में Microsoft ने Nokia का फोन बिज़नेस, patents समेत, five point four four billion euro में लेने का deal announce किया।"
+    },
+    {
+      "id": 7,
+      "text": "Android को ना कहना सही था? Comment में बताओ।"
+    }
+  ],
   "assets": [],
   "music": {
     "file": "",
@@ -49,8 +88,8 @@
     "file": "voice.mp3"
   },
   "upload": {
-    "title": "",
-    "description": "",
+    "title": "आधा market था, फिर भी Nokia ने Android को ना कहा",
+    "description": "Nokia ने Android छोड़कर Windows Phone चुना, और Microsoft ने सितंबर 2013 में 5.44 billion euro का deal announce किया, patents समेत।\nSources: Gartner, Microsoft press release, Engadget, Computing.",
     "hashtags": [
       "#shorts",
       "#businessstory",
