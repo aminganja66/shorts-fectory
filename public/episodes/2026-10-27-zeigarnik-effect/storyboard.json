@@ -3,13 +3,83 @@
   "channel": "psych",
   "language": "hi",
   "topic": "Zeigarnik Effect",
-  "title": "",
+  "title": "रात को अधूरा काम ही क्यों याद आता है?",
   "theme": {
     "accent": "#7C5CFF",
     "grade": "cold"
   },
-  "facts": [],
-  "lines": [],
+  "facts": [
+    {
+      "claim": "Bluma Zeigarnik ने 1927 में 32 adults और 22 tasks वाली study में पाया कि बीच में रोके गए tasks लगभग दोगुने याद रहे (उनका अपना निष्कर्ष; सटीक 1.9 ratio verified नहीं, इसलिए 'लगभग दोगुना' बोलें)",
+      "source": [
+        "https://www.simplypsychology.org/zeigarnik-effect.html",
+        "https://www.gwern.net/doc/psychology/willpower/1927-zeigarnik.pdf"
+      ]
+    },
+    {
+      "claim": "2025 की meta-analysis (Ghibellini और Meier, University of Bern) में अधूरे tasks की याददाश्त का फायदा नहीं मिला, पर अधूरा काम दोबारा शुरू करने का झुकाव दिखा। यानी याददाश्त वाला हिस्सा replicate करना मुश्किल रहा",
+      "source": [
+        "https://doi.org/10.1057/s41599-025-05000-w",
+        "https://ideas.repec.org/a/pal/palcom/v12y2025i1d10.1057_s41599-025-05000-w.html"
+      ]
+    },
+    {
+      "claim": "Masicampo और Baumeister (2011): अधूरे goal ने बाद के unrelated tasks में intrusive thoughts और खराब performance दी; काम के लिए एक specific plan बना लेने से यह असर खत्म हो गया",
+      "source": [
+        "https://doi.org/10.1037/a0024192"
+      ]
+    },
+    {
+      "claim": "कहानी के मुताबिक (anecdote, पक्का सबूत नहीं): Kurt Lewin ने एक café में waiter को देखा जो unpaid orders याद रखता था और payment के बाद भूल जाता था। जगह आमतौर पर Berlin बताई जाती है, कुछ में Vienna",
+      "source": [
+        "https://en.wikipedia.org/wiki/Zeigarnik_effect",
+        "https://www.simplypsychology.org/zeigarnik-effect.html"
+      ]
+    },
+    {
+      "claim": "पुरानी replications भी मिली-जुली रहीं: Hovland (1951) ने लिखा कि बहुत कम researchers Zeigarnik के नतीजे साफ तौर पर दोहरा पाए; Seifert और Patalano (1991) ने कहा कि नतीजे task की शर्तों पर निर्भर करते हैं",
+      "source": [
+        "https://www.simplypsychology.org/zeigarnik-effect.html",
+        "https://escholarship.org/uc/item/2qb9x9wd"
+      ]
+    }
+  ],
+  "hookType": "question",
+  "hookCandidates": [
+    "रात को अधूरा काम ही क्यों याद आता है?",
+    "एक waiter की याददाश्त ने किस effect को जन्म दिया?",
+    "अधूरा काम दिमाग से निकलता क्यों नहीं?"
+  ],
+  "lines": [
+    {
+      "text": "रात को अधूरा काम ही क्यों याद आता है?"
+    },
+    {
+      "text": "यह Zeigarnik effect है: अधूरा काम अटक जाता है।",
+      "voice": "यह ज़ाइगार्निक effect है: अधूरा काम अटक जाता है।"
+    },
+    {
+      "text": "कहते हैं, एक waiter को सिर्फ unpaid orders याद रहते थे।"
+    },
+    {
+      "text": "1927 में Zeigarnik के test में अधूरे tasks लगभग दोगुने याद रहे।",
+      "voice": "nineteen twenty seven में ज़ाइगार्निक के test में अधूरे tasks लगभग दोगुने याद रहे।"
+    },
+    {
+      "text": "पर 2025 की meta-analysis में यह फायदा नहीं दिखा।",
+      "voice": "पर twenty twenty five की meta-analysis में यह फायदा नहीं दिखा।"
+    },
+    {
+      "text": "हाँ, अधूरा goal खटकता है, 2011 की study में दिखा।",
+      "voice": "हाँ, अधूरा goal खटकता है, twenty eleven की study में दिखा।"
+    },
+    {
+      "text": "उसी study में कब-कहाँ का plan बनते ही असर गया।"
+    },
+    {
+      "text": "आज रात कौन सा अधूरा काम plan करोगे?"
+    }
+  ],
   "assets": [],
   "music": {
     "file": "",
@@ -19,8 +89,8 @@
     "file": "voice.mp3"
   },
   "upload": {
-    "title": "",
-    "description": "",
+    "title": "रात को अधूरा काम ही क्यों याद आता है? (सच कितना?)",
+    "description": "Zeigarnik effect: 1927 का नतीजा, 2025 की meta-analysis का जवाब, और Masicampo-Baumeister का plan वाला tip.\nआज रात कौन सा अधूरा काम दिमाग में घूम रहा है? Comment करो।",
     "hashtags": [
       "#shorts",
       "#psychology",
