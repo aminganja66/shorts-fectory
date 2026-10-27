@@ -46,5 +46,18 @@
       ]
     },
     "updated": "2026-10-27"
+  },
+  {
+    "topic": "Nokia ने Android को ना कहा",
+    "episodeId": "2026-10-27-nokia-android-v2",
+    "keywords": [
+      "nokia",
+      "android",
+      "symbian",
+      "microsoft"
+    ],
+    "status": "in-progress",
+    "date": "2026-10-27",
+    "retryOf": "2026-10-27-nokia-android"
   }
 ]
