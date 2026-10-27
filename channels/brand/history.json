@@ -129,7 +129,30 @@
       "1975",
       "sasson"
     ],
-    "status": "in-progress",
-    "date": "2026-10-27"
+    "status": "rendered",
+    "date": "2026-10-27",
+    "signature": {
+      "look": "vox",
+      "captionStyle": "pop",
+      "transition": "zoom",
+      "accent": "#F26A1B",
+      "hookType": "contradiction",
+      "music": "quiet-motion.mp3",
+      "scenes": [
+        "vox",
+        "vox",
+        "typewriter",
+        "counter",
+        "vox",
+        "counter",
+        "typewriter"
+      ],
+      "motions": [
+        "push",
+        "pull",
+        "push"
+      ]
+    },
+    "updated": "2026-10-27"
   }
 ]

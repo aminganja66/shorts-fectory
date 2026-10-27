@@ -80,6 +80,7 @@ Use the installed `humanizer` skill (English) plus these rules:
 ## Motion grammar (frame-wise animation — 30 fps, frame 0 = start of the scene)
 - Every scene already has a soft entrance (frames 0–8, gentle push + light blur, barely any flash). Don't add another.
 - `beats`: `{"at": 24, "do": "punch"}` · `do` = `zoom-through` (dive into the image, motion-blurred; use `"at": -12` = last 12 frames to dive into the next scene) · `punch` (quick 12% push on a key word) · `shake` (impact, 8–10 frames) · `flash` (white hit) · `whip-out` (fast exit left) · `blur-in`.
+- `sfxAt` (line field, seconds after scene start, default 0): delays the `sfx` so it lands on the key word (= word.start − line.start), e.g. the hit on "bankruptcy".
 - Put beats ON the word that matters: find the word's time in `timing.json` (after the voice exists) → frame = (word.start − scene.start) × 30. Before the voice exists, estimate 0.38 s per word.
 - `fx`: `smoke` (rising haze — failures, mystery, endings), `embers` (destruction, bankruptcy, fights), `dust` (old times, history), `lightleak` (success, money, nostalgia), `glitch` (internet, tech, digital).
 - Max 2 beats + 1–2 fx per scene (comfort: 1 is better). `flash`/`shake` at most ONCE per Short on the biggest reveal. Calm scenes make loud scenes hit harder.

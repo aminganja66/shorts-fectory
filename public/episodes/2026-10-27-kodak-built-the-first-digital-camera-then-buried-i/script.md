@@ -4,58 +4,58 @@ Channel: brand · Language: en · Episode: 2026-10-27-kodak-built-the-first-digi
 
 ## Scene-wise script
 
-### Scene 1 — vox
+### Scene 1 — vox (0.0–3.3s)
 - **Voice:** Kodak built the first digital camera. What did it do with it?
 - **Visual:** Locked paper grid. MID: pencil sketch of the first digital camera prototype (boxy, lens, cassette) with orange marker outline. FG: stack of yellow film-style boxes anchoring the bottom. Headline top, black uppercase, from frame 0.
 - **On-screen text:** KODAK BUILT IT. THEN WHAT?
 - **Motion:** f0 headline visible; prototype pops in with marker stroke f0-10; boxes slide up from bottom f14; slow push. Punch on 'invented' (~f30).
-- **Frame beats:** f30 punch
+- **Frame beats:** f35 punch
 - **SFX:** whoosh.mp3
 - **Assets:** sasson-prototype.png (CC BY-SA 4.0), a1-boxes.png (AI-generated (ChatGPT) — owned by user per OpenAI terms)
 
-### Scene 2 — vox
+### Scene 2 — vox (4.4–10.4s)
 - **Voice:** Engineer Steven Sasson made it in 1975. Reportedly, Kodak kept it inside the company.
 - **Visual:** Halftone B&W newsprint portrait of Kodak engineer Steven Sasson (real licensed photo, CC BY 3.0 Aljawad) with orange marker outline. Headline above.
 - **On-screen text:** 1975 | KEPT INSIDE (reportedly)
 - **Motion:** Portrait slides in from the bottom with stroke; slow pull. Punch on 'twenty-three seconds' (~f140).
-- **Frame beats:** f140 punch
+- **Frame beats:** f27 punch
 - **Effects:** dust
 - **Assets:** sasson.png (CC BY 3.0)
 
-### Scene 3 — typewriter
+### Scene 3 — typewriter (11.5–15.6s)
 - **Voice:** One photo took 23 seconds, and bosses reportedly saw no market.
 - **Visual:** Typed black mono quote on paper; small sub-line 'Reportedly' (reported, not a verified quote). A closed grey filing cabinet rises from the bottom.
 - **On-screen text:** 23 SECONDS PER PHOTO. No market, reportedly
 - **Motion:** Text types out f0-50 with block cursor; cabinet rises f0-24 and sits behind the lower text. Calm scene, no beats.
 - **Assets:** 
 
-### Scene 4 — counter
+### Scene 4 — counter (16.7–21.7s)
 - **Voice:** At its 1988 peak, Kodak had about 145,000 employees.
 - **Visual:** Kodak 1987-2006 logo shown as-is (public-domain text logo, identification) dropping in at the top; big number counting up beneath.
 - **On-screen text:** 145,000 / EMPLOYEES AT ITS 1988 PEAK
 - **Motion:** Logo drops from top f2 with slight tilt; counter runs 0 to 145,000 across the line; settles on the number.
 - **Assets:** 
 
-### Scene 5 — vox
+### Scene 5 — vox (22.7–29.3s)
 - **Voice:** It sold digital cameras from 1996. Still, it filed for bankruptcy in January 2012.
 - **Visual:** Flat editorial neoclassical courthouse (generic, no text) with marker outline, headline above.
 - **On-screen text:** CHAPTER 11 / JAN 2012
 - **Motion:** Courthouse rises in with stroke; slow push in; punch on 'bankruptcy' (~f175). Smoke haze for the fall.
-- **Frame beats:** f175 punch
+- **Frame beats:** f133 punch
 - **Effects:** smoke
 - **SFX:** hit.mp3
 - **Assets:** a5-courthouse.png (AI-generated (ChatGPT) — owned by user per OpenAI terms)
 
-### Scene 6 — counter
+### Scene 6 — counter (30.5–36.4s)
 - **Voice:** Three months later, Facebook agreed to buy Instagram, about a dozen employees, for $1 billion.
 - **Visual:** Generic black smartphone (rear, camera lens, no brand) at top; big '$1 BILLION' counter below. No Instagram logo.
 - **On-screen text:** $1 BILLION / INSTAGRAM · ~12 EMPLOYEES
 - **Motion:** Phone drops in; counter climbs to $1; THE one flash of the Short on the reveal 'one billion dollars' (~f110).
-- **Frame beats:** f110 flash
+- **Frame beats:** f160 flash
 - **SFX:** whoosh.mp3
 - **Assets:** 
 
-### Scene 7 — typewriter
+### Scene 7 — typewriter (37.5–40.3s)
 - **Voice:** Was Kodak's mistake missing digital, or hiding it?
 - **Visual:** Closing typed question on paper, no props; loops back to the hook.
 - **On-screen text:** MISSED DIGITAL? / OR HID IT?

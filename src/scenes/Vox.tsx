@@ -155,7 +155,7 @@ export const Typewriter: React.FC<{s: TypewriterScene; dur: number}> = ({s, dur}
   const {accent} = useEpisode();
   const lines = s.text.split('|');
   const total = lines.join('').length;
-  const typed = Math.floor(interpolate(frame, [6, Math.max(20, dur * 0.62)], [0, total], CLAMP));
+  const typed = Math.floor(interpolate(frame, [6, Math.max(20, dur * 0.68)], [0, total], CLAMP));
   let left = typed;
   const shown = lines.map((l) => {
     const n = Math.max(0, Math.min(l.length, left));

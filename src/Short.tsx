@@ -75,7 +75,7 @@ const ProgressBar: React.FC<{color: string}> = ({color}) => {
   return <div style={{position: 'absolute', left: 0, bottom: 0, height: 16, width: `${(frame / Math.max(1, durationInFrames - 1)) * 100}%`, background: color}} />;
 };
 
-export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing}) => {
+export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing, thumb}) => {
   const {durationInFrames} = useVideoConfig();
   if (!storyboard) return <AbsoluteFill style={{background: '#000'}} />;
   const tm = timing ?? estimateTiming(storyboard);
@@ -96,7 +96,11 @@ export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing}) => 
                     {renderScene(l.scene, dur)}
                     <FxLayer fx={l.fx} />
                   </BeatCamera>
-                  {l.sfx && <Audio src={staticFile(`sfx/${l.sfx}`)} volume={0.5} />}
+                  {l.sfx && (
+                    <Sequence from={Math.round((l.sfxAt ?? 0) * FPS)}>
+                      <Audio src={staticFile(`sfx/${l.sfx}`)} volume={0.5} />
+                    </Sequence>
+                  )}
                 </Sequence>
               );
             })}
@@ -104,7 +108,7 @@ export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing}) => 
         </GateWeave>
         <FilmOverlay look={storyboard.theme?.look} />
         {(storyboard.theme?.progressBar ?? storyboard.theme?.look === 'vox') && <ProgressBar color={accent} />}
-        <Captions words={tm.words} style={storyboard.theme?.captionStyle} />
+        {!thumb && <Captions words={tm.words} style={storyboard.theme?.captionStyle} />}
         {timing && storyboard.voice?.file && <Audio src={staticFile(`episodes/${episodeId}/${storyboard.voice.file}`)} />}
         {storyboard.music?.file && <Music file={storyboard.music.file} volume={storyboard.music.volume ?? 0.16} timing={tm} total={durationInFrames} />}
       </AbsoluteFill>

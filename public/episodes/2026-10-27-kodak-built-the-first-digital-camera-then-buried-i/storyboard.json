@@ -85,7 +85,7 @@
       "motionNotes": "f0 headline visible; prototype pops in with marker stroke f0-10; boxes slide up from bottom f14; slow push. Punch on 'invented' (~f30).",
       "beats": [
         {
-          "at": 30,
+          "at": 35,
           "do": "punch"
         }
       ],
@@ -109,7 +109,7 @@
       "motionNotes": "Portrait slides in from the bottom with stroke; slow pull. Punch on 'twenty-three seconds' (~f140).",
       "beats": [
         {
-          "at": 140,
+          "at": 27,
           "do": "punch"
         }
       ],
@@ -168,14 +168,15 @@
       "motionNotes": "Courthouse rises in with stroke; slow push in; punch on 'bankruptcy' (~f175). Smoke haze for the fall.",
       "beats": [
         {
-          "at": 175,
+          "at": 133,
           "do": "punch"
         }
       ],
       "fx": [
         "smoke"
       ],
-      "sfx": "hit.mp3"
+      "sfx": "hit.mp3",
+      "sfxAt": 4.45
     },
     {
       "text": "Three months later, Facebook agreed to buy Instagram, about a dozen employees, for $1 billion.",
@@ -196,19 +197,21 @@
       "motionNotes": "Phone drops in; counter climbs to $1; THE one flash of the Short on the reveal 'one billion dollars' (~f110).",
       "beats": [
         {
-          "at": 110,
+          "at": 160,
           "do": "flash"
         }
       ],
       "fx": [],
-      "sfx": "whoosh.mp3"
+      "sfx": "whoosh.mp3",
+      "sfxAt": 5.33
     },
     {
       "text": "Was Kodak's mistake missing digital, or hiding it?",
       "id": 7,
       "scene": {
         "type": "typewriter",
-        "text": "MISSED DIGITAL?|OR HID IT?"
+        "text": "MISSED DIGITAL?|OR HID IT?",
+        "prop": "assets/sasson-prototype.png"
       },
       "visual": "Closing typed question on paper, no props; loops back to the hook.",
       "onScreen": "MISSED DIGITAL? / OR HID IT?",
@@ -263,7 +266,8 @@
     "volume": 0.16
   },
   "voice": {
-    "file": "voice.mp3"
+    "file": "voice.mp3",
+    "source": "elevenlabs-web"
   },
   "upload": {
     "title": "Kodak Built the First Digital Camera. Then What?",

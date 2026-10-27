@@ -78,7 +78,8 @@ export type Line = {
   text: string; // narration (what the voice says, shown as captions)
   voice?: string; // optional pronunciation version for ElevenLabs
   scene: Scene;
-  sfx?: string; // file in public/sfx, played at scene start
+  sfx?: string; // file in public/sfx, played at scene start (+ sfxAt)
+  sfxAt?: number; // seconds after scene start when the sfx plays (default 0)
   fx?: Fx[]; // atmosphere layers
   beats?: Beat[]; // frame-wise camera moments
   // Scene script (documentation shown in the plan file)
@@ -118,6 +119,7 @@ export type Timing = {words: Word[]; lines: {id: number; start: number; end: num
 
 export type ShortProps = {
   episodeId: string;
+  thumb?: boolean; // render for the thumbnail: no captions
   storyboard?: Storyboard;
   timing?: Timing;
 };

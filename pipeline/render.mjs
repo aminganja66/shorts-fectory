@@ -31,8 +31,8 @@ if (!draft) {
 }
 
 // Thumbnail = first frame after the hook text has landed
-const thumbFrame = sb.thumbnailFrame ?? 20;
-execFileSync(bin, ['still', 'src/index.ts', 'Short', path.join(out, 'thumbnail.jpg'), `--props=${props}`, `--frame=${thumbFrame}`, '--image-format=jpeg'], {
+const thumbFrame = sb.thumbnailFrame ?? 30; // entrance finished, headline settled
+execFileSync(bin, ['still', 'src/index.ts', 'Short', path.join(out, 'thumbnail.jpg'), `--props=${JSON.stringify({episodeId: id, thumb: true})}`, `--frame=${thumbFrame}`, '--image-format=jpeg'], {
   cwd: ROOT,
   stdio: 'ignore',
 });
@@ -48,7 +48,7 @@ execFileSync(bin, ['still', 'src/index.ts', 'Short', path.join(out, 'thumbnail.j
 // upload.txt with credits for every asset + music
 const credits = readJSON(path.join(dir, 'credits.json'), {});
 const music = readJSON(path.join(ROOT, 'public/music/library.json'), []).find((m) => m.file === sb.music?.file);
-const lines = Object.values(credits).map((c) => `• ${c.author} — ${c.license} (${c.provider}) ${c.page}`);
+const lines = Object.entries(credits).map(([file, c]) => `• ${c.author} — ${c.license} (${c.provider}) ${c.page}${/logo/i.test(file) ? ' — trademark of its owner, shown for identification only' : ''}`);
 if (music) lines.push(`• Music: ${music.title ?? music.file} — ${music.author ?? ''} ${music.license ?? ''} ${music.url ?? ''}`.trim());
 const up = sb.upload ?? {};
 const ai = Object.values(credits).some((c) => c.aiGenerated);
