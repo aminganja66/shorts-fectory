@@ -1,0 +1,32 @@
+{
+  "id": "2026-10-27-nokia-android",
+  "channel": "brand",
+  "language": "hi",
+  "topic": "Nokia ने Android को ना कहा",
+  "title": "",
+  "theme": {
+    "accent": "#E50914",
+    "grade": "warm"
+  },
+  "facts": [],
+  "lines": [],
+  "assets": [],
+  "music": {
+    "file": "",
+    "volume": 0.16
+  },
+  "voice": {
+    "file": "voice.mp3"
+  },
+  "upload": {
+    "title": "",
+    "description": "",
+    "hashtags": [
+      "#shorts",
+      "#businessstory",
+      "#हिंदी",
+      "#startup",
+      "#brandstory"
+    ]
+  }
+}
