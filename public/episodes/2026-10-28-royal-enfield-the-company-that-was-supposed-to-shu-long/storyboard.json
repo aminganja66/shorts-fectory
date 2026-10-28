@@ -1,0 +1,69 @@
+{
+  "id": "2026-10-28-royal-enfield-the-company-that-was-supposed-to-shu-long",
+  "channel": "brand",
+  "language": "en",
+  "topic": "Royal Enfield: the company that was supposed to shut down, and came back",
+  "title": "",
+  "format": "long",
+  "chapters": [
+    {
+      "id": "c0",
+      "kind": "open",
+      "title": "Cold open"
+    },
+    {
+      "id": "c1",
+      "kind": "idea",
+      "title": "The idea"
+    },
+    {
+      "id": "c2",
+      "kind": "rise",
+      "title": "The rise"
+    },
+    {
+      "id": "c3",
+      "kind": "downfall",
+      "title": "The downfall"
+    },
+    {
+      "id": "c4",
+      "kind": "recovery",
+      "title": "The comeback"
+    },
+    {
+      "id": "c5",
+      "kind": "today",
+      "title": "Today"
+    }
+  ],
+  "theme": {
+    "accent": "#F26A1B",
+    "look": "vox",
+    "captionStyle": "highlight",
+    "transition": "zoom",
+    "progressBar": true
+  },
+  "facts": [],
+  "lines": [],
+  "assets": [],
+  "music": {
+    "file": "",
+    "volume": 0.16
+  },
+  "voice": {
+    "file": "voice.mp3"
+  },
+  "upload": {
+    "title": "",
+    "description": "",
+    "hashtags": [
+      "#business",
+      "#documentary",
+      "#brandstory",
+      "#casestudy",
+      "#businessstory"
+    ],
+    "chapters": ""
+  }
+}
