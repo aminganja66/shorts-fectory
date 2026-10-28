@@ -22,11 +22,14 @@
     }
   ],
   "theme": {
-    "accent": "#F26A1B",
+    "accent": "#FF7A00",
     "look": "vox",
-    "captionStyle": "pop",
-    "transition": "zoom",
-    "progressBar": true
+    "captionStyle": "paper",
+    "transition": "slide",
+    "progressBar": true,
+    "backdrop": "sunrise",
+    "motion": "punchy",
+    "direction": "comeback"
   },
   "facts": [
     {
@@ -104,57 +107,346 @@
     {
       "id": 1,
       "text": "Airbnb was nearly dead in 2008. What kept it alive?",
-      "voice": "Airbnb was nearly dead in two thousand eight. What kept it alive?"
+      "voice": "Airbnb was nearly dead in two thousand eight. What kept it alive?",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a1-monitor.png",
+        "mid2": "assets/logo-airbnb.png",
+        "mid2Halftone": false,
+        "headline": "WHAT KEPT|AIRBNB ALIVE?",
+        "sub": "2008",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push"
+      },
+      "visual": "BG: locked paper backdrop. MID: flat editorial hospital heart-rate monitor on a stand, screen showing a weak, almost flat green line (no text), orange marker outline. MID2: Airbnb Bélo logo as-is (identification, real colours) beside it like a patient tag. Headline top from frame 0.",
+      "onScreen": "WHAT KEPT AIRBNB ALIVE? / 2008",
+      "motionNotes": "Hard cut, f0 headline already on screen with the \"?\". Monitor + logo visible from f0, slow push all scene. Punch at f70 on \"What kept it alive\".",
+      "beats": [
+        {
+          "at": 70,
+          "do": "punch"
+        }
+      ],
+      "fx": [],
+      "sfx": "whoosh.mp3",
+      "sfxAt": 0
     },
     {
       "id": 2,
       "text": "Breakfast cereal. About $40 a box.",
-      "voice": "Breakfast cereal. About forty dollars a box."
+      "voice": "Breakfast cereal. About forty dollars a box.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 40,
+        "prefix": "$",
+        "decimals": 0,
+        "label": "A BOX OF CEREAL",
+        "icon": "assets/a2-cereal-box.png"
+      },
+      "visual": "BG: paper. TOP: one generic text-free cereal box cut-out drops in. CENTER: big \"$40\" counter. LABEL: A BOX OF CEREAL.",
+      "onScreen": "$40 / A BOX OF CEREAL",
+      "motionNotes": "Box drops in f0-10 with a little bounce; THE one flash of the Short at f12 on \"cereal\"; counter runs 0 to $40 and settles on \"a box\".",
+      "beats": [
+        {
+          "at": 12,
+          "do": "flash"
+        }
+      ],
+      "fx": [],
+      "sfx": "hit.mp3",
+      "sfxAt": 0.4
     },
     {
       "id": 3,
       "text": "In 2007, Brian Chesky and Joe Gebbia couldn't make rent.",
-      "voice": "In two thousand seven, Brian Chesky and Joe Gebbia couldn't make rent."
+      "voice": "In two thousand seven, Brian Chesky and Joe Gebbia couldn't make rent.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/chesky.png",
+        "mid2": "assets/gebbia.png",
+        "fg": "assets/a3-rowhouses.png",
+        "headline": "2007:|RENT WAS DUE",
+        "halftone": true,
+        "stroke": true,
+        "motion": "pull"
+      },
+      "visual": "BG: paper. MID: halftone newsprint cut-outs of Brian Chesky (left, CC BY 2.0 TechCrunch) and Joe Gebbia (right, CC BY 2.0 Financial Times) with orange marker outline. FG: flat illustration strip of generic San Francisco Victorian row houses anchoring the bottom. Headline above.",
+      "onScreen": "2007: RENT WAS DUE",
+      "motionNotes": "Founders rise in f0-10 (Gebbia 5 frames later); row houses slide up f12; slow pull. Punch at f80 on \"couldn't make rent\".",
+      "beats": [
+        {
+          "at": 80,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "dust"
+      ]
     },
     {
       "id": 4,
       "text": "So they rented air mattresses on their floor. Three guests came.",
-      "voice": "So they rented air mattresses on their floor. Three guests came."
+      "voice": "So they rented air mattresses on their floor. Three guests came.",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s4-apartment.jpg",
+        "headline": "AIR BEDS",
+        "motion": "pan-right"
+      },
+      "look": "film",
+      "visual": "FULL-BLEED FILM SCENE (the one emotional/establishing peak, no numbers): photoreal AI image of a small 2007 San Francisco apartment living room at dusk, three inflated air mattresses with folded sheets on a wooden floor, warm lamp light, bay window. Short headline only.",
+      "onScreen": "AIR BEDS",
+      "motionNotes": "Soft entrance, slow pan right across the mattresses; documentary grade + grain (film look). Punch at f91 on \"Three guests came\". Warm light leak.",
+      "beats": [
+        {
+          "at": 91,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ]
     },
     {
       "id": 5,
       "text": "Chesky says he owed $25,000 on credit cards.",
-      "voice": "Chesky says he owed twenty-five thousand dollars on credit cards."
+      "voice": "Chesky says he owed twenty-five thousand dollars on credit cards.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a5-card-bill.png",
+        "headline": "$25,000|ON CREDIT CARDS",
+        "sub": "Chesky says",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-left"
+      },
+      "visual": "BG: paper. MID: flat editorial credit card statement with a blank credit card on top and a red stamp shape without words, no bank logos, orange marker outline. Headline above, small sub \"Chesky says\".",
+      "onScreen": "$25,000 ON CREDIT CARDS / Chesky says",
+      "motionNotes": "Bill slides in with stroke f0-10; slow pan left. Punch at f45 on \"twenty-five thousand dollars\".",
+      "beats": [
+        {
+          "at": 45,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
       "id": 6,
       "text": "Then the 2008 election gave them a weird idea.",
-      "voice": "Then the two thousand eight election gave them a weird idea."
+      "voice": "Then the two thousand eight election gave them a weird idea.",
+      "scene": {
+        "type": "typewriter",
+        "text": "AIRBED & BREAKFAST|+ THE 2008 ELECTION",
+        "sub": "a weird idea",
+        "prop": "assets/a6-ballot.png"
+      },
+      "visual": "BG: paper. Typed mono text: the company's 2008 name \"AirBed & Breakfast\" + the election. PROP: generic ballot box with red-white-blue bunting (no text, no faces) rises from the bottom.",
+      "onScreen": "AIRBED & BREAKFAST + THE 2008 ELECTION / a weird idea",
+      "motionNotes": "Text types f0-50 with block cursor; ballot box rises f0-24 behind the lower text. Calm breather scene, no beats.",
+      "beats": [],
+      "fx": []
     },
     {
       "id": 7,
       "text": "They made 500 boxes of Obama O's and 500 of Cap'n McCain's.",
-      "voice": "They made five hundred boxes of Obama Ohs and five hundred of Captain McCain's."
+      "voice": "They made five hundred boxes of Obama Ohs and five hundred of Captain McCain's.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a7-box-blue.png",
+        "mid2": "assets/a7-box-red.png",
+        "headline": "OBAMA O'S|CAP'N McCAIN'S",
+        "sub": "500 boxes of each",
+        "halftone": false,
+        "stroke": true,
+        "motion": "drift"
+      },
+      "visual": "BG: paper. MID + MID2: two generic text-free cereal boxes side by side (one blue, one red), flat editorial style, no faces, no candidate likeness, orange marker outline. Names only as headline type.",
+      "onScreen": "OBAMA O'S / CAP'N McCAIN'S / 500 boxes of each",
+      "motionNotes": "Blue box pops in f0, red box f6; gentle drift. Punch at f103 on \"Cap'n McCain's\".",
+      "beats": [
+        {
+          "at": 103,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
       "id": 8,
       "text": "Obama O's sold out. Chesky says it raised about $30,000.",
-      "voice": "Obama Ohs sold out. Chesky says it raised about thirty thousand dollars."
+      "voice": "Obama Ohs sold out. Chesky says it raised about thirty thousand dollars.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 30000,
+        "prefix": "$",
+        "decimals": 0,
+        "label": "RAISED, CHESKY SAYS",
+        "icon": "assets/a8-cash.png"
+      },
+      "visual": "BG: paper. TOP: flat illustration of a small stack of cash (no text). CENTER: counter climbing to $30,000. LABEL: RAISED, CHESKY SAYS.",
+      "onScreen": "$30,000 / RAISED, CHESKY SAYS",
+      "motionNotes": "Cash stack drops in; counter climbs across the line and lands on \"thirty thousand dollars\"; punch at f91 as it settles. Warm light leak for money.",
+      "beats": [
+        {
+          "at": 91,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ],
+      "sfx": "whoosh.mp3",
+      "sfxAt": 2.9
     },
     {
       "id": 9,
       "text": "He says it also won over Paul Graham. Y Combinator put in $20,000.",
-      "voice": "He says it also won over Paul Graham. Y Combinator put in twenty thousand dollars."
+      "voice": "He says it also won over Paul Graham. Y Combinator put in twenty thousand dollars.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a9-contract.png",
+        "headline": "Y COMBINATOR|PUT IN $20,000",
+        "sub": "for a 6% stake",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push"
+      },
+      "visual": "BG: paper. MID: flat editorial signed contract with a fountain pen (generic, no readable text, no faces), orange marker outline. Headline above.",
+      "onScreen": "Y COMBINATOR PUT IN $20,000 / for a 6% stake",
+      "motionNotes": "Contract slides up with stroke f0-10; slow push. Punch at f137 on \"twenty thousand dollars\".",
+      "beats": [
+        {
+          "at": 137,
+          "do": "punch"
+        }
+      ],
+      "fx": []
     },
     {
       "id": 10,
       "text": "In 2025, Airbnb brought in $12.2 billion. Would you have bought that cereal?",
-      "voice": "In twenty twenty-five, Airbnb brought in twelve point two billion dollars. Would you have bought that cereal?"
+      "voice": "In twenty twenty-five, Airbnb brought in twelve point two billion dollars. Would you have bought that cereal?",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 12.2,
+        "prefix": "$",
+        "suffix": " BILLION",
+        "decimals": 1,
+        "label": "AIRBNB REVENUE IN 2025",
+        "icon": "assets/a10-bowl.png"
+      },
+      "visual": "BG: paper. TOP: flat illustration of a cereal bowl with a spoon (loops back to the cereal). CENTER: counter to $12.2 BILLION. LABEL: AIRBNB REVENUE IN 2025. Closing question stays in the captions.",
+      "onScreen": "$12.2 BILLION / AIRBNB REVENUE IN 2025",
+      "motionNotes": "Bowl drops in; counter climbs to 12.2 by f70 (\"twelve point two billion dollars\"); holds calm while the closing question plays. No flash.",
+      "beats": [],
+      "fx": []
     }
   ],
-  "assets": [],
+  "assets": [
+    {
+      "file": "assets/logo-airbnb.png",
+      "query": "Airbnb Logo Bélo.svg",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/chesky.png",
+      "query": "Brian Chesky TechCrunch",
+      "kind": "person",
+      "cutout": true,
+      "note": "After fetch, cropped chest-up (crop=1920:1420:0:250) to remove the stage chair; re-crop if re-fetched"
+    },
+    {
+      "file": "assets/gebbia.png",
+      "query": "Joe Gebbia, 2012 (cropped)",
+      "kind": "person",
+      "cutout": true
+    },
+    {
+      "file": "assets/a1-monitor.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat editorial illustration of a hospital heart-rate monitor on a rolling stand, the screen shows a weak, almost flat green line, clean vector style, warm soft shadow, plain white background, no text, no numbers, no logos"
+    },
+    {
+      "file": "assets/a2-cereal-box.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat editorial illustration of one generic breakfast cereal box, three-quarter view, orange and cream colours with a simple bowl-and-flakes graphic, clean vector style, warm soft shadow, plain white background, no text, no letters, no logos, no faces"
+    },
+    {
+      "file": "assets/a3-rowhouses.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat editorial illustration of a row of generic San Francisco Victorian row houses seen front-on, wide horizontal strip, pastel colours, clean vector style, plain white background, no text, no logos"
+    },
+    {
+      "file": "assets/s4-apartment.jpg",
+      "orientation": "portrait",
+      "generate": "Small San Francisco apartment living room in 2007 at dusk, three inflated air mattresses with folded white sheets and pillows on a wooden floor, a bay window with city light, warm table lamp, lived-in and modest, no people",
+      "manual": true,
+      "note": "ChatGPT tab: Small San Francisco apartment living room in 2007 at dusk, three inflated air mattresses with folded white sheets and pillows on a wooden floor, a bay window with city light, warm table lamp, lived-in and modest, no people",
+      "license": "AI-generated (ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a5-card-bill.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat editorial illustration of a paper credit card statement with a plain blank credit card lying on top and a red circular stamp shape, clean vector style, warm soft shadow, plain white background, no text, no numbers, no logos"
+    },
+    {
+      "file": "assets/a6-ballot.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat editorial illustration of a generic wooden ballot box with a slot and red, white and blue bunting draped over it, clean vector style, warm soft shadow, plain white background, no text, no logos, no faces"
+    },
+    {
+      "file": "assets/a7-box-blue.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat editorial illustration of one generic breakfast cereal box, front view, deep blue box with a simple white star and ring-shaped cereal pieces graphic, clean vector style, plain white background, no text, no letters, no logos, no faces, no people"
+    },
+    {
+      "file": "assets/a7-box-red.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat editorial illustration of one generic breakfast cereal box, front view, bright red box with a simple white star and puffed cereal pieces graphic, clean vector style, plain white background, no text, no letters, no logos, no faces, no people"
+    },
+    {
+      "file": "assets/a8-cash.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat isometric illustration of a small stack of green banknotes with a paper band, marigold and warm black accents, bold outline, plain white background, no text, no numbers"
+    },
+    {
+      "file": "assets/a9-contract.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat editorial illustration of a signed paper contract with a black fountain pen lying on it, clean vector style, warm soft shadow, plain white background, no readable text, no logos, no faces"
+    },
+    {
+      "file": "assets/a10-bowl.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "manual": true,
+      "note": "ChatGPT tab (vox recipe): Flat editorial illustration of a white cereal bowl full of ring-shaped cereal with milk and a spoon, clean vector style, warm soft shadow, plain white background, no text, no logos"
+    }
+  ],
   "music": {
-    "file": "",
+    "file": "scrappy-bright-idea.mp3",
     "volume": 0.16
   },
   "voice": {
@@ -170,5 +462,7 @@
       "#businessstory",
       "#brandstory"
     ]
-  }
+  },
+  "imageStyle": "Photorealistic, warm documentary lighting, 35mm film grain, natural colours, no text, no logos, no watermark",
+  "directionReason": "comeback: growth, revival, record numbers, hope"
 }

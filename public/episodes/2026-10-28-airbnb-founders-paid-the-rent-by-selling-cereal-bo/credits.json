@@ -1,0 +1,135 @@
+{
+  "assets/logo-airbnb.png": {
+    "query": "Airbnb Logo Bélo.svg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1280px-Airbnb_Logo_B%C3%A9lo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1280px-Airbnb_Logo_B%C3%A9lo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Airbnb_Logo_B%C3%A9lo.svg",
+    "author": "DesignStudio",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 512,
+    "h": 160
+  },
+  "assets/chesky.png": {
+    "query": "Brian Chesky TechCrunch",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Brian_Chesky_TechCrunch.jpg/1920px-Brian_Chesky_TechCrunch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Brian_Chesky_TechCrunch.jpg/1920px-Brian_Chesky_TechCrunch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Brian_Chesky_TechCrunch.jpg",
+    "author": "TechCrunch",
+    "license": "CC BY 2.0",
+    "provider": "wikimedia",
+    "w": 2832,
+    "h": 4256
+  },
+  "assets/gebbia.png": {
+    "query": "Joe Gebbia, 2012 (cropped)",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Joe_Gebbia%2C_2012_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Joe_Gebbia%2C_2012_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Joe_Gebbia,_2012_(cropped).jpg",
+    "author": "Financial Times",
+    "license": "CC BY 2.0",
+    "provider": "wikimedia",
+    "w": 892,
+    "h": 1261
+  },
+  "assets/a1-monitor.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a1-monitor.png"
+  },
+  "assets/a2-cereal-box.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a2-cereal-box.png"
+  },
+  "assets/a7-box-blue.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a7-box-blue.png"
+  },
+  "assets/a7-box-red.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a7-box-red.png"
+  },
+  "assets/a10-bowl.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a10-bowl.png"
+  },
+  "assets/s4-apartment.jpg": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Cozy Dusk Living Room with Air Mattresses.png"
+  },
+  "assets/a5-card-bill.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a5-card-bill.png"
+  },
+  "assets/a8-cash.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a8-cash.png"
+  },
+  "assets/a6-ballot.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a6-ballot.png"
+  },
+  "assets/a9-contract.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a9-contract.png"
+  },
+  "assets/a3-rowhouses.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "airbnb-a3-rowhouses.png"
+  }
+}
