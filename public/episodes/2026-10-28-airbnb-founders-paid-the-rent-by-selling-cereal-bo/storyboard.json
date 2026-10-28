@@ -117,11 +117,26 @@
         "sub": "2008",
         "halftone": false,
         "stroke": true,
-        "motion": "push"
+        "motion": "push",
+        "instant": true,
+        "boxes": {
+          "mid": {
+            "left": "8%",
+            "width": "84%",
+            "top": "29%",
+            "height": "34%"
+          },
+          "mid2": {
+            "left": "14%",
+            "width": "72%",
+            "top": "74%",
+            "height": "14%"
+          }
+        }
       },
       "visual": "BG: locked paper backdrop. MID: flat editorial hospital heart-rate monitor on a stand, screen showing a weak, almost flat green line (no text), orange marker outline. MID2: Airbnb Bélo logo as-is (identification, real colours) beside it like a patient tag. Headline top from frame 0.",
       "onScreen": "WHAT KEPT AIRBNB ALIVE? / 2008",
-      "motionNotes": "Hard cut, f0 headline already on screen with the \"?\". Monitor + logo visible from f0, slow push all scene. Punch at f70 on \"What kept it alive\".",
+      "motionNotes": "Hard cut, f0 headline already on screen with the \"?\". Monitor + logo visible from f0, slow push all scene. Punch at f70 on \"What kept it alive\". Layout fix: instant=true so monitor + headline are already landed on frame 0; monitor sits above the captions band, Airbnb logo anchored below it (y ~1420-1690).",
       "beats": [
         {
           "at": 70,
@@ -170,11 +185,25 @@
         "headline": "2007:|RENT WAS DUE",
         "halftone": true,
         "stroke": true,
-        "motion": "pull"
+        "motion": "pull",
+        "boxes": {
+          "mid": {
+            "left": "0%",
+            "width": "50%",
+            "top": "30%",
+            "height": "34%"
+          },
+          "mid2": {
+            "left": "46%",
+            "width": "54%",
+            "top": "27%",
+            "height": "46%"
+          }
+        }
       },
       "visual": "BG: paper. MID: halftone newsprint cut-outs of Brian Chesky (left, CC BY 2.0 TechCrunch) and Joe Gebbia (right, CC BY 2.0 Financial Times) with orange marker outline. FG: flat illustration strip of generic San Francisco Victorian row houses anchoring the bottom. Headline above.",
       "onScreen": "2007: RENT WAS DUE",
-      "motionNotes": "Founders rise in f0-10 (Gebbia 5 frames later); row houses slide up f12; slow pull. Punch at f80 on \"couldn't make rent\".",
+      "motionNotes": "Founders rise in f0-10 (Gebbia 5 frames later); row houses slide up f12; slow pull. Punch at f80 on \"couldn't make rent\". Layout fix: both founders lifted so faces sit above the captions band; enter=zoom (slide faded through dark).",
       "beats": [
         {
           "at": 80,
@@ -183,7 +212,8 @@
       ],
       "fx": [
         "dust"
-      ]
+      ],
+      "enter": "zoom"
     },
     {
       "id": 4,
@@ -220,7 +250,15 @@
         "sub": "Chesky says",
         "halftone": false,
         "stroke": true,
-        "motion": "pan-left"
+        "motion": "pan-left",
+        "boxes": {
+          "mid": {
+            "left": "8%",
+            "width": "84%",
+            "top": "30%",
+            "height": "34%"
+          }
+        }
       },
       "visual": "BG: paper. MID: flat editorial credit card statement with a blank credit card on top and a red stamp shape without words, no bank logos, orange marker outline. Headline above, small sub \"Chesky says\".",
       "onScreen": "$25,000 ON CREDIT CARDS / Chesky says",
@@ -261,18 +299,33 @@
         "sub": "500 boxes of each",
         "halftone": false,
         "stroke": true,
-        "motion": "drift"
+        "motion": "drift",
+        "boxes": {
+          "mid": {
+            "left": "4%",
+            "width": "46%",
+            "top": "30%",
+            "height": "34%"
+          },
+          "mid2": {
+            "left": "50%",
+            "width": "46%",
+            "top": "30%",
+            "height": "34%"
+          }
+        }
       },
       "visual": "BG: paper. MID + MID2: two generic text-free cereal boxes side by side (one blue, one red), flat editorial style, no faces, no candidate likeness, orange marker outline. Names only as headline type.",
       "onScreen": "OBAMA O'S / CAP'N McCAIN'S / 500 boxes of each",
-      "motionNotes": "Blue box pops in f0, red box f6; gentle drift. Punch at f103 on \"Cap'n McCain's\".",
+      "motionNotes": "Blue box pops in f0, red box f6; gentle drift. Punch at f103 on \"Cap'n McCain's\". Layout fix: boxes lifted to end above the captions band; enter=zoom (slide faded through dark).",
       "beats": [
         {
           "at": 103,
           "do": "punch"
         }
       ],
-      "fx": []
+      "fx": [],
+      "enter": "zoom"
     },
     {
       "id": 8,
@@ -313,7 +366,15 @@
         "sub": "for a 6% stake",
         "halftone": false,
         "stroke": true,
-        "motion": "push"
+        "motion": "push",
+        "boxes": {
+          "mid": {
+            "left": "8%",
+            "width": "84%",
+            "top": "30%",
+            "height": "34%"
+          }
+        }
       },
       "visual": "BG: paper. MID: flat editorial signed contract with a fountain pen (generic, no readable text, no faces), orange marker outline. Headline above.",
       "onScreen": "Y COMBINATOR PUT IN $20,000 / for a 6% stake",

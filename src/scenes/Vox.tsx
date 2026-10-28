@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, Easing, spring} from 'remotion';
+import {AbsoluteFill, Sequence, useCurrentFrame, useVideoConfig, interpolate, Easing, spring} from 'remotion';
 import type {VoxScene, TypewriterScene, CounterScene, LineScene, ChapterScene, TimelineScene} from '../types';
 import {Photo, useAsset, useEpisode} from './common';
 import {boil, camera, fadeIn} from '../film/motion';
@@ -176,7 +176,8 @@ export const Vox: React.FC<{s: VoxScene; dur: number}> = ({s, dur}) => {
       </AbsoluteFill>
     );
   }
-  return (
+  const bx = s.boxes ?? {};
+  const body = (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <VoxBg />
       <AbsoluteFill style={{transform: `scale(${zoom})`}}>
@@ -194,15 +195,17 @@ export const Vox: React.FC<{s: VoxScene; dur: number}> = ({s, dur}) => {
             delay={4}
             from={two ? 'left' : 'bottom'}
             rot={two ? -3 : 0}
-            box={two ? {left: '2%', width: '50%', top: s.sub ? '34%' : '30%', height: s.sub ? '48%' : '52%'} : {left: '6%', width: '88%', top: s.sub ? '33%' : '28%', height: s.sub ? '49%' : '54%'}}
+            box={{...(two ? {left: '2%', width: '50%', top: s.sub ? '34%' : '30%', height: s.sub ? '48%' : '52%'} : {left: '6%', width: '88%', top: s.sub ? '33%' : '28%', height: s.sub ? '49%' : '54%'}), ...bx.mid}}
           />
         )}
-        {s.mid2 && !s.card && <Cut src={s.mid2} halftone={s.mid2Halftone ?? s.halftone ?? false} stroke={s.stroke ?? true} delay={10} from="right" rot={3} box={{left: '48%', width: '50%', top: '30%', height: '52%'}} />}
-        {s.fg && <Cut src={s.fg} stroke={s.fgStroke ?? false} delay={14} from="bottom" box={{left: '0%', width: '100%', top: '75%', height: '21%'}} />}
+        {s.mid2 && !s.card && <Cut src={s.mid2} halftone={s.mid2Halftone ?? s.halftone ?? false} stroke={s.stroke ?? true} delay={10} from="right" rot={3} box={{left: '48%', width: '50%', top: '30%', height: '52%', ...bx.mid2}} />}
+        {s.fg && <Cut src={s.fg} stroke={s.fgStroke ?? false} delay={14} from="bottom" box={{left: '0%', width: '100%', top: '75%', height: '21%', ...bx.fg}} />}
       </AbsoluteFill>
       {s.headline && <VoxHeadline text={s.headline} sub={s.sub} />}
     </AbsoluteFill>
   );
+  // instant: shift the scene's clock so every entrance has already landed on frame 0
+  return s.instant ? <Sequence from={-30} layout="none">{body}</Sequence> : body;
 };
 
 // 2) TYPEWRITER: black mono text typed out with a block cursor, optional prop rising from the bottom (e.g. a dollar bill)
@@ -236,7 +239,7 @@ export const Typewriter: React.FC<{s: TypewriterScene; dur: number}> = ({s, dur}
           </div>
         ))}
       </div>
-      {s.sub && <div style={{position: 'absolute', top: wide ? 200 : 520, left: wide ? 150 : 70, fontFamily: headlineFont, fontWeight: 700, fontSize: wide ? 56 : 64, color: accent, opacity: fadeIn(frame, 8, 8)}}>{s.sub}</div>}
+      {s.sub && <div style={{position: 'absolute', top: wide ? 200 : 420, left: wide ? 150 : 70, fontFamily: headlineFont, fontWeight: 700, fontSize: wide ? 56 : 64, color: accent, opacity: fadeIn(frame, 8, 8)}}>{s.sub}</div>}
       {s.prop && (
         <div style={{position: 'absolute', ...(wide ? {right: 90, width: 640, top: 150, height: 640} : {left: 0, right: 0, bottom: 10, height: 520}), transform: `translateY(${prop}px)`, perspective: 1100}}>
           <div style={{width: '100%', height: '100%', transform: 'rotateX(24deg) scale(1)', transformOrigin: 'center bottom', filter: 'drop-shadow(0 30px 30px rgba(0,0,0,0.25))'}}>

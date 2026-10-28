@@ -60,7 +60,10 @@ export type VoxScene = {
   card?: boolean; // mid is a rectangular photo (not a cut-out): show it as a tilted polaroid card; mid2 becomes a sticker on its corner
   fgStroke?: boolean;
   motion?: Motion;
+  boxes?: {mid?: VoxBox; mid2?: VoxBox; fg?: VoxBox}; // portrait only: override where a cut-out sits (e.g. lift faces above the captions band y 1230–1400)
+  instant?: boolean; // cut-outs + headline already landed at frame 0 (use on the hook scene: strongest image from the first frame)
 };
+export type VoxBox = {left?: string; width?: string; top?: string; height?: string};
 export type TypewriterScene = {type: 'typewriter'; text: string; sub?: string; prop?: string};
 export type CounterScene = {type: 'counter'; from?: number; to: number; prefix?: string; suffix?: string; decimals?: number; label?: string; icon?: string};
 export type LineScene = {type: 'line'; title: string; points: number[]; labels?: string[]; previous?: number[]; callout?: string; unit?: string; xs?: number[]}; // xs = real x values (e.g. years) so gaps are spaced honestly
