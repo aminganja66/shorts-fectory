@@ -56,12 +56,14 @@ export type VoxScene = {
   sub?: string; // small line under the headline
   halftone?: boolean; // B&W newsprint-dot portrait look for mid/mid2
   stroke?: boolean; // hand-drawn marker outline in the accent colour (default true)
+  mid2Halftone?: boolean; // override halftone for mid2 (keep logos in their real colours)
+  card?: boolean; // mid is a rectangular photo (not a cut-out): show it as a tilted polaroid card; mid2 becomes a sticker on its corner
   fgStroke?: boolean;
   motion?: Motion;
 };
 export type TypewriterScene = {type: 'typewriter'; text: string; sub?: string; prop?: string};
 export type CounterScene = {type: 'counter'; from?: number; to: number; prefix?: string; suffix?: string; decimals?: number; label?: string; icon?: string};
-export type LineScene = {type: 'line'; title: string; points: number[]; labels?: string[]; previous?: number[]; callout?: string; unit?: string};
+export type LineScene = {type: 'line'; title: string; points: number[]; labels?: string[]; previous?: number[]; callout?: string; unit?: string; xs?: number[]}; // xs = real x values (e.g. years) so gaps are spaced honestly
 
 export type Scene = CollageScene | KineticScene | ChartScene | VersusScene | StackScene | EndScene | VoxScene | TypewriterScene | CounterScene | LineScene;
 

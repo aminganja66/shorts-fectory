@@ -97,40 +97,43 @@
       },
       "visual": "Locked paper grid. MID: flat editorial illustration of a long queue of people (back view, no faces) outside a small Indian mobile phone shop, 2016, red marker outline. FG: a hand holding a blank SIM card rising from the bottom. Headline top from frame 0.",
       "onScreen": "FREE INTERNET. WHO PAID?",
-      "motionNotes": "f0 headline visible; queue pops in with marker stroke f0-10; SIM hand slides up f12; slow push. Punch on \"who paid\" (~f70).",
+      "motionNotes": "f0 headline FREE INTERNET. WHO PAID? already on screen; queue cut-out pops up from the bottom with its red marker outline drawing f4-20; SIM hand slides up f14-30; slow push the whole line. Punch + whoosh on \"paid\" (f85 / 2.83 s, from timing.json).",
       "beats": [
         {
-          "at": 70,
+          "at": 85,
           "do": "punch"
         }
       ],
       "fx": [],
-      "sfx": "whoosh.mp3"
+      "sfx": "whoosh.mp3",
+      "sfxAt": 2.83
     },
     {
       "id": 2,
-      "text": "Not the users. In 2016, Jio made everything free.",
-      "voice": "Not the users. In twenty sixteen, Jio made everything free.",
+      "text": "Not the users. In 2016, Jio made calls and data free.",
       "scene": {
         "type": "vox",
         "mid": "assets/ambani.png",
         "mid2": "assets/logo-jio.png",
-        "headline": "2016:|EVERYTHING FREE",
-        "sub": "Calls, data, SMS",
+        "headline": "2016:|CALLS + DATA FREE",
+        "sub": "Welcome Offer, Sept–Dec 2016",
         "halftone": true,
         "stroke": true,
-        "motion": "pull"
+        "motion": "pull",
+        "card": true,
+        "mid2Halftone": false
       },
-      "visual": "Halftone B&W newsprint portrait of Mukesh Ambani (real licensed Wikimedia photo, CC BY-SA 2.0, World Economic Forum) with red marker outline, the Jio logo (PD text logo, as-is) beside him. Headline above.",
-      "onScreen": "2016: EVERYTHING FREE / Calls, data, SMS",
-      "motionNotes": "Portrait slides up with stroke f0-12, logo drops in f10; slow pull. Punch on \"free\" (~f75).",
+      "visual": "Halftone B&W newsprint portrait of Mukesh Ambani (real licensed Wikimedia photo, CC BY-SA 2.0, World Economic Forum) mounted as a tilted polaroid photo card with a red marker outline (the photo is not a cut-out, so it is framed on purpose); the Jio logo (PD text logo, unaltered colours) stuck on the card corner like a sticker, below the headline.",
+      "onScreen": "2016: CALLS + DATA FREE / Welcome Offer, Sept–Dec 2016",
+      "motionNotes": "f0 headline 2016: CALLS + DATA FREE, sub fades in f14; photo card slides in from the left f4-20 with its marker outline drawing; Jio logo sticker drops in from the right f10-26; slow pull. Punch on \"free\" (f126, from timing.json).",
       "beats": [
         {
-          "at": 75,
+          "at": 126,
           "do": "punch"
         }
       ],
-      "fx": []
+      "fx": [],
+      "voice": "Not the users. In twenty sixteen, Jio made calls and data free."
     },
     {
       "id": 3,
@@ -141,14 +144,14 @@
         "from": 0,
         "to": 1.5,
         "prefix": "₹",
-        "suffix": " LAKH CR",
+        "suffix": " LAKH CRORE",
         "decimals": 1,
         "label": "INVESTED, PER RELIANCE",
         "icon": "assets/a3-tower.png"
       },
       "visual": "Flat editorial cell tower cut-out drops in at the top; big ₹1.5 LAKH CR counter below; label notes it is Reliance's own figure.",
-      "onScreen": "₹1.5 LAKH CR / INVESTED, PER RELIANCE",
-      "motionNotes": "Tower drops in f2; counter climbs 0 to 1.5 across the line; calm, no beats.",
+      "onScreen": "₹1.5 / LAKH CRORE / INVESTED, PER RELIANCE",
+      "motionNotes": "Tower drops in from the top f2-18; ₹ number counts 0.0 to 1.5 f4-80, LAKH CRORE sits on its own line under the number in red; label fades in f12. Calm, no beats.",
       "beats": [],
       "fx": []
     },
@@ -166,10 +169,10 @@
       },
       "visual": "Generic cheap smartphone (no brand) showing a loading bar, drops in at top; 100M counter below.",
       "onScreen": "100M / USERS IN 170 DAYS",
-      "motionNotes": "Phone drops in f2; counter races to 100M; punch when it lands on \"170 days\" (~f75).",
+      "motionNotes": "Phone drops in f2-18; counter races 0 to 100M f4-72; soft light leak; punch on \"170\" (f65, from timing.json).",
       "beats": [
         {
-          "at": 75,
+          "at": 65,
           "do": "punch"
         }
       ],
@@ -183,7 +186,7 @@
       "voice": "A gigabyte cost about two hundred sixty-nine rupees in twenty fourteen. By twenty eighteen, about twelve rupees.",
       "scene": {
         "type": "line",
-        "title": "PRICE OF 1 GB IN INDIA",
+        "title": "PRICE OF 1 GB",
         "points": [
           269,
           75.57,
@@ -197,20 +200,26 @@
           "2018"
         ],
         "callout": "₹269 → ₹12|-95%",
-        "unit": "₹ per GB"
+        "unit": "₹ per GB, India",
+        "xs": [
+          2014,
+          2016,
+          2017,
+          2018
+        ]
       },
       "visual": "Cream chart card: red line drawing itself down from ₹269 (2014) to ₹12 (2018), TRAI averages; callout bubble with -95%.",
-      "onScreen": "PRICE OF 1 GB IN INDIA / ₹269 → ₹12 / -95%",
-      "motionNotes": "Line draws f0-90 following the voice; callout pops when the line bottoms out (~f150) with THE one flash of the Short on \"twelve rupees\".",
+      "onScreen": "PRICE OF 1 GB / ₹269 → ₹12  -95%",
+      "motionNotes": "Chart card scales in f0-10; red line draws 2014 to 2018 f8-176 (x-axis spaced by real years, so the 2015 gap is visible); callout ₹269 → ₹12 / -95% pops at f176 (70% of the 252-frame scene, fully in by f184); THE one flash of the Short + hit sfx on \"₹12\" (f188 / 6.26 s, from timing.json).",
       "beats": [
         {
-          "at": 150,
+          "at": 188,
           "do": "flash"
         }
       ],
       "fx": [],
       "sfx": "hit.mp3",
-      "sfxAt": 5
+      "sfxAt": 6.26
     },
     {
       "id": 6,
@@ -218,18 +227,18 @@
       "scene": {
         "type": "vox",
         "mid": "assets/a6-shutter.png",
-        "headline": "AIRCEL:|INSOLVENT",
+        "headline": "AIRCEL FILES|FOR INSOLVENCY",
         "sub": "Feb 2018",
         "halftone": false,
         "stroke": true,
         "motion": "drift"
       },
       "visual": "Flat editorial illustration of a small Indian phone shop with its metal shutter pulled down (no signage, no logos), red marker outline; smoke haze.",
-      "onScreen": "AIRCEL: INSOLVENT / Feb 2018",
-      "motionNotes": "Shutter shop rises in with stroke; slow drift; punch on \"insolvency\" (~f45).",
+      "onScreen": "AIRCEL FILES FOR INSOLVENCY / Feb 2018",
+      "motionNotes": "Shuttered shop rises in from the bottom with marker outline f4-20; headline AIRCEL: INSOLVENT + Feb 2018; slow drift; soft smoke; punch + shutter sfx on \"insolvency\" (f52 / 1.73 s, from timing.json).",
       "beats": [
         {
-          "at": 45,
+          "at": 52,
           "do": "punch"
         }
       ],
@@ -237,7 +246,7 @@
         "smoke"
       ],
       "sfx": "shutter.mp3",
-      "sfxAt": 0.3
+      "sfxAt": 1.73
     },
     {
       "id": 7,
@@ -310,7 +319,8 @@
     "volume": 0.16
   },
   "voice": {
-    "file": "voice.mp3"
+    "file": "voice.mp3",
+    "source": "elevenlabs-web"
   },
   "upload": {
     "title": "Jio Gave India Free Internet. Who Paid the Price?",

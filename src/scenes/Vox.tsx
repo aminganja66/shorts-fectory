@@ -99,6 +99,44 @@ const Cut: React.FC<{
   );
 };
 
+// Rectangular photo (no transparent cut-out available) shown on purpose as a tilted polaroid:
+// white paper border, halftone newsprint photo, marker outline around the card, soft paper shadow.
+const PhotoCard: React.FC<{src: string; box: React.CSSProperties; aspect: number; halftone?: boolean; stroke?: boolean; delay?: number; rot?: number}> = ({
+  src,
+  box,
+  aspect,
+  halftone = true,
+  stroke = true,
+  delay = 0,
+  rot = -4,
+}) => {
+  const frame = useCurrentFrame();
+  const {accent} = useEpisode();
+  const enter = spring({frame: frame - delay, fps: 30, config: {damping: 14, mass: 0.8}});
+  const dx = (1 - enter) * -620;
+  const b = boil(frame, src, 0.8, 3);
+  const draw = interpolate(frame, [delay + 4, delay + 16], [0, 1], CLAMP);
+  const filters = [stroke ? outline(accent, 6 * draw) : '', 'drop-shadow(16px 20px 0 rgba(0,0,0,0.16))'].filter(Boolean).join(' ');
+  return (
+    <div style={{position: 'absolute', ...box, transform: `translate(${dx + b.x}px, ${b.y}px) rotate(${rot * enter + b.r}deg)`, filter: filters, opacity: Math.min(1, enter * 1.4)}}>
+      <div style={{background: '#fbf8f0', padding: '22px 22px 86px', boxSizing: 'border-box'}}>
+        <div style={{position: 'relative', width: '100%', aspectRatio: String(aspect), overflow: 'hidden', background: '#d9d4c7'}}>
+          <Photo src={src} fit="cover" style={{objectPosition: 'center top', filter: halftone ? 'grayscale(1) contrast(1.25) brightness(1.18)' : undefined}} />
+          {halftone && (
+            <AbsoluteFill
+              style={{
+                backgroundImage: 'radial-gradient(circle at center, rgba(0,0,0,0.42) 0 24%, rgba(0,0,0,0) 30%)',
+                backgroundSize: '8px 8px',
+                mixBlendMode: 'multiply',
+              }}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const VoxHeadline: React.FC<{text: string; sub?: string; top?: number; size?: number}> = ({text, sub, top = 150, size = 170}) => {
   const frame = useCurrentFrame();
   const {accent} = useEpisode();
@@ -130,7 +168,13 @@ export const Vox: React.FC<{s: VoxScene; dur: number}> = ({s, dur}) => {
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <VoxBg />
       <AbsoluteFill style={{transform: `scale(${zoom})`}}>
-        {s.mid && (
+        {s.mid && s.card && (
+          <PhotoCard src={s.mid} aspect={0.86} halftone={s.halftone ?? true} stroke={s.stroke ?? true} delay={4} rot={-4} box={{left: '6%', width: '56%', top: s.sub ? '35%' : '31%'}} />
+        )}
+        {s.mid2 && s.card && (
+          <Cut src={s.mid2} halftone={s.mid2Halftone ?? false} stroke={s.stroke ?? true} delay={10} from="right" rot={8} pos="center center" box={{left: '60%', width: '34%', top: s.sub ? '41%' : '37%', height: '19%'}} />
+        )}
+        {s.mid && !s.card && (
           <Cut
             src={s.mid}
             halftone={s.halftone ?? false}
@@ -141,7 +185,7 @@ export const Vox: React.FC<{s: VoxScene; dur: number}> = ({s, dur}) => {
             box={two ? {left: '2%', width: '50%', top: s.sub ? '34%' : '30%', height: s.sub ? '48%' : '52%'} : {left: '6%', width: '88%', top: s.sub ? '33%' : '28%', height: s.sub ? '49%' : '54%'}}
           />
         )}
-        {s.mid2 && <Cut src={s.mid2} halftone={s.halftone ?? false} stroke={s.stroke ?? true} delay={10} from="right" rot={3} box={{left: '48%', width: '50%', top: '30%', height: '52%'}} />}
+        {s.mid2 && !s.card && <Cut src={s.mid2} halftone={s.mid2Halftone ?? s.halftone ?? false} stroke={s.stroke ?? true} delay={10} from="right" rot={3} box={{left: '48%', width: '50%', top: '30%', height: '52%'}} />}
         {s.fg && <Cut src={s.fg} stroke={s.fgStroke ?? false} delay={14} from="bottom" box={{left: '0%', width: '100%', top: '75%', height: '21%'}} />}
       </AbsoluteFill>
       {s.headline && <VoxHeadline text={s.headline} sub={s.sub} />}
@@ -168,11 +212,11 @@ export const Typewriter: React.FC<{s: TypewriterScene; dur: number}> = ({s, dur}
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <VoxBg />
-      <div style={{position: 'absolute', top: 640, left: 70, right: 70, fontFamily: '"Courier New", "DejaVu Sans Mono", monospace', fontWeight: 700, fontSize: 92, lineHeight: 1.18, color: INK}}>
+      <div style={{position: 'absolute', top: 520, left: 70, right: 70, fontFamily: '"Courier New", "DejaVu Sans Mono", monospace', fontWeight: 700, fontSize: 118, lineHeight: 1.18, color: INK}}>
         {shown.map((l, i) => (
-          <div key={i} style={{minHeight: 108}}>
+          <div key={i} style={{minHeight: 140}}>
             {l}
-            {i === lastIdx && <span style={{display: 'inline-block', width: 46, height: 88, marginLeft: 6, verticalAlign: 'text-bottom', background: cursorOn ? INK : 'transparent'}} />}
+            {i === lastIdx && <span style={{display: 'inline-block', width: 58, height: 112, marginLeft: 6, verticalAlign: 'text-bottom', background: cursorOn ? INK : 'transparent'}} />}
           </div>
         ))}
       </div>
@@ -196,16 +240,19 @@ export const Counter: React.FC<{s: CounterScene; dur: number}> = ({s, dur}) => {
   const v = (s.from ?? 0) + ((s.to - (s.from ?? 0)) * k);
   const txt = v.toLocaleString('en-US', {minimumFractionDigits: s.decimals ?? 0, maximumFractionDigits: s.decimals ?? 0});
   const pop = interpolate(frame, [0, 8], [0.85, 1], {...CLAMP, easing: Easing.out(Easing.back(1.8))});
+  // Long suffixes ("LAKH CRORE", "BILLION") go on their own line under the number so nothing runs off the 1080 px frame.
+  const stacked = (s.suffix ?? '').trim().length > 3;
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <VoxBg />
-      {s.icon && <Cut src={s.icon} stroke delay={2} from="top" rot={-4} box={{left: '22%', width: '56%', top: '7%', height: '25%'}} pos="center center" />}
-      <div style={{position: 'absolute', top: 700, left: 30, right: 30, textAlign: 'center', transform: `scale(${pop})`}}>
+      {s.icon && <Cut src={s.icon} stroke delay={2} from="top" rot={-4} box={stacked ? {left: '26%', width: '48%', top: '5%', height: '21%'} : {left: '22%', width: '56%', top: '7%', height: '25%'}} pos="center center" />}
+      <div style={{position: 'absolute', top: stacked ? 500 : 700, left: 30, right: 30, textAlign: 'center', transform: `scale(${pop})`}}>
         <div style={{fontFamily: headlineFont, fontWeight: 700, fontSize: 300, lineHeight: 0.95, color: INK, letterSpacing: -2}}>
           {s.prefix}
           {txt}
-          <span style={{color: accent, fontSize: (s.suffix ?? '').trim().length > 2 ? 150 : undefined, letterSpacing: 0}}>{s.suffix}</span>
+          {!stacked && <span style={{color: accent, fontSize: (s.suffix ?? '').trim().length > 2 ? 150 : undefined, letterSpacing: 0}}>{s.suffix}</span>}
         </div>
+        {stacked && <div style={{fontFamily: headlineFont, fontWeight: 700, fontSize: 150, lineHeight: 0.95, color: accent, letterSpacing: 0}}>{(s.suffix ?? '').trim()}</div>}
         <div style={{height: 14, width: `${interpolate(frame, [6, 22], [0, 70], CLAMP)}%`, margin: '10px auto 0', background: accent, borderRadius: 7}} />
         {s.label && <div style={{marginTop: 30, fontFamily: headlineFont, fontWeight: 700, fontSize: 84, color: '#3b342a', textTransform: 'uppercase', opacity: fadeIn(frame, 12, 10)}}>{s.label}</div>}
       </div>
@@ -223,31 +270,39 @@ export const LineChart: React.FC<{s: LineScene; dur: number}> = ({s, dur}) => {
   const all = [...s.points, ...(s.previous ?? [])];
   const lo = Math.min(0, ...all);
   const hi = Math.max(...all) * 1.12;
-  const x = (i: number, n: number) => pad.l + (i / Math.max(1, n - 1)) * (W - pad.l - pad.r);
+  // x position: by real value (s.xs, e.g. years -> a missing year leaves an honest gap) or evenly by index
+  const xs = s.xs && s.xs.length === s.points.length ? s.xs : null;
+  const x = (i: number, n: number) => {
+    if (xs && n === xs.length) return pad.l + ((xs[i] - xs[0]) / Math.max(1e-9, xs[xs.length - 1] - xs[0])) * (W - pad.l - pad.r);
+    return pad.l + (i / Math.max(1, n - 1)) * (W - pad.l - pad.r);
+  };
   const y = (v: number) => pad.t + (1 - (v - lo) / (hi - lo)) * (H - pad.t - pad.b);
   const path = (arr: number[]) => arr.map((v, i) => `${i ? 'L' : 'M'}${x(i, arr.length).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
   const draw = interpolate(frame, [8, Math.max(24, dur * 0.7)], [0, 1], {...CLAMP, easing: Easing.inOut(Easing.cubic)});
-  const lastX = x(s.points.length - 1, s.points.length);
-  const lastY = y(s.points[s.points.length - 1]);
   const ticks = [0, 0.25, 0.5, 0.75, 1].map((t) => lo + (hi - lo) * t);
   const enter = interpolate(frame, [0, 10], [0.9, 1], {...CLAMP, easing: Easing.out(Easing.cubic)});
+  const calloutAt = Math.max(24, dur * 0.7);
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       <VoxBg />
-      <div style={{position: 'absolute', left: 60, top: 420, width: 960, padding: '34px 50px 30px', background: '#faf6ea', borderRadius: 34, boxShadow: '0 30px 60px rgba(60,40,10,0.22), 0 0 0 2px rgba(60,40,10,0.08)', transform: `scale(${enter})`, opacity: fadeIn(frame, 0, 6)}}>
-        <div style={{fontFamily: headlineFont, fontWeight: 700, fontSize: 56, color: INK, textTransform: 'uppercase', letterSpacing: 1}}>{s.title}</div>
+      {/* title = big headline above the card (readable from frame 0), callout = big label between card and captions (y < 1230) */}
+      <div style={{position: 'absolute', top: 120, left: 40, right: 40, textAlign: 'center'}}>
+        <div style={{fontFamily: headlineFont, fontWeight: 700, fontSize: 104, lineHeight: 0.95, color: INK, textTransform: 'uppercase', letterSpacing: -1}}>{s.title}</div>
+        <div style={{height: 12, width: `${interpolate(frame, [4, 20], [0, 60], CLAMP)}%`, margin: '16px auto 0', background: accent, borderRadius: 6}} />
+      </div>
+      <div style={{position: 'absolute', left: 60, top: 330, width: 960, padding: '30px 50px 26px', background: '#faf6ea', borderRadius: 34, boxShadow: '0 30px 60px rgba(60,40,10,0.22), 0 0 0 2px rgba(60,40,10,0.08)', transform: `scale(${enter})`, opacity: fadeIn(frame, 0, 6)}}>
+        {s.unit && <div style={{fontFamily: headlineFont, fontWeight: 700, fontSize: 44, color: '#6b6354'}}>{s.unit}</div>}
         <svg width={W} height={H} style={{marginTop: 10, overflow: 'visible'}}>
           {ticks.map((t, i) => (
             <g key={i}>
               <line x1={pad.l} x2={W - pad.r} y1={y(t)} y2={y(t)} stroke="rgba(60,50,30,0.14)" strokeWidth={2} />
-              <text x={pad.l - 14} y={y(t) + 8} textAnchor="end" fontSize={28} fontFamily={headlineFont} fill="#6b6354">
+              <text x={pad.l - 14} y={y(t) + 10} textAnchor="end" fontSize={34} fontFamily={headlineFont} fill="#6b6354">
                 {Math.round(t)}
-                {s.unit ?? ''}
               </text>
             </g>
           ))}
           {(s.labels ?? []).map((l, i, a) => (
-            <text key={i} x={x(i, a.length)} y={H - 14} textAnchor="middle" fontSize={26} fontFamily={headlineFont} fill="#6b6354">
+            <text key={i} x={x(i, a.length)} y={H - 12} textAnchor="middle" fontSize={38} fontFamily={headlineFont} fill="#6b6354">
               {l}
             </text>
           ))}
@@ -258,16 +313,18 @@ export const LineChart: React.FC<{s: LineScene; dur: number}> = ({s, dur}) => {
             return shown ? <circle key={i} cx={x(i, s.points.length)} cy={y(v)} r={11} fill="#faf6ea" stroke={accent} strokeWidth={6} /> : null;
           })}
         </svg>
-        {s.callout && (
-          <div style={{position: 'absolute', left: Math.min(lastX + 20, 930) - 190, top: 120 + Math.max(0, lastY - 190), width: 280, padding: '10px 16px', background: '#fff', border: `5px solid ${accent}`, borderRadius: 16, fontFamily: headlineFont, fontWeight: 700, fontSize: 52, textAlign: 'center', color: INK, lineHeight: 1, opacity: fadeIn(frame, Math.max(24, dur * 0.7), 8), transform: `scale(${interpolate(frame, [Math.max(24, dur * 0.7), Math.max(24, dur * 0.7) + 8], [0.7, 1], CLAMP)})`}}>
+      </div>
+      {s.callout && (
+        <div style={{position: 'absolute', left: 0, right: 0, top: 1010, display: 'flex', justifyContent: 'center', opacity: fadeIn(frame, calloutAt, 8), transform: `scale(${interpolate(frame, [calloutAt, calloutAt + 8], [0.7, 1], {...CLAMP, easing: Easing.out(Easing.back(1.8))})})`}}>
+          <div style={{display: 'flex', gap: 28, alignItems: 'baseline', padding: '14px 36px', background: '#fff', border: `7px solid ${accent}`, borderRadius: 22, boxShadow: '0 18px 36px rgba(60,40,10,0.18)', fontFamily: headlineFont, fontWeight: 700, fontSize: 100, lineHeight: 1, color: INK}}>
             {s.callout.split('|').map((l, i) => (
-              <div key={i} style={{color: i ? accent : INK}}>
+              <span key={i} style={{color: i ? accent : INK}}>
                 {l}
-              </div>
+              </span>
             ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </AbsoluteFill>
   );
 };

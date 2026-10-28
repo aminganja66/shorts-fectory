@@ -1,0 +1,397 @@
+{
+  "words": [
+    {
+      "text": "One",
+      "start": 0,
+      "end": 0.191
+    },
+    {
+      "text": "company",
+      "start": 0.191,
+      "end": 0.582
+    },
+    {
+      "text": "gave",
+      "start": 0.582,
+      "end": 0.823
+    },
+    {
+      "text": "India",
+      "start": 0.823,
+      "end": 1.114
+    },
+    {
+      "text": "free",
+      "start": 1.114,
+      "end": 1.354
+    },
+    {
+      "text": "internet.",
+      "start": 1.354,
+      "end": 1.921
+    },
+    {
+      "text": "Who",
+      "start": 2.637,
+      "end": 2.831
+    },
+    {
+      "text": "paid",
+      "start": 2.831,
+      "end": 3.077
+    },
+    {
+      "text": "the",
+      "start": 3.077,
+      "end": 3.271
+    },
+    {
+      "text": "price?",
+      "start": 3.271,
+      "end": 3.695
+    },
+    {
+      "text": "Not",
+      "start": 4.646,
+      "end": 4.868
+    },
+    {
+      "text": "the",
+      "start": 4.868,
+      "end": 5.09
+    },
+    {
+      "text": "users.",
+      "start": 5.09,
+      "end": 5.574
+    },
+    {
+      "text": "In",
+      "start": 6.199,
+      "end": 6.373
+    },
+    {
+      "text": "2016,",
+      "start": 6.373,
+      "end": 7.415
+    },
+    {
+      "text": "Jio",
+      "start": 7.415,
+      "end": 7.65
+    },
+    {
+      "text": "made",
+      "start": 7.65,
+      "end": 7.948
+    },
+    {
+      "text": "calls",
+      "start": 7.948,
+      "end": 8.308
+    },
+    {
+      "text": "and",
+      "start": 8.308,
+      "end": 8.544
+    },
+    {
+      "text": "data",
+      "start": 8.544,
+      "end": 8.841
+    },
+    {
+      "text": "free.",
+      "start": 8.841,
+      "end": 9.294
+    },
+    {
+      "text": "Reliance",
+      "start": 10.35,
+      "end": 10.864
+    },
+    {
+      "text": "said",
+      "start": 10.864,
+      "end": 11.145
+    },
+    {
+      "text": "it",
+      "start": 11.145,
+      "end": 11.309
+    },
+    {
+      "text": "had",
+      "start": 11.309,
+      "end": 11.531
+    },
+    {
+      "text": "already",
+      "start": 11.531,
+      "end": 11.987
+    },
+    {
+      "text": "invested",
+      "start": 11.987,
+      "end": 12.501
+    },
+    {
+      "text": "₹1.5",
+      "start": 12.501,
+      "end": 13.285
+    },
+    {
+      "text": "lakh",
+      "start": 13.285,
+      "end": 13.565
+    },
+    {
+      "text": "crore.",
+      "start": 13.565,
+      "end": 14.051
+    },
+    {
+      "text": "Jio",
+      "start": 15.153,
+      "end": 15.389
+    },
+    {
+      "text": "hit",
+      "start": 15.389,
+      "end": 15.624
+    },
+    {
+      "text": "100",
+      "start": 15.624,
+      "end": 16.293
+    },
+    {
+      "text": "million",
+      "start": 16.293,
+      "end": 16.776
+    },
+    {
+      "text": "users",
+      "start": 16.776,
+      "end": 17.136
+    },
+    {
+      "text": "in",
+      "start": 17.136,
+      "end": 17.309
+    },
+    {
+      "text": "170",
+      "start": 17.309,
+      "end": 17.979
+    },
+    {
+      "text": "days.",
+      "start": 17.979,
+      "end": 18.431
+    },
+    {
+      "text": "A",
+      "start": 19.457,
+      "end": 19.605
+    },
+    {
+      "text": "GB",
+      "start": 19.605,
+      "end": 19.834
+    },
+    {
+      "text": "cost",
+      "start": 19.834,
+      "end": 20.228
+    },
+    {
+      "text": "about",
+      "start": 20.228,
+      "end": 20.703
+    },
+    {
+      "text": "₹269",
+      "start": 20.703,
+      "end": 21.802
+    },
+    {
+      "text": "in",
+      "start": 21.802,
+      "end": 22.032
+    },
+    {
+      "text": "2014.",
+      "start": 22.032,
+      "end": 23.466
+    },
+    {
+      "text": "By",
+      "start": 23.466,
+      "end": 23.696
+    },
+    {
+      "text": "2018,",
+      "start": 24.195,
+      "end": 25.324
+    },
+    {
+      "text": "about",
+      "start": 25.324,
+      "end": 25.714
+    },
+    {
+      "text": "₹12.",
+      "start": 25.714,
+      "end": 26.715
+    },
+    {
+      "text": "That",
+      "start": 27.857,
+      "end": 28.082
+    },
+    {
+      "text": "year,",
+      "start": 28.082,
+      "end": 28.393
+    },
+    {
+      "text": "Aircel",
+      "start": 28.702,
+      "end": 29.07
+    },
+    {
+      "text": "filed",
+      "start": 29.07,
+      "end": 29.383
+    },
+    {
+      "text": "for",
+      "start": 29.383,
+      "end": 29.588
+    },
+    {
+      "text": "insolvency,",
+      "start": 29.588,
+      "end": 30.268
+    },
+    {
+      "text": "blaming",
+      "start": 30.268,
+      "end": 30.689
+    },
+    {
+      "text": "a",
+      "start": 30.689,
+      "end": 30.809
+    },
+    {
+      "text": "\"disruptive\"",
+      "start": 30.786,
+      "end": 31.477
+    },
+    {
+      "text": "new",
+      "start": 31.477,
+      "end": 31.682
+    },
+    {
+      "text": "player.",
+      "start": 31.682,
+      "end": 32.184
+    },
+    {
+      "text": "Jio",
+      "start": 33.26,
+      "end": 33.474
+    },
+    {
+      "text": "now",
+      "start": 33.474,
+      "end": 33.689
+    },
+    {
+      "text": "has",
+      "start": 33.689,
+      "end": 33.903
+    },
+    {
+      "text": "over",
+      "start": 33.903,
+      "end": 34.175
+    },
+    {
+      "text": "500",
+      "start": 34.175,
+      "end": 34.784
+    },
+    {
+      "text": "million",
+      "start": 34.784,
+      "end": 35.225
+    },
+    {
+      "text": "users.",
+      "start": 35.225,
+      "end": 35.694
+    },
+    {
+      "text": "Who",
+      "start": 35.694,
+      "end": 35.908
+    },
+    {
+      "text": "paid",
+      "start": 36.504,
+      "end": 36.751
+    },
+    {
+      "text": "the",
+      "start": 36.751,
+      "end": 36.947
+    },
+    {
+      "text": "price?",
+      "start": 36.947,
+      "end": 37.376
+    }
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 3.695
+    },
+    {
+      "id": 2,
+      "start": 4.646,
+      "end": 9.294
+    },
+    {
+      "id": 3,
+      "start": 10.35,
+      "end": 14.051
+    },
+    {
+      "id": 4,
+      "start": 15.153,
+      "end": 18.431
+    },
+    {
+      "id": 5,
+      "start": 19.457,
+      "end": 26.715
+    },
+    {
+      "id": 6,
+      "start": 27.857,
+      "end": 32.184
+    },
+    {
+      "id": 7,
+      "start": 33.26,
+      "end": 37.376
+    }
+  ],
+  "duration": 37.376
+}

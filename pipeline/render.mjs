@@ -14,10 +14,11 @@ if (!draft && !fs.existsSync(path.join(dir, 'timing.json'))) die('No timing.json
 const out = path.join(ROOT, 'exports', id);
 fs.mkdirSync(out, {recursive: true});
 const props = JSON.stringify({episodeId: id});
-const bin = path.join(ROOT, 'node_modules/.bin/remotion');
+// Run the CLI's JS entry with node directly: node_modules/.bin/remotion is a shell script that Windows can't spawn.
+const cli = path.join(ROOT, 'node_modules/@remotion/cli/remotion-cli.js');
 const video = path.join(out, draft ? 'draft.mp4' : 'short.mp4');
 
-execFileSync(bin, ['render', 'src/index.ts', 'Short', video, `--props=${props}`, '--codec=h264', '--crf=18', ...(draft ? ['--scale=0.5'] : [])], {
+execFileSync(process.execPath, [cli, 'render','src/index.ts', 'Short', video, `--props=${props}`, '--codec=h264', '--crf=18', ...(draft ? ['--scale=0.5'] : [])], {
   cwd: ROOT,
   stdio: 'inherit',
 });
@@ -32,7 +33,7 @@ if (!draft) {
 
 // Thumbnail = first frame after the hook text has landed
 const thumbFrame = sb.thumbnailFrame ?? 30; // entrance finished, headline settled
-execFileSync(bin, ['still', 'src/index.ts', 'Short', path.join(out, 'thumbnail.jpg'), `--props=${JSON.stringify({episodeId: id, thumb: true})}`, `--frame=${thumbFrame}`, '--image-format=jpeg'], {
+execFileSync(process.execPath, [cli, 'still','src/index.ts', 'Short', path.join(out, 'thumbnail.jpg'), `--props=${JSON.stringify({episodeId: id, thumb: true})}`, `--frame=${thumbFrame}`, '--image-format=jpeg'], {
   cwd: ROOT,
   stdio: 'ignore',
 });

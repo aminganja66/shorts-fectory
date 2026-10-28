@@ -26,7 +26,7 @@ const est = () => {
   let t = 0.2;
   return sb.lines.map((l) => {
     const s = t;
-    t += l.text.split(/\s+/).filter(Boolean).length * 0.38 + 0.35;
+    t += l.text.split(/\s+/).filter(Boolean).length * 0.5 + 0.6; // = estimateTiming() in src/Short.tsx
     return s;
   });
 };
