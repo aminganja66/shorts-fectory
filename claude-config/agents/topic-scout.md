@@ -10,3 +10,5 @@ You choose ONE topic for an English YouTube Short. Skill to load: `content-strat
 3. Score each 1–5 on: twist/surprise, one hard number, Indian viewer relevance, visual potential (logos, founders, places), source availability. Reject anything that needs medical, legal or investment claims.
 4. Run `npm run history -- check <ch> "<topic>" "<kw1,kw2>"` for the winner (exit 2 = duplicate → next).
 5. Return: topic, 1-line angle, keywords, the hook idea, and why it beat the others. Do NOT write the script.
+
+Long videos (`/long`): pick a company with a real arc — a clear start, a real fall, a comeback or a fight to survive, and enough public sources for 12+ facts. A company we already made a Short about is fine. Check with `npm run history -- check brand "<topic>" "<kw>" --long`.

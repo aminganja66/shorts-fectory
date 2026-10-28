@@ -3,9 +3,31 @@
   "language": "en",
   "style": "Conversational English, the way a smart friend tells a story: short sentences, concrete numbers, no jargon, no filler openers. Captions keep digits. The `voice` field is only needed where the narrator could misread a token (Q3 → 'Q three', €5.44B → 'five point four four billion euros', '&').",
   "length": {
-    "lines": "6-8",
-    "seconds": "30-42",
-    "maxWords": 75
+    "default": "quick",
+    "rule": "Pick the tier from the story, not by habit. quick = one twist, one number. story = needs a setup + a turn + a result (3+ facts that each matter). deep = a real chain of events (5+ facts, several turns). Never pad to reach a tier: if the facts fit in quick, it is quick. storyboard.length = tier, storyboard.lengthReason = one sentence why.",
+    "tiers": {
+      "quick": {
+        "lines": "6-8",
+        "seconds": "30-42",
+        "maxWords": 75,
+        "maxSeconds": 48,
+        "maxVoice": 44
+      },
+      "story": {
+        "lines": "8-10",
+        "seconds": "43-58",
+        "maxWords": 110,
+        "maxSeconds": 62,
+        "maxVoice": 60
+      },
+      "deep": {
+        "lines": "10-13",
+        "seconds": "58-85",
+        "maxWords": 160,
+        "maxSeconds": 90,
+        "maxVoice": 88
+      }
+    }
   },
   "structure": [
     "1 HOOK (<=12 words): an open QUESTION (ends with ?) — big stake first, the key noun withheld",
@@ -42,7 +64,7 @@
       "similarity_boost": 0.8,
       "style": 0.15,
       "use_speaker_boost": true,
-      "speed": 1.0
+      "speed": 1
     },
     "say": {},
     "alternatives": [
@@ -105,5 +127,77 @@
     ],
     "rule": "House style = vox (locked on purpose; see docs/vox-style.md). Still vary: hookType not in the last 2 Shorts, opening 3 scene types not in the last 5, music not in the last 5, accent colour may change per story.",
     "lockLook": "vox"
+  },
+  "long": {
+    "format": "16:9, 1920x1080, composition Long",
+    "length": {
+      "seconds": "480-720",
+      "maxSeconds": 780,
+      "words": "950-1450",
+      "lines": "80-120",
+      "minFacts": 12
+    },
+    "chapters": [
+      {
+        "kind": "open",
+        "title": "Cold open",
+        "seconds": "20-35",
+        "job": "In medias res: the most dramatic moment of the story (usually from the downfall), told in 3-5 lines, ending on an open question. Then one line that promises the whole arc ('To understand how, we have to go back to 2002.')."
+      },
+      {
+        "kind": "idea",
+        "title": "The idea",
+        "seconds": "90-130",
+        "job": "Who started it, where, when, and the exact spark: the problem they saw, the bet they made, the first money. One founder-scale detail (a garage, a loan, a rejected pitch)."
+      },
+      {
+        "kind": "rise",
+        "title": "The rise",
+        "seconds": "110-160",
+        "job": "How it won: 2-3 decisive moves, each with a hard number (users, revenue, market share, valuation, IPO). End on the peak: the moment it looked unstoppable."
+      },
+      {
+        "kind": "downfall",
+        "title": "The downfall",
+        "seconds": "110-160",
+        "job": "What broke: the mistake, the rival, the scandal, the debt. Cause → effect with dates. Fair: 'according to', 'reportedly' for anything not proven. The lowest point, with a number."
+      },
+      {
+        "kind": "recovery",
+        "title": "The comeback",
+        "seconds": "90-140",
+        "job": "Who or what turned it around (new CEO, pivot, deal, product). What it cost. Honest if the recovery is partial or never happened (then the chapter is 'The fight to survive')."
+      },
+      {
+        "kind": "today",
+        "title": "Today",
+        "seconds": "50-90",
+        "job": "Where it stands now with the latest verified numbers (say the date of the figure). Loop back to the cold open, then one question for the comments. No lessons, no moral."
+      }
+    ],
+    "rules": [
+      "Each chapter starts with a `chapter` scene (title card) and ends on a mini-cliffhanger line that pulls into the next chapter.",
+      "Re-hook every 60-90 s: a line that opens a new question ('But there was a problem nobody saw.').",
+      "Change the visual every 4-8 s: one line = one scene, lines of 6-16 words.",
+      "Each chapter needs at least 2 sourced facts (facts[].chapter = chapter id).",
+      "Max 1 flash/shake per chapter, calm scenes between loud ones."
+    ],
+    "sceneMix": "16:9 vox look. Per chapter: 1 chapter card, 1 timeline when there are 3+ dated events, counters/line charts for every hard number, vox cut-out scenes for people/places/objects, typewriter for quotes. Never 3 of the same type in a row.",
+    "theme": {
+      "accent": "#F26A1B",
+      "look": "vox",
+      "captionStyle": "highlight",
+      "transition": "zoom",
+      "progressBar": true
+    },
+    "imageStyle": "landscape 3:2 framing for AI places and moods; cut-outs stay transparent PNGs",
+    "musicNote": "one 2-3 min instrumental bed that loops (ElevenLabs Music or library), volume ~0.12; optional second track for the downfall chapter is not supported yet",
+    "hashtags": [
+      "#business",
+      "#documentary",
+      "#brandstory",
+      "#casestudy",
+      "#businessstory"
+    ]
   }
 }

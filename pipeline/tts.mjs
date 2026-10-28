@@ -3,7 +3,7 @@
 // Whole script in ONE request so intonation flows naturally between lines.
 import fs from 'node:fs';
 import path from 'node:path';
-import {loadEpisode, readJSON, writeJSON, chDir, die, ok} from './lib.mjs';
+import {loadEpisode, readJSON, writeJSON, chDir, die, ok, ROOT, joinVoiceParts} from './lib.mjs';
 import {speak} from './spoken.mjs';
 
 const args = process.argv.slice(2);
@@ -16,6 +16,30 @@ if (!key) die('ELEVENLABS_API_KEY missing in .env (or record your own voice and 
 const cfg = readJSON(path.join(chDir(sb.channel), 'config.json')).voice;
 const voiceId = sb.voice?.voiceId ?? cfg.voiceId;
 if (!voiceId) die('No voiceId in channels/<channel>/config.json');
+
+// Long videos: one request per tts-text-N.txt part (5000-char limit), joined into voice.mp3, then align.mjs finds the line pauses.
+if (sb.format === 'long') {
+  const {execFileSync} = await import('node:child_process');
+  execFileSync('node', [path.join(ROOT, 'pipeline/tts-text.mjs'), id], {stdio: 'ignore'});
+  const total = readJSON(path.join(dir, 'tts-parts.json')).parts.length;
+  for (let k = 1; k <= total; k++) {
+    const out = path.join(dir, `voice-part-${k}.mp3`);
+    if (fs.existsSync(out) && !args.includes('--force')) continue; // resume: keep parts already paid for
+    const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`, {
+      method: 'POST',
+      headers: {'xi-api-key': key, 'Content-Type': 'application/json'},
+      body: JSON.stringify({text: fs.readFileSync(path.join(dir, `tts-text-${k}.txt`), 'utf8').trim(), model_id: cfg.model ?? 'eleven_multilingual_v2', language_code: cfg.languageCode, voice_settings: cfg.settings}),
+    });
+    if (!r.ok) die(`ElevenLabs ${r.status} on part ${k}: ${await r.text()}`);
+    fs.writeFileSync(out, Buffer.from(await r.arrayBuffer()));
+    ok(`voice-part-${k}.mp3`);
+  }
+  await joinVoiceParts(dir, total);
+  sb.voice = {...(sb.voice ?? {}), file: 'voice.mp3', parts: total};
+  writeJSON(path.join(dir, 'storyboard.json'), sb);
+  execFileSync('node', [path.join(ROOT, 'pipeline/align.mjs'), id], {stdio: 'inherit'});
+  process.exit(0);
+}
 
 // Optional pronunciation fixes: {"Netflix":"नेटफ्लिक्स"} in config.voice.say
 const say = (t) => Object.entries(cfg.say ?? {}).reduce((s, [k, v]) => s.replaceAll(k, v), t);

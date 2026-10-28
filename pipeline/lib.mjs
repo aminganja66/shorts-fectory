@@ -45,3 +45,16 @@ export const die = (msg) => {
 };
 export const ok = (msg) => console.log(`✔ ${msg}`);
 export const info = (msg) => console.log(`• ${msg}`);
+
+// Long videos: joins voice-part-1.mp3 … voice-part-N.mp3 into voice.mp3 with a 0.9 s gap (= a normal line pause for align.mjs).
+export const joinVoiceParts = async (dir, total) => {
+  const {execFileSync} = await import('node:child_process');
+  const have = [...Array(total)].map((_, k) => path.join(dir, `voice-part-${k + 1}.mp3`)).filter((f) => fs.existsSync(f));
+  if (!total || have.length < total) return false;
+  const chain = have.map((_, k) => `[${k}:a]aresample=44100,aformat=channel_layouts=mono[a${k}]`).join(';');
+  const gaps = have.slice(1).map((_, k) => `anullsrc=r=44100:cl=mono,atrim=0:0.9[g${k}]`).join(';');
+  const order = have.map((_, k) => (k ? `[g${k - 1}][a${k}]` : `[a${k}]`)).join('');
+  const filter = [chain, gaps, `${order}concat=n=${have.length * 2 - 1}:v=0:a=1[out]`].filter(Boolean).join(';');
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...have.flatMap((f) => ['-i', f]), '-filter_complex', filter, '-map', '[out]', '-b:a', '192k', path.join(dir, 'voice.mp3')]);
+  return true;
+};

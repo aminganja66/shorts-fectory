@@ -10,7 +10,9 @@ import {chDir, epDir, readJSON, writeJSON, die, ok, info, today} from './lib.mjs
 import {signature} from './variety.mjs';
 
 const RETRY = process.argv.includes('--retry');
-const [cmd, a, b, c, d] = process.argv.slice(2).filter((x) => x !== '--retry');
+// --long: long videos are their own series — a long documentary on a company we already made a Short about is NOT a duplicate
+const LONG = process.argv.includes('--long');
+const [cmd, a, b, c, d] = process.argv.slice(2).filter((x) => !x.startsWith('--'));
 const file = (ch) => path.join(chDir(ch), 'history.json');
 const load = (ch) => readJSON(file(ch), []);
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9ऀ-ॿ ]/g, ' ').split(/\s+/).filter((w) => w.length > 2);
@@ -19,6 +21,7 @@ const similar = (ch, topic, keywords = []) => {
   const want = new Set([...norm(topic), ...keywords.map((k) => k.toLowerCase())]);
   return load(ch)
     .filter((h) => h.status !== 'dropped')
+    .filter((h) => (h.format === 'long') === LONG)
     .map((h) => {
       const have = new Set([...norm(h.topic), ...(h.keywords || [])]);
       const overlap = [...want].filter((w) => have.has(w)).length;
@@ -64,7 +67,7 @@ switch (cmd) {
     const m = similar(a, b, kws);
     if (m.length && !RETRY) die(`Topic too close to: ${m[0].topic} (${m[0].episodeId})`);
     const h = load(a);
-    h.push({topic: b, episodeId: c, keywords: kws, status: 'in-progress', date: today(), ...(RETRY && m.length ? {retryOf: m[0].episodeId} : {})});
+    h.push({topic: b, episodeId: c, keywords: kws, status: 'in-progress', date: today(), ...(LONG ? {format: 'long'} : {}), ...(RETRY && m.length ? {retryOf: m[0].episodeId} : {})});
     writeJSON(file(a), h);
     ok(`Claimed "${b}" → ${c}`);
     break;

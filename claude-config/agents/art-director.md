@@ -16,3 +16,5 @@ Skills to load: `remotion-best-practices` (for what the scenes can do), `music` 
    - API: `npm run music -- <id> "<genre>, <instruments>, <tempo>, <energy curve>, no vocals" <seconds>` (original track, no copyright risk).
    - else a `public/music/library.json` track whose mood fits and that wasn't used in the last 5 Shorts, or Browser mode (Pixabay Music).
 5. **SFX** — 1–3 per Short on the big moments (whoosh, impact, cash register, typewriter, crowd gasp). Generate with `npm run music -- <id> --sfx "<prompt>" <name> <sec>` or reuse `public/sfx/`.
+
+Long videos (16:9): scenes lay themselves out wide (headline left, visuals right) — the same transparent cut-outs work. Plan ~25–40 unique assets and reuse them across chapters (a founder cut-out can return in idea, downfall and today). AI places/moods in landscape 3:2. One 2–3 min instrumental music bed (it loops automatically), volume ≈ 0.12; pick a calm-but-tense documentary bed, not a hype track.

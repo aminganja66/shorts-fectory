@@ -14,7 +14,13 @@ Two **English-only** YouTube Shorts channels, made with Remotion. Owner: Amin (u
 2. **Pick topic**: read `channels/<ch>/history.json` + `backlog.md`. Take the first backlog idea not in history. Run `npm run history -- check <ch> "<topic>" "<kw>"` (exit 2 = duplicate → next idea). Prefer ideas with a twist + a hard number.
 3. **Claim**: `npm run new -- <ch> "<topic>" "<keywords>"` then `git add channels public/episodes/<id>/storyboard.json && git commit -m "claim: <topic>" && git push` (this locks the topic for the other laptop).
 4. **Research**: WebSearch/WebFetch. Minimum 3 facts, each with a source URL from a reliable outlet (company filings/press releases, Reuters, BBC, Fortune, Economic Times, Mint, the original study/paper for psych). If sources disagree, use the conservative number or drop it. Never invent quotes, numbers, dates, or study results.
-5. **Script** (`lines[].text`, English): follow `channels/<ch>/config.json` → `structure` + `style`. 6–8 lines, **30–42 s, max 75 words** (real narration ≈ 0.45 s/word + 1.1 s per line; `npm run check` fails over 48 s — cut words, never speed the voice up). **Hook = the viewer test below**, ≤ 12 words; write 3 candidates into `storyboard.hookCandidates` and use the best as line 1. Then humanize (see below). Then run **`npm run spoken -- <id>`**: it writes `lines[].voice` with the natural spoken English for every number/symbol (see "Spoken form"); read those voice lines once.
+5. **Script** (`lines[].text`, English): follow `channels/<ch>/config.json` → `structure` + `style`. **Length follows the story** — pick a tier from `channels/<ch>/config.json → length.tiers` and set `storyboard.length` (+ `lengthReason` if not quick):
+   | Tier | When | Lines | Seconds | Max words | `check` fails over |
+   |---|---|---|---|---|---|
+   | `quick` (default) | one twist, one hard number | 6–8 | 30–42 | 75 | 48 s |
+   | `story` | setup + turn + result, 4+ facts that each matter | 8–10 | 43–58 | 110 | 62 s |
+   | `deep` | a real chain of events, 5+ facts, several turns | 10–13 | 58–85 | 160 | 90 s |
+   Never pad to reach a tier. Longer tiers must re-hook in the middle third (a line that opens a new question: "But…", "Then…", a `?`) and change the visual every 2–4 s (skill `short-form-video`). Real narration ≈ 0.45 s/word + 1.1 s per line — cut words, never speed the voice up. **Hook = the viewer test below**, ≤ 12 words; write 3 candidates into `storyboard.hookCandidates` and use the best as line 1. Then humanize (see below). Then run **`npm run spoken -- <id>`**: it writes `lines[].voice` with the natural spoken English for every number/symbol (see "Spoken form"); read those voice lines once.
 6. **Scene script + motion spec** — for EVERY line fill: `visual` (what we see, layer by layer: background / middle / foreground / logo), `onScreen` (on-screen text), `motionNotes` (frame-by-frame choreography in words), `beats` (frame-exact camera moments), `fx` (atmosphere), `sfx`. See "Motion grammar" below.
    **Scenes** (`lines[].scene`): for the vox look use `vox | typewriter | counter | line` (+ `chart`/`end` if they fit); older looks also have `collage | kinetic | versus | stack` (see `src/types.ts`, `src/scenes/Vox.tsx`). Follow `sceneMix`. Vary motions (push, pull, pan-left, pan-right, drift). Reference storyboards: `public/episodes/2026-10-27-netflix-vs-blockbuster/storyboard.json` (brand) and `docs/examples/psych-zeigarnik.storyboard.json` (psych). Copy their shape, never their wording.
 7. **Assets** (`storyboard.assets[]`): one entry per file. Kinds (details in `pipeline/fetch-assets.mjs` header):
@@ -62,6 +68,15 @@ A 4-digit number is read as a YEAR unless a count noun follows ("2000 employees"
 **Eye comfort.** Subject bright and readable, soft grain only, no scanlines/flicker stacks, no full-black frames. Flash/shake only on THE one big moment (max 1 per Short), `glitch` transition only for tech stories, never with `noir`. House look is `vox` (bright paper, one accent). Other looks only if Amin asks. Max 1 fx per scene, calm scenes between loud ones, text ≥ 90 px, high contrast.
 **Captions in sync.** `npm run timing` aligns to real pauses. After import, read its line table; if any line starts mid-sentence or a ⚠ shows, fix the voice (longer break), not the captions.
 
+## Long videos (`/long brand [auto] [browser] [topic]`)
+16:9 documentaries, **8–12 min**, brand channel only (`channels/brand/config.json → long`). Full flow: `.claude/commands/long.md`.
+- **Arc** (`storyboard.chapters`, every line has `chapter`): `open` cold open (the most dramatic moment + an open question, 20–35 s) → `idea` how it started / the spark → `rise` how it won → `downfall` what broke → `recovery` the comeback (or the fight to survive — be honest) → `today` latest verified numbers, loop to the cold open, one question. No lessons/morals.
+- **Size**: 80–120 lines, 950–1450 words, 12+ sourced facts (`facts[].chapter`, ≥ 2 per chapter). `npm run check` fails under 8 min or over 13 min estimated.
+- **Retention**: each chapter opens with a `chapter` title-card scene and ends on a pull into the next; a re-hook ("But…", a question) every 60–90 s; one line = one scene (visual change every 4–8 s); max 1 flash/shake per chapter.
+- **Scenes**: `chapter` (CHAPTER N pill + title + sub + optional icon), `timeline` (`events:[{year,label}]`, `highlight`), plus `vox | counter | line | typewriter` — all auto-laid-out for 16:9 (headline column left, visuals right, captions in the lower third y ≈ 880–1010, chapter tag top-left, chapter ticks on the progress bar).
+- **Voice**: `npm run tts-text` splits into parts ≤ 4500 chars (ElevenLabs limit) → `npm run import -- <id> voice --part N` per take → joined into voice.mp3 → `npm run timing`. With a key: `npm run voice` does all parts.
+- **Render**: chapter by chapter, resumable (`npm run render -- <id>`, or `--chapter N`), ≈ 0.8 s/frame → ~4 h for 10 min. upload.txt gets YouTube CHAPTERS timestamps. History: long videos are their own series (`--long`), so a long video about a company we made a Short on is not a duplicate.
+
 ## Humanize (every script, before assets)
 Use the installed `humanizer` skill (English) plus these rules:
 - Write how a smart friend tells a story, not a news anchor or a textbook. Contractions are good ("didn't", "it's").
@@ -92,7 +107,7 @@ Use the installed `humanizer` skill (English) plus these rules:
 |---|---|---|
 | 1–3 topic | `topic-scout` | content-strategy, marketing-psychology (psych) |
 | 4 research | `researcher` | — |
-| 5 script | `scriptwriter` | social, copywriting, copy-editing, humanizer, marketing-psychology (psych) |
+| 5 script | `scriptwriter` | social, short-form-video, copywriting, copy-editing, humanizer, marketing-psychology (psych); long videos: youtube-scriptwriting |
 | 6–8 look, assets, music, sfx | `art-director` | remotion-best-practices, music, sound-effects |
 | 6, 9, 12 scenes, beats, frames | `motion-director` | remotion-best-practices, remotion-markup, remotion-captions, remotion-render, remotion-studio |
 | 9, 12 final gate | `qa-editor` | — |
@@ -115,7 +130,7 @@ Before each generation/download say in one line what you're doing. Never type pa
 
 | Need | Tab | What to do | Then |
 |---|---|---|---|
-| **Voiceover** | elevenlabs.io/app/speech-synthesis | Dismiss the promo popup first (it shifts the layout), pick the channel voice (Voice → search the name from config `voice.name` → *Use*), model "Eleven Multilingual v2", Speed 1.0 (never faster), Stability ≈ 0.5, Similarity 0.8, Style ≈ 0.15 (the voice's own defaults load when you pick it — fix the sliders after). Paste the output of **`npm run tts-text -- <id>`** (spoken forms + `<break time="0.3s" />` after each sentence and `<break time="0.8s" />` between lines; also saved to `public/episodes/<id>/tts-text.txt`). Generate (one click = 2 takes; the player shows the length — must be ≤ 44 s, else shorten the script) → Download. Amin picks by ear if he wants; otherwise take Generation 1. | `npm run import -- <id> voice` → `npm run timing -- <id>` |
+| **Voiceover** | elevenlabs.io/app/speech-synthesis | Dismiss the promo popup first (it shifts the layout), pick the channel voice (Voice → search the name from config `voice.name` → *Use*), model "Eleven Multilingual v2", Speed 1.0 (never faster), Stability ≈ 0.5, Similarity 0.8, Style ≈ 0.15 (the voice's own defaults load when you pick it — fix the sliders after). Paste the output of **`npm run tts-text -- <id>`** (spoken forms + `<break time="0.3s" />` after each sentence and `<break time="0.8s" />` between lines; also saved to `public/episodes/<id>/tts-text.txt`). Generate (one click = 2 takes; the player shows the length — must be ≤ the tier's `maxVoice` (quick 44 s · story 60 s · deep 88 s), else shorten the script) → Download. Amin picks by ear if he wants; otherwise take Generation 1. | `npm run import -- <id> voice` → `npm run timing -- <id>` |
 | **Original music** | elevenlabs.io/app/music | Prompt = genre, instruments, tempo, energy curve, "instrumental, no vocals", length ≈ script length + 5 s. Generate → Download. | `npm run import -- <id> music --title "<name>" --mood "<mood>" --license "ElevenLabs Music (paid plan)"` |
 | **Sound effect** | elevenlabs.io/app/sound-effects | Short prompt ("deep cinematic whoosh", "cash register ding", "typewriter clack"), 1–3 s. | `npm run import -- <id> sfx:<name> --license "ElevenLabs SFX"` |
 | **AI image** (building, place, era) | chatgpt.com | "Create a vertical 2:3 photorealistic image: <asset.generate> — <imageStyle>". No real people's faces, no logos. Download. | `npm run import -- <id> assets/<file> --ai` |

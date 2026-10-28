@@ -3,9 +3,31 @@
   "language": "en",
   "style": "Conversational English, the way a smart friend tells a story: short sentences, concrete numbers, no jargon, no filler openers. Captions keep digits. The `voice` field is only needed where the narrator could misread a token (Q3 → 'Q three', €5.44B → 'five point four four billion euros', '&').",
   "length": {
-    "lines": "6-8",
-    "seconds": "30-42",
-    "maxWords": 75
+    "default": "quick",
+    "rule": "Pick the tier from the story, not by habit. quick = one twist, one number. story = needs a setup + a turn + a result (3+ facts that each matter). deep = a real chain of events (5+ facts, several turns). Never pad to reach a tier: if the facts fit in quick, it is quick. storyboard.length = tier, storyboard.lengthReason = one sentence why.",
+    "tiers": {
+      "quick": {
+        "lines": "6-8",
+        "seconds": "30-42",
+        "maxWords": 75,
+        "maxSeconds": 48,
+        "maxVoice": 44
+      },
+      "story": {
+        "lines": "8-10",
+        "seconds": "43-58",
+        "maxWords": 110,
+        "maxSeconds": 62,
+        "maxVoice": 60
+      },
+      "deep": {
+        "lines": "10-13",
+        "seconds": "58-85",
+        "maxWords": 160,
+        "maxSeconds": 90,
+        "maxVoice": 88
+      }
+    }
   },
   "structure": [
     "1 HOOK (<=12 words): an open QUESTION about a relatable moment — the effect's name withheld",
@@ -42,7 +64,7 @@
       "similarity_boost": 0.8,
       "style": 0.15,
       "use_speaker_boost": true,
-      "speed": 1.0
+      "speed": 1
     },
     "say": {},
     "pauseBetweenLines": "1.1s",

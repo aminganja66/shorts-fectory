@@ -1,4 +1,5 @@
-// npm run frames -- <episodeId>
+// npm run frames -- <episodeId> [--chapter N]
+// Long videos: composition "Long" (16:9), entrance + beats + middle per scene only; --chapter N = just that chapter.
 // Frame-by-frame visual check: renders key frames of every scene (entrance, each beat, middle, end)
 // into public/episodes/<id>/frames/ — shown as a filmstrip in storyboard.html.
 import fs from 'node:fs';
@@ -7,7 +8,9 @@ import {bundle} from '@remotion/bundler';
 import {selectComposition, renderStill} from '@remotion/renderer';
 import {loadEpisode, readJSON, writeJSON, ROOT, ok, info} from './lib.mjs';
 
-const id = process.argv[2];
+const args = process.argv.slice(2);
+const id = args.find((a) => !a.startsWith('--'));
+const onlyChapter = args.includes('--chapter') ? Number(args[args.indexOf('--chapter') + 1]) : null;
 const {dir, sb} = loadEpisode(id);
 const out = path.join(dir, 'frames');
 fs.rmSync(out, {recursive: true, force: true});
@@ -17,7 +20,8 @@ info('Bundling Remotion project…');
 const serveUrl = await bundle({entryPoint: path.join(ROOT, 'src/index.ts')});
 const inputProps = {episodeId: id};
 const browserExecutable = process.env.REMOTION_BROWSER || null;
-const comp = await selectComposition({serveUrl, id: 'Short', inputProps, browserExecutable});
+const long = sb.format === 'long';
+const comp = await selectComposition({serveUrl, id: long ? 'Long' : 'Short', inputProps, browserExecutable});
 const fps = comp.fps;
 
 // Same scene start logic as Short.tsx
@@ -34,7 +38,9 @@ const starts = (timing ? timing.lines.map((l) => l.start) : est()).map((s, i) =>
 const ends = starts.map((s, i) => (i < starts.length - 1 ? starts[i + 1] : comp.durationInFrames) - 1);
 
 const list = [];
+const chapterNo = (l) => (sb.chapters ?? []).findIndex((c) => c.id === l.chapter) + 1;
 sb.lines.forEach((l, i) => {
+  if (onlyChapter && chapterNo(l) !== onlyChapter) return;
   const s = starts[i];
   const e = ends[i];
   const add = (f, label) => f >= s && f <= e && list.push({frame: f, scene: l.id, label});
@@ -44,7 +50,7 @@ sb.lines.forEach((l, i) => {
     add(s + at + Math.round((b.len ?? 8) / 2), `${b.do} @${b.at}`);
   });
   add(Math.round((s + e) / 2), 'middle');
-  add(e - 2, 'end');
+  if (!long) add(e - 2, 'end'); // ~110 scenes in a long video: entrance + beats + middle is enough
 });
 
 for (const f of list) {

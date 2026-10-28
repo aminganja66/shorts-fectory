@@ -65,7 +65,11 @@ export type TypewriterScene = {type: 'typewriter'; text: string; sub?: string; p
 export type CounterScene = {type: 'counter'; from?: number; to: number; prefix?: string; suffix?: string; decimals?: number; label?: string; icon?: string};
 export type LineScene = {type: 'line'; title: string; points: number[]; labels?: string[]; previous?: number[]; callout?: string; unit?: string; xs?: number[]}; // xs = real x values (e.g. years) so gaps are spaced honestly
 
-export type Scene = CollageScene | KineticScene | ChartScene | VersusScene | StackScene | EndScene | VoxScene | TypewriterScene | CounterScene | LineScene;
+// Long videos (16:9): chapter title card and a self-drawing timeline of dated events
+export type ChapterScene = {type: 'chapter'; number?: number; title: string; sub?: string; icon?: string};
+export type TimelineScene = {type: 'timeline'; title?: string; events: {year: string; label: string}[]; highlight?: number};
+
+export type Scene = CollageScene | KineticScene | ChartScene | VersusScene | StackScene | EndScene | VoxScene | TypewriterScene | CounterScene | LineScene | ChapterScene | TimelineScene;
 
 // Frame-exact moments inside a scene (frame 0 = scene start)
 export type Beat = {
@@ -85,6 +89,7 @@ export type Line = {
   fx?: Fx[]; // atmosphere layers
   beats?: Beat[]; // frame-wise camera moments
   // Scene script (documentation shown in the plan file)
+  chapter?: string; // long videos: id of the chapter this line belongs to (storyboard.chapters[].id)
   visual?: string; // what the viewer sees
   onScreen?: string; // on-screen text
   motionNotes?: string; // how the motion graphics play, frame by frame
@@ -97,10 +102,16 @@ export type Storyboard = {
   title: string;
   theme?: Theme;
   hookType?: HookType;
+  format?: 'short' | 'long'; // long = 16:9 chapter documentary (composition "Long")
+  chapters?: Chapter[];
   lines: Line[];
   music?: {file: string; volume?: number}; // file relative to public/music
   voice?: {file: string}; // relative to episode folder
 };
+
+// Long-video chapter: the story arc is open → idea → rise → downfall → recovery → today
+export type ChapterKind = 'open' | 'idea' | 'rise' | 'downfall' | 'recovery' | 'today';
+export type Chapter = {id: string; kind: ChapterKind; title: string};
 
 // ---- Variety system: every episode gets its own combination (checked by `npm run check`) ----
 export type Look = 'archive' | 'noir' | 'neon' | 'paper' | 'gold' | 'clean' | 'vox';

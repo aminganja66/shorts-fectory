@@ -1,5 +1,7 @@
 # Shorts Factory: Hindi YouTube Shorts with Claude Code + Remotion
 
+> **New here? Read [docs/HOW-TO-USE.md](docs/HOW-TO-USE.md) first.** It's the simple guide for making, pausing, resuming and uploading videos. (The channels are English now; the notes below are older setup details.)
+
 Two channels, one machine:
 
 | Channel | Folder | What it makes |

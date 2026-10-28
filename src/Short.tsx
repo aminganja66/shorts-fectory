@@ -3,7 +3,8 @@ import {AbsoluteFill, Sequence, Audio, staticFile, useVideoConfig, useCurrentFra
 import {ShortProps, Line, Scene, Timing, Storyboard} from './types';
 import {EpisodeCtx} from './scenes/common';
 import {Collage, Kinetic, Chart, Versus, Stack, End} from './scenes/Scenes';
-import {Vox, Typewriter, Counter, LineChart} from './scenes/Vox';
+import {Vox, Typewriter, Counter, LineChart, ChapterCard, Timeline} from './scenes/Vox';
+import {headlineFont} from './fonts';
 import {FilmOverlay, GateWeave, gradeFilter} from './film/FilmLook';
 import {Captions} from './Captions';
 import {BeatCamera} from './film/Beats';
@@ -51,6 +52,10 @@ const renderScene = (s: Scene, dur: number) => {
       return <Counter s={s} dur={dur} />;
     case 'line':
       return <LineChart s={s} dur={dur} />;
+    case 'chapter':
+      return <ChapterCard s={s} dur={dur} />;
+    case 'timeline':
+      return <Timeline s={s} dur={dur} />;
   }
 };
 
@@ -58,6 +63,7 @@ const Music: React.FC<{file: string; volume: number; timing: Timing; total: numb
   const {fps} = useVideoConfig();
   return (
     <Audio
+      loop // long videos run far past one track; a Short is shorter than its track, so nothing changes there
       src={staticFile(`music/${file}`)}
       volume={(f) => {
         const t = f / fps;
@@ -69,18 +75,39 @@ const Music: React.FC<{file: string; volume: number; timing: Timing; total: numb
   );
 };
 
-const ProgressBar: React.FC<{color: string}> = ({color}) => {
+const ProgressBar: React.FC<{color: string; ticks?: number[]}> = ({color, ticks = []}) => {
   const frame = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  return <div style={{position: 'absolute', left: 0, bottom: 0, height: 16, width: `${(frame / Math.max(1, durationInFrames - 1)) * 100}%`, background: color}} />;
+  const {durationInFrames, width, height} = useVideoConfig();
+  const h = width > height ? 10 : 16;
+  return (
+    <>
+      <div style={{position: 'absolute', left: 0, bottom: 0, height: h, width: `${(frame / Math.max(1, durationInFrames - 1)) * 100}%`, background: color}} />
+      {ticks.map((t) => (
+        <div key={t} style={{position: 'absolute', bottom: 0, height: h + 8, width: 4, left: `${(t / Math.max(1, durationInFrames - 1)) * 100}%`, background: '#16120d', opacity: 0.55}} />
+      ))}
+    </>
+  );
 };
+
+// Long videos: small "3 · THE DOWNFALL" tag top-left, so viewers who skip around know where they are.
+const ChapterTag: React.FC<{label?: string; color: string}> = ({label, color}) =>
+  label ? (
+    <div style={{position: 'absolute', top: 36, left: 44, padding: '6px 18px', background: 'rgba(250,246,234,0.92)', borderLeft: `8px solid ${color}`, fontFamily: headlineFont, fontWeight: 700, fontSize: 30, letterSpacing: 2, color: '#16120d', textTransform: 'uppercase'}}>{label}</div>
+  ) : null;
 
 export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing, thumb}) => {
   const {durationInFrames} = useVideoConfig();
+  const frame = useCurrentFrame();
   if (!storyboard) return <AbsoluteFill style={{background: '#000'}} />;
   const tm = timing ?? estimateTiming(storyboard);
   const accent = storyboard.theme?.accent ?? '#E50914';
   const starts = storyboard.lines.map((l: Line, i) => (i === 0 ? 0 : Math.round((tm.lines[i]?.start ?? 0) * FPS)));
+  // chapters (long videos): tick marks where each chapter starts + a tag for the chapter on screen now
+  const chapters = storyboard.chapters ?? [];
+  const chapterStarts = chapters.map((c) => starts[storyboard.lines.findIndex((l) => l.chapter === c.id)]).filter((f) => f !== undefined && f > 0);
+  const cur = storyboard.lines[Math.max(0, starts.filter((st) => st <= frame).length - 1)];
+  const ci = chapters.findIndex((c) => c.id === cur?.chapter);
+  const chapterLabel = ci >= 0 && chapters[ci].kind !== 'open' && cur.scene.type !== 'chapter' ? `${chapters.filter((c, k) => k <= ci && c.kind !== 'open').length} · ${chapters[ci].title}` : undefined;
   return (
     <EpisodeCtx.Provider value={{id: episodeId, accent, theme: storyboard.theme ?? {}}}>
       <AbsoluteFill style={{background: '#000'}}>
@@ -107,7 +134,8 @@ export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing, thum
           </AbsoluteFill>
         </GateWeave>
         <FilmOverlay look={storyboard.theme?.look} />
-        {(storyboard.theme?.progressBar ?? storyboard.theme?.look === 'vox') && <ProgressBar color={accent} />}
+        {(storyboard.theme?.progressBar ?? storyboard.theme?.look === 'vox') && <ProgressBar color={accent} ticks={chapterStarts} />}
+        {!thumb && <ChapterTag label={chapterLabel} color={accent} />}
         {!thumb && <Captions words={tm.words} style={storyboard.theme?.captionStyle} />}
         {timing && storyboard.voice?.file && <Audio src={staticFile(`episodes/${episodeId}/${storyboard.voice.file}`)} />}
         {storyboard.music?.file && <Music file={storyboard.music.file} volume={storyboard.music.volume ?? 0.16} timing={tm} total={durationInFrames} />}

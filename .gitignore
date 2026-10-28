@@ -8,3 +8,5 @@ public/episodes/*/voice-take*.mp3
 .DS_Store
 public/episodes/*/frames/
 public/episodes/*/tts-text.txt
+public/episodes/*/tts-text-*.txt
+public/episodes/*/voice-part-*.mp3

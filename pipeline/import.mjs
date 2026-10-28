@@ -2,6 +2,7 @@
 // Picks the NEWEST file you (or Claude in Chrome) just downloaded and puts it in the right place:
 //   target = assets/s3-hq.jpg   → episode image (+ credits.json)
 //   target = voice              → episode voice.mp3 (then run: npm run timing -- <id>)
+//   target = voice --part N     → long video: voice-part-N.mp3; joined into voice.mp3 once all parts (tts-parts.json) are in
 //   target = music              → public/music/<name>.mp3 (+ library.json, + storyboard.music.file)
 //   target = sfx:<name>         → public/sfx/<name>.mp3
 // Looks in DOWNLOADS_DIR (default ~/Downloads) for files modified in the last 20 minutes.
@@ -11,7 +12,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
-import {loadEpisode, readJSON, writeJSON, ROOT, die, ok, info, slugify} from './lib.mjs';
+import {loadEpisode, readJSON, writeJSON, ROOT, die, ok, info, slugify, joinVoiceParts} from './lib.mjs';
 
 const args = process.argv.slice(2);
 const opt = (k) => (args.includes(`--${k}`) ? args[args.indexOf(`--${k}`) + 1] : undefined);
@@ -39,7 +40,19 @@ const toMp3 = (from, to) => {
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', from, '-b:a', '192k', to]);
 };
 
-if (target === 'voice') {
+if (target === 'voice' && opt('part')) {
+  // long video: one take per tts-text-N.txt; when every part is here, join them (0.9 s gap = a normal line pause for align.mjs)
+  const n = Number(opt('part'));
+  toMp3(src.p, path.join(dir, `voice-part-${n}.mp3`));
+  const total = readJSON(path.join(dir, 'tts-parts.json'), {parts: []}).parts.length;
+  const have = [...Array(total)].filter((_, k) => fs.existsSync(path.join(dir, `voice-part-${k + 1}.mp3`)));
+  ok(`voice-part-${n}.mp3 imported (${have.length}/${total} parts)`);
+  if (await joinVoiceParts(dir, total)) {
+    sb.voice = {...(sb.voice ?? {}), file: 'voice.mp3', source: 'elevenlabs-web', parts: total};
+    writeJSON(path.join(dir, 'storyboard.json'), sb);
+    ok(`all ${total} parts joined → voice.mp3 → now run: npm run timing -- ${id}`);
+  }
+} else if (target === 'voice') {
   toMp3(src.p, path.join(dir, 'voice.mp3'));
   sb.voice = {...(sb.voice ?? {}), file: 'voice.mp3', source: 'elevenlabs-web'};
   writeJSON(path.join(dir, 'storyboard.json'), sb);

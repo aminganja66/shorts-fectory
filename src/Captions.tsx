@@ -27,13 +27,14 @@ const chunk = (words: Word[]) => {
 
 export const Captions: React.FC<{words: Word[]; style?: CaptionStyle}> = ({words, style = 'highlight'}) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
+  const {fps, width, height} = useVideoConfig();
+  const wide = width > height; // 16:9: smaller captions at the bottom (lower third), never one-word pops for 10 minutes
   const {accent} = useEpisode();
   const t = frame / fps;
   const hl = accent === '#E50914' ? '#FFD400' : accent;
 
   // POP: one word at a time, big and punchy
-  if (style === 'pop') {
+  if (style === 'pop' && !wide) {
     const w = words.find((x) => t >= x.start - 0.03 && t <= x.end + 0.08);
     if (!w) return null;
     const p = interpolate(t, [w.start - 0.03, w.start + 0.06, w.start + 0.14], [0.6, 1.15, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
@@ -53,9 +54,9 @@ export const Captions: React.FC<{words: Word[]; style?: CaptionStyle}> = ({words
     <div
       style={{
         position: 'absolute',
-        top: 1230,
-        left: 50,
-        right: 50,
+        top: wide ? 890 : 1230,
+        left: wide ? 260 : 50,
+        right: wide ? 260 : 50,
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
@@ -67,7 +68,7 @@ export const Captions: React.FC<{words: Word[]; style?: CaptionStyle}> = ({words
       {g.map((w, i) => {
         const active = t >= w.start && t <= w.end + 0.05;
         const past = t > w.end + 0.05;
-        const base: React.CSSProperties = {fontFamily: captionFont, fontWeight: 800, fontSize: boxed ? 74 : 84, lineHeight: 1.15, padding: '0 10px', borderRadius: 10, display: 'inline-block'};
+        const base: React.CSSProperties = {fontFamily: captionFont, fontWeight: 800, fontSize: wide ? (boxed ? 54 : 60) : boxed ? 74 : 84, lineHeight: 1.15, padding: '0 10px', borderRadius: 10, display: 'inline-block'};
         const stroke: React.CSSProperties = {WebkitTextStroke: '3px #000', paintOrder: 'stroke fill', textShadow: '0 6px 18px rgba(0,0,0,0.9)'};
         let st: React.CSSProperties;
         switch (style) {

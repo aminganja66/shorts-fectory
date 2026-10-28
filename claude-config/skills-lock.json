@@ -5,109 +5,121 @@
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
       "skillPath": "skills/content-strategy/SKILL.md",
-      "computedHash": "3fad57336f133f265d08f55968d3ec382aaab47323c7b03fb265d0f305bc315d"
+      "computedHash": "b23afb4df8eab84d662a714a51437ee64df0fb038f548051ab5b598d3c33a952"
     },
     "copy-editing": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
       "skillPath": "skills/copy-editing/SKILL.md",
-      "computedHash": "92731d3f0fd28f0e432c1031230e6553a2267f517a3e4cd9a44f37ff82ebba04"
+      "computedHash": "43a0ead845fa5dde5cb6dc0a8e8578f503a2b917035e2267fd32da1123101fcb"
     },
     "copywriting": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
       "skillPath": "skills/copywriting/SKILL.md",
-      "computedHash": "b62e532dd34dc666288b241ea05e4e1f36f011d4f65d5d3129e85603064ac1c4"
+      "computedHash": "b7ad458352da7e0f962bb285fdfb15daabbd2b354fc903548bf68ca7d973a8f3"
     },
     "humanizer": {
       "source": "blader/humanizer",
       "sourceType": "github",
       "skillPath": "SKILL.md",
-      "computedHash": "d85c4727f62296887c3206e32a99caeed7611af7c4701c1b9931897260e31a73"
+      "computedHash": "4c7af5b1efdd897dcad56390d3c5f8708f6ddc11431fbf668e13ceb12ff583ce"
     },
     "marketing-psychology": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
       "skillPath": "skills/marketing-psychology/SKILL.md",
-      "computedHash": "50d735eb0f5c36f379ed2200f21aeacc9b9ad85667b5d33ec6111857352a1340"
+      "computedHash": "d057044710ce7b7f9b90b84b3ab64e9359aaf47982b922ec10daca3822185ede"
     },
     "music": {
       "source": "elevenlabs/skills",
       "sourceType": "github",
       "skillPath": "music/SKILL.md",
-      "computedHash": "f5307770bacfea37e8fb49aa1d5588d6af15dfdcec8a23d4bac781a0c26685de"
+      "computedHash": "7bf6bcb4ddbccaa2da189109c18ce43e4943aa68a87864b4ece988c997af754b"
     },
     "remotion-best-practices": {
       "source": "remotion-dev/skills",
       "sourceType": "github",
       "skillPath": "skills/remotion-best-practices/SKILL.md",
-      "computedHash": "e3cc169fcb69c59efd9c3f1feaf0bdbf124488aec9dd2809266733f4d615b90a"
+      "computedHash": "105ddafe7e16db760acf88b5aca1ea13a2ff3952e66058e8db41a9cd49df7dbd"
     },
     "remotion-captions": {
       "source": "remotion-dev/skills",
       "sourceType": "github",
       "skillPath": "skills/remotion-captions/SKILL.md",
-      "computedHash": "e997ec4674833ff2605d2db6ae6fe023799267c25a9015e886114ea27e906b34"
+      "computedHash": "42688fbc8b8caa18547b3001aa671c04bd281f12473e4e9acb7606abc3c9a1a2"
     },
     "remotion-markup": {
       "source": "remotion-dev/skills",
       "sourceType": "github",
       "skillPath": "skills/remotion-markup/SKILL.md",
-      "computedHash": "c4a3ebb4ef11bd881fd5712f47f61e0c7cb2ebc3b4fe779e32a5eac8d891dff5"
+      "computedHash": "fa73e347b9445cbe3d01daa6c5847f2042c33f47e38e55ce20d341d17325cae8"
     },
     "remotion-multimedia": {
       "source": "remotion-dev/skills",
       "sourceType": "github",
       "skillPath": "skills/remotion-multimedia/SKILL.md",
-      "computedHash": "fa62009668e36465a7196e53c1c78d2579095d63e405e453a31ccb8ddd6eef19"
+      "computedHash": "38a6bf9d481c68e41fb66cce679350d09b2bc4bc8234287c56e6a144b29c03c8"
     },
     "remotion-render": {
       "source": "remotion-dev/skills",
       "sourceType": "github",
       "skillPath": "skills/remotion-render/SKILL.md",
-      "computedHash": "f681e71be3f6853552c57fccc5224be62edf58182cbd266100e7153f196d6731"
+      "computedHash": "3dba80ad45cfb547e000f7470d7f6810097dda057d103df9fd1447db2372de16"
     },
     "remotion-studio": {
       "source": "remotion-dev/skills",
       "sourceType": "github",
       "skillPath": "skills/remotion-studio/SKILL.md",
-      "computedHash": "b4af8d2cb77e7ad1d529ee670f5d0c9b6a3cdf26956a0a4bc9c88bc570022c99"
+      "computedHash": "50584e0493ddb2186eae2f24dcbc72e76e25ed206870c2573d71c6cd6eaed93f"
     },
     "setup-api-key": {
       "source": "elevenlabs/skills",
       "sourceType": "github",
       "skillPath": "setup-api-key/SKILL.md",
-      "computedHash": "cdfe132b922554fd7c2afe1ad22c0a96d95e5ed65af609a225131c6c7bd199cc"
+      "computedHash": "600327d8a4a47563696a8580981529997836a1313e6db15144817460b7245dc0"
+    },
+    "short-form-video": {
+      "source": "iart-ai/tiktok-video-skills",
+      "sourceType": "github",
+      "skillPath": "skills/short-form-video/SKILL.md",
+      "computedHash": "f2cb1610f64f2f3013ff20ef6acc4094bcd8de2c578098643f110926c7ef4df2"
     },
     "social": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
       "skillPath": "skills/social/SKILL.md",
-      "computedHash": "665681c9f0815617bcfedd5b3334404acebfe2b3dfececc67300e276c0cdcd18"
+      "computedHash": "8fbfde477a34d243500855a5f4f47a9848dedba21713d53467dc603cd15001ef"
     },
     "sound-effects": {
       "source": "elevenlabs/skills",
       "sourceType": "github",
       "skillPath": "sound-effects/SKILL.md",
-      "computedHash": "90a38dd66bf6c5d900778fe5287e50104e404b9fc29027c774c88dbfe63a8890"
+      "computedHash": "e6a75b6bb366498c8613968430ef8dae7bcfd35b61268d0922be224462d90eb5"
     },
     "speech-to-text": {
       "source": "elevenlabs/skills",
       "sourceType": "github",
       "skillPath": "speech-to-text/SKILL.md",
-      "computedHash": "d4134f0f36d89adb026bb186bab48e4812a3ee04a2d4e940c2d257ce5f9d5678"
+      "computedHash": "1a656b0d9d51ec7105edf2d3bf14807352d0e04beec41bfce225a23b8ffbdf7f"
     },
     "text-to-speech": {
       "source": "elevenlabs/skills",
       "sourceType": "github",
       "skillPath": "text-to-speech/SKILL.md",
-      "computedHash": "451b0b1444cb9890107ec36ebc948868d12ae3bdcb42cc513c5461f8d15e3de0"
+      "computedHash": "d7451c6d5c0d8665db184076caf6031521f6e4bc448ab3406ff3bd64cd4105f8"
     },
     "video": {
       "source": "coreyhaines31/marketingskills",
       "sourceType": "github",
       "skillPath": "skills/video/SKILL.md",
-      "computedHash": "11241310773f98c80dbf75949112fad3b45db5ed0c4c39ac8a3ac6051ef8f7ae"
+      "computedHash": "6fe83b57e775be3bee5dc6d5e79f9719bc0218a4dfa12d8cd4a888ba204ba40b"
+    },
+    "youtube-scriptwriting": {
+      "source": "cdeistopened/skill-stack",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/youtube-scriptwriting/SKILL.md",
+      "computedHash": "47210319862e71615249298ad838b3dc6240290a33d3c3fb81882464fdc8efb0"
     }
   }
 }

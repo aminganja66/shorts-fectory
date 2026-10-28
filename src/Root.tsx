@@ -22,14 +22,27 @@ const calc: CalculateMetadataFunction<ShortProps> = async ({props}) => {
 };
 
 export const Root: React.FC = () => (
-  <Composition
-    id="Short"
-    component={Short}
-    width={1080}
-    height={1920}
-    fps={FPS}
-    durationInFrames={900}
-    defaultProps={{episodeId: 'demo-netflix'} as ShortProps}
-    calculateMetadata={calc}
-  />
+  <>
+    <Composition
+      id="Short"
+      component={Short}
+      width={1080}
+      height={1920}
+      fps={FPS}
+      durationInFrames={900}
+      defaultProps={{episodeId: 'demo-netflix'} as ShortProps}
+      calculateMetadata={calc}
+    />
+    {/* Long videos (storyboard.format = "long"): same scenes in 16:9 layouts (useWide in scenes/Vox.tsx) */}
+    <Composition
+      id="Long"
+      component={Short}
+      width={1920}
+      height={1080}
+      fps={FPS}
+      durationInFrames={900}
+      defaultProps={{episodeId: 'demo-netflix'} as ShortProps}
+      calculateMetadata={calc}
+    />
+  </>
 );
