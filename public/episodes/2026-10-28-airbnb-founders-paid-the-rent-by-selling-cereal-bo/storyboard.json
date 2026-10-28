@@ -2,8 +2,25 @@
   "id": "2026-10-28-airbnb-founders-paid-the-rent-by-selling-cereal-bo",
   "channel": "brand",
   "language": "en",
-  "topic": "Airbnb founders paid the rent by selling cereal boxes",
-  "title": "",
+  "topic": "Airbnb founders kept the company alive by selling cereal boxes",
+  "title": "Airbnb Was Nearly Dead in 2008. What Kept It Alive?",
+  "length": "story",
+  "lengthReason": "The payoff needs a setup (2007 rent, credit card debt), the turn (election cereal, 500 + 500 boxes), and two results (about $30,000 and the Y Combinator deal), which doesn't fit in 75 words.",
+  "hookType": "question",
+  "hookCandidates": [
+    {
+      "hookType": "question",
+      "text": "Airbnb was nearly dead in 2008. What kept it alive?"
+    },
+    {
+      "hookType": "myth-bust",
+      "text": "Airbnb's founders didn't pay rent with cereal. So what did it pay?"
+    },
+    {
+      "hookType": "contradiction",
+      "text": "A breakfast food kept a future giant alive. Which one?"
+    }
+  ],
   "theme": {
     "accent": "#F26A1B",
     "look": "vox",
@@ -11,8 +28,130 @@
     "transition": "zoom",
     "progressBar": true
   },
-  "facts": [],
-  "lines": [],
+  "facts": [
+    {
+      "claim": "In October 2007, Brian Chesky and Joe Gebbia were broke with rent due on their San Francisco apartment, so they rented air mattresses on their floor to people attending a sold-out design trade show. Airbnb says the first guests were three people.",
+      "source": [
+        "https://fortune.com/longform/brian-chesky-airbnb/",
+        "https://news.airbnb.com/about-us/"
+      ]
+    },
+    {
+      "claim": "The site launched in August 2008 as Airbedandbreakfast.com.",
+      "source": "https://fortune.com/longform/brian-chesky-airbnb/"
+    },
+    {
+      "claim": "During the 2008 US presidential election, AirBed & Breakfast sold two cereals: 'Obama O's' (Honey O's inside, 'Hope in every bowl', 'Breakfast of Change') and 'Cap'n McCain's' (repackaged Quaker puffs). TechCrunch reported on October 9, 2008 that they made 500 boxes of each, priced at $39 a box.",
+      "source": "https://techcrunch.com/?p=23166"
+    },
+    {
+      "claim": "The boxes are usually described as a numbered collector's edition at $40 each (TechCrunch's launch price was $39). Safe to say 'about $40 a box'. Real cereal inside was a roughly $4 box, according to Chesky's retelling of Paul Graham's remark.",
+      "source": [
+        "https://avc.com/2011/03/airbnb/",
+        "https://fortune.com/2023/04/19/airbnb-ceo-cereal-box-investors-changed-everything-billion-dollar-company/"
+      ]
+    },
+    {
+      "claim": "Joe Gebbia: they made 500 of each cereal. The Obama O's sold out and brought in the money they needed to keep Airbnb alive. The Cap'n McCain's sold poorly (quoted by investor Fred Wilson in 2011).",
+      "source": [
+        "https://avc.com/2011/03/airbnb/",
+        "https://techcrunch.com/?p=23166"
+      ]
+    },
+    {
+      "claim": "The cereal brought in about $30,000, according to Chesky in a 2023 Stanford GSB interview. CNBC gives a higher figure: 1,000 boxes at $40, or $40,000. Use the conservative 'about $30,000'.",
+      "source": [
+        "https://fortune.com/2023/04/19/airbnb-ceo-cereal-box-investors-changed-everything-billion-dollar-company/",
+        "https://www.cnbc.com/make-it/2020/11/17/airbnb-was-clawing-toward-ramen-profitability.html"
+      ]
+    },
+    {
+      "claim": "Chesky said on Reid Hoffman's 'Masters of Scale' podcast (2017) that he was $25,000 in credit card debt, and that Gebbia owed tens of thousands of dollars on credit cards.",
+      "source": [
+        "https://www.cnbc.com/make-it/2020/11/17/airbnb-was-clawing-toward-ramen-profitability.html",
+        "https://www.nbcsandiego.com/news/business/money-report/in-2009-airbnb-collected-734-in-fees-in-a-week-and-was-clawing-toward-ramen-profitability/2447353/?amp=1"
+      ]
+    },
+    {
+      "claim": "Chesky says Paul Graham was not sold on the idea until he saw the cereal. Chesky recalls Graham saying that if they could get people to pay $40 for $4 boxes of cereal, maybe they could convince strangers to stay in each other's homes. (This is Chesky's memory, so present it as 'Chesky says Graham told them'.)",
+      "source": "https://fortune.com/2023/04/19/airbnb-ceo-cereal-box-investors-changed-everything-billion-dollar-company/"
+    },
+    {
+      "claim": "Airbnb got into Y Combinator days after pitching Paul Graham. YC put in $20,000 for a 6% stake. The founders were in YC's Winter 2009 class.",
+      "source": [
+        "https://fortune.com/2023/04/19/airbnb-ceo-cereal-box-investors-changed-everything-billion-dollar-company/",
+        "https://avc.com/2011/03/airbnb/"
+      ]
+    },
+    {
+      "claim": "In January 2009, Chesky emailed Paul Graham: 'This week so far we have done $734 in fees.' He wrote that Airbnb needed $1,000 a week in fees to be 'ramen profitable'.",
+      "source": "https://www.cnbc.com/make-it/2020/11/17/airbnb-was-clawing-toward-ramen-profitability.html"
+    },
+    {
+      "claim": "In a 2020 tweet about the cereal boxes, Chesky wrote: 'We funded Airbnb by selling these.' (quoted by CNBC)",
+      "source": "https://www.cnbc.com/make-it/2020/11/17/airbnb-was-clawing-toward-ramen-profitability.html"
+    },
+    {
+      "claim": "Airbnb's full-year 2025 revenue was $12.2 billion ($12,241 million, up 10%), with net income of $2.5 billion ($2,511 million). Gross booking value was $91.3 billion, and 533.0 million nights and seats were booked (Q4 2025 shareholder letter, SEC 8-K, February 12, 2026).",
+      "source": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526048670/d58192dex991.htm"
+    },
+    {
+      "claim": "Airbnb says it has over 5.5 million hosts, over 2.5 billion guest arrivals of all time, and listings in 220+ countries and regions.",
+      "source": "https://news.airbnb.com/about-us/"
+    }
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "text": "Airbnb was nearly dead in 2008. What kept it alive?",
+      "voice": "Airbnb was nearly dead in two thousand eight. What kept it alive?"
+    },
+    {
+      "id": 2,
+      "text": "Breakfast cereal. About $40 a box.",
+      "voice": "Breakfast cereal. About forty dollars a box."
+    },
+    {
+      "id": 3,
+      "text": "In 2007, Brian Chesky and Joe Gebbia couldn't make rent.",
+      "voice": "In two thousand seven, Brian Chesky and Joe Gebbia couldn't make rent."
+    },
+    {
+      "id": 4,
+      "text": "So they rented air mattresses on their floor. Three guests came.",
+      "voice": "So they rented air mattresses on their floor. Three guests came."
+    },
+    {
+      "id": 5,
+      "text": "Chesky says he owed $25,000 on credit cards.",
+      "voice": "Chesky says he owed twenty-five thousand dollars on credit cards."
+    },
+    {
+      "id": 6,
+      "text": "Then the 2008 election gave them a weird idea.",
+      "voice": "Then the two thousand eight election gave them a weird idea."
+    },
+    {
+      "id": 7,
+      "text": "They made 500 boxes of Obama O's and 500 of Cap'n McCain's.",
+      "voice": "They made five hundred boxes of Obama Ohs and five hundred of Captain McCain's."
+    },
+    {
+      "id": 8,
+      "text": "Obama O's sold out. Chesky says it raised about $30,000.",
+      "voice": "Obama Ohs sold out. Chesky says it raised about thirty thousand dollars."
+    },
+    {
+      "id": 9,
+      "text": "He says it also won over Paul Graham. Y Combinator put in $20,000.",
+      "voice": "He says it also won over Paul Graham. Y Combinator put in twenty thousand dollars."
+    },
+    {
+      "id": 10,
+      "text": "In 2025, Airbnb brought in $12.2 billion. Would you have bought that cereal?",
+      "voice": "In twenty twenty-five, Airbnb brought in twelve point two billion dollars. Would you have bought that cereal?"
+    }
+  ],
   "assets": [],
   "music": {
     "file": "",
@@ -22,14 +161,14 @@
     "file": "voice.mp3"
   },
   "upload": {
-    "title": "",
-    "description": "",
+    "title": "Airbnb Was Nearly Dead in 2008. What Kept It Alive?",
+    "description": "In 2008 Airbnb's founders were deep in credit card debt, so they sold election-themed cereal for about $40 a box.\nChesky says it raised about $30,000 and helped win over Y Combinator. In 2025, Airbnb's revenue was $12.2 billion.",
     "hashtags": [
       "#shorts",
+      "#airbnb",
+      "#startup",
       "#businessstory",
-      "#brandstory",
-      "#business",
-      "#storytime"
+      "#brandstory"
     ]
   }
 }
