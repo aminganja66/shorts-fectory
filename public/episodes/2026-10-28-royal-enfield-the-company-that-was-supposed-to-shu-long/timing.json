@@ -1,0 +1,5272 @@
+{
+  "words": [
+    {
+      "text": "This",
+      "start": 0,
+      "end": 0.231
+    },
+    {
+      "text": "motorcycle",
+      "start": 0.231,
+      "end": 0.751
+    },
+    {
+      "text": "brand",
+      "start": 0.751,
+      "end": 1.031
+    },
+    {
+      "text": "was",
+      "start": 1.031,
+      "end": 1.214
+    },
+    {
+      "text": "slated",
+      "start": 1.214,
+      "end": 1.541
+    },
+    {
+      "text": "for",
+      "start": 1.541,
+      "end": 1.724
+    },
+    {
+      "text": "closure",
+      "start": 1.724,
+      "end": 2.1
+    },
+    {
+      "text": "in",
+      "start": 2.1,
+      "end": 2.234
+    },
+    {
+      "text": "2000.",
+      "start": 2.234,
+      "end": 3.077
+    },
+    {
+      "text": "Who",
+      "start": 3.077,
+      "end": 3.26
+    },
+    {
+      "text": "saved",
+      "start": 3.861,
+      "end": 4.103
+    },
+    {
+      "text": "it?",
+      "start": 4.103,
+      "end": 4.325
+    },
+    {
+      "text": "A",
+      "start": 5.468,
+      "end": 5.588
+    },
+    {
+      "text": "man",
+      "start": 5.563,
+      "end": 5.763
+    },
+    {
+      "text": "named",
+      "start": 5.763,
+      "end": 6.068
+    },
+    {
+      "text": "Siddhartha",
+      "start": 6.068,
+      "end": 6.636
+    },
+    {
+      "text": "Lal,",
+      "start": 6.636,
+      "end": 6.931
+    },
+    {
+      "text": "who'd",
+      "start": 6.931,
+      "end": 7.236
+    },
+    {
+      "text": "just",
+      "start": 7.675,
+      "end": 7.949
+    },
+    {
+      "text": "taken",
+      "start": 7.949,
+      "end": 8.281
+    },
+    {
+      "text": "charge",
+      "start": 8.281,
+      "end": 8.67
+    },
+    {
+      "text": "at",
+      "start": 8.67,
+      "end": 8.83
+    },
+    {
+      "text": "about",
+      "start": 8.83,
+      "end": 9.162
+    },
+    {
+      "text": "26.",
+      "start": 9.162,
+      "end": 9.866
+    },
+    {
+      "text": "The",
+      "start": 10.908,
+      "end": 11.118
+    },
+    {
+      "text": "division",
+      "start": 11.118,
+      "end": 11.605
+    },
+    {
+      "text": "was",
+      "start": 11.605,
+      "end": 11.815
+    },
+    {
+      "text": "reportedly",
+      "start": 11.815,
+      "end": 12.412
+    },
+    {
+      "text": "making",
+      "start": 12.412,
+      "end": 12.788
+    },
+    {
+      "text": "large",
+      "start": 12.788,
+      "end": 13.108
+    },
+    {
+      "text": "losses.",
+      "start": 13.108,
+      "end": 13.623
+    },
+    {
+      "text": "Yet",
+      "start": 14.643,
+      "end": 14.836
+    },
+    {
+      "text": "in",
+      "start": 14.836,
+      "end": 14.979
+    },
+    {
+      "text": "the",
+      "start": 14.979,
+      "end": 15.172
+    },
+    {
+      "text": "year",
+      "start": 15.172,
+      "end": 15.417
+    },
+    {
+      "text": "to",
+      "start": 15.417,
+      "end": 15.559
+    },
+    {
+      "text": "March",
+      "start": 15.559,
+      "end": 15.854
+    },
+    {
+      "text": "2026,",
+      "start": 15.854,
+      "end": 16.71
+    },
+    {
+      "text": "it",
+      "start": 17.013,
+      "end": 17.2
+    },
+    {
+      "text": "sold",
+      "start": 17.2,
+      "end": 17.521
+    },
+    {
+      "text": "1.23",
+      "start": 17.521,
+      "end": 18.415
+    },
+    {
+      "text": "million",
+      "start": 18.415,
+      "end": 18.936
+    },
+    {
+      "text": "motorcycles.",
+      "start": 18.936,
+      "end": 19.89
+    },
+    {
+      "text": "How",
+      "start": 20.98,
+      "end": 21.189
+    },
+    {
+      "text": "do",
+      "start": 21.189,
+      "end": 21.344
+    },
+    {
+      "text": "you",
+      "start": 21.344,
+      "end": 21.553
+    },
+    {
+      "text": "go",
+      "start": 21.553,
+      "end": 21.707
+    },
+    {
+      "text": "from",
+      "start": 21.707,
+      "end": 21.971
+    },
+    {
+      "text": "closure",
+      "start": 21.971,
+      "end": 22.401
+    },
+    {
+      "text": "to",
+      "start": 22.401,
+      "end": 22.555
+    },
+    {
+      "text": "that?",
+      "start": 22.555,
+      "end": 22.956
+    },
+    {
+      "text": "To",
+      "start": 24.142,
+      "end": 24.33
+    },
+    {
+      "text": "find",
+      "start": 24.33,
+      "end": 24.651
+    },
+    {
+      "text": "out,",
+      "start": 24.651,
+      "end": 25.025
+    },
+    {
+      "text": "we",
+      "start": 25.025,
+      "end": 25.213
+    },
+    {
+      "text": "go",
+      "start": 25.213,
+      "end": 25.4
+    },
+    {
+      "text": "back",
+      "start": 25.4,
+      "end": 25.721
+    },
+    {
+      "text": "to",
+      "start": 25.721,
+      "end": 25.908
+    },
+    {
+      "text": "1891,",
+      "start": 25.908,
+      "end": 27.032
+    },
+    {
+      "text": "in",
+      "start": 27.032,
+      "end": 27.22
+    },
+    {
+      "text": "England.",
+      "start": 27.22,
+      "end": 27.909
+    },
+    {
+      "text": "Chapter",
+      "start": 28.995,
+      "end": 29.371
+    },
+    {
+      "text": "one.",
+      "start": 29.371,
+      "end": 29.675
+    },
+    {
+      "text": "It",
+      "start": 30.279,
+      "end": 30.43
+    },
+    {
+      "text": "starts",
+      "start": 30.43,
+      "end": 30.796
+    },
+    {
+      "text": "with",
+      "start": 30.796,
+      "end": 31.054
+    },
+    {
+      "text": "parts",
+      "start": 31.054,
+      "end": 31.366
+    },
+    {
+      "text": "for",
+      "start": 31.366,
+      "end": 31.571
+    },
+    {
+      "text": "a",
+      "start": 31.571,
+      "end": 31.691
+    },
+    {
+      "text": "gun",
+      "start": 31.668,
+      "end": 31.872
+    },
+    {
+      "text": "factory.",
+      "start": 31.872,
+      "end": 32.426
+    },
+    {
+      "text": "In",
+      "start": 33.665,
+      "end": 33.825
+    },
+    {
+      "text": "1891,",
+      "start": 33.825,
+      "end": 34.784
+    },
+    {
+      "text": "two",
+      "start": 34.784,
+      "end": 35.001
+    },
+    {
+      "text": "men",
+      "start": 35.308,
+      "end": 35.507
+    },
+    {
+      "text": "bought",
+      "start": 35.507,
+      "end": 35.864
+    },
+    {
+      "text": "a",
+      "start": 35.864,
+      "end": 35.984
+    },
+    {
+      "text": "small",
+      "start": 35.959,
+      "end": 36.263
+    },
+    {
+      "text": "Redditch",
+      "start": 36.263,
+      "end": 36.725
+    },
+    {
+      "text": "company",
+      "start": 36.725,
+      "end": 37.135
+    },
+    {
+      "text": "called",
+      "start": 37.135,
+      "end": 37.492
+    },
+    {
+      "text": "George",
+      "start": 37.492,
+      "end": 37.849
+    },
+    {
+      "text": "Townsend",
+      "start": 37.849,
+      "end": 38.311
+    },
+    {
+      "text": "and",
+      "start": 38.311,
+      "end": 38.51
+    },
+    {
+      "text": "Company.",
+      "start": 38.51,
+      "end": 39.051
+    },
+    {
+      "text": "Their",
+      "start": 40.184,
+      "end": 40.522
+    },
+    {
+      "text": "names",
+      "start": 40.522,
+      "end": 40.859
+    },
+    {
+      "text": "were",
+      "start": 40.859,
+      "end": 41.138
+    },
+    {
+      "text": "Bob",
+      "start": 41.138,
+      "end": 41.359
+    },
+    {
+      "text": "Walker",
+      "start": 41.359,
+      "end": 41.754
+    },
+    {
+      "text": "Smith",
+      "start": 41.754,
+      "end": 42.092
+    },
+    {
+      "text": "and",
+      "start": 42.092,
+      "end": 42.313
+    },
+    {
+      "text": "Albert",
+      "start": 42.313,
+      "end": 42.708
+    },
+    {
+      "text": "Eadie.",
+      "start": 42.708,
+      "end": 43.191
+    },
+    {
+      "text": "In",
+      "start": 44.313,
+      "end": 44.498
+    },
+    {
+      "text": "1893",
+      "start": 44.498,
+      "end": 45.384
+    },
+    {
+      "text": "they",
+      "start": 45.384,
+      "end": 45.701
+    },
+    {
+      "text": "won",
+      "start": 45.701,
+      "end": 45.952
+    },
+    {
+      "text": "a",
+      "start": 45.952,
+      "end": 46.072
+    },
+    {
+      "text": "contract:",
+      "start": 46.071,
+      "end": 46.772
+    },
+    {
+      "text": "precision",
+      "start": 47.072,
+      "end": 47.652
+    },
+    {
+      "text": "parts",
+      "start": 47.652,
+      "end": 47.995
+    },
+    {
+      "text": "for",
+      "start": 47.995,
+      "end": 48.22
+    },
+    {
+      "text": "the",
+      "start": 48.22,
+      "end": 48.444
+    },
+    {
+      "text": "Royal",
+      "start": 48.444,
+      "end": 48.787
+    },
+    {
+      "text": "Small",
+      "start": 48.787,
+      "end": 49.13
+    },
+    {
+      "text": "Arms",
+      "start": 49.13,
+      "end": 49.414
+    },
+    {
+      "text": "Factory",
+      "start": 49.414,
+      "end": 49.876
+    },
+    {
+      "text": "at",
+      "start": 49.876,
+      "end": 50.041
+    },
+    {
+      "text": "Enfield.",
+      "start": 50.041,
+      "end": 50.651
+    },
+    {
+      "text": "So",
+      "start": 51.696,
+      "end": 51.847
+    },
+    {
+      "text": "they",
+      "start": 51.847,
+      "end": 52.105
+    },
+    {
+      "text": "renamed",
+      "start": 52.105,
+      "end": 52.525
+    },
+    {
+      "text": "the",
+      "start": 52.525,
+      "end": 52.729
+    },
+    {
+      "text": "business",
+      "start": 52.729,
+      "end": 53.203
+    },
+    {
+      "text": "the",
+      "start": 53.203,
+      "end": 53.408
+    },
+    {
+      "text": "Enfield",
+      "start": 53.408,
+      "end": 53.827
+    },
+    {
+      "text": "Manufacturing",
+      "start": 53.827,
+      "end": 54.57
+    },
+    {
+      "text": "Company.",
+      "start": 54.57,
+      "end": 55.125
+    },
+    {
+      "text": "The",
+      "start": 56.251,
+      "end": 56.497
+    },
+    {
+      "text": "badge",
+      "start": 56.497,
+      "end": 56.873
+    },
+    {
+      "text": "was",
+      "start": 56.873,
+      "end": 57.118
+    },
+    {
+      "text": "a",
+      "start": 57.118,
+      "end": 57.238
+    },
+    {
+      "text": "cannon.",
+      "start": 57.235,
+      "end": 57.837
+    },
+    {
+      "text": "The",
+      "start": 58.384,
+      "end": 58.657
+    },
+    {
+      "text": "line",
+      "start": 58.657,
+      "end": 59.001
+    },
+    {
+      "text": "was",
+      "start": 59.001,
+      "end": 59.274
+    },
+    {
+      "text": "'Made",
+      "start": 59.274,
+      "end": 59.69
+    },
+    {
+      "text": "Like",
+      "start": 59.69,
+      "end": 60.034
+    },
+    {
+      "text": "a",
+      "start": 60.034,
+      "end": 60.163
+    },
+    {
+      "text": "Gun'.",
+      "start": 60.163,
+      "end": 60.687
+    },
+    {
+      "text": "A",
+      "start": 61.814,
+      "end": 61.934
+    },
+    {
+      "text": "parts",
+      "start": 61.92,
+      "end": 62.261
+    },
+    {
+      "text": "shop",
+      "start": 62.261,
+      "end": 62.543
+    },
+    {
+      "text": "with",
+      "start": 62.543,
+      "end": 62.825
+    },
+    {
+      "text": "a",
+      "start": 62.825,
+      "end": 62.945
+    },
+    {
+      "text": "gun-factory",
+      "start": 62.931,
+      "end": 63.625
+    },
+    {
+      "text": "contract.",
+      "start": 63.625,
+      "end": 64.29
+    },
+    {
+      "text": "Nothing",
+      "start": 64.845,
+      "end": 65.349
+    },
+    {
+      "text": "here",
+      "start": 65.349,
+      "end": 65.659
+    },
+    {
+      "text": "says",
+      "start": 65.659,
+      "end": 65.969
+    },
+    {
+      "text": "global",
+      "start": 65.969,
+      "end": 66.408
+    },
+    {
+      "text": "brand.",
+      "start": 66.408,
+      "end": 66.944
+    },
+    {
+      "text": "In",
+      "start": 68.108,
+      "end": 68.274
+    },
+    {
+      "text": "1901,",
+      "start": 68.274,
+      "end": 69.269
+    },
+    {
+      "text": "the",
+      "start": 69.269,
+      "end": 69.494
+    },
+    {
+      "text": "first",
+      "start": 69.494,
+      "end": 69.837
+    },
+    {
+      "text": "Royal",
+      "start": 69.837,
+      "end": 70.181
+    },
+    {
+      "text": "Enfield",
+      "start": 70.181,
+      "end": 70.643
+    },
+    {
+      "text": "motorcycle",
+      "start": 70.643,
+      "end": 71.282
+    },
+    {
+      "text": "appeared",
+      "start": 71.282,
+      "end": 71.804
+    },
+    {
+      "text": "at",
+      "start": 71.804,
+      "end": 71.969
+    },
+    {
+      "text": "the",
+      "start": 71.969,
+      "end": 72.195
+    },
+    {
+      "text": "Stanley",
+      "start": 72.195,
+      "end": 72.656
+    },
+    {
+      "text": "Cycle",
+      "start": 72.656,
+      "end": 73
+    },
+    {
+      "text": "Show",
+      "start": 73,
+      "end": 73.284
+    },
+    {
+      "text": "in",
+      "start": 73.284,
+      "end": 73.45
+    },
+    {
+      "text": "London.",
+      "start": 73.45,
+      "end": 74.001
+    },
+    {
+      "text": "It",
+      "start": 75.02,
+      "end": 75.221
+    },
+    {
+      "text": "cost",
+      "start": 75.221,
+      "end": 75.566
+    },
+    {
+      "text": "£50",
+      "start": 75.566,
+      "end": 76.343
+    },
+    {
+      "text": "and",
+      "start": 76.343,
+      "end": 76.616
+    },
+    {
+      "text": "had",
+      "start": 76.616,
+      "end": 76.889
+    },
+    {
+      "text": "a",
+      "start": 76.889,
+      "end": 77.018
+    },
+    {
+      "text": "tiny",
+      "start": 77.018,
+      "end": 77.363
+    },
+    {
+      "text": "1.75",
+      "start": 77.363,
+      "end": 78.327
+    },
+    {
+      "text": "horsepower",
+      "start": 78.327,
+      "end": 79.103
+    },
+    {
+      "text": "engine.",
+      "start": 79.103,
+      "end": 79.771
+    },
+    {
+      "text": "In",
+      "start": 80.954,
+      "end": 81.106
+    },
+    {
+      "text": "1932,",
+      "start": 81.106,
+      "end": 82.016
+    },
+    {
+      "text": "the",
+      "start": 82.016,
+      "end": 82.222
+    },
+    {
+      "text": "company",
+      "start": 82.527,
+      "end": 82.922
+    },
+    {
+      "text": "brought",
+      "start": 82.922,
+      "end": 83.316
+    },
+    {
+      "text": "out",
+      "start": 83.316,
+      "end": 83.509
+    },
+    {
+      "text": "a",
+      "start": 83.509,
+      "end": 83.629
+    },
+    {
+      "text": "model",
+      "start": 83.6,
+      "end": 83.893
+    },
+    {
+      "text": "called",
+      "start": 83.893,
+      "end": 84.237
+    },
+    {
+      "text": "the",
+      "start": 84.237,
+      "end": 84.43
+    },
+    {
+      "text": "Bullet.",
+      "start": 84.43,
+      "end": 84.9
+    },
+    {
+      "text": "But",
+      "start": 86.071,
+      "end": 86.298
+    },
+    {
+      "text": "the",
+      "start": 86.298,
+      "end": 86.526
+    },
+    {
+      "text": "Bullet's",
+      "start": 86.526,
+      "end": 87.053
+    },
+    {
+      "text": "real",
+      "start": 87.053,
+      "end": 87.34
+    },
+    {
+      "text": "story",
+      "start": 87.34,
+      "end": 87.687
+    },
+    {
+      "text": "happens",
+      "start": 87.687,
+      "end": 88.154
+    },
+    {
+      "text": "in",
+      "start": 88.154,
+      "end": 88.322
+    },
+    {
+      "text": "India.",
+      "start": 88.322,
+      "end": 88.819
+    },
+    {
+      "text": "In",
+      "start": 89.947,
+      "end": 90.143
+    },
+    {
+      "text": "1949,",
+      "start": 90.143,
+      "end": 91.315
+    },
+    {
+      "text": "K.",
+      "start": 91.616,
+      "end": 91.868
+    },
+    {
+      "text": "R.",
+      "start": 91.868,
+      "end": 92.12
+    },
+    {
+      "text": "Sundaram",
+      "start": 92.12,
+      "end": 92.636
+    },
+    {
+      "text": "Iyer",
+      "start": 92.636,
+      "end": 92.918
+    },
+    {
+      "text": "founded",
+      "start": 92.918,
+      "end": 93.376
+    },
+    {
+      "text": "Madras",
+      "start": 93.75,
+      "end": 94.228
+    },
+    {
+      "text": "Motors",
+      "start": 94.228,
+      "end": 94.706
+    },
+    {
+      "text": "to",
+      "start": 94.706,
+      "end": 94.903
+    },
+    {
+      "text": "import",
+      "start": 94.903,
+      "end": 95.381
+    },
+    {
+      "text": "British",
+      "start": 95.381,
+      "end": 95.93
+    },
+    {
+      "text": "bikes.",
+      "start": 95.93,
+      "end": 96.513
+    },
+    {
+      "text": "In",
+      "start": 97.593,
+      "end": 97.739
+    },
+    {
+      "text": "the",
+      "start": 97.739,
+      "end": 97.938
+    },
+    {
+      "text": "early",
+      "start": 97.938,
+      "end": 98.242
+    },
+    {
+      "text": "1950s,",
+      "start": 98.242,
+      "end": 99.257
+    },
+    {
+      "text": "the",
+      "start": 99.257,
+      "end": 99.456
+    },
+    {
+      "text": "Indian",
+      "start": 99.456,
+      "end": 99.812
+    },
+    {
+      "text": "Army",
+      "start": 99.812,
+      "end": 100.064
+    },
+    {
+      "text": "ordered",
+      "start": 100.064,
+      "end": 100.472
+    },
+    {
+      "text": "Bullets",
+      "start": 100.472,
+      "end": 100.88
+    },
+    {
+      "text": "for",
+      "start": 100.88,
+      "end": 101.079
+    },
+    {
+      "text": "border",
+      "start": 101.079,
+      "end": 101.435
+    },
+    {
+      "text": "patrol.",
+      "start": 101.435,
+      "end": 101.922
+    },
+    {
+      "text": "Hundreds",
+      "start": 102.977,
+      "end": 103.441
+    },
+    {
+      "text": "of",
+      "start": 103.441,
+      "end": 103.589
+    },
+    {
+      "text": "bikes,",
+      "start": 103.589,
+      "end": 103.99
+    },
+    {
+      "text": "shipped",
+      "start": 103.99,
+      "end": 104.402
+    },
+    {
+      "text": "from",
+      "start": 104.402,
+      "end": 104.655
+    },
+    {
+      "text": "England.",
+      "start": 104.655,
+      "end": 105.199
+    },
+    {
+      "text": "That",
+      "start": 105.753,
+      "end": 106.05
+    },
+    {
+      "text": "wasn't",
+      "start": 106.05,
+      "end": 106.471
+    },
+    {
+      "text": "going",
+      "start": 106.471,
+      "end": 106.829
+    },
+    {
+      "text": "to",
+      "start": 106.829,
+      "end": 107.002
+    },
+    {
+      "text": "last.",
+      "start": 107.002,
+      "end": 107.454
+    },
+    {
+      "text": "Chapter",
+      "start": 108.614,
+      "end": 109.015
+    },
+    {
+      "text": "two.",
+      "start": 109.015,
+      "end": 109.339
+    },
+    {
+      "text": "India",
+      "start": 109.936,
+      "end": 110.207
+    },
+    {
+      "text": "starts",
+      "start": 110.207,
+      "end": 110.525
+    },
+    {
+      "text": "building",
+      "start": 110.525,
+      "end": 110.937
+    },
+    {
+      "text": "it.",
+      "start": 110.937,
+      "end": 111.185
+    },
+    {
+      "text": "In",
+      "start": 112.326,
+      "end": 112.512
+    },
+    {
+      "text": "1955,",
+      "start": 112.512,
+      "end": 113.625
+    },
+    {
+      "text": "a",
+      "start": 113.625,
+      "end": 113.745
+    },
+    {
+      "text": "company",
+      "start": 113.744,
+      "end": 114.261
+    },
+    {
+      "text": "called",
+      "start": 114.261,
+      "end": 114.711
+    },
+    {
+      "text": "Enfield",
+      "start": 114.711,
+      "end": 115.228
+    },
+    {
+      "text": "India",
+      "start": 115.228,
+      "end": 115.612
+    },
+    {
+      "text": "was",
+      "start": 115.612,
+      "end": 115.864
+    },
+    {
+      "text": "formed",
+      "start": 115.864,
+      "end": 116.314
+    },
+    {
+      "text": "with",
+      "start": 116.314,
+      "end": 116.632
+    },
+    {
+      "text": "Madras",
+      "start": 116.632,
+      "end": 117.083
+    },
+    {
+      "text": "Motors.",
+      "start": 117.083,
+      "end": 117.699
+    },
+    {
+      "text": "At",
+      "start": 118.758,
+      "end": 118.88
+    },
+    {
+      "text": "first",
+      "start": 118.88,
+      "end": 119.132
+    },
+    {
+      "text": "it",
+      "start": 119.132,
+      "end": 119.253
+    },
+    {
+      "text": "only",
+      "start": 119.253,
+      "end": 119.462
+    },
+    {
+      "text": "assembled",
+      "start": 119.462,
+      "end": 119.888
+    },
+    {
+      "text": "Bullets",
+      "start": 119.888,
+      "end": 120.227
+    },
+    {
+      "text": "from",
+      "start": 120.227,
+      "end": 120.435
+    },
+    {
+      "text": "kits",
+      "start": 120.435,
+      "end": 120.644
+    },
+    {
+      "text": "shipped",
+      "start": 120.644,
+      "end": 120.983
+    },
+    {
+      "text": "from",
+      "start": 120.983,
+      "end": 121.191
+    },
+    {
+      "text": "England.",
+      "start": 121.191,
+      "end": 121.639
+    },
+    {
+      "text": "In",
+      "start": 122.711,
+      "end": 122.891
+    },
+    {
+      "text": "1956,",
+      "start": 122.891,
+      "end": 123.971
+    },
+    {
+      "text": "a",
+      "start": 123.971,
+      "end": 124.091
+    },
+    {
+      "text": "factory",
+      "start": 124.087,
+      "end": 124.588
+    },
+    {
+      "text": "started",
+      "start": 124.588,
+      "end": 125.09
+    },
+    {
+      "text": "up",
+      "start": 125.09,
+      "end": 125.27
+    },
+    {
+      "text": "at",
+      "start": 125.27,
+      "end": 125.45
+    },
+    {
+      "text": "Tiruvottiyur,",
+      "start": 125.45,
+      "end": 126.388
+    },
+    {
+      "text": "in",
+      "start": 126.388,
+      "end": 126.568
+    },
+    {
+      "text": "north",
+      "start": 126.568,
+      "end": 126.941
+    },
+    {
+      "text": "Madras.",
+      "start": 126.941,
+      "end": 127.539
+    },
+    {
+      "text": "By",
+      "start": 128.636,
+      "end": 128.802
+    },
+    {
+      "text": "the",
+      "start": 128.802,
+      "end": 129.027
+    },
+    {
+      "text": "end",
+      "start": 129.027,
+      "end": 129.252
+    },
+    {
+      "text": "of",
+      "start": 129.252,
+      "end": 129.418
+    },
+    {
+      "text": "that",
+      "start": 129.418,
+      "end": 129.702
+    },
+    {
+      "text": "year,",
+      "start": 129.702,
+      "end": 130.093
+    },
+    {
+      "text": "it",
+      "start": 130.093,
+      "end": 130.259
+    },
+    {
+      "text": "had",
+      "start": 130.259,
+      "end": 130.484
+    },
+    {
+      "text": "built",
+      "start": 130.484,
+      "end": 130.827
+    },
+    {
+      "text": "163",
+      "start": 130.827,
+      "end": 131.467
+    },
+    {
+      "text": "Bullets.",
+      "start": 131.467,
+      "end": 132.077
+    },
+    {
+      "text": "Not",
+      "start": 133.131,
+      "end": 133.263
+    },
+    {
+      "text": "many.",
+      "start": 133.263,
+      "end": 133.516
+    },
+    {
+      "text": "But",
+      "start": 133.516,
+      "end": 133.648
+    },
+    {
+      "text": "it",
+      "start": 134.296,
+      "end": 134.416
+    },
+    {
+      "text": "was",
+      "start": 134.415,
+      "end": 134.576
+    },
+    {
+      "text": "a",
+      "start": 134.576,
+      "end": 134.696
+    },
+    {
+      "text": "start.",
+      "start": 134.653,
+      "end": 135.005
+    },
+    {
+      "text": "In",
+      "start": 136.158,
+      "end": 136.325
+    },
+    {
+      "text": "1962,",
+      "start": 136.325,
+      "end": 137.327
+    },
+    {
+      "text": "the",
+      "start": 137.327,
+      "end": 137.553
+    },
+    {
+      "text": "first",
+      "start": 137.553,
+      "end": 137.899
+    },
+    {
+      "text": "fully",
+      "start": 137.899,
+      "end": 138.245
+    },
+    {
+      "text": "made-in-India",
+      "start": 138.245,
+      "end": 139.068
+    },
+    {
+      "text": "Enfield",
+      "start": 139.068,
+      "end": 139.533
+    },
+    {
+      "text": "rolled",
+      "start": 139.533,
+      "end": 139.938
+    },
+    {
+      "text": "out.",
+      "start": 139.938,
+      "end": 140.314
+    },
+    {
+      "text": "But",
+      "start": 141.392,
+      "end": 141.57
+    },
+    {
+      "text": "could",
+      "start": 141.57,
+      "end": 141.842
+    },
+    {
+      "text": "a",
+      "start": 141.842,
+      "end": 141.962
+    },
+    {
+      "text": "British",
+      "start": 141.926,
+      "end": 142.292
+    },
+    {
+      "text": "design",
+      "start": 142.292,
+      "end": 142.61
+    },
+    {
+      "text": "survive",
+      "start": 142.61,
+      "end": 142.976
+    },
+    {
+      "text": "without",
+      "start": 142.976,
+      "end": 143.341
+    },
+    {
+      "text": "Britain?",
+      "start": 143.341,
+      "end": 143.824
+    },
+    {
+      "text": "The",
+      "start": 144.87,
+      "end": 145.089
+    },
+    {
+      "text": "Bullet",
+      "start": 145.089,
+      "end": 145.481
+    },
+    {
+      "text": "was",
+      "start": 145.481,
+      "end": 145.7
+    },
+    {
+      "text": "a",
+      "start": 145.7,
+      "end": 145.82
+    },
+    {
+      "text": "heavy,",
+      "start": 145.803,
+      "end": 146.241
+    },
+    {
+      "text": "single-cylinder",
+      "start": 146.241,
+      "end": 147.152
+    },
+    {
+      "text": "350cc",
+      "start": 147.152,
+      "end": 148.074
+    },
+    {
+      "text": "bike,",
+      "start": 148.074,
+      "end": 148.454
+    },
+    {
+      "text": "and",
+      "start": 148.454,
+      "end": 148.673
+    },
+    {
+      "text": "the",
+      "start": 149.191,
+      "end": 149.395
+    },
+    {
+      "text": "Army",
+      "start": 149.395,
+      "end": 149.653
+    },
+    {
+      "text": "trusted",
+      "start": 149.653,
+      "end": 150.071
+    },
+    {
+      "text": "it.",
+      "start": 150.071,
+      "end": 150.356
+    },
+    {
+      "text": "Soldiers",
+      "start": 151.417,
+      "end": 151.888
+    },
+    {
+      "text": "on",
+      "start": 151.888,
+      "end": 152.038
+    },
+    {
+      "text": "border",
+      "start": 152.038,
+      "end": 152.401
+    },
+    {
+      "text": "patrol",
+      "start": 152.401,
+      "end": 152.765
+    },
+    {
+      "text": "aren't",
+      "start": 152.765,
+      "end": 153.129
+    },
+    {
+      "text": "forgiving",
+      "start": 153.129,
+      "end": 153.653
+    },
+    {
+      "text": "customers.",
+      "start": 153.653,
+      "end": 154.311
+    },
+    {
+      "text": "Out",
+      "start": 155.387,
+      "end": 155.567
+    },
+    {
+      "text": "on",
+      "start": 155.567,
+      "end": 155.699
+    },
+    {
+      "text": "the",
+      "start": 155.699,
+      "end": 155.879
+    },
+    {
+      "text": "highways,",
+      "start": 155.879,
+      "end": 156.381
+    },
+    {
+      "text": "the",
+      "start": 156.737,
+      "end": 156.948
+    },
+    {
+      "text": "Bullet",
+      "start": 156.948,
+      "end": 157.326
+    },
+    {
+      "text": "became",
+      "start": 157.326,
+      "end": 157.704
+    },
+    {
+      "text": "more",
+      "start": 157.704,
+      "end": 157.971
+    },
+    {
+      "text": "than",
+      "start": 157.971,
+      "end": 158.238
+    },
+    {
+      "text": "a",
+      "start": 158.238,
+      "end": 158.358
+    },
+    {
+      "text": "machine.",
+      "start": 158.338,
+      "end": 158.91
+    },
+    {
+      "text": "On",
+      "start": 159.933,
+      "end": 160.091
+    },
+    {
+      "text": "a",
+      "start": 160.091,
+      "end": 160.211
+    },
+    {
+      "text": "road",
+      "start": 160.192,
+      "end": 160.463
+    },
+    {
+      "text": "near",
+      "start": 160.463,
+      "end": 160.734
+    },
+    {
+      "text": "Pali",
+      "start": 160.734,
+      "end": 161.005
+    },
+    {
+      "text": "in",
+      "start": 161.005,
+      "end": 161.162
+    },
+    {
+      "text": "Rajasthan,",
+      "start": 161.162,
+      "end": 161.817
+    },
+    {
+      "text": "locals",
+      "start": 161.817,
+      "end": 162.2
+    },
+    {
+      "text": "say,",
+      "start": 162.2,
+      "end": 162.516
+    },
+    {
+      "text": "travellers",
+      "start": 162.516,
+      "end": 163.125
+    },
+    {
+      "text": "stop",
+      "start": 163.59,
+      "end": 163.918
+    },
+    {
+      "text": "at",
+      "start": 163.918,
+      "end": 164.109
+    },
+    {
+      "text": "a",
+      "start": 164.109,
+      "end": 164.232
+    },
+    {
+      "text": "roadside",
+      "start": 164.232,
+      "end": 164.833
+    },
+    {
+      "text": "shrine",
+      "start": 164.833,
+      "end": 165.297
+    },
+    {
+      "text": "to",
+      "start": 165.297,
+      "end": 165.488
+    },
+    {
+      "text": "a",
+      "start": 165.488,
+      "end": 165.611
+    },
+    {
+      "text": "Bullet.",
+      "start": 165.611,
+      "end": 166.246
+    },
+    {
+      "text": "They",
+      "start": 167.392,
+      "end": 167.632
+    },
+    {
+      "text": "reportedly",
+      "start": 167.632,
+      "end": 168.172
+    },
+    {
+      "text": "pray",
+      "start": 168.172,
+      "end": 168.412
+    },
+    {
+      "text": "there",
+      "start": 168.412,
+      "end": 168.703
+    },
+    {
+      "text": "for",
+      "start": 168.703,
+      "end": 168.893
+    },
+    {
+      "text": "a",
+      "start": 168.893,
+      "end": 169.013
+    },
+    {
+      "text": "safe",
+      "start": 168.983,
+      "end": 169.223
+    },
+    {
+      "text": "journey.",
+      "start": 169.223,
+      "end": 169.738
+    },
+    {
+      "text": "It",
+      "start": 170.844,
+      "end": 170.989
+    },
+    {
+      "text": "looked",
+      "start": 170.989,
+      "end": 171.342
+    },
+    {
+      "text": "like",
+      "start": 171.342,
+      "end": 171.592
+    },
+    {
+      "text": "a",
+      "start": 171.592,
+      "end": 171.712
+    },
+    {
+      "text": "perfect",
+      "start": 171.685,
+      "end": 172.09
+    },
+    {
+      "text": "Indian",
+      "start": 172.09,
+      "end": 172.443
+    },
+    {
+      "text": "success",
+      "start": 172.443,
+      "end": 172.848
+    },
+    {
+      "text": "story.",
+      "start": 172.848,
+      "end": 173.279
+    },
+    {
+      "text": "But",
+      "start": 174.397,
+      "end": 174.541
+    },
+    {
+      "text": "in",
+      "start": 174.541,
+      "end": 174.661
+    },
+    {
+      "text": "England,",
+      "start": 174.646,
+      "end": 175.009
+    },
+    {
+      "text": "the",
+      "start": 175.324,
+      "end": 175.508
+    },
+    {
+      "text": "parent",
+      "start": 175.508,
+      "end": 175.837
+    },
+    {
+      "text": "company",
+      "start": 175.837,
+      "end": 176.214
+    },
+    {
+      "text": "was",
+      "start": 176.214,
+      "end": 176.398
+    },
+    {
+      "text": "running",
+      "start": 176.398,
+      "end": 176.775
+    },
+    {
+      "text": "out",
+      "start": 176.775,
+      "end": 176.959
+    },
+    {
+      "text": "of",
+      "start": 176.959,
+      "end": 177.094
+    },
+    {
+      "text": "road.",
+      "start": 177.094,
+      "end": 177.447
+    },
+    {
+      "text": "Chapter",
+      "start": 178.812,
+      "end": 179.184
+    },
+    {
+      "text": "three.",
+      "start": 179.184,
+      "end": 179.579
+    },
+    {
+      "text": "The",
+      "start": 180.247,
+      "end": 180.529
+    },
+    {
+      "text": "world",
+      "start": 180.529,
+      "end": 180.96
+    },
+    {
+      "text": "moves",
+      "start": 180.96,
+      "end": 181.391
+    },
+    {
+      "text": "on.",
+      "start": 181.391,
+      "end": 181.785
+    },
+    {
+      "text": "By",
+      "start": 182.908,
+      "end": 183.045
+    },
+    {
+      "text": "the",
+      "start": 183.045,
+      "end": 183.232
+    },
+    {
+      "text": "early",
+      "start": 183.232,
+      "end": 183.516
+    },
+    {
+      "text": "1970s,",
+      "start": 183.516,
+      "end": 184.468
+    },
+    {
+      "text": "the",
+      "start": 184.468,
+      "end": 184.654
+    },
+    {
+      "text": "British",
+      "start": 184.654,
+      "end": 185.037
+    },
+    {
+      "text": "company",
+      "start": 185.037,
+      "end": 185.42
+    },
+    {
+      "text": "was",
+      "start": 185.42,
+      "end": 185.606
+    },
+    {
+      "text": "gone.",
+      "start": 185.606,
+      "end": 185.964
+    },
+    {
+      "text": "Enfield",
+      "start": 187.047,
+      "end": 187.482
+    },
+    {
+      "text": "India",
+      "start": 187.482,
+      "end": 187.805
+    },
+    {
+      "text": "carried",
+      "start": 187.805,
+      "end": 188.24
+    },
+    {
+      "text": "on",
+      "start": 188.24,
+      "end": 188.396
+    },
+    {
+      "text": "alone,",
+      "start": 188.396,
+      "end": 188.819
+    },
+    {
+      "text": "and",
+      "start": 188.819,
+      "end": 189.031
+    },
+    {
+      "text": "kept",
+      "start": 189.031,
+      "end": 189.298
+    },
+    {
+      "text": "the",
+      "start": 189.298,
+      "end": 189.51
+    },
+    {
+      "text": "name.",
+      "start": 189.51,
+      "end": 189.917
+    },
+    {
+      "text": "By",
+      "start": 191.038,
+      "end": 191.206
+    },
+    {
+      "text": "1977,",
+      "start": 191.206,
+      "end": 192.217
+    },
+    {
+      "text": "Madras",
+      "start": 192.217,
+      "end": 192.626
+    },
+    {
+      "text": "Musings",
+      "start": 192.626,
+      "end": 193.096
+    },
+    {
+      "text": "reports,",
+      "start": 193.096,
+      "end": 193.673
+    },
+    {
+      "text": "it",
+      "start": 193.673,
+      "end": 193.842
+    },
+    {
+      "text": "had",
+      "start": 193.842,
+      "end": 194.071
+    },
+    {
+      "text": "no",
+      "start": 194.071,
+      "end": 194.239
+    },
+    {
+      "text": "reserves,",
+      "start": 194.554,
+      "end": 195.218
+    },
+    {
+      "text": "after",
+      "start": 195.218,
+      "end": 195.581
+    },
+    {
+      "text": "steady",
+      "start": 195.581,
+      "end": 196.007
+    },
+    {
+      "text": "losses",
+      "start": 196.007,
+      "end": 196.433
+    },
+    {
+      "text": "and",
+      "start": 196.433,
+      "end": 196.671
+    },
+    {
+      "text": "a",
+      "start": 196.671,
+      "end": 196.791
+    },
+    {
+      "text": "long",
+      "start": 196.784,
+      "end": 197.084
+    },
+    {
+      "text": "strike.",
+      "start": 197.084,
+      "end": 197.667
+    },
+    {
+      "text": "The",
+      "start": 198.775,
+      "end": 198.976
+    },
+    {
+      "text": "rescue",
+      "start": 198.976,
+      "end": 199.335
+    },
+    {
+      "text": "reportedly",
+      "start": 199.335,
+      "end": 199.905
+    },
+    {
+      "text": "cost",
+      "start": 199.905,
+      "end": 200.159
+    },
+    {
+      "text": "just",
+      "start": 200.159,
+      "end": 200.412
+    },
+    {
+      "text": "over",
+      "start": 200.412,
+      "end": 200.666
+    },
+    {
+      "text": "one",
+      "start": 200.666,
+      "end": 200.866
+    },
+    {
+      "text": "crore",
+      "start": 200.866,
+      "end": 201.173
+    },
+    {
+      "text": "rupees.",
+      "start": 201.173,
+      "end": 201.664
+    },
+    {
+      "text": "Losses",
+      "start": 201.664,
+      "end": 202.023
+    },
+    {
+      "text": "were",
+      "start": 202.561,
+      "end": 202.843
+    },
+    {
+      "text": "cleared",
+      "start": 202.843,
+      "end": 203.301
+    },
+    {
+      "text": "by",
+      "start": 203.301,
+      "end": 203.465
+    },
+    {
+      "text": "1981.",
+      "start": 203.465,
+      "end": 204.492
+    },
+    {
+      "text": "But",
+      "start": 205.616,
+      "end": 205.782
+    },
+    {
+      "text": "the",
+      "start": 205.782,
+      "end": 205.948
+    },
+    {
+      "text": "market",
+      "start": 205.948,
+      "end": 206.245
+    },
+    {
+      "text": "around",
+      "start": 206.245,
+      "end": 206.542
+    },
+    {
+      "text": "the",
+      "start": 206.542,
+      "end": 206.708
+    },
+    {
+      "text": "Bullet",
+      "start": 206.708,
+      "end": 207.005
+    },
+    {
+      "text": "kept",
+      "start": 207.005,
+      "end": 207.215
+    },
+    {
+      "text": "moving.",
+      "start": 207.215,
+      "end": 207.621
+    },
+    {
+      "text": "In",
+      "start": 208.725,
+      "end": 208.918
+    },
+    {
+      "text": "1984,",
+      "start": 208.918,
+      "end": 210.076
+    },
+    {
+      "text": "Hero",
+      "start": 210.076,
+      "end": 210.407
+    },
+    {
+      "text": "Honda",
+      "start": 210.407,
+      "end": 210.806
+    },
+    {
+      "text": "was",
+      "start": 210.806,
+      "end": 211.068
+    },
+    {
+      "text": "formed.",
+      "start": 211.068,
+      "end": 211.709
+    },
+    {
+      "text": "A",
+      "start": 212.752,
+      "end": 212.872
+    },
+    {
+      "text": "year",
+      "start": 212.839,
+      "end": 213.073
+    },
+    {
+      "text": "later,",
+      "start": 213.073,
+      "end": 213.442
+    },
+    {
+      "text": "its",
+      "start": 213.442,
+      "end": 213.627
+    },
+    {
+      "text": "100cc",
+      "start": 213.627,
+      "end": 214.404
+    },
+    {
+      "text": "CD100",
+      "start": 214.404,
+      "end": 215.182
+    },
+    {
+      "text": "started",
+      "start": 215.182,
+      "end": 215.561
+    },
+    {
+      "text": "production",
+      "start": 215.561,
+      "end": 216.086
+    },
+    {
+      "text": "at",
+      "start": 216.086,
+      "end": 216.222
+    },
+    {
+      "text": "Dharuhera,",
+      "start": 216.222,
+      "end": 216.786
+    },
+    {
+      "text": "in",
+      "start": 217.114,
+      "end": 217.263
+    },
+    {
+      "text": "Haryana.",
+      "start": 217.263,
+      "end": 217.81
+    },
+    {
+      "text": "So",
+      "start": 218.905,
+      "end": 219.032
+    },
+    {
+      "text": "what",
+      "start": 219.032,
+      "end": 219.251
+    },
+    {
+      "text": "were",
+      "start": 219.251,
+      "end": 219.469
+    },
+    {
+      "text": "buyers",
+      "start": 219.469,
+      "end": 219.779
+    },
+    {
+      "text": "choosing",
+      "start": 219.779,
+      "end": 220.179
+    },
+    {
+      "text": "instead?",
+      "start": 220.179,
+      "end": 220.648
+    },
+    {
+      "text": "By",
+      "start": 221.739,
+      "end": 221.913
+    },
+    {
+      "text": "1987,",
+      "start": 221.913,
+      "end": 222.958
+    },
+    {
+      "text": "Enfield",
+      "start": 222.958,
+      "end": 223.443
+    },
+    {
+      "text": "had",
+      "start": 223.443,
+      "end": 223.679
+    },
+    {
+      "text": "reportedly",
+      "start": 223.679,
+      "end": 224.35
+    },
+    {
+      "text": "hit",
+      "start": 224.35,
+      "end": 224.587
+    },
+    {
+      "text": "a",
+      "start": 224.587,
+      "end": 224.707
+    },
+    {
+      "text": "new",
+      "start": 224.699,
+      "end": 224.935
+    },
+    {
+      "text": "sales",
+      "start": 224.935,
+      "end": 225.296
+    },
+    {
+      "text": "low,",
+      "start": 225.296,
+      "end": 225.644
+    },
+    {
+      "text": "with",
+      "start": 225.644,
+      "end": 225.942
+    },
+    {
+      "text": "Japanese",
+      "start": 225.942,
+      "end": 226.489
+    },
+    {
+      "text": "100cc",
+      "start": 226.489,
+      "end": 227.484
+    },
+    {
+      "text": "bikes",
+      "start": 227.484,
+      "end": 227.845
+    },
+    {
+      "text": "as",
+      "start": 227.845,
+      "end": 228.019
+    },
+    {
+      "text": "strong",
+      "start": 228.019,
+      "end": 228.442
+    },
+    {
+      "text": "rivals.",
+      "start": 228.442,
+      "end": 229.02
+    },
+    {
+      "text": "Around",
+      "start": 230.119,
+      "end": 230.466
+    },
+    {
+      "text": "1990,",
+      "start": 230.466,
+      "end": 231.323
+    },
+    {
+      "text": "Eicher",
+      "start": 231.323,
+      "end": 231.671
+    },
+    {
+      "text": "took",
+      "start": 231.671,
+      "end": 231.916
+    },
+    {
+      "text": "a",
+      "start": 231.916,
+      "end": 232.036
+    },
+    {
+      "text": "stake.",
+      "start": 232.007,
+      "end": 232.431
+    },
+    {
+      "text": "By",
+      "start": 233.009,
+      "end": 233.173
+    },
+    {
+      "text": "1994,",
+      "start": 233.173,
+      "end": 234.16
+    },
+    {
+      "text": "it",
+      "start": 234.16,
+      "end": 234.325
+    },
+    {
+      "text": "owned",
+      "start": 234.325,
+      "end": 234.665
+    },
+    {
+      "text": "Enfield",
+      "start": 234.665,
+      "end": 235.123
+    },
+    {
+      "text": "India.",
+      "start": 235.123,
+      "end": 235.611
+    },
+    {
+      "text": "Riders",
+      "start": 236.665,
+      "end": 237.041
+    },
+    {
+      "text": "complained",
+      "start": 237.041,
+      "end": 237.639
+    },
+    {
+      "text": "about",
+      "start": 237.639,
+      "end": 237.96
+    },
+    {
+      "text": "oil",
+      "start": 237.96,
+      "end": 238.17
+    },
+    {
+      "text": "leaks,",
+      "start": 238.17,
+      "end": 238.591
+    },
+    {
+      "text": "snapping",
+      "start": 238.591,
+      "end": 239.078
+    },
+    {
+      "text": "cables",
+      "start": 239.078,
+      "end": 239.454
+    },
+    {
+      "text": "and",
+      "start": 239.454,
+      "end": 239.665
+    },
+    {
+      "text": "engine",
+      "start": 239.665,
+      "end": 240.041
+    },
+    {
+      "text": "seizures,",
+      "start": 240.041,
+      "end": 240.628
+    },
+    {
+      "text": "a",
+      "start": 240.628,
+      "end": 240.748
+    },
+    {
+      "text": "Business",
+      "start": 240.727,
+      "end": 241.214
+    },
+    {
+      "text": "Today",
+      "start": 241.214,
+      "end": 241.535
+    },
+    {
+      "text": "case",
+      "start": 241.535,
+      "end": 241.801
+    },
+    {
+      "text": "study",
+      "start": 241.801,
+      "end": 242.122
+    },
+    {
+      "text": "says.",
+      "start": 242.122,
+      "end": 242.526
+    },
+    {
+      "text": "In",
+      "start": 243.602,
+      "end": 243.762
+    },
+    {
+      "text": "October",
+      "start": 243.762,
+      "end": 244.208
+    },
+    {
+      "text": "2000,",
+      "start": 244.208,
+      "end": 245.168
+    },
+    {
+      "text": "Eicher",
+      "start": 245.168,
+      "end": 245.556
+    },
+    {
+      "text": "posted",
+      "start": 245.556,
+      "end": 245.945
+    },
+    {
+      "text": "its",
+      "start": 245.945,
+      "end": 246.162
+    },
+    {
+      "text": "first",
+      "start": 246.162,
+      "end": 246.493
+    },
+    {
+      "text": "quarterly",
+      "start": 246.493,
+      "end": 247.053
+    },
+    {
+      "text": "loss",
+      "start": 247.053,
+      "end": 247.328
+    },
+    {
+      "text": "in",
+      "start": 247.328,
+      "end": 247.488
+    },
+    {
+      "text": "ten",
+      "start": 247.488,
+      "end": 247.705
+    },
+    {
+      "text": "years.",
+      "start": 247.705,
+      "end": 248.179
+    },
+    {
+      "text": "Royal",
+      "start": 249.172,
+      "end": 249.455
+    },
+    {
+      "text": "Enfield",
+      "start": 249.455,
+      "end": 249.837
+    },
+    {
+      "text": "was",
+      "start": 249.837,
+      "end": 250.022
+    },
+    {
+      "text": "about",
+      "start": 250.022,
+      "end": 250.306
+    },
+    {
+      "text": "one-fifth",
+      "start": 250.306,
+      "end": 250.785
+    },
+    {
+      "text": "of",
+      "start": 250.785,
+      "end": 250.922
+    },
+    {
+      "text": "its",
+      "start": 250.922,
+      "end": 251.108
+    },
+    {
+      "text": "revenue.",
+      "start": 251.108,
+      "end": 251.611
+    },
+    {
+      "text": "That",
+      "start": 252.756,
+      "end": 252.986
+    },
+    {
+      "text": "year,",
+      "start": 252.986,
+      "end": 253.302
+    },
+    {
+      "text": "according",
+      "start": 253.302,
+      "end": 253.771
+    },
+    {
+      "text": "to",
+      "start": 253.771,
+      "end": 253.905
+    },
+    {
+      "text": "Outlook",
+      "start": 253.905,
+      "end": 254.278
+    },
+    {
+      "text": "Business,",
+      "start": 254.278,
+      "end": 254.786
+    },
+    {
+      "text": "the",
+      "start": 254.786,
+      "end": 254.967
+    },
+    {
+      "text": "division",
+      "start": 254.967,
+      "end": 255.389
+    },
+    {
+      "text": "was",
+      "start": 255.389,
+      "end": 255.571
+    },
+    {
+      "text": "slated",
+      "start": 255.571,
+      "end": 255.896
+    },
+    {
+      "text": "for",
+      "start": 255.896,
+      "end": 256.078
+    },
+    {
+      "text": "closure.",
+      "start": 256.078,
+      "end": 256.571
+    },
+    {
+      "text": "Bullet",
+      "start": 257.699,
+      "end": 258.015
+    },
+    {
+      "text": "sales",
+      "start": 258.015,
+      "end": 258.285
+    },
+    {
+      "text": "were",
+      "start": 258.285,
+      "end": 258.509
+    },
+    {
+      "text": "reportedly",
+      "start": 258.509,
+      "end": 259.011
+    },
+    {
+      "text": "below",
+      "start": 259.011,
+      "end": 259.281
+    },
+    {
+      "text": "2,000",
+      "start": 259.281,
+      "end": 260.026
+    },
+    {
+      "text": "a",
+      "start": 260.026,
+      "end": 260.146
+    },
+    {
+      "text": "month.",
+      "start": 260.11,
+      "end": 260.496
+    },
+    {
+      "text": "One",
+      "start": 261.558,
+      "end": 261.761
+    },
+    {
+      "text": "person",
+      "start": 261.761,
+      "end": 262.123
+    },
+    {
+      "text": "reportedly",
+      "start": 262.123,
+      "end": 262.699
+    },
+    {
+      "text": "asked",
+      "start": 262.699,
+      "end": 263.009
+    },
+    {
+      "text": "for",
+      "start": 263.009,
+      "end": 263.211
+    },
+    {
+      "text": "one",
+      "start": 263.211,
+      "end": 263.414
+    },
+    {
+      "text": "more",
+      "start": 263.414,
+      "end": 263.67
+    },
+    {
+      "text": "chance.",
+      "start": 263.67,
+      "end": 264.166
+    },
+    {
+      "text": "Chapter",
+      "start": 265.228,
+      "end": 265.583
+    },
+    {
+      "text": "four.",
+      "start": 265.583,
+      "end": 265.916
+    },
+    {
+      "text": "One",
+      "start": 266.474,
+      "end": 266.684
+    },
+    {
+      "text": "more",
+      "start": 266.684,
+      "end": 266.949
+    },
+    {
+      "text": "chance.",
+      "start": 266.949,
+      "end": 267.463
+    },
+    {
+      "text": "Siddhartha",
+      "start": 268.536,
+      "end": 269.128
+    },
+    {
+      "text": "Lal",
+      "start": 269.128,
+      "end": 269.336
+    },
+    {
+      "text": "took",
+      "start": 269.336,
+      "end": 269.599
+    },
+    {
+      "text": "charge",
+      "start": 269.599,
+      "end": 269.971
+    },
+    {
+      "text": "in",
+      "start": 269.971,
+      "end": 270.124
+    },
+    {
+      "text": "2000,",
+      "start": 270.124,
+      "end": 271.045
+    },
+    {
+      "text": "aged",
+      "start": 271.045,
+      "end": 271.308
+    },
+    {
+      "text": "about",
+      "start": 271.308,
+      "end": 271.625
+    },
+    {
+      "text": "26.",
+      "start": 271.625,
+      "end": 272.299
+    },
+    {
+      "text": "He",
+      "start": 273.384,
+      "end": 273.535
+    },
+    {
+      "text": "reportedly",
+      "start": 273.535,
+      "end": 274.117
+    },
+    {
+      "text": "set",
+      "start": 274.117,
+      "end": 274.322
+    },
+    {
+      "text": "up",
+      "start": 274.322,
+      "end": 274.473
+    },
+    {
+      "text": "a",
+      "start": 274.473,
+      "end": 274.593
+    },
+    {
+      "text": "team",
+      "start": 274.57,
+      "end": 274.828
+    },
+    {
+      "text": "just",
+      "start": 274.828,
+      "end": 275.087
+    },
+    {
+      "text": "to",
+      "start": 275.087,
+      "end": 275.238
+    },
+    {
+      "text": "deal",
+      "start": 275.238,
+      "end": 275.497
+    },
+    {
+      "text": "with",
+      "start": 275.497,
+      "end": 275.755
+    },
+    {
+      "text": "unhappy",
+      "start": 275.755,
+      "end": 276.176
+    },
+    {
+      "text": "dealers.",
+      "start": 276.176,
+      "end": 276.731
+    },
+    {
+      "text": "By",
+      "start": 277.832,
+      "end": 277.991
+    },
+    {
+      "text": "2004,",
+      "start": 277.991,
+      "end": 278.948
+    },
+    {
+      "text": "Royal",
+      "start": 278.948,
+      "end": 279.278
+    },
+    {
+      "text": "Enfield",
+      "start": 279.278,
+      "end": 279.722
+    },
+    {
+      "text": "was",
+      "start": 279.722,
+      "end": 279.938
+    },
+    {
+      "text": "selling",
+      "start": 279.938,
+      "end": 280.383
+    },
+    {
+      "text": "about",
+      "start": 280.383,
+      "end": 280.713
+    },
+    {
+      "text": "25,000",
+      "start": 280.713,
+      "end": 281.772
+    },
+    {
+      "text": "bikes",
+      "start": 281.772,
+      "end": 282.102
+    },
+    {
+      "text": "a",
+      "start": 282.102,
+      "end": 282.222
+    },
+    {
+      "text": "year.",
+      "start": 282.204,
+      "end": 282.62
+    },
+    {
+      "text": "In",
+      "start": 283.787,
+      "end": 283.956
+    },
+    {
+      "text": "2005,",
+      "start": 283.956,
+      "end": 284.968
+    },
+    {
+      "text": "Eicher",
+      "start": 284.968,
+      "end": 285.378
+    },
+    {
+      "text": "sold",
+      "start": 285.378,
+      "end": 285.667
+    },
+    {
+      "text": "13",
+      "start": 285.667,
+      "end": 286.161
+    },
+    {
+      "text": "of",
+      "start": 286.161,
+      "end": 286.33
+    },
+    {
+      "text": "its",
+      "start": 286.33,
+      "end": 286.559
+    },
+    {
+      "text": "15",
+      "start": 286.559,
+      "end": 287.053
+    },
+    {
+      "text": "divisions.",
+      "start": 287.053,
+      "end": 287.794
+    },
+    {
+      "text": "That",
+      "start": 288.891,
+      "end": 289.066
+    },
+    {
+      "text": "is",
+      "start": 289.066,
+      "end": 289.186
+    },
+    {
+      "text": "a",
+      "start": 289.167,
+      "end": 289.287
+    },
+    {
+      "text": "gamble.",
+      "start": 289.233,
+      "end": 289.571
+    },
+    {
+      "text": "Eicher",
+      "start": 290.167,
+      "end": 290.514
+    },
+    {
+      "text": "was",
+      "start": 290.514,
+      "end": 290.708
+    },
+    {
+      "text": "betting",
+      "start": 290.708,
+      "end": 291.106
+    },
+    {
+      "text": "its",
+      "start": 291.106,
+      "end": 291.3
+    },
+    {
+      "text": "future",
+      "start": 291.3,
+      "end": 291.647
+    },
+    {
+      "text": "on",
+      "start": 291.647,
+      "end": 291.79
+    },
+    {
+      "text": "motorcycles.",
+      "start": 291.79,
+      "end": 292.52
+    },
+    {
+      "text": "But",
+      "start": 293.629,
+      "end": 293.79
+    },
+    {
+      "text": "a",
+      "start": 293.79,
+      "end": 293.91
+    },
+    {
+      "text": "gamble",
+      "start": 293.866,
+      "end": 294.154
+    },
+    {
+      "text": "needs",
+      "start": 294.154,
+      "end": 294.4
+    },
+    {
+      "text": "a",
+      "start": 294.4,
+      "end": 294.52
+    },
+    {
+      "text": "better",
+      "start": 294.476,
+      "end": 294.764
+    },
+    {
+      "text": "bike.",
+      "start": 294.764,
+      "end": 295.073
+    },
+    {
+      "text": "Could",
+      "start": 295.668,
+      "end": 295.882
+    },
+    {
+      "text": "they",
+      "start": 295.882,
+      "end": 296.058
+    },
+    {
+      "text": "build",
+      "start": 296.058,
+      "end": 296.272
+    },
+    {
+      "text": "one?",
+      "start": 296.272,
+      "end": 296.504
+    },
+    {
+      "text": "Quality",
+      "start": 297.529,
+      "end": 297.998
+    },
+    {
+      "text": "came",
+      "start": 297.998,
+      "end": 298.286
+    },
+    {
+      "text": "first,",
+      "start": 298.286,
+      "end": 298.743
+    },
+    {
+      "text": "and",
+      "start": 298.743,
+      "end": 298.972
+    },
+    {
+      "text": "2006",
+      "start": 298.972,
+      "end": 299.777
+    },
+    {
+      "text": "was",
+      "start": 299.777,
+      "end": 300.005
+    },
+    {
+      "text": "reportedly",
+      "start": 300.005,
+      "end": 300.654
+    },
+    {
+      "text": "a",
+      "start": 300.654,
+      "end": 300.774
+    },
+    {
+      "text": "back-to-basics",
+      "start": 300.763,
+      "end": 301.652
+    },
+    {
+      "text": "year.",
+      "start": 301.652,
+      "end": 302.091
+    },
+    {
+      "text": "Sprag",
+      "start": 303.05,
+      "end": 303.405
+    },
+    {
+      "text": "clutch",
+      "start": 303.405,
+      "end": 303.821
+    },
+    {
+      "text": "failures",
+      "start": 303.821,
+      "end": 304.359
+    },
+    {
+      "text": "reportedly",
+      "start": 304.359,
+      "end": 305.02
+    },
+    {
+      "text": "fell",
+      "start": 305.02,
+      "end": 305.314
+    },
+    {
+      "text": "from",
+      "start": 305.314,
+      "end": 305.607
+    },
+    {
+      "text": "5",
+      "start": 305.607,
+      "end": 305.95
+    },
+    {
+      "text": "percent",
+      "start": 305.95,
+      "end": 306.427
+    },
+    {
+      "text": "to",
+      "start": 306.427,
+      "end": 306.598
+    },
+    {
+      "text": "0.2",
+      "start": 306.598,
+      "end": 307.259
+    },
+    {
+      "text": "percent",
+      "start": 307.259,
+      "end": 307.736
+    },
+    {
+      "text": "in",
+      "start": 307.736,
+      "end": 307.908
+    },
+    {
+      "text": "five",
+      "start": 307.908,
+      "end": 308.201
+    },
+    {
+      "text": "years.",
+      "start": 308.201,
+      "end": 308.709
+    },
+    {
+      "text": "Then",
+      "start": 309.739,
+      "end": 310.029
+    },
+    {
+      "text": "the",
+      "start": 310.029,
+      "end": 310.258
+    },
+    {
+      "text": "engine:",
+      "start": 310.258,
+      "end": 310.777
+    },
+    {
+      "text": "a",
+      "start": 310.777,
+      "end": 310.897
+    },
+    {
+      "text": "new",
+      "start": 310.885,
+      "end": 311.114
+    },
+    {
+      "text": "aluminium",
+      "start": 311.114,
+      "end": 311.705
+    },
+    {
+      "text": "unit",
+      "start": 311.705,
+      "end": 311.995
+    },
+    {
+      "text": "with",
+      "start": 311.995,
+      "end": 312.285
+    },
+    {
+      "text": "30",
+      "start": 312.285,
+      "end": 312.779
+    },
+    {
+      "text": "percent",
+      "start": 312.779,
+      "end": 313.25
+    },
+    {
+      "text": "fewer",
+      "start": 313.25,
+      "end": 313.6
+    },
+    {
+      "text": "parts",
+      "start": 313.6,
+      "end": 313.949
+    },
+    {
+      "text": "and",
+      "start": 313.949,
+      "end": 314.179
+    },
+    {
+      "text": "30",
+      "start": 314.179,
+      "end": 314.673
+    },
+    {
+      "text": "percent",
+      "start": 314.673,
+      "end": 315.144
+    },
+    {
+      "text": "more",
+      "start": 315.144,
+      "end": 315.433
+    },
+    {
+      "text": "power.",
+      "start": 315.433,
+      "end": 315.934
+    },
+    {
+      "text": "Even",
+      "start": 316.977,
+      "end": 317.229
+    },
+    {
+      "text": "the",
+      "start": 317.229,
+      "end": 317.428
+    },
+    {
+      "text": "gear",
+      "start": 317.428,
+      "end": 317.679
+    },
+    {
+      "text": "lever",
+      "start": 317.679,
+      "end": 317.983
+    },
+    {
+      "text": "moved",
+      "start": 317.983,
+      "end": 318.287
+    },
+    {
+      "text": "to",
+      "start": 318.287,
+      "end": 318.434
+    },
+    {
+      "text": "the",
+      "start": 318.434,
+      "end": 318.633
+    },
+    {
+      "text": "left",
+      "start": 318.633,
+      "end": 318.884
+    },
+    {
+      "text": "side,",
+      "start": 318.884,
+      "end": 319.23
+    },
+    {
+      "text": "against",
+      "start": 319.23,
+      "end": 319.639
+    },
+    {
+      "text": "strong",
+      "start": 319.639,
+      "end": 319.995
+    },
+    {
+      "text": "opposition",
+      "start": 319.995,
+      "end": 320.561
+    },
+    {
+      "text": "from",
+      "start": 320.561,
+      "end": 320.812
+    },
+    {
+      "text": "fans.",
+      "start": 320.812,
+      "end": 321.195
+    },
+    {
+      "text": "In",
+      "start": 322.329,
+      "end": 322.51
+    },
+    {
+      "text": "2009",
+      "start": 322.51,
+      "end": 323.378
+    },
+    {
+      "text": "came",
+      "start": 323.378,
+      "end": 323.688
+    },
+    {
+      "text": "the",
+      "start": 323.688,
+      "end": 323.934
+    },
+    {
+      "text": "Classic",
+      "start": 323.934,
+      "end": 324.439
+    },
+    {
+      "text": "350,",
+      "start": 324.439,
+      "end": 325.358
+    },
+    {
+      "text": "priced",
+      "start": 325.358,
+      "end": 325.799
+    },
+    {
+      "text": "at",
+      "start": 325.799,
+      "end": 325.98
+    },
+    {
+      "text": "about",
+      "start": 325.98,
+      "end": 326.355
+    },
+    {
+      "text": "1.2",
+      "start": 326.355,
+      "end": 327.054
+    },
+    {
+      "text": "lakh",
+      "start": 327.054,
+      "end": 327.365
+    },
+    {
+      "text": "rupees.",
+      "start": 327.365,
+      "end": 327.967
+    },
+    {
+      "text": "A",
+      "start": 329.005,
+      "end": 329.125
+    },
+    {
+      "text": "decade",
+      "start": 329.114,
+      "end": 329.527
+    },
+    {
+      "text": "earlier,",
+      "start": 329.527,
+      "end": 330.11
+    },
+    {
+      "text": "the",
+      "start": 330.11,
+      "end": 330.341
+    },
+    {
+      "text": "old",
+      "start": 330.341,
+      "end": 330.571
+    },
+    {
+      "text": "350",
+      "start": 330.571,
+      "end": 331.227
+    },
+    {
+      "text": "reportedly",
+      "start": 331.227,
+      "end": 331.883
+    },
+    {
+      "text": "cost",
+      "start": 331.883,
+      "end": 332.174
+    },
+    {
+      "text": "about",
+      "start": 332.174,
+      "end": 332.526
+    },
+    {
+      "text": "55,000",
+      "start": 332.526,
+      "end": 333.655
+    },
+    {
+      "text": "rupees",
+      "start": 333.655,
+      "end": 334.068
+    },
+    {
+      "text": "and",
+      "start": 334.068,
+      "end": 334.299
+    },
+    {
+      "text": "broke",
+      "start": 334.651,
+      "end": 335.012
+    },
+    {
+      "text": "down",
+      "start": 335.012,
+      "end": 335.311
+    },
+    {
+      "text": "often.",
+      "start": 335.311,
+      "end": 335.827
+    },
+    {
+      "text": "So",
+      "start": 336.897,
+      "end": 337.045
+    },
+    {
+      "text": "did",
+      "start": 337.045,
+      "end": 337.246
+    },
+    {
+      "text": "the",
+      "start": 337.246,
+      "end": 337.448
+    },
+    {
+      "text": "fixes",
+      "start": 337.448,
+      "end": 337.755
+    },
+    {
+      "text": "actually",
+      "start": 337.755,
+      "end": 338.221
+    },
+    {
+      "text": "work?",
+      "start": 338.221,
+      "end": 338.607
+    },
+    {
+      "text": "From",
+      "start": 339.686,
+      "end": 339.902
+    },
+    {
+      "text": "2010",
+      "start": 339.902,
+      "end": 340.505
+    },
+    {
+      "text": "to",
+      "start": 340.505,
+      "end": 340.631
+    },
+    {
+      "text": "2018,",
+      "start": 340.631,
+      "end": 341.387
+    },
+    {
+      "text": "volumes",
+      "start": 341.695,
+      "end": 342.102
+    },
+    {
+      "text": "grew",
+      "start": 342.102,
+      "end": 342.352
+    },
+    {
+      "text": "about",
+      "start": 342.352,
+      "end": 342.655
+    },
+    {
+      "text": "22",
+      "start": 342.655,
+      "end": 343.082
+    },
+    {
+      "text": "percent",
+      "start": 343.082,
+      "end": 343.489
+    },
+    {
+      "text": "a",
+      "start": 343.489,
+      "end": 343.609
+    },
+    {
+      "text": "year.",
+      "start": 343.583,
+      "end": 343.964
+    },
+    {
+      "text": "Lal",
+      "start": 344.984,
+      "end": 345.165
+    },
+    {
+      "text": "later",
+      "start": 345.165,
+      "end": 345.441
+    },
+    {
+      "text": "said",
+      "start": 345.441,
+      "end": 345.669
+    },
+    {
+      "text": "sales",
+      "start": 345.669,
+      "end": 345.945
+    },
+    {
+      "text": "went",
+      "start": 345.945,
+      "end": 346.173
+    },
+    {
+      "text": "from",
+      "start": 346.173,
+      "end": 346.402
+    },
+    {
+      "text": "2,000",
+      "start": 346.402,
+      "end": 347.163
+    },
+    {
+      "text": "a",
+      "start": 347.163,
+      "end": 347.283
+    },
+    {
+      "text": "month",
+      "start": 347.249,
+      "end": 347.524
+    },
+    {
+      "text": "to",
+      "start": 347.524,
+      "end": 347.658
+    },
+    {
+      "text": "over",
+      "start": 347.658,
+      "end": 347.886
+    },
+    {
+      "text": "10,000.",
+      "start": 347.886,
+      "end": 348.966
+    },
+    {
+      "text": "In",
+      "start": 349.99,
+      "end": 350.138
+    },
+    {
+      "text": "2012",
+      "start": 350.138,
+      "end": 350.847
+    },
+    {
+      "text": "it",
+      "start": 351.169,
+      "end": 351.339
+    },
+    {
+      "text": "sold",
+      "start": 351.339,
+      "end": 351.631
+    },
+    {
+      "text": "about",
+      "start": 351.631,
+      "end": 351.983
+    },
+    {
+      "text": "113,000",
+      "start": 351.983,
+      "end": 353.27
+    },
+    {
+      "text": "bikes,",
+      "start": 353.27,
+      "end": 353.732
+    },
+    {
+      "text": "up",
+      "start": 353.732,
+      "end": 353.902
+    },
+    {
+      "text": "from",
+      "start": 354.268,
+      "end": 354.539
+    },
+    {
+      "text": "about",
+      "start": 354.539,
+      "end": 354.867
+    },
+    {
+      "text": "75,000",
+      "start": 354.867,
+      "end": 355.917
+    },
+    {
+      "text": "the",
+      "start": 355.917,
+      "end": 356.132
+    },
+    {
+      "text": "year",
+      "start": 356.132,
+      "end": 356.403
+    },
+    {
+      "text": "before.",
+      "start": 356.403,
+      "end": 356.928
+    },
+    {
+      "text": "In",
+      "start": 358.008,
+      "end": 358.154
+    },
+    {
+      "text": "April",
+      "start": 358.154,
+      "end": 358.458
+    },
+    {
+      "text": "2013,",
+      "start": 358.458,
+      "end": 359.336
+    },
+    {
+      "text": "a",
+      "start": 359.336,
+      "end": 359.456
+    },
+    {
+      "text": "new",
+      "start": 359.43,
+      "end": 359.629
+    },
+    {
+      "text": "150-crore-rupee",
+      "start": 359.629,
+      "end": 361.825
+    },
+    {
+      "text": "plant",
+      "start": 361.825,
+      "end": 362.128
+    },
+    {
+      "text": "opened",
+      "start": 362.128,
+      "end": 362.484
+    },
+    {
+      "text": "at",
+      "start": 362.484,
+      "end": 362.63
+    },
+    {
+      "text": "Oragadam,",
+      "start": 362.63,
+      "end": 363.184
+    },
+    {
+      "text": "near",
+      "start": 363.184,
+      "end": 363.435
+    },
+    {
+      "text": "Chennai.",
+      "start": 363.435,
+      "end": 363.974
+    },
+    {
+      "text": "In",
+      "start": 365.113,
+      "end": 365.286
+    },
+    {
+      "text": "March",
+      "start": 365.286,
+      "end": 365.645
+    },
+    {
+      "text": "2016,",
+      "start": 365.645,
+      "end": 366.684
+    },
+    {
+      "text": "it",
+      "start": 366.684,
+      "end": 366.858
+    },
+    {
+      "text": "launched",
+      "start": 366.858,
+      "end": 367.402
+    },
+    {
+      "text": "the",
+      "start": 367.402,
+      "end": 367.637
+    },
+    {
+      "text": "Himalayan.",
+      "start": 367.637,
+      "end": 368.398
+    },
+    {
+      "text": "In",
+      "start": 369.432,
+      "end": 369.58
+    },
+    {
+      "text": "November",
+      "start": 369.58,
+      "end": 370.044
+    },
+    {
+      "text": "2017,",
+      "start": 370.044,
+      "end": 370.93
+    },
+    {
+      "text": "its",
+      "start": 370.93,
+      "end": 371.13
+    },
+    {
+      "text": "Indian",
+      "start": 371.13,
+      "end": 371.489
+    },
+    {
+      "text": "owner",
+      "start": 371.489,
+      "end": 371.794
+    },
+    {
+      "text": "opened",
+      "start": 371.794,
+      "end": 372.153
+    },
+    {
+      "text": "a",
+      "start": 372.153,
+      "end": 372.273
+    },
+    {
+      "text": "technology",
+      "start": 372.248,
+      "end": 372.817
+    },
+    {
+      "text": "centre",
+      "start": 372.817,
+      "end": 373.176
+    },
+    {
+      "text": "in",
+      "start": 373.176,
+      "end": 373.324
+    },
+    {
+      "text": "Leicestershire,",
+      "start": 373.324,
+      "end": 374.199
+    },
+    {
+      "text": "England.",
+      "start": 374.199,
+      "end": 374.742
+    },
+    {
+      "text": "The",
+      "start": 375.82,
+      "end": 376.008
+    },
+    {
+      "text": "British",
+      "start": 376.008,
+      "end": 376.393
+    },
+    {
+      "text": "company",
+      "start": 376.393,
+      "end": 376.779
+    },
+    {
+      "text": "had",
+      "start": 376.779,
+      "end": 376.966
+    },
+    {
+      "text": "died",
+      "start": 376.966,
+      "end": 377.203
+    },
+    {
+      "text": "around",
+      "start": 377.203,
+      "end": 377.539
+    },
+    {
+      "text": "1970.",
+      "start": 377.539,
+      "end": 378.404
+    },
+    {
+      "text": "The",
+      "start": 378.985,
+      "end": 379.192
+    },
+    {
+      "text": "brand",
+      "start": 379.192,
+      "end": 379.508
+    },
+    {
+      "text": "had",
+      "start": 379.508,
+      "end": 379.714
+    },
+    {
+      "text": "come",
+      "start": 379.714,
+      "end": 379.976
+    },
+    {
+      "text": "home.",
+      "start": 379.976,
+      "end": 380.373
+    },
+    {
+      "text": "That",
+      "start": 381.387,
+      "end": 381.71
+    },
+    {
+      "text": "same",
+      "start": 381.71,
+      "end": 382.033
+    },
+    {
+      "text": "month,",
+      "start": 382.033,
+      "end": 382.545
+    },
+    {
+      "text": "it",
+      "start": 382.545,
+      "end": 382.733
+    },
+    {
+      "text": "showed",
+      "start": 382.733,
+      "end": 383.191
+    },
+    {
+      "text": "two",
+      "start": 383.191,
+      "end": 383.447
+    },
+    {
+      "text": "650cc",
+      "start": 383.447,
+      "end": 384.524
+    },
+    {
+      "text": "twins",
+      "start": 384.524,
+      "end": 384.915
+    },
+    {
+      "text": "in",
+      "start": 384.915,
+      "end": 385.103
+    },
+    {
+      "text": "Milan.",
+      "start": 385.103,
+      "end": 385.662
+    },
+    {
+      "text": "The",
+      "start": 386.764,
+      "end": 386.969
+    },
+    {
+      "text": "Interceptor",
+      "start": 386.969,
+      "end": 387.608
+    },
+    {
+      "text": "and",
+      "start": 387.608,
+      "end": 387.813
+    },
+    {
+      "text": "the",
+      "start": 387.813,
+      "end": 388.018
+    },
+    {
+      "text": "Continental",
+      "start": 388.018,
+      "end": 388.656
+    },
+    {
+      "text": "GT",
+      "start": 388.656,
+      "end": 388.808
+    },
+    {
+      "text": "went",
+      "start": 388.808,
+      "end": 389.067
+    },
+    {
+      "text": "on",
+      "start": 389.067,
+      "end": 389.219
+    },
+    {
+      "text": "sale",
+      "start": 389.219,
+      "end": 389.478
+    },
+    {
+      "text": "in",
+      "start": 389.478,
+      "end": 389.63
+    },
+    {
+      "text": "India",
+      "start": 389.63,
+      "end": 389.943
+    },
+    {
+      "text": "a",
+      "start": 389.943,
+      "end": 390.063
+    },
+    {
+      "text": "year",
+      "start": 390.041,
+      "end": 390.3
+    },
+    {
+      "text": "later.",
+      "start": 390.3,
+      "end": 390.749
+    },
+    {
+      "text": "A",
+      "start": 391.846,
+      "end": 391.966
+    },
+    {
+      "text": "brand",
+      "start": 391.946,
+      "end": 392.268
+    },
+    {
+      "text": "once",
+      "start": 392.268,
+      "end": 392.534
+    },
+    {
+      "text": "slated",
+      "start": 392.534,
+      "end": 392.912
+    },
+    {
+      "text": "for",
+      "start": 392.912,
+      "end": 393.123
+    },
+    {
+      "text": "closure,",
+      "start": 393.123,
+      "end": 393.656
+    },
+    {
+      "text": "showing",
+      "start": 393.656,
+      "end": 394.089
+    },
+    {
+      "text": "new",
+      "start": 394.089,
+      "end": 394.3
+    },
+    {
+      "text": "bikes",
+      "start": 394.3,
+      "end": 394.622
+    },
+    {
+      "text": "in",
+      "start": 394.622,
+      "end": 394.777
+    },
+    {
+      "text": "Milan.",
+      "start": 394.777,
+      "end": 395.238
+    },
+    {
+      "text": "So",
+      "start": 395.841,
+      "end": 395.997
+    },
+    {
+      "text": "how",
+      "start": 395.997,
+      "end": 396.208
+    },
+    {
+      "text": "big",
+      "start": 396.208,
+      "end": 396.42
+    },
+    {
+      "text": "is",
+      "start": 396.42,
+      "end": 396.576
+    },
+    {
+      "text": "it",
+      "start": 396.576,
+      "end": 396.731
+    },
+    {
+      "text": "now?",
+      "start": 396.731,
+      "end": 397.082
+    },
+    {
+      "text": "Chapter",
+      "start": 398.435,
+      "end": 398.898
+    },
+    {
+      "text": "five.",
+      "start": 398.898,
+      "end": 399.331
+    },
+    {
+      "text": "Today.",
+      "start": 399.888,
+      "end": 400.359
+    },
+    {
+      "text": "The",
+      "start": 401.459,
+      "end": 401.658
+    },
+    {
+      "text": "climb",
+      "start": 401.658,
+      "end": 401.961
+    },
+    {
+      "text": "was",
+      "start": 401.961,
+      "end": 402.16
+    },
+    {
+      "text": "not",
+      "start": 402.16,
+      "end": 402.359
+    },
+    {
+      "text": "a",
+      "start": 402.359,
+      "end": 402.479
+    },
+    {
+      "text": "straight",
+      "start": 402.453,
+      "end": 402.914
+    },
+    {
+      "text": "line.",
+      "start": 402.914,
+      "end": 403.296
+    },
+    {
+      "text": "In",
+      "start": 404.387,
+      "end": 404.536
+    },
+    {
+      "text": "FY20,",
+      "start": 404.536,
+      "end": 405.431
+    },
+    {
+      "text": "sales",
+      "start": 405.431,
+      "end": 405.74
+    },
+    {
+      "text": "fell",
+      "start": 405.74,
+      "end": 405.995
+    },
+    {
+      "text": "16",
+      "start": 405.995,
+      "end": 406.432
+    },
+    {
+      "text": "percent,",
+      "start": 406.432,
+      "end": 406.943
+    },
+    {
+      "text": "and",
+      "start": 406.943,
+      "end": 407.146
+    },
+    {
+      "text": "COVID",
+      "start": 407.146,
+      "end": 407.454
+    },
+    {
+      "text": "stopped",
+      "start": 407.454,
+      "end": 407.87
+    },
+    {
+      "text": "production",
+      "start": 407.87,
+      "end": 408.445
+    },
+    {
+      "text": "in",
+      "start": 408.445,
+      "end": 408.594
+    },
+    {
+      "text": "March",
+      "start": 408.594,
+      "end": 408.903
+    },
+    {
+      "text": "2020.",
+      "start": 408.903,
+      "end": 409.835
+    },
+    {
+      "text": "In",
+      "start": 410.951,
+      "end": 411.149
+    },
+    {
+      "text": "FY23,",
+      "start": 411.149,
+      "end": 412.337
+    },
+    {
+      "text": "a",
+      "start": 412.337,
+      "end": 412.465
+    },
+    {
+      "text": "record:",
+      "start": 412.465,
+      "end": 413.073
+    },
+    {
+      "text": "834,895",
+      "start": 413.436,
+      "end": 414.808
+    },
+    {
+      "text": "bikes,",
+      "start": 414.808,
+      "end": 415.299
+    },
+    {
+      "text": "up",
+      "start": 415.299,
+      "end": 415.48
+    },
+    {
+      "text": "about",
+      "start": 415.48,
+      "end": 415.856
+    },
+    {
+      "text": "38",
+      "start": 415.856,
+      "end": 416.386
+    },
+    {
+      "text": "percent.",
+      "start": 416.386,
+      "end": 417.053
+    },
+    {
+      "text": "Exports",
+      "start": 417.053,
+      "end": 417.557
+    },
+    {
+      "text": "crossed",
+      "start": 417.557,
+      "end": 418.062
+    },
+    {
+      "text": "100,000",
+      "start": 418.604,
+      "end": 420.019
+    },
+    {
+      "text": "for",
+      "start": 420.019,
+      "end": 420.272
+    },
+    {
+      "text": "the",
+      "start": 420.272,
+      "end": 420.526
+    },
+    {
+      "text": "first",
+      "start": 420.526,
+      "end": 420.913
+    },
+    {
+      "text": "time.",
+      "start": 420.913,
+      "end": 421.4
+    },
+    {
+      "text": "In",
+      "start": 422.435,
+      "end": 422.581
+    },
+    {
+      "text": "November",
+      "start": 422.581,
+      "end": 423.041
+    },
+    {
+      "text": "2022,",
+      "start": 423.041,
+      "end": 423.918
+    },
+    {
+      "text": "it",
+      "start": 423.918,
+      "end": 424.065
+    },
+    {
+      "text": "opened",
+      "start": 424.065,
+      "end": 424.42
+    },
+    {
+      "text": "an",
+      "start": 424.42,
+      "end": 424.566
+    },
+    {
+      "text": "assembly",
+      "start": 424.566,
+      "end": 425.026
+    },
+    {
+      "text": "plant",
+      "start": 425.026,
+      "end": 425.329
+    },
+    {
+      "text": "in",
+      "start": 425.329,
+      "end": 425.475
+    },
+    {
+      "text": "Manaus,",
+      "start": 425.475,
+      "end": 425.924
+    },
+    {
+      "text": "Brazil.",
+      "start": 425.924,
+      "end": 426.41
+    },
+    {
+      "text": "In",
+      "start": 427.517,
+      "end": 427.706
+    },
+    {
+      "text": "the",
+      "start": 427.706,
+      "end": 427.961
+    },
+    {
+      "text": "year",
+      "start": 427.961,
+      "end": 428.285
+    },
+    {
+      "text": "to",
+      "start": 428.285,
+      "end": 428.473
+    },
+    {
+      "text": "March",
+      "start": 428.473,
+      "end": 428.864
+    },
+    {
+      "text": "2025,",
+      "start": 428.864,
+      "end": 429.995
+    },
+    {
+      "text": "Royal",
+      "start": 429.995,
+      "end": 430.386
+    },
+    {
+      "text": "Enfield",
+      "start": 430.386,
+      "end": 430.911
+    },
+    {
+      "text": "sold",
+      "start": 430.911,
+      "end": 431.234
+    },
+    {
+      "text": "1,002,893",
+      "start": 431.234,
+      "end": 433.012
+    },
+    {
+      "text": "motorcycles.",
+      "start": 433.012,
+      "end": 433.975
+    },
+    {
+      "text": "Its",
+      "start": 433.975,
+      "end": 434.231
+    },
+    {
+      "text": "first",
+      "start": 434.786,
+      "end": 435.18
+    },
+    {
+      "text": "million.",
+      "start": 435.18,
+      "end": 435.88
+    },
+    {
+      "text": "About",
+      "start": 436.926,
+      "end": 437.181
+    },
+    {
+      "text": "100,000",
+      "start": 437.181,
+      "end": 438.111
+    },
+    {
+      "text": "of",
+      "start": 438.111,
+      "end": 438.234
+    },
+    {
+      "text": "them",
+      "start": 438.234,
+      "end": 438.444
+    },
+    {
+      "text": "were",
+      "start": 438.444,
+      "end": 438.655
+    },
+    {
+      "text": "exports.",
+      "start": 438.655,
+      "end": 439.107
+    },
+    {
+      "text": "A",
+      "start": 440.154,
+      "end": 440.309
+    },
+    {
+      "text": "year",
+      "start": 440.309,
+      "end": 440.723
+    },
+    {
+      "text": "later,",
+      "start": 440.723,
+      "end": 441.378
+    },
+    {
+      "text": "it",
+      "start": 441.378,
+      "end": 441.62
+    },
+    {
+      "text": "sold",
+      "start": 441.62,
+      "end": 442.034
+    },
+    {
+      "text": "1,227,977.",
+      "start": 442.034,
+      "end": 444.664
+    },
+    {
+      "text": "Up",
+      "start": 444.664,
+      "end": 444.905
+    },
+    {
+      "text": "22",
+      "start": 445.413,
+      "end": 445.948
+    },
+    {
+      "text": "percent.",
+      "start": 445.948,
+      "end": 446.621
+    },
+    {
+      "text": "Eicher",
+      "start": 447.672,
+      "end": 448.143
+    },
+    {
+      "text": "Motors'",
+      "start": 448.143,
+      "end": 448.684
+    },
+    {
+      "text": "revenue",
+      "start": 448.684,
+      "end": 449.224
+    },
+    {
+      "text": "that",
+      "start": 449.565,
+      "end": 449.861
+    },
+    {
+      "text": "year:",
+      "start": 449.861,
+      "end": 450.267
+    },
+    {
+      "text": "23,408",
+      "start": 450.267,
+      "end": 451.413
+    },
+    {
+      "text": "crore",
+      "start": 451.413,
+      "end": 451.77
+    },
+    {
+      "text": "rupees.",
+      "start": 451.77,
+      "end": 452.343
+    },
+    {
+      "text": "Profit:",
+      "start": 453.38,
+      "end": 453.744
+    },
+    {
+      "text": "5,515",
+      "start": 454.119,
+      "end": 455.539
+    },
+    {
+      "text": "crore.",
+      "start": 455.539,
+      "end": 456.276
+    },
+    {
+      "text": "It",
+      "start": 457.328,
+      "end": 457.51
+    },
+    {
+      "text": "also",
+      "start": 457.51,
+      "end": 457.821
+    },
+    {
+      "text": "announced",
+      "start": 457.821,
+      "end": 458.458
+    },
+    {
+      "text": "958",
+      "start": 458.458,
+      "end": 459.159
+    },
+    {
+      "text": "crore",
+      "start": 459.159,
+      "end": 459.536
+    },
+    {
+      "text": "rupees",
+      "start": 459.536,
+      "end": 459.977
+    },
+    {
+      "text": "for",
+      "start": 459.977,
+      "end": 460.224
+    },
+    {
+      "text": "a",
+      "start": 460.224,
+      "end": 460.344
+    },
+    {
+      "text": "plant",
+      "start": 460.341,
+      "end": 460.717
+    },
+    {
+      "text": "at",
+      "start": 460.717,
+      "end": 460.899
+    },
+    {
+      "text": "Cheyyar,",
+      "start": 460.899,
+      "end": 461.523
+    },
+    {
+      "text": "near",
+      "start": 461.523,
+      "end": 461.834
+    },
+    {
+      "text": "Chennai.",
+      "start": 461.834,
+      "end": 462.503
+    },
+    {
+      "text": "In",
+      "start": 463.643,
+      "end": 463.79
+    },
+    {
+      "text": "2000,",
+      "start": 463.79,
+      "end": 464.669
+    },
+    {
+      "text": "this",
+      "start": 464.669,
+      "end": 464.92
+    },
+    {
+      "text": "brand",
+      "start": 464.92,
+      "end": 465.223
+    },
+    {
+      "text": "was",
+      "start": 465.223,
+      "end": 465.422
+    },
+    {
+      "text": "slated",
+      "start": 465.422,
+      "end": 465.778
+    },
+    {
+      "text": "for",
+      "start": 465.778,
+      "end": 465.977
+    },
+    {
+      "text": "closure.",
+      "start": 465.977,
+      "end": 466.516
+    },
+    {
+      "text": "Then",
+      "start": 467.568,
+      "end": 467.795
+    },
+    {
+      "text": "a",
+      "start": 467.795,
+      "end": 467.915
+    },
+    {
+      "text": "26-year-old",
+      "start": 467.88,
+      "end": 469.373
+    },
+    {
+      "text": "asked",
+      "start": 469.373,
+      "end": 469.647
+    },
+    {
+      "text": "for",
+      "start": 469.647,
+      "end": 469.827
+    },
+    {
+      "text": "one",
+      "start": 469.827,
+      "end": 470.007
+    },
+    {
+      "text": "more",
+      "start": 470.007,
+      "end": 470.233
+    },
+    {
+      "text": "chance.",
+      "start": 470.233,
+      "end": 470.673
+    },
+    {
+      "text": "If",
+      "start": 471.763,
+      "end": 471.883
+    },
+    {
+      "text": "you'd",
+      "start": 471.882,
+      "end": 472.129
+    },
+    {
+      "text": "been",
+      "start": 472.129,
+      "end": 472.333
+    },
+    {
+      "text": "on",
+      "start": 472.333,
+      "end": 472.453
+    },
+    {
+      "text": "that",
+      "start": 472.452,
+      "end": 472.657
+    },
+    {
+      "text": "board,",
+      "start": 472.657,
+      "end": 472.98
+    },
+    {
+      "text": "would",
+      "start": 473.314,
+      "end": 473.547
+    },
+    {
+      "text": "you",
+      "start": 473.547,
+      "end": 473.7
+    },
+    {
+      "text": "have",
+      "start": 473.7,
+      "end": 473.893
+    },
+    {
+      "text": "shut",
+      "start": 473.893,
+      "end": 474.086
+    },
+    {
+      "text": "it",
+      "start": 474.086,
+      "end": 474.206
+    },
+    {
+      "text": "down?",
+      "start": 474.199,
+      "end": 474.492
+    }
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 4.325
+    },
+    {
+      "id": 2,
+      "start": 5.468,
+      "end": 9.866
+    },
+    {
+      "id": 3,
+      "start": 10.908,
+      "end": 13.623
+    },
+    {
+      "id": 4,
+      "start": 14.643,
+      "end": 19.89
+    },
+    {
+      "id": 5,
+      "start": 20.98,
+      "end": 22.956
+    },
+    {
+      "id": 6,
+      "start": 24.142,
+      "end": 27.909
+    },
+    {
+      "id": 7,
+      "start": 28.995,
+      "end": 32.426
+    },
+    {
+      "id": 8,
+      "start": 33.665,
+      "end": 39.051
+    },
+    {
+      "id": 9,
+      "start": 40.184,
+      "end": 43.191
+    },
+    {
+      "id": 10,
+      "start": 44.313,
+      "end": 50.651
+    },
+    {
+      "id": 11,
+      "start": 51.696,
+      "end": 55.125
+    },
+    {
+      "id": 12,
+      "start": 56.251,
+      "end": 60.687
+    },
+    {
+      "id": 13,
+      "start": 61.814,
+      "end": 66.944
+    },
+    {
+      "id": 14,
+      "start": 68.108,
+      "end": 74.001
+    },
+    {
+      "id": 15,
+      "start": 75.02,
+      "end": 79.771
+    },
+    {
+      "id": 16,
+      "start": 80.954,
+      "end": 84.9
+    },
+    {
+      "id": 17,
+      "start": 86.071,
+      "end": 88.819
+    },
+    {
+      "id": 18,
+      "start": 89.947,
+      "end": 96.513
+    },
+    {
+      "id": 19,
+      "start": 97.593,
+      "end": 101.922
+    },
+    {
+      "id": 20,
+      "start": 102.977,
+      "end": 107.454
+    },
+    {
+      "id": 21,
+      "start": 108.614,
+      "end": 111.185
+    },
+    {
+      "id": 22,
+      "start": 112.326,
+      "end": 117.699
+    },
+    {
+      "id": 23,
+      "start": 118.758,
+      "end": 121.639
+    },
+    {
+      "id": 24,
+      "start": 122.711,
+      "end": 127.539
+    },
+    {
+      "id": 25,
+      "start": 128.636,
+      "end": 132.077
+    },
+    {
+      "id": 26,
+      "start": 133.131,
+      "end": 135.005
+    },
+    {
+      "id": 27,
+      "start": 136.158,
+      "end": 140.314
+    },
+    {
+      "id": 28,
+      "start": 141.392,
+      "end": 143.824
+    },
+    {
+      "id": 29,
+      "start": 144.87,
+      "end": 150.356
+    },
+    {
+      "id": 30,
+      "start": 151.417,
+      "end": 154.311
+    },
+    {
+      "id": 31,
+      "start": 155.387,
+      "end": 158.91
+    },
+    {
+      "id": 32,
+      "start": 159.933,
+      "end": 166.246
+    },
+    {
+      "id": 33,
+      "start": 167.392,
+      "end": 169.738
+    },
+    {
+      "id": 34,
+      "start": 170.844,
+      "end": 173.279
+    },
+    {
+      "id": 35,
+      "start": 174.397,
+      "end": 177.447
+    },
+    {
+      "id": 36,
+      "start": 178.812,
+      "end": 181.785
+    },
+    {
+      "id": 37,
+      "start": 182.908,
+      "end": 185.964
+    },
+    {
+      "id": 38,
+      "start": 187.047,
+      "end": 189.917
+    },
+    {
+      "id": 39,
+      "start": 191.038,
+      "end": 197.667
+    },
+    {
+      "id": 40,
+      "start": 198.775,
+      "end": 204.492
+    },
+    {
+      "id": 41,
+      "start": 205.616,
+      "end": 207.621
+    },
+    {
+      "id": 42,
+      "start": 208.725,
+      "end": 211.709
+    },
+    {
+      "id": 43,
+      "start": 212.752,
+      "end": 217.81
+    },
+    {
+      "id": 44,
+      "start": 218.905,
+      "end": 220.648
+    },
+    {
+      "id": 45,
+      "start": 221.739,
+      "end": 229.02
+    },
+    {
+      "id": 46,
+      "start": 230.119,
+      "end": 235.611
+    },
+    {
+      "id": 47,
+      "start": 236.665,
+      "end": 242.526
+    },
+    {
+      "id": 48,
+      "start": 243.602,
+      "end": 248.179
+    },
+    {
+      "id": 49,
+      "start": 249.172,
+      "end": 251.611
+    },
+    {
+      "id": 50,
+      "start": 252.756,
+      "end": 256.571
+    },
+    {
+      "id": 51,
+      "start": 257.699,
+      "end": 260.496
+    },
+    {
+      "id": 52,
+      "start": 261.558,
+      "end": 264.166
+    },
+    {
+      "id": 53,
+      "start": 265.228,
+      "end": 267.463
+    },
+    {
+      "id": 54,
+      "start": 268.536,
+      "end": 272.299
+    },
+    {
+      "id": 55,
+      "start": 273.384,
+      "end": 276.731
+    },
+    {
+      "id": 56,
+      "start": 277.832,
+      "end": 282.62
+    },
+    {
+      "id": 57,
+      "start": 283.787,
+      "end": 287.794
+    },
+    {
+      "id": 58,
+      "start": 288.891,
+      "end": 292.52
+    },
+    {
+      "id": 59,
+      "start": 293.629,
+      "end": 296.504
+    },
+    {
+      "id": 60,
+      "start": 297.529,
+      "end": 302.091
+    },
+    {
+      "id": 61,
+      "start": 303.05,
+      "end": 308.709
+    },
+    {
+      "id": 62,
+      "start": 309.739,
+      "end": 315.934
+    },
+    {
+      "id": 63,
+      "start": 316.977,
+      "end": 321.195
+    },
+    {
+      "id": 64,
+      "start": 322.329,
+      "end": 327.967
+    },
+    {
+      "id": 65,
+      "start": 329.005,
+      "end": 335.827
+    },
+    {
+      "id": 66,
+      "start": 336.897,
+      "end": 338.607
+    },
+    {
+      "id": 67,
+      "start": 339.686,
+      "end": 343.964
+    },
+    {
+      "id": 68,
+      "start": 344.984,
+      "end": 348.966
+    },
+    {
+      "id": 69,
+      "start": 349.99,
+      "end": 356.928
+    },
+    {
+      "id": 70,
+      "start": 358.008,
+      "end": 363.974
+    },
+    {
+      "id": 71,
+      "start": 365.113,
+      "end": 368.398
+    },
+    {
+      "id": 72,
+      "start": 369.432,
+      "end": 374.742
+    },
+    {
+      "id": 73,
+      "start": 375.82,
+      "end": 380.373
+    },
+    {
+      "id": 74,
+      "start": 381.387,
+      "end": 385.662
+    },
+    {
+      "id": 75,
+      "start": 386.764,
+      "end": 390.749
+    },
+    {
+      "id": 76,
+      "start": 391.846,
+      "end": 397.082
+    },
+    {
+      "id": 77,
+      "start": 398.435,
+      "end": 400.359
+    },
+    {
+      "id": 78,
+      "start": 401.459,
+      "end": 403.296
+    },
+    {
+      "id": 79,
+      "start": 404.387,
+      "end": 409.835
+    },
+    {
+      "id": 80,
+      "start": 410.951,
+      "end": 421.4
+    },
+    {
+      "id": 81,
+      "start": 422.435,
+      "end": 426.41
+    },
+    {
+      "id": 82,
+      "start": 427.517,
+      "end": 435.88
+    },
+    {
+      "id": 83,
+      "start": 436.926,
+      "end": 439.107
+    },
+    {
+      "id": 84,
+      "start": 440.154,
+      "end": 446.621
+    },
+    {
+      "id": 85,
+      "start": 447.672,
+      "end": 452.343
+    },
+    {
+      "id": 86,
+      "start": 453.38,
+      "end": 456.276
+    },
+    {
+      "id": 87,
+      "start": 457.328,
+      "end": 462.503
+    },
+    {
+      "id": 88,
+      "start": 463.643,
+      "end": 466.516
+    },
+    {
+      "id": 89,
+      "start": 467.568,
+      "end": 470.673
+    },
+    {
+      "id": 90,
+      "start": 471.763,
+      "end": 474.492
+    }
+  ],
+  "duration": 474.492
+}

@@ -3,7 +3,7 @@
   "channel": "brand",
   "language": "en",
   "topic": "Royal Enfield: the company that was supposed to shut down, and came back",
-  "title": "",
+  "title": "Royal Enfield Was Slated for Closure in 2000. Now It Sells 1.2 Million Bikes",
   "format": "long",
   "chapters": [
     {
@@ -44,26 +44,1953 @@
     "transition": "zoom",
     "progressBar": true
   },
-  "facts": [],
-  "lines": [],
-  "assets": [],
+  "facts": [
+    {
+      "chapter": "c0",
+      "claim": "In 2000, when Siddhartha Lal took charge, the Royal Enfield division was reportedly making large losses; Eicher chairman S. Sandilya said it was \"slated for closure\".",
+      "source": [
+        "https://www.outlookbusiness.com/the-big-story/lead-story/siddhartha-lal-an-indian-powerhouse-on-two-wheels-6676"
+      ],
+      "confidence": "medium (reported)"
+    },
+    {
+      "chapter": "c0",
+      "claim": "Eicher sold 1,227,977 Royal Enfield motorcycles in FY26 (results 22 May 2026), up 22%.",
+      "source": [
+        "https://www.autocarpro.in/news/eicher-motors-reports-record-fy26-profit-q4-pat-up-12-percent-132749"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c0",
+      "claim": "The Eicher Group acquired Enfield India in 1994 and renamed it Royal Enfield Motors Limited.",
+      "source": [
+        "https://www.royalenfield.com/in/en/our-world/since-1901/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c1",
+      "claim": "1891: Bob Walker Smith and Albert Eadie bought George Townsend & Co. in Redditch; in 1893 they won a contract for parts for the Royal Small Arms Factory at Enfield and renamed the business Enfield Manufacturing Company.",
+      "source": [
+        "https://www.royalenfield.com/in/en/our-world/since-1901/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c1",
+      "claim": "1901: the first Royal Enfield motorcycle was launched at the Stanley Cycle Show in London for £50 with a 1¾ hp engine.",
+      "source": [
+        "https://www.royalenfield.com/in/en/our-world/since-1901/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c1",
+      "claim": "1932: the Bullet was introduced.",
+      "source": [
+        "https://www.royalenfield.com/in/en/our-world/since-1901/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c1",
+      "claim": "1949: K. R. Sundaram Iyer founded Madras Motors to import British bikes; in the early 1950s the Indian Army ordered Bullets for border patrol (order size disputed: 500 or 800).",
+      "source": [
+        "https://www.royalenfield.com/in/en/our-world/since-1901/",
+        "https://theprint.in/pageturner/excerpt/indian-army-wanted-royal-enfield-bullets-nehru-ensured-they-made-in-india/554496/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "chapter": "c2",
+      "claim": "1955: Enfield India was formed with Madras Motors, assembling Bullets from Redditch kits; the Tiruvottiyur factory started in 1956 and built 163 Bullets that year.",
+      "source": [
+        "https://theprint.in/pageturner/excerpt/indian-army-wanted-royal-enfield-bullets-nehru-ensured-they-made-in-india/554496/"
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "chapter": "c2",
+      "claim": "1962: the first fully made-in-India Enfield was built.",
+      "source": [
+        "https://theprint.in/pageturner/excerpt/indian-army-wanted-royal-enfield-bullets-nehru-ensured-they-made-in-india/554496/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c3",
+      "claim": "The British company was gone by about 1970-71 (Redditch factory closed 1967); Enfield India continued and later got the Royal Enfield name rights.",
+      "source": [
+        "https://en.wikipedia.org/wiki/Royal_Enfield_(England)"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "chapter": "c3",
+      "claim": "Hero Honda was formed in 1984; its 100cc CD100 started production in 1985 at Dharuhera.",
+      "source": [
+        "https://global.honda/en/about/history-digest/75years-history/chapter2/section5_2/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c3",
+      "claim": "Around 2000, Bullet sales were reportedly below 2,000 a month; Lal later said growth went \"from 2,000 per month to over 10,000 per month\".",
+      "source": [
+        "https://www.autocarpro.in/feature/2012-news-maker-siddhartha-lal-3369",
+        "https://www.outlookindia.com/business/to-italy-on-a-bullet-news-298868"
+      ],
+      "confidence": "medium (reported)"
+    },
+    {
+      "chapter": "c4",
+      "claim": "Lal took charge in 2000, aged about 26; sales were about 25,000 units in 2004; in 2005 Eicher sold 13 of its 15 divisions to focus on two-wheelers.",
+      "source": [
+        "https://www.outlookbusiness.com/the-big-story/lead-story/siddhartha-lal-an-indian-powerhouse-on-two-wheels-6676"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "chapter": "c4",
+      "claim": "The Classic 350 with the new UCE engine launched in 2009; volumes grew about 22% a year from 2010 to 2018.",
+      "source": [
+        "https://www.outlookbusiness.com/the-big-story/lead-story/siddhartha-lal-an-indian-powerhouse-on-two-wheels-6676"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "chapter": "c4",
+      "claim": "The 648cc Interceptor 650 and Continental GT 650 were unveiled at EICMA Milan on 7 Nov 2017 and went on sale in India in Nov 2018.",
+      "source": [
+        "https://businessworld.in/article/royal-enfield-unveils-interceptor-continental-gt-bikes-powered-by-648cc-twin-cylinder-at-eicma-2017-130930"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c5",
+      "claim": "FY25: 1,002,893 units (902,757 domestic, 100,136 exports), the first year above one million; Eicher revenue Rs 18,870 crore, profit Rs 4,734 crore.",
+      "source": [
+        "https://www.business-standard.com/companies/quarterly-results/eicher-motors-q4-profit-up-27-pc-on-record-revenue-royal-enfield-sales-125051401506_1.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c5",
+      "claim": "FY26: 1,227,977 units (1,107,343 domestic, 120,634 exports); Eicher revenue Rs 23,408 crore, profit Rs 5,515 crore.",
+      "source": [
+        "https://www.autocarpro.in/news/eicher-motors-reports-record-fy26-profit-q4-pat-up-12-percent-132749"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c5",
+      "claim": "Eicher announced Rs 958 crore for the Cheyyar plant near Chennai, lifting capacity from 1.46 million to 2 million units a year (reported).",
+      "source": [
+        "https://www.constructionworld.in/amp/policy-updates-and-economic-news/eicher-motors-posts-record-fy26-revenue-profit-and-ebitda/92207"
+      ],
+      "confidence": "medium (reported)"
+    },
+    {
+      "chapter": "c3",
+      "claim": "By 1977 Enfield India reportedly had no reserves after losses and a long strike; losses cleared by 1981; by 1987 a new sales low against Japanese 100cc bikes; Eicher took a stake around 1990 and full ownership about three years later.",
+      "source": [
+        "https://madrasmusings.com/vol-32-no-14/bullet-the-survivor/"
+      ],
+      "confidence": "medium (single source)"
+    },
+    {
+      "chapter": "c3",
+      "claim": "October 2000: Eicher posted its first quarterly loss in 10 years; Royal Enfield was about one-fifth of revenue.",
+      "source": [
+        "https://archives.digitaltoday.in/businesstoday/20001021/cf.html"
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "chapter": "c3",
+      "claim": "Riders complained of engine seizures, snapping cables, electrical failures and oil leaks; Lal, 26, reportedly argued for one more chance when the board weighed closure or sale.",
+      "source": [
+        "https://www.businesstoday.in/magazine/case-study/reviving-royal-enfield-bullet/story/19892.html"
+      ],
+      "confidence": "medium (retrospective, single source)"
+    },
+    {
+      "chapter": "c4",
+      "claim": "Quality push: a \"back to basics\" 2006; sprag clutch failures fell from 5% (2005/06) to 0.2% (2010/11); new aluminium engine with 30% fewer parts and 30% more power; gear lever moved left; Classic 350 launched Nov 2009 at about Rs 1.20 lakh.",
+      "source": [
+        "https://www.businesstoday.in/magazine/case-study/reviving-royal-enfield-bullet/story/19892.html"
+      ],
+      "confidence": "medium (single source)"
+    },
+    {
+      "chapter": "c4",
+      "claim": "About a decade before 2012 the Enfield 350 cost about Rs 55,000 on-road and broke down often; monthly volume went from about 2,000 to over 10,000.",
+      "source": [
+        "https://www.autocarpro.in/feature/2012-news-maker-siddhartha-lal-3369"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "chapter": "c4",
+      "claim": "2011 sales about 75,000, 2012 about 113,000; the Rs 150-crore Oragadam plant opened on 30 April 2013.",
+      "source": [
+        "https://www.autocarpro.in/feature/royal-enfield-fired-growth-plan-3372"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c4",
+      "claim": "The Himalayan launched in March 2016; the UK Technology Centre at Bruntingthorpe, Leicestershire, was inaugurated on 6 Nov 2017 (120+ staff).",
+      "source": [
+        "https://www.autocarpro.in/news-national/royal-enfield-innovation-factory-uk-26908",
+        "https://www.business-standard.com/article/pti-stories/royal-enfield-launches-himalayan-for-rs-1-73-lakh-in-delhi-116033000399_1.html"
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "chapter": "c5",
+      "claim": "FY20 sales fell 16% to 695,947 (from 826,098 in FY19) and production stopped from 23 March 2020 (COVID); FY22: 602,268; FY23: record 834,895 (+~38%), exports above 1 lakh for the first time.",
+      "source": [
+        "https://www.businesstoday.in/auto/story/royal-enfield-sees-16-dip-in-sales-in-fy20-41-in-march-253701-2020-04-02"
+      ],
+      "confidence": "high"
+    },
+    {
+      "chapter": "c5",
+      "claim": "The Manaus (Brazil) assembly plant opened on 8 Nov 2022.",
+      "source": [
+        "https://autocarpro.in/news-international/royal-enfield-opens-its-fourth-overseas-ckd-assembly-plant-in-brazil-113548"
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "chapter": "c2",
+      "claim": "On the Pali–Jodhpur highway in Rajasthan, travellers reportedly pray at a roadside shrine to a Bullet (local legend).",
+      "source": [
+        "https://www.aljazeera.com/features/2014/2/7/bizarre-temples-feed-indian-faith"
+      ],
+      "confidence": "medium (legend)"
+    }
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "chapter": "c0",
+      "text": "This motorcycle brand was slated for closure in 2000. Who saved it?",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "SLATED FOR|CLOSURE?",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push",
+        "sub": "Royal Enfield, 2000"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"SLATED FOR|CLOSURE?\".",
+      "onScreen": "SLATED FOR CLOSURE?",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 50,
+          "do": "punch"
+        }
+      ],
+      "sfx": "whoosh.mp3",
+      "voice": "This motorcycle brand was slated for closure in two thousand. Who saved it?"
+    },
+    {
+      "id": 2,
+      "chapter": "c0",
+      "text": "A man named Siddhartha Lal, who'd just taken charge at about 26.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/lal.png",
+        "headline": "SIDDHARTHA LAL|AGE ~26",
+        "halftone": true,
+        "stroke": true,
+        "motion": "pull",
+        "sub": "in charge, 2000"
+      },
+      "visual": "Paper grid; assets/lal.png cut-out(s) with marker outline; headline \"SIDDHARTHA LAL|AGE ~26\".",
+      "onScreen": "SIDDHARTHA LAL AGE ~26",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 16,
+          "do": "punch"
+        }
+      ],
+      "voice": "A man named Siddhartha Lal, who'd just taken charge at about twenty-six."
+    },
+    {
+      "id": 3,
+      "chapter": "c0",
+      "text": "The division was reportedly making large losses.",
+      "scene": {
+        "type": "typewriter",
+        "text": "LARGE LOSSES|(REPORTED)",
+        "sub": "Outlook Business"
+      },
+      "visual": "Typewriter text on the paper grid: LARGE LOSSES / (REPORTED).",
+      "onScreen": "LARGE LOSSES (REPORTED)",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 4,
+      "chapter": "c0",
+      "text": "Yet in the year to March 2026, it sold 1.23 million motorcycles.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 1.23,
+        "suffix": "M",
+        "decimals": 2,
+        "label": "BIKES SOLD, FY26",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: 1.23M BIKES SOLD, FY26.",
+      "onScreen": "1.23M BIKES SOLD, FY26",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "beats": [
+        {
+          "at": 111,
+          "do": "flash"
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ],
+      "voice": "Yet in the year to March twenty twenty-six, it sold one point two three million motorcycles."
+    },
+    {
+      "id": 5,
+      "chapter": "c0",
+      "text": "How do you go from closure to that?",
+      "scene": {
+        "type": "typewriter",
+        "text": "CLOSURE → 1.23 MILLION?"
+      },
+      "visual": "Typewriter text on the paper grid: CLOSURE → 1.23 MILLION?.",
+      "onScreen": "CLOSURE → 1.23 MILLION?",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 6,
+      "chapter": "c0",
+      "text": "To find out, we go back to 1891, in England.",
+      "scene": {
+        "type": "timeline",
+        "title": "ROYAL ENFIELD",
+        "events": [
+          {
+            "year": "1891",
+            "label": "Two men buy a Redditch firm"
+          },
+          {
+            "year": "1901",
+            "label": "First motorcycle"
+          },
+          {
+            "year": "1949",
+            "label": "Madras Motors"
+          },
+          {
+            "year": "1994",
+            "label": "Eicher takes over"
+          },
+          {
+            "year": "2000",
+            "label": "Lal in charge"
+          }
+        ],
+        "highlight": 0
+      },
+      "visual": "Self-drawing timeline of 5 dated events on the paper grid.",
+      "onScreen": "ROYAL ENFIELD",
+      "motionNotes": "Axis draws f0–14; each event pops in on its year, highlight scales up.",
+      "beats": [
+        {
+          "at": -12,
+          "do": "zoom-through",
+          "len": 12
+        }
+      ],
+      "voice": "To find out, we go back to eighteen ninety-one, in England."
+    },
+    {
+      "id": 7,
+      "chapter": "c1",
+      "text": "Chapter one. It starts with parts for a gun factory.",
+      "scene": {
+        "type": "chapter",
+        "number": 1,
+        "title": "THE IDEA",
+        "sub": "1891–1949"
+      },
+      "visual": "Chapter title card: \"THE IDEA\" on the paper grid, accent pill \"CHAPTER 1\".",
+      "onScreen": "THE IDEA",
+      "motionNotes": "f0–8 soft entrance; card holds; last 12 frames dive into the next chapter."
+    },
+    {
+      "id": 8,
+      "chapter": "c1",
+      "text": "In 1891, two men bought a small Redditch company called George Townsend and Company.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/factory.png",
+        "headline": "REDDITCH,|ENGLAND",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push",
+        "sub": "November 1891"
+      },
+      "visual": "Paper grid; assets/factory.png cut-out(s) with marker outline; headline \"REDDITCH,|ENGLAND\".",
+      "onScreen": "REDDITCH, ENGLAND",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "In eighteen ninety-one, two men bought a small Redditch company called George Townsend and Company."
+    },
+    {
+      "id": 9,
+      "chapter": "c1",
+      "text": "Their names were Bob Walker Smith and Albert Eadie.",
+      "scene": {
+        "type": "typewriter",
+        "text": "BOB WALKER SMITH|ALBERT EADIE"
+      },
+      "visual": "Typewriter text on the paper grid: BOB WALKER SMITH / ALBERT EADIE.",
+      "onScreen": "BOB WALKER SMITH ALBERT EADIE",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 10,
+      "chapter": "c1",
+      "text": "In 1893 they won a contract: precision parts for the Royal Small Arms Factory at Enfield.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/factory.png",
+        "headline": "1893:|PARTS FOR A|GUN FACTORY",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-right"
+      },
+      "visual": "Paper grid; assets/factory.png cut-out(s) with marker outline; headline \"1893:|PARTS FOR A|GUN FACTORY\".",
+      "onScreen": "1893: PARTS FOR A GUN FACTORY",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 51,
+          "do": "punch"
+        }
+      ],
+      "voice": "In eighteen ninety-three they won a contract: precision parts for the Royal Small Arms Factory at Enfield."
+    },
+    {
+      "id": 11,
+      "chapter": "c1",
+      "text": "So they renamed the business the Enfield Manufacturing Company.",
+      "scene": {
+        "type": "typewriter",
+        "text": "ENFIELD MANUFACTURING COMPANY",
+        "sub": "renamed, 1893"
+      },
+      "visual": "Typewriter text on the paper grid: ENFIELD MANUFACTURING COMPANY.",
+      "onScreen": "ENFIELD MANUFACTURING COMPANY",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 12,
+      "chapter": "c1",
+      "text": "The badge was a cannon. The line was 'Made Like a Gun'.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "MADE LIKE|A GUN",
+        "halftone": true,
+        "stroke": true,
+        "motion": "push",
+        "sub": "cannon badge"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"MADE LIKE|A GUN\".",
+      "onScreen": "MADE LIKE A GUN",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way."
+    },
+    {
+      "id": 13,
+      "chapter": "c1",
+      "text": "A parts shop with a gun-factory contract. Nothing here says global brand.",
+      "scene": {
+        "type": "typewriter",
+        "text": "NOTHING HERE SAYS|GLOBAL BRAND"
+      },
+      "visual": "Typewriter text on the paper grid: NOTHING HERE SAYS / GLOBAL BRAND.",
+      "onScreen": "NOTHING HERE SAYS GLOBAL BRAND",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 14,
+      "chapter": "c1",
+      "text": "In 1901, the first Royal Enfield motorcycle appeared at the Stanley Cycle Show in London.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "1901:|FIRST|MOTORCYCLE",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push",
+        "sub": "Stanley Cycle Show, London"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"1901:|FIRST|MOTORCYCLE\".",
+      "onScreen": "1901: FIRST MOTORCYCLE",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 40,
+          "do": "punch"
+        }
+      ],
+      "voice": "In nineteen oh one, the first Royal Enfield motorcycle appeared at the Stanley Cycle Show in London."
+    },
+    {
+      "id": 15,
+      "chapter": "c1",
+      "text": "It cost £50 and had a tiny 1.75 horsepower engine.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 50,
+        "prefix": "£",
+        "label": "PRICE OF THE FIRST ONE, 1901",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: £50 PRICE OF THE FIRST ONE, 1901.",
+      "onScreen": "£50 PRICE OF THE FIRST ONE, 1901",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "voice": "It cost fifty pounds and had a tiny one point seven five horsepower engine."
+    },
+    {
+      "id": 16,
+      "chapter": "c1",
+      "text": "In 1932, the company brought out a model called the Bullet.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "1932:|THE BULLET",
+        "halftone": true,
+        "stroke": true,
+        "motion": "push"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"1932:|THE BULLET\".",
+      "onScreen": "1932: THE BULLET",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "In nineteen thirty-two, the company brought out a model called the Bullet."
+    },
+    {
+      "id": 17,
+      "chapter": "c1",
+      "text": "But the Bullet's real story happens in India.",
+      "scene": {
+        "type": "typewriter",
+        "text": "THE REAL STORY:|INDIA"
+      },
+      "visual": "Typewriter text on the paper grid: THE REAL STORY: / INDIA.",
+      "onScreen": "THE REAL STORY: INDIA",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "sfx": "whoosh.mp3"
+    },
+    {
+      "id": 18,
+      "chapter": "c1",
+      "text": "In 1949, K. R. Sundaram Iyer founded Madras Motors to import British bikes.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/young-man.png",
+        "headline": "1949:|MADRAS MOTORS",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push",
+        "sub": "K. R. Sundaram Iyer"
+      },
+      "visual": "Paper grid; assets/young-man.png cut-out(s) with marker outline; headline \"1949:|MADRAS MOTORS\".",
+      "onScreen": "1949: MADRAS MOTORS",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "In nineteen forty-nine, K R Sundaram Iyer founded Madras Motors to import British bikes."
+    },
+    {
+      "id": 19,
+      "chapter": "c1",
+      "text": "In the early 1950s, the Indian Army ordered Bullets for border patrol.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/soldier-bike.png",
+        "headline": "ARMY ORDER|EARLY 1950s",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-right"
+      },
+      "visual": "Paper grid; assets/soldier-bike.png cut-out(s) with marker outline; headline \"ARMY ORDER|EARLY 1950s\".",
+      "onScreen": "ARMY ORDER EARLY 1950s",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 65,
+          "do": "punch"
+        }
+      ],
+      "voice": "In the early nineteen fifties, the Indian Army ordered Bullets for border patrol."
+    },
+    {
+      "id": 20,
+      "chapter": "c1",
+      "text": "Hundreds of bikes, shipped from England. That wasn't going to last.",
+      "scene": {
+        "type": "typewriter",
+        "text": "SHIPPED FROM ENGLAND.|NOT FOR LONG."
+      },
+      "visual": "Typewriter text on the paper grid: SHIPPED FROM ENGLAND. / NOT FOR LONG..",
+      "onScreen": "SHIPPED FROM ENGLAND. NOT FOR LONG.",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "beats": [
+        {
+          "at": -12,
+          "do": "zoom-through",
+          "len": 12
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "chapter": "c2",
+      "text": "Chapter two. India starts building it.",
+      "scene": {
+        "type": "chapter",
+        "number": 2,
+        "title": "THE RISE",
+        "sub": "1955–1962"
+      },
+      "visual": "Chapter title card: \"THE RISE\" on the paper grid, accent pill \"CHAPTER 2\".",
+      "onScreen": "THE RISE",
+      "motionNotes": "f0–8 soft entrance; card holds; last 12 frames dive into the next chapter."
+    },
+    {
+      "id": 22,
+      "chapter": "c2",
+      "text": "In 1955, a company called Enfield India was formed with Madras Motors.",
+      "scene": {
+        "type": "timeline",
+        "title": "ENFIELD INDIA",
+        "events": [
+          {
+            "year": "1955",
+            "label": "Enfield India formed"
+          },
+          {
+            "year": "1956",
+            "label": "Tiruvottiyur factory"
+          },
+          {
+            "year": "1962",
+            "label": "First fully Indian-made Enfield"
+          }
+        ],
+        "highlight": 0
+      },
+      "visual": "Self-drawing timeline of 3 dated events on the paper grid.",
+      "onScreen": "ENFIELD INDIA",
+      "motionNotes": "Axis draws f0–14; each event pops in on its year, highlight scales up.",
+      "sfx": "shutter.mp3",
+      "voice": "In nineteen fifty-five, a company called Enfield India was formed with Madras Motors."
+    },
+    {
+      "id": 23,
+      "chapter": "c2",
+      "text": "At first it only assembled Bullets from kits shipped from England.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/crates.png",
+        "headline": "BULLETS|FROM KITS",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-left"
+      },
+      "visual": "Paper grid; assets/crates.png cut-out(s) with marker outline; headline \"BULLETS|FROM KITS\".",
+      "onScreen": "BULLETS FROM KITS",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way."
+    },
+    {
+      "id": 24,
+      "chapter": "c2",
+      "text": "In 1956, a factory started up at Tiruvottiyur, in north Madras.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/assembly.png",
+        "headline": "TIRUVOTTIYUR|1956",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push",
+        "sub": "north Madras",
+        "card": true
+      },
+      "visual": "Paper grid; assets/assembly.png cut-out(s) with marker outline; headline \"TIRUVOTTIYUR|1956\".",
+      "onScreen": "TIRUVOTTIYUR 1956",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "In nineteen fifty-six, a factory started up at Tiruvottiyur, in north Madras."
+    },
+    {
+      "id": 25,
+      "chapter": "c2",
+      "text": "By the end of that year, it had built 163 Bullets.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 163,
+        "label": "BULLETS BUILT IN 1956",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: 163 BULLETS BUILT IN 1956.",
+      "onScreen": "163 BULLETS BUILT IN 1956",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "beats": [
+        {
+          "at": 64,
+          "do": "punch"
+        }
+      ],
+      "voice": "By the end of that year, it had built one hundred sixty-three Bullets."
+    },
+    {
+      "id": 26,
+      "chapter": "c2",
+      "text": "Not many. But it was a start.",
+      "scene": {
+        "type": "typewriter",
+        "text": "NOT MANY.|BUT A START."
+      },
+      "visual": "Typewriter text on the paper grid: NOT MANY. / BUT A START..",
+      "onScreen": "NOT MANY. BUT A START.",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 27,
+      "chapter": "c2",
+      "text": "In 1962, the first fully made-in-India Enfield rolled out.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "1962:|MADE IN INDIA",
+        "halftone": true,
+        "stroke": true,
+        "motion": "push"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"1962:|MADE IN INDIA\".",
+      "onScreen": "1962: MADE IN INDIA",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 50,
+          "do": "punch"
+        }
+      ],
+      "voice": "In nineteen sixty-two, the first fully made-in-India Enfield rolled out."
+    },
+    {
+      "id": 28,
+      "chapter": "c2",
+      "text": "But could a British design survive without Britain?",
+      "scene": {
+        "type": "typewriter",
+        "text": "A BRITISH DESIGN,|WITHOUT BRITAIN?"
+      },
+      "visual": "Typewriter text on the paper grid: A BRITISH DESIGN, / WITHOUT BRITAIN?.",
+      "onScreen": "A BRITISH DESIGN, WITHOUT BRITAIN?",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 29,
+      "chapter": "c2",
+      "text": "The Bullet was a heavy, single-cylinder 350cc bike, and the Army trusted it.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/soldier-bike.png",
+        "headline": "350cc.|ARMY-TRUSTED",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-left"
+      },
+      "visual": "Paper grid; assets/soldier-bike.png cut-out(s) with marker outline; headline \"350cc.|ARMY-TRUSTED\".",
+      "onScreen": "350cc. ARMY-TRUSTED",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "The Bullet was a heavy, single-cylinder three hundred fifty C C bike, and the Army trusted it."
+    },
+    {
+      "id": 30,
+      "chapter": "c2",
+      "text": "Soldiers on border patrol aren't forgiving customers.",
+      "scene": {
+        "type": "typewriter",
+        "text": "NOT FORGIVING|CUSTOMERS"
+      },
+      "visual": "Typewriter text on the paper grid: NOT FORGIVING / CUSTOMERS.",
+      "onScreen": "NOT FORGIVING CUSTOMERS",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 31,
+      "chapter": "c2",
+      "text": "Out on the highways, the Bullet became more than a machine.",
+      "scene": {
+        "type": "typewriter",
+        "text": "MORE THAN|A MACHINE"
+      },
+      "visual": "Typewriter text on the paper grid: MORE THAN / A MACHINE.",
+      "onScreen": "MORE THAN A MACHINE",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 32,
+      "chapter": "c2",
+      "text": "On a road near Pali in Rajasthan, locals say, travellers stop at a roadside shrine to a Bullet.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "A SHRINE|TO A BULLET",
+        "halftone": true,
+        "stroke": true,
+        "motion": "drift",
+        "sub": "Pali–Jodhpur highway, locals say"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"A SHRINE|TO A BULLET\".",
+      "onScreen": "A SHRINE TO A BULLET",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 145,
+          "do": "punch"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "chapter": "c2",
+      "text": "They reportedly pray there for a safe journey.",
+      "scene": {
+        "type": "typewriter",
+        "text": "PRAYING FOR|A SAFE JOURNEY",
+        "sub": "Al Jazeera, 2014"
+      },
+      "visual": "Typewriter text on the paper grid: PRAYING FOR / A SAFE JOURNEY.",
+      "onScreen": "PRAYING FOR A SAFE JOURNEY",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 34,
+      "chapter": "c2",
+      "text": "It looked like a perfect Indian success story.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "INDIAN|SUCCESS STORY?",
+        "halftone": true,
+        "stroke": true,
+        "motion": "push"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"INDIAN|SUCCESS STORY?\".",
+      "onScreen": "INDIAN SUCCESS STORY?",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way."
+    },
+    {
+      "id": 35,
+      "chapter": "c2",
+      "text": "But in England, the parent company was running out of road.",
+      "scene": {
+        "type": "typewriter",
+        "text": "BUT IN ENGLAND..."
+      },
+      "visual": "Typewriter text on the paper grid: BUT IN ENGLAND....",
+      "onScreen": "BUT IN ENGLAND...",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "beats": [
+        {
+          "at": -12,
+          "do": "zoom-through",
+          "len": 12
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "chapter": "c3",
+      "text": "Chapter three. The world moves on.",
+      "scene": {
+        "type": "chapter",
+        "number": 3,
+        "title": "THE DOWNFALL",
+        "sub": "1970s–2000"
+      },
+      "visual": "Chapter title card: \"THE DOWNFALL\" on the paper grid, accent pill \"CHAPTER 3\".",
+      "onScreen": "THE DOWNFALL",
+      "motionNotes": "f0–8 soft entrance; card holds; last 12 frames dive into the next chapter."
+    },
+    {
+      "id": 37,
+      "chapter": "c3",
+      "text": "By the early 1970s, the British company was gone.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/factory.png",
+        "headline": "BRITISH ROYAL ENFIELD|GONE BY ~1970",
+        "halftone": true,
+        "stroke": true,
+        "motion": "push"
+      },
+      "visual": "Paper grid; assets/factory.png cut-out(s) with marker outline; headline \"BRITISH ROYAL ENFIELD|GONE BY ~1970\".",
+      "onScreen": "BRITISH ROYAL ENFIELD GONE BY ~1970",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "By the early nineteen seventies, the British company was gone."
+    },
+    {
+      "id": 38,
+      "chapter": "c3",
+      "text": "Enfield India carried on alone, and kept the name.",
+      "scene": {
+        "type": "typewriter",
+        "text": "INDIA CARRIED ON.|ALONE."
+      },
+      "visual": "Typewriter text on the paper grid: INDIA CARRIED ON. / ALONE..",
+      "onScreen": "INDIA CARRIED ON. ALONE.",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 39,
+      "chapter": "c3",
+      "text": "By 1977, Madras Musings reports, it had no reserves, after steady losses and a long strike.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/padlock.png",
+        "headline": "1977:|NO RESERVES",
+        "halftone": true,
+        "stroke": true,
+        "motion": "push",
+        "sub": "Madras Musings"
+      },
+      "visual": "Paper grid; assets/padlock.png cut-out(s) with marker outline; headline \"1977:|NO RESERVES\".",
+      "onScreen": "1977: NO RESERVES",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 103,
+          "do": "punch"
+        }
+      ],
+      "voice": "By nineteen seventy-seven, Madras Musings reports, it had no reserves, after steady losses and a long strike."
+    },
+    {
+      "id": 40,
+      "chapter": "c3",
+      "text": "The rescue reportedly cost just over one crore rupees. Losses were cleared by 1981.",
+      "scene": {
+        "type": "typewriter",
+        "text": "LOSSES CLEARED|BY 1981",
+        "sub": "reported"
+      },
+      "visual": "Typewriter text on the paper grid: LOSSES CLEARED / BY 1981.",
+      "onScreen": "LOSSES CLEARED BY 1981",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "The rescue reportedly cost just over one crore rupees. Losses were cleared by nineteen eighty-one."
+    },
+    {
+      "id": 41,
+      "chapter": "c3",
+      "text": "But the market around the Bullet kept moving.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "THE MARKET|KEPT MOVING",
+        "halftone": false,
+        "stroke": true,
+        "motion": "drift"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"THE MARKET|KEPT MOVING\".",
+      "onScreen": "THE MARKET KEPT MOVING",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way."
+    },
+    {
+      "id": 42,
+      "chapter": "c3",
+      "text": "In 1984, Hero Honda was formed.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/commuter.png",
+        "headline": "1984:|HERO HONDA",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push",
+        "sub": "a joint venture"
+      },
+      "visual": "Paper grid; assets/commuter.png cut-out(s) with marker outline; headline \"1984:|HERO HONDA\".",
+      "onScreen": "1984: HERO HONDA",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 39,
+          "do": "punch"
+        }
+      ],
+      "voice": "In nineteen eighty-four, Hero Honda was formed."
+    },
+    {
+      "id": 43,
+      "chapter": "c3",
+      "text": "A year later, its 100cc CD100 started production at Dharuhera, in Haryana.",
+      "scene": {
+        "type": "typewriter",
+        "text": "100cc CD100|DHARUHERA, 1985"
+      },
+      "visual": "Typewriter text on the paper grid: 100cc CD100 / DHARUHERA, 1985.",
+      "onScreen": "100cc CD100 DHARUHERA, 1985",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "A year later, its C D one hundred started production at Dharuhera, in Haryana."
+    },
+    {
+      "id": 44,
+      "chapter": "c3",
+      "text": "So what were buyers choosing instead?",
+      "scene": {
+        "type": "typewriter",
+        "text": "WHAT WERE|BUYERS CHOOSING?"
+      },
+      "visual": "Typewriter text on the paper grid: WHAT WERE / BUYERS CHOOSING?.",
+      "onScreen": "WHAT WERE BUYERS CHOOSING?",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 45,
+      "chapter": "c3",
+      "text": "By 1987, Enfield had reportedly hit a new sales low, with Japanese 100cc bikes as strong rivals.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "1987:|NEW SALES LOW",
+        "halftone": true,
+        "stroke": true,
+        "motion": "pull",
+        "sub": "Madras Musings (reported)"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"1987:|NEW SALES LOW\".",
+      "onScreen": "1987: NEW SALES LOW",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "By nineteen eighty-seven, Enfield had reportedly hit a new sales low, with Japanese one hundred C C bikes as strong rivals."
+    },
+    {
+      "id": 46,
+      "chapter": "c3",
+      "text": "Around 1990, Eicher took a stake. By 1994, it owned Enfield India.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/boardroom.png",
+        "headline": "1994:|EICHER OWNS|ENFIELD INDIA",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pull"
+      },
+      "visual": "Paper grid; assets/boardroom.png cut-out(s) with marker outline; headline \"1994:|EICHER OWNS|ENFIELD INDIA\".",
+      "onScreen": "1994: EICHER OWNS ENFIELD INDIA",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "sfx": "shutter.mp3",
+      "voice": "Around nineteen ninety, Eicher took a stake. By nineteen ninety-four, it owned Enfield India."
+    },
+    {
+      "id": 47,
+      "chapter": "c3",
+      "text": "Riders complained about oil leaks, snapping cables and engine seizures, a Business Today case study says.",
+      "scene": {
+        "type": "typewriter",
+        "text": "OIL LEAKS. SNAPPING CABLES.|ENGINE SEIZURES.",
+        "sub": "Business Today case study"
+      },
+      "visual": "Typewriter text on the paper grid: OIL LEAKS. SNAPPING CABLES. / ENGINE SEIZURES..",
+      "onScreen": "OIL LEAKS. SNAPPING CABLES. ENGINE SEIZURES.",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 48,
+      "chapter": "c3",
+      "text": "In October 2000, Eicher posted its first quarterly loss in ten years.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 10,
+        "suffix": " YEARS",
+        "label": "SINCE LAST QUARTERLY LOSS",
+        "icon": "assets/padlock.png"
+      },
+      "visual": "Big number counting up on the paper grid: 10 YEARS SINCE LAST QUARTERLY LOSS.",
+      "onScreen": "10 YEARS SINCE LAST QUARTERLY LOSS",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "beats": [
+        {
+          "at": 75,
+          "do": "punch"
+        }
+      ],
+      "voice": "In October two thousand, Eicher posted its first quarterly loss in ten years."
+    },
+    {
+      "id": 49,
+      "chapter": "c3",
+      "text": "Royal Enfield was about one-fifth of its revenue.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 20,
+        "suffix": "%",
+        "label": "OF EICHER REVENUE, ABOUT",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: 20% OF EICHER REVENUE, ABOUT.",
+      "onScreen": "20% OF EICHER REVENUE, ABOUT",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands."
+    },
+    {
+      "id": 50,
+      "chapter": "c3",
+      "text": "That year, according to Outlook Business, the division was slated for closure.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/boardroom.png",
+        "headline": "SLATED FOR|CLOSURE",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pull",
+        "sub": "Outlook Business"
+      },
+      "visual": "Paper grid; assets/boardroom.png cut-out(s) with marker outline; headline \"SLATED FOR|CLOSURE\".",
+      "onScreen": "SLATED FOR CLOSURE",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 98,
+          "do": "flash"
+        }
+      ],
+      "fx": [
+        "smoke"
+      ],
+      "sfx": "hit.mp3",
+      "sfxAt": 3.27
+    },
+    {
+      "id": 51,
+      "chapter": "c3",
+      "text": "Bullet sales were reportedly below 2,000 a month.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 2000,
+        "prefix": "<",
+        "label": "BULLETS A MONTH (REPORTED)",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: <2000 BULLETS A MONTH (REPORTED).",
+      "onScreen": "<2000 BULLETS A MONTH (REPORTED)",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "voice": "Bullet sales were reportedly below two thousand a month."
+    },
+    {
+      "id": 52,
+      "chapter": "c3",
+      "text": "One person reportedly asked for one more chance.",
+      "scene": {
+        "type": "typewriter",
+        "text": "ONE MORE|CHANCE."
+      },
+      "visual": "Typewriter text on the paper grid: ONE MORE / CHANCE..",
+      "onScreen": "ONE MORE CHANCE.",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "beats": [
+        {
+          "at": -12,
+          "do": "zoom-through",
+          "len": 12
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "chapter": "c4",
+      "text": "Chapter four. One more chance.",
+      "scene": {
+        "type": "chapter",
+        "number": 4,
+        "title": "THE COMEBACK",
+        "sub": "2000–2018"
+      },
+      "visual": "Chapter title card: \"THE COMEBACK\" on the paper grid, accent pill \"CHAPTER 4\".",
+      "onScreen": "THE COMEBACK",
+      "motionNotes": "f0–8 soft entrance; card holds; last 12 frames dive into the next chapter."
+    },
+    {
+      "id": 54,
+      "chapter": "c4",
+      "text": "Siddhartha Lal took charge in 2000, aged about 26.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/lal.png",
+        "headline": "AGE ~26|IN CHARGE",
+        "halftone": true,
+        "stroke": true,
+        "motion": "push",
+        "sub": "2000 (photo: 2012)"
+      },
+      "visual": "Paper grid; assets/lal.png cut-out(s) with marker outline; headline \"AGE ~26|IN CHARGE\".",
+      "onScreen": "AGE ~26 IN CHARGE",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 30,
+          "do": "punch"
+        }
+      ],
+      "voice": "Siddhartha Lal took charge in two thousand, aged about twenty-six."
+    },
+    {
+      "id": 55,
+      "chapter": "c4",
+      "text": "He reportedly set up a team just to deal with unhappy dealers.",
+      "scene": {
+        "type": "typewriter",
+        "text": "A TEAM FOR|UNHAPPY DEALERS",
+        "sub": "Outlook Business"
+      },
+      "visual": "Typewriter text on the paper grid: A TEAM FOR / UNHAPPY DEALERS.",
+      "onScreen": "A TEAM FOR UNHAPPY DEALERS",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 56,
+      "chapter": "c4",
+      "text": "By 2004, Royal Enfield was selling about 25,000 bikes a year.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 25000,
+        "label": "BIKES A YEAR, 2004",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: 25000 BIKES A YEAR, 2004.",
+      "onScreen": "25000 BIKES A YEAR, 2004",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "voice": "By two thousand four, Royal Enfield was selling about twenty-five thousand bikes a year."
+    },
+    {
+      "id": 57,
+      "chapter": "c4",
+      "text": "In 2005, Eicher sold 13 of its 15 divisions.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 13,
+        "suffix": " OF 15",
+        "label": "DIVISIONS SOLD, 2005",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: 13 OF 15 DIVISIONS SOLD, 2005.",
+      "onScreen": "13 OF 15 DIVISIONS SOLD, 2005",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "beats": [
+        {
+          "at": 54,
+          "do": "punch"
+        }
+      ],
+      "voice": "In two thousand five, Eicher sold thirteen of its fifteen divisions."
+    },
+    {
+      "id": 58,
+      "chapter": "c4",
+      "text": "That is a gamble. Eicher was betting its future on motorcycles.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/young-man.png",
+        "headline": "ALL IN ON|TWO WHEELS",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-left"
+      },
+      "visual": "Paper grid; assets/young-man.png cut-out(s) with marker outline; headline \"ALL IN ON|TWO WHEELS\".",
+      "onScreen": "ALL IN ON TWO WHEELS",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way."
+    },
+    {
+      "id": 59,
+      "chapter": "c4",
+      "text": "But a gamble needs a better bike. Could they build one?",
+      "scene": {
+        "type": "typewriter",
+        "text": "A BETTER BIKE.|COULD THEY BUILD ONE?"
+      },
+      "visual": "Typewriter text on the paper grid: A BETTER BIKE. / COULD THEY BUILD ONE?.",
+      "onScreen": "A BETTER BIKE. COULD THEY BUILD ONE?",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 60,
+      "chapter": "c4",
+      "text": "Quality came first, and 2006 was reportedly a back-to-basics year.",
+      "scene": {
+        "type": "typewriter",
+        "text": "2006:|BACK TO BASICS",
+        "sub": "Business Today case study"
+      },
+      "visual": "Typewriter text on the paper grid: 2006: / BACK TO BASICS.",
+      "onScreen": "2006: BACK TO BASICS",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "Quality came first, and two thousand six was reportedly a back-to-basics year."
+    },
+    {
+      "id": 61,
+      "chapter": "c4",
+      "text": "Sprag clutch failures reportedly fell from 5 percent to 0.2 percent in five years.",
+      "scene": {
+        "type": "line",
+        "title": "SPRAG CLUTCH FAILURES (%)",
+        "points": [
+          5,
+          0.2
+        ],
+        "labels": [
+          "2005/06",
+          "2010/11"
+        ],
+        "xs": [
+          2005,
+          2010
+        ],
+        "callout": "5% → 0.2%",
+        "unit": "% of bikes (reported)"
+      },
+      "visual": "Self-drawing line chart \"SPRAG CLUTCH FAILURES (%)\".",
+      "onScreen": "SPRAG CLUTCH FAILURES (%)",
+      "motionNotes": "Line draws left to right over ~2 s, callout pops at the end.",
+      "voice": "Sprag clutch failures reportedly fell from five percent to zero point two percent in five years."
+    },
+    {
+      "id": 62,
+      "chapter": "c4",
+      "text": "Then the engine: a new aluminium unit with 30 percent fewer parts and 30 percent more power.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 30,
+        "prefix": "+",
+        "suffix": "% POWER",
+        "label": "NEW ENGINE (REPORTED)",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: +30% POWER NEW ENGINE (REPORTED).",
+      "onScreen": "+30% POWER NEW ENGINE (REPORTED)",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "beats": [
+        {
+          "at": 39,
+          "do": "punch"
+        }
+      ],
+      "voice": "Then the engine: a new aluminium unit with thirty percent fewer parts and thirty percent more power."
+    },
+    {
+      "id": 63,
+      "chapter": "c4",
+      "text": "Even the gear lever moved to the left side, against strong opposition from fans.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "GEAR LEVER|MOVED LEFT",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-right"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"GEAR LEVER|MOVED LEFT\".",
+      "onScreen": "GEAR LEVER MOVED LEFT",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way."
+    },
+    {
+      "id": 64,
+      "chapter": "c4",
+      "text": "In 2009 came the Classic 350, priced at about 1.2 lakh rupees.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/bullet.png",
+        "headline": "2009:|CLASSIC 350",
+        "halftone": true,
+        "stroke": true,
+        "motion": "push",
+        "sub": "about ₹1.2 lakh (reported)"
+      },
+      "visual": "Paper grid; assets/bullet.png cut-out(s) with marker outline; headline \"2009:|CLASSIC 350\".",
+      "onScreen": "2009: CLASSIC 350",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "In two thousand nine came the Classic three hundred fifty, priced at about one point two lakh rupees."
+    },
+    {
+      "id": 65,
+      "chapter": "c4",
+      "text": "A decade earlier, the old 350 reportedly cost about 55,000 rupees and broke down often.",
+      "scene": {
+        "type": "typewriter",
+        "text": "A DECADE BEFORE:|~₹55,000, BROKE DOWN OFTEN",
+        "sub": "Autocar Professional, 2012"
+      },
+      "visual": "Typewriter text on the paper grid: A DECADE BEFORE: / ~₹55,000, BROKE DOWN OFTEN.",
+      "onScreen": "A DECADE BEFORE: ~₹55,000, BROKE DOWN OFTEN",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "A decade earlier, the old three hundred fifty reportedly cost about fifty-five thousand rupees and broke down often."
+    },
+    {
+      "id": 66,
+      "chapter": "c4",
+      "text": "So did the fixes actually work?",
+      "scene": {
+        "type": "typewriter",
+        "text": "DID THE FIXES|ACTUALLY WORK?"
+      },
+      "visual": "Typewriter text on the paper grid: DID THE FIXES / ACTUALLY WORK?.",
+      "onScreen": "DID THE FIXES ACTUALLY WORK?",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    },
+    {
+      "id": 67,
+      "chapter": "c4",
+      "text": "From 2010 to 2018, volumes grew about 22 percent a year.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 22,
+        "suffix": "% / YEAR",
+        "label": "VOLUME GROWTH 2010–2018"
+      },
+      "visual": "Big number counting up on the paper grid: 22% / YEAR VOLUME GROWTH 2010–2018.",
+      "onScreen": "22% / YEAR VOLUME GROWTH 2010–2018",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "voice": "From twenty ten to twenty eighteen, volumes grew about twenty-two percent a year."
+    },
+    {
+      "id": 68,
+      "chapter": "c4",
+      "text": "Lal later said sales went from 2,000 a month to over 10,000.",
+      "scene": {
+        "type": "typewriter",
+        "text": "FROM 2,000 PER MONTH|TO OVER 10,000",
+        "sub": "Siddhartha Lal, Autocar Pro, 2012"
+      },
+      "visual": "Typewriter text on the paper grid: FROM 2,000 PER MONTH / TO OVER 10,000.",
+      "onScreen": "FROM 2,000 PER MONTH TO OVER 10,000",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "Lal later said sales went from two thousand a month to over ten thousand."
+    },
+    {
+      "id": 69,
+      "chapter": "c4",
+      "text": "In 2012 it sold about 113,000 bikes, up from about 75,000 the year before.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 113000,
+        "prefix": "~",
+        "label": "BIKES IN 2012 (~75,000 IN 2011)",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: ~113000 BIKES IN 2012 (~75,000 IN 2011).",
+      "onScreen": "~113000 BIKES IN 2012 (~75,000 IN 2011)",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "voice": "In twenty twelve it sold about one hundred thirteen thousand bikes, up from about seventy-five thousand the year before."
+    },
+    {
+      "id": 70,
+      "chapter": "c4",
+      "text": "In April 2013, a new 150-crore-rupee plant opened at Oragadam, near Chennai.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/assembly.png",
+        "headline": "ORAGADAM|APRIL 2013",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-left",
+        "sub": "₹150 crore plant",
+        "card": true
+      },
+      "visual": "Paper grid; assets/assembly.png cut-out(s) with marker outline; headline \"ORAGADAM|APRIL 2013\".",
+      "onScreen": "ORAGADAM APRIL 2013",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "In April twenty thirteen, a new one hundred fifty-crore-rupee plant opened at Oragadam, near Chennai."
+    },
+    {
+      "id": 71,
+      "chapter": "c4",
+      "text": "In March 2016, it launched the Himalayan.",
+      "scene": {
+        "type": "typewriter",
+        "text": "MARCH 2016:|THE HIMALAYAN",
+        "sub": "adventure tourer"
+      },
+      "visual": "Typewriter text on the paper grid: MARCH 2016: / THE HIMALAYAN.",
+      "onScreen": "MARCH 2016: THE HIMALAYAN",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "In March twenty sixteen, it launched the Himalayan."
+    },
+    {
+      "id": 72,
+      "chapter": "c4",
+      "text": "In November 2017, its Indian owner opened a technology centre in Leicestershire, England.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/factory.png",
+        "headline": "LEICESTERSHIRE,|ENGLAND",
+        "halftone": true,
+        "stroke": true,
+        "motion": "push",
+        "sub": "UK Technology Centre, Nov 2017"
+      },
+      "visual": "Paper grid; assets/factory.png cut-out(s) with marker outline; headline \"LEICESTERSHIRE,|ENGLAND\".",
+      "onScreen": "LEICESTERSHIRE, ENGLAND",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "beats": [
+        {
+          "at": 141,
+          "do": "punch"
+        }
+      ],
+      "voice": "In November twenty seventeen, its Indian owner opened a technology centre in Leicestershire, England."
+    },
+    {
+      "id": 73,
+      "chapter": "c4",
+      "text": "The British company had died around 1970. The brand had come home.",
+      "scene": {
+        "type": "typewriter",
+        "text": "ENGLAND, 2017:|THE BRAND COMES HOME"
+      },
+      "visual": "Typewriter text on the paper grid: ENGLAND, 2017: / THE BRAND COMES HOME.",
+      "onScreen": "ENGLAND, 2017: THE BRAND COMES HOME",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "The British company had died around nineteen seventy. The brand had come home."
+    },
+    {
+      "id": 74,
+      "chapter": "c4",
+      "text": "That same month, it showed two 650cc twins in Milan.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/twin.png",
+        "headline": "MILAN, NOV 2017|650cc TWINS",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-right"
+      },
+      "visual": "Paper grid; assets/twin.png cut-out(s) with marker outline; headline \"MILAN, NOV 2017|650cc TWINS\".",
+      "onScreen": "MILAN, NOV 2017 650cc TWINS",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "sfx": "shutter.mp3",
+      "voice": "That same month, it showed two six hundred fifty C C twins in Milan."
+    },
+    {
+      "id": 75,
+      "chapter": "c4",
+      "text": "The Interceptor and the Continental GT went on sale in India a year later.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/twin.png",
+        "headline": "ON SALE|NOV 2018",
+        "halftone": false,
+        "stroke": true,
+        "motion": "drift",
+        "sub": "Interceptor 650 + Continental GT 650"
+      },
+      "visual": "Paper grid; assets/twin.png cut-out(s) with marker outline; headline \"ON SALE|NOV 2018\".",
+      "onScreen": "ON SALE NOV 2018",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way."
+    },
+    {
+      "id": 76,
+      "chapter": "c4",
+      "text": "A brand once slated for closure, showing new bikes in Milan. So how big is it now?",
+      "scene": {
+        "type": "typewriter",
+        "text": "SLATED FOR CLOSURE →|MILAN. HOW BIG NOW?"
+      },
+      "visual": "Typewriter text on the paper grid: SLATED FOR CLOSURE → / MILAN. HOW BIG NOW?.",
+      "onScreen": "SLATED FOR CLOSURE → MILAN. HOW BIG NOW?",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "beats": [
+        {
+          "at": -12,
+          "do": "zoom-through",
+          "len": 12
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "chapter": "c5",
+      "text": "Chapter five. Today.",
+      "scene": {
+        "type": "chapter",
+        "number": 5,
+        "title": "TODAY",
+        "sub": "FY19–FY26"
+      },
+      "visual": "Chapter title card: \"TODAY\" on the paper grid, accent pill \"CHAPTER 5\".",
+      "onScreen": "TODAY",
+      "motionNotes": "f0–8 soft entrance; card holds; last 12 frames dive into the next chapter."
+    },
+    {
+      "id": 78,
+      "chapter": "c5",
+      "text": "The climb was not a straight line.",
+      "scene": {
+        "type": "line",
+        "title": "ROYAL ENFIELD UNITS SOLD",
+        "points": [
+          826098,
+          695947,
+          602268,
+          834895,
+          1002893,
+          1227977
+        ],
+        "labels": [
+          "FY19",
+          "FY20",
+          "FY22",
+          "FY23",
+          "FY25",
+          "FY26"
+        ],
+        "xs": [
+          2019,
+          2020,
+          2022,
+          2023,
+          2025,
+          2026
+        ],
+        "callout": "1.23M|FY26",
+        "unit": "bikes per year"
+      },
+      "visual": "Self-drawing line chart \"ROYAL ENFIELD UNITS SOLD\".",
+      "onScreen": "ROYAL ENFIELD UNITS SOLD",
+      "motionNotes": "Line draws left to right over ~2 s, callout pops at the end."
+    },
+    {
+      "id": 79,
+      "chapter": "c5",
+      "text": "In FY20, sales fell 16 percent, and COVID stopped production in March 2020.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 16,
+        "prefix": "−",
+        "suffix": "%",
+        "label": "SALES, FY20",
+        "icon": "assets/padlock.png"
+      },
+      "visual": "Big number counting up on the paper grid: −16% SALES, FY20.",
+      "onScreen": "−16% SALES, FY20",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "beats": [
+        {
+          "at": 81,
+          "do": "punch"
+        }
+      ],
+      "voice": "In F Y twenty, sales fell sixteen percent, and COVID stopped production in March twenty twenty."
+    },
+    {
+      "id": 80,
+      "chapter": "c5",
+      "text": "In FY23, a record: 834,895 bikes, up about 38 percent. Exports crossed 100,000 for the first time.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 834895,
+        "label": "RECORD, FY23 (+~38%)",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: 834895 RECORD, FY23 (+~38%).",
+      "onScreen": "834895 RECORD, FY23 (+~38%)",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "voice": "In F Y twenty-three, a record: eight hundred thirty-four thousand eight hundred ninety-five bikes, up about thirty-eight percent. Exports crossed one hundred thousand for the first time."
+    },
+    {
+      "id": 81,
+      "chapter": "c5",
+      "text": "In November 2022, it opened an assembly plant in Manaus, Brazil.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/assembly.png",
+        "headline": "MANAUS,|BRAZIL",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-right",
+        "sub": "assembly plant, Nov 2022",
+        "card": true
+      },
+      "visual": "Paper grid; assets/assembly.png cut-out(s) with marker outline; headline \"MANAUS,|BRAZIL\".",
+      "onScreen": "MANAUS, BRAZIL",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "In November twenty twenty-two, it opened an assembly plant in Manaus, Brazil."
+    },
+    {
+      "id": 82,
+      "chapter": "c5",
+      "text": "In the year to March 2025, Royal Enfield sold 1,002,893 motorcycles. Its first million.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 1002893,
+        "label": "FY25 UNITS, FIRST OVER 1M",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: 1002893 FY25 UNITS, FIRST OVER 1M.",
+      "onScreen": "1002893 FY25 UNITS, FIRST OVER 1M",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "beats": [
+        {
+          "at": 228,
+          "do": "punch"
+        },
+        {
+          "at": 216,
+          "do": "flash"
+        }
+      ],
+      "voice": "In the year to March twenty twenty-five, Royal Enfield sold one million two thousand eight hundred ninety-three motorcycles. Its first million."
+    },
+    {
+      "id": 83,
+      "chapter": "c5",
+      "text": "About 100,000 of them were exports.",
+      "scene": {
+        "type": "typewriter",
+        "text": "ABOUT 100,000|WERE EXPORTS",
+        "sub": "FY25"
+      },
+      "visual": "Typewriter text on the paper grid: ABOUT 100,000 / WERE EXPORTS.",
+      "onScreen": "ABOUT 100,000 WERE EXPORTS",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "About one hundred thousand of them were exports."
+    },
+    {
+      "id": 84,
+      "chapter": "c5",
+      "text": "A year later, it sold 1,227,977. Up 22 percent.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 1227977,
+        "label": "FY26 UNITS (+22%)",
+        "icon": "assets/bullet.png"
+      },
+      "visual": "Big number counting up on the paper grid: 1227977 FY26 UNITS (+22%).",
+      "onScreen": "1227977 FY26 UNITS (+22%)",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "voice": "A year later, it sold one million two hundred twenty-seven thousand nine hundred seventy-seven. Up twenty-two percent."
+    },
+    {
+      "id": 85,
+      "chapter": "c5",
+      "text": "Eicher Motors' revenue that year: 23,408 crore rupees.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 23408,
+        "prefix": "₹",
+        "suffix": " CR",
+        "label": "EICHER REVENUE, FY26 (RESULTS 22 MAY 2026)"
+      },
+      "visual": "Big number counting up on the paper grid: ₹23408 CR EICHER REVENUE, FY26 (RESULTS 22 MAY 2026).",
+      "onScreen": "₹23408 CR EICHER REVENUE, FY26 (RESULTS 22 MAY 2026)",
+      "motionNotes": "Counter runs f6–40 with ease-out; label types in after the number lands.",
+      "voice": "Eicher Motors' revenue that year: twenty-three thousand four hundred eight crore rupees."
+    },
+    {
+      "id": 86,
+      "chapter": "c5",
+      "text": "Profit: 5,515 crore.",
+      "scene": {
+        "type": "typewriter",
+        "text": "PROFIT:|₹5,515 CRORE",
+        "sub": "Eicher Motors, FY26"
+      },
+      "visual": "Typewriter text on the paper grid: PROFIT: / ₹5,515 CRORE.",
+      "onScreen": "PROFIT: ₹5,515 CRORE",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "Profit: five thousand five hundred fifteen crore."
+    },
+    {
+      "id": 87,
+      "chapter": "c5",
+      "text": "It also announced 958 crore rupees for a plant at Cheyyar, near Chennai.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/assembly.png",
+        "headline": "CHEYYAR PLANT|₹958 CR",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-right",
+        "sub": "capacity 1.46M → 2M a year (reported)",
+        "card": true
+      },
+      "visual": "Paper grid; assets/assembly.png cut-out(s) with marker outline; headline \"CHEYYAR PLANT|₹958 CR\".",
+      "onScreen": "CHEYYAR PLANT ₹958 CR",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "It also announced nine hundred fifty-eight crore rupees for a plant at Cheyyar, near Chennai."
+    },
+    {
+      "id": 88,
+      "chapter": "c5",
+      "text": "In 2000, this brand was slated for closure.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/padlock.png",
+        "headline": "SLATED FOR|CLOSURE, 2000",
+        "halftone": true,
+        "stroke": true,
+        "motion": "pull"
+      },
+      "visual": "Paper grid; assets/padlock.png cut-out(s) with marker outline; headline \"SLATED FOR|CLOSURE, 2000\".",
+      "onScreen": "SLATED FOR CLOSURE, 2000",
+      "motionNotes": "Cut-out springs up f4 with overshoot, headline types in f8–20, slow push all the way.",
+      "voice": "In two thousand, this brand was slated for closure."
+    },
+    {
+      "id": 89,
+      "chapter": "c5",
+      "text": "Then a 26-year-old asked for one more chance.",
+      "scene": {
+        "type": "typewriter",
+        "text": "ONE MORE CHANCE.",
+        "sub": "age ~26"
+      },
+      "visual": "Typewriter text on the paper grid: ONE MORE CHANCE..",
+      "onScreen": "ONE MORE CHANCE.",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured.",
+      "voice": "Then a twenty-six-year-old asked for one more chance."
+    },
+    {
+      "id": 90,
+      "chapter": "c5",
+      "text": "If you'd been on that board, would you have shut it down?",
+      "scene": {
+        "type": "typewriter",
+        "text": "WOULD YOU HAVE|SHUT IT DOWN?"
+      },
+      "visual": "Typewriter text on the paper grid: WOULD YOU HAVE / SHUT IT DOWN?.",
+      "onScreen": "WOULD YOU HAVE SHUT IT DOWN?",
+      "motionNotes": "Characters type in at ~25 chars/s, caret blinks, last word accent coloured."
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/logo-royal-enfield.png",
+      "query": "Royal Enfield logo",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/lal.png",
+      "query": "Siddhartha Lal",
+      "kind": "person",
+      "cutout": true,
+      "allowShareAlike": true
+    },
+    {
+      "file": "assets/bullet.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Classic retro single-cylinder 350cc motorcycle, side view, black and warm cream, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    },
+    {
+      "file": "assets/factory.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Victorian red-brick factory building with a tall chimney, front-on, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    },
+    {
+      "file": "assets/soldier-bike.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "1950s soldier riding a vintage motorcycle seen from behind, no face visible, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    },
+    {
+      "file": "assets/crates.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Stack of wooden shipping crates stencilled with motorcycle parts, a wheel and handlebar sticking out, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    },
+    {
+      "file": "assets/assembly.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Empty motorcycle assembly line, frames hanging from overhead rails, front view, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    },
+    {
+      "file": "assets/commuter.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Small 100cc commuter motorcycle, side view, simple and practical, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    },
+    {
+      "file": "assets/boardroom.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Empty boardroom table with six chairs and a closed folder in the middle, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    },
+    {
+      "file": "assets/padlock.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Closed factory gate wrapped in a chain with a large padlock, front view, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    },
+    {
+      "file": "assets/young-man.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Young man in a suit seen from behind, hands in pockets, looking at a large building, no face visible, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    },
+    {
+      "file": "assets/twin.png",
+      "cutout": true,
+      "license": "AI-generated (ChatGPT image), no real person or logo",
+      "prompt": "Modern retro-styled twin-cylinder motorcycle, side view, black and cream, flat editorial illustration, bold outline, warm limited palette, plain white background, no text, no logos, no brand names"
+    }
+  ],
   "music": {
-    "file": "",
-    "volume": 0.16
+    "file": "quiet-motion.mp3",
+    "volume": 0.12
   },
   "voice": {
-    "file": "voice.mp3"
+    "file": "voice.mp3",
+    "source": "elevenlabs-web",
+    "parts": 3
   },
   "upload": {
-    "title": "",
-    "description": "",
+    "title": "Royal Enfield Was Slated for Closure in 2000. Now It Sells 1.2 Million Bikes",
+    "description": "In 2000, Royal Enfield was reportedly slated for closure. Today it sells over a million motorcycles a year.\nFigures: Eicher Motors results (FY25, FY26), Outlook Business, the Royal Enfield company timeline. Items marked 'reported' come from press interviews and are not company-confirmed.\nWould you have shut it down?",
     "hashtags": [
+      "#royalenfield",
       "#business",
       "#documentary",
       "#brandstory",
-      "#casestudy",
-      "#businessstory"
+      "#casestudy"
     ],
-    "chapters": ""
-  }
+    "chapters": "0:00 Cold open\n0:29 The idea\n1:48 The rise\n2:58 The downfall\n4:25 The comeback\n6:38 Today"
+  },
+  "hookCandidates": [
+    "This motorcycle brand was slated for closure in 2000. Who saved it?",
+    "A 26-year-old took charge of a motorcycle brand slated for closure. Why?",
+    "Royal Enfield sells 1.2 million bikes a year. In 2000, it was slated for closure. Why?"
+  ],
+  "hookType": "stake-question",
+  "angle": "A motorcycle brand reportedly slated for closure in 2000 is now selling over a million bikes a year.",
+  "length": "deep"
 }

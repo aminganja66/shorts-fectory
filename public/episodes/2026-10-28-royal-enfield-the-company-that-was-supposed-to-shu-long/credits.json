@@ -1,0 +1,115 @@
+{
+  "assets/logo-royal-enfield.png": {
+    "query": "Royal Enfield logo",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Royal_Enfield_logo_new.svg/1280px-Royal_Enfield_logo_new.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Royal_Enfield_logo_new.svg/1280px-Royal_Enfield_logo_new.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Royal_Enfield_logo_new.svg",
+    "author": "Royal Enfield",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 512,
+    "h": 69
+  },
+  "assets/lal.png": {
+    "query": "Siddhartha Lal",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Siddhartha_Lal%2C_Managing_Director_and_Chief_Executive_Officer%2C_Eicher_Motors%2C_India%2C_at_the_World_Economic_Forum_on_India_2012.jpg/1920px-Siddhartha_Lal%2C_Managing_Director_and_Chief_Executive_Officer%2C_Eicher_Motors%2C_India%2C_at_the_World_Economic_Forum_on_India_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Siddhartha_Lal%2C_Managing_Director_and_Chief_Executive_Officer%2C_Eicher_Motors%2C_India%2C_at_the_World_Economic_Forum_on_India_2012.jpg/1920px-Siddhartha_Lal%2C_Managing_Director_and_Chief_Executive_Officer%2C_Eicher_Motors%2C_India%2C_at_the_World_Economic_Forum_on_India_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Siddhartha_Lal,_Managing_Director_and_Chief_Executive_Officer,_Eicher_Motors,_India,_at_the_World_Economic_Forum_on_India_2012.jpg",
+    "author": "World Economic Forum from Cologny, Switzerland",
+    "license": "CC BY-SA 2.0",
+    "provider": "wikimedia",
+    "w": 3323,
+    "h": 2216
+  },
+  "assets/bullet.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Classic Cream-and-Black Retro Motorcycle.png"
+  },
+  "assets/factory.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Industrial Brick Factory Illustration.png"
+  },
+  "assets/soldier-bike.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Vintage Soldier Riding Motorcycle.png"
+  },
+  "assets/crates.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Motorcycle Parts in Wooden Crates.png"
+  },
+  "assets/assembly.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Industrial Motorcycle Assembly Line.png"
+  },
+  "assets/commuter.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Classic Commuter Motorcycle Illustration.png"
+  },
+  "assets/boardroom.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Minimalist Conference Room with Binder.png"
+  },
+  "assets/young-man.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Man Facing Grand Corporate Building.png"
+  },
+  "assets/padlock.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Locked Factory Entrance Illustration.png"
+  },
+  "assets/twin.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Retro Twin-Cylinder Roadster.png"
+  }
+}

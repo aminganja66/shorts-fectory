@@ -1,4 +1,4 @@
-// npm run render -- <episodeId> [--draft] [--concurrency N]
+// npm run render -- <episodeId> [--draft] [--concurrency N] [--crf N]  (crf default 18; /optimizedlong uses 23)
 // Renders the final MP4 + thumbnail + upload.txt into exports/<episodeId>/ (ready to upload by hand).
 // Long videos (format "long", composition "Long" 1920x1080) render chapter by chapter into exports/<id>/parts/:
 //   npm run render -- <id>               renders every chapter part that is missing (re-run = resume), then joins → long.mp4
@@ -15,6 +15,7 @@ const id = args.find((a) => !a.startsWith('--'));
 const draft = args.includes('--draft');
 const optArg = (k) => (args.includes(`--${k}`) ? args[args.indexOf(`--${k}`) + 1] : undefined);
 const concurrency = optArg('concurrency') ?? String(Math.max(1, os.cpus().length - 1)); // measured: 7 of 8 cores ≈ 40% faster than Remotion's default
+const crf = optArg('crf') ?? '18';
 const {dir, sb} = loadEpisode(id);
 if (!draft && !fs.existsSync(path.join(dir, 'timing.json'))) die('No timing.json yet — run `npm run voice` (or `npm run timing`) first, or use --draft');
 
@@ -29,7 +30,7 @@ const video = path.join(out, draft ? 'draft.mp4' : long ? 'long.mp4' : 'short.mp
 const remotion = (a) => execFileSync(process.execPath, [cli, ...a, `--concurrency=${concurrency}`], {cwd: ROOT, stdio: 'inherit'});
 
 if (!long) {
-  remotion(['render', 'src/index.ts', comp, video, `--props=${props}`, '--codec=h264', '--crf=18', ...(draft ? ['--scale=0.5'] : [])]);
+  remotion(['render', 'src/index.ts', comp, video, `--props=${props}`, '--codec=h264', `--crf=${crf}`, ...(draft ? ['--scale=0.5'] : [])]);
 } else {
   // frame ranges per chapter — same start logic as Short.tsx (timing.json, else the estimate)
   const FPS = 30;
@@ -63,7 +64,7 @@ if (!long) {
     }
     info(`chapter ${r.k + 1}/${ranges.length} "${r.c.title}": frames ${r.from}–${r.to} (${((r.to - r.from + 1) / FPS / 60).toFixed(1)} min)`);
     const tmp = f.replace(/\.mp4$/, '.tmp.mp4');
-    remotion(['render', 'src/index.ts', comp, tmp, `--props=${props}`, '--codec=h264', '--crf=18', `--frames=${r.from}-${r.to}`, '--muted', ...(draft ? ['--scale=0.5'] : [])]);
+    remotion(['render', 'src/index.ts', comp, tmp, `--props=${props}`, '--codec=h264', `--crf=${crf}`, `--frames=${r.from}-${r.to}`, '--muted', ...(draft ? ['--scale=0.5'] : [])]);
     fs.renameSync(tmp, f); // only complete chapters get their final name → safe to resume
   }
   if (only) {
@@ -72,7 +73,7 @@ if (!long) {
   }
   // one continuous audio track (voice + looping music) — audio-only render is fast, and avoids clicks at the joins
   const audio = path.join(partsDir, 'audio.aac');
-  remotion(['render', 'src/index.ts', comp, audio, `--props=${props}`, '--codec=aac']);
+  if (!fs.existsSync(audio)) remotion(['render', 'src/index.ts', comp, audio, `--props=${props}`, '--codec=aac']); // an existing audio.aac is reused (delete it after changing voice/music)
   const list = path.join(partsDir, 'list.txt');
   fs.writeFileSync(list, ranges.map((r) => `file 'chapter-${r.k + 1}.mp4'`).join('\n') + '\n');
   execFileSync('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-i', audio, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', video]);

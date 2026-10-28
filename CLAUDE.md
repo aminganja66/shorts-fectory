@@ -36,7 +36,7 @@ Two **English-only** YouTube Shorts channels, made with Remotion. Owner: Amin (u
 9. **Check + plan file**: `npm run check -- <id>` (fix every ✖) → `npm run frames -- <id>` (renders key frames of every scene/beat) → **look at the frames yourself** (Read tool on `public/episodes/<id>/frames/*.jpg`) and fix anything ugly: text overlapping captions (captions live at y≈1230–1400), faces cut off, logo on top of headline, empty frames → re-run frames → `npm run board -- <id>` (writes `storyboard.html` with filmstrip + `script.md`) → `npm run render -- <id> --draft` (silent animatic).
 10. **STOP for approval** unless the argument was `auto`. Tell Amin: topic, hook line, length, and the path of `storyboard.html` + `exports/<id>/draft.mp4`.
 11. **Voice**: key set → `npm run voice -- <id>`. No key → ElevenLabs tab (Browser mode, exact recipe in the table) → `npm run import -- <id> voice` → `npm run timing -- <id>` (now `align.mjs`: finds the real pauses, no Whisper). Read the printed line table: every line must start after a clear pause; ⚠ lines = re-generate or tell Amin. No ElevenLabs at all → `npm run voice:local -- <id>` (Kokoro) or Amin records `voice.m4a` → `npm run timing -- <id> voice.m4a`.
-12. **Re-sync beats to the real voice**: read `timing.json`, move each beat onto its key word, then `npm run frames -- <id>` and look again.
+12. **Re-sync beats to the real voice**: read `timing.json`, move each beat onto its key word, then `npm run frames -- <id>` and look again. Then the **Studio preview gate** (below) — wait for Amin's "render".
     **Render**: `npm run render -- <id>` → `exports/<id>/short.mp4`, `thumbnail.jpg`, `upload.txt`. Look at 3–4 stills (`npx remotion still ... --frame=N`) to verify nothing is broken.
 13. **Save**: `git add channels public/episodes/<id>/{storyboard.json,timing.json,credits.json,voice.mp3} && git commit -m "rendered: <topic>" && git push`.
 14. Report in 3 lines: file paths, length, anything Amin should double-check.
@@ -67,6 +67,9 @@ A 4-digit number is read as a YEAR unless a count noun follows ("2000 employees"
 **Natural voice.** English storyteller voice (brand: Jon, psych: Ellis — see config), speed 1.0, stability ≈ 0.5, style ≤ 0.2. Intense/dramatic voices and fast speeds sound acted/robotic. If a take sounds robotic, change the voice name in `channels/<ch>/config.json` (alternatives listed) before spending credits again.
 **Eye comfort.** Subject bright and readable, soft grain only, no scanlines/flicker stacks, no full-black frames. Flash/shake only on THE one big moment (max 1 per Short), `glitch` transition only for tech stories, never with `noir`. House look is `vox` (bright paper, one accent). Other looks only if Amin asks. Max 1 fx per scene, calm scenes between loud ones, text ≥ 90 px, high contrast.
 **Captions in sync.** `npm run timing` aligns to real pauses. After import, read its line table; if any line starts mid-sentence or a ⚠ shows, fix the voice (longer break), not the captions.
+
+## Studio preview gate (every video, before the final render)
+After the voice + beat re-sync and BEFORE `npm run render` (Short: composition `Short`; long: `Long`): run `npm run studio` in the background (http://localhost:3000), tell Amin the episode id + where to look, and STOP until he says "render". He may edit `storyboard.json` or the Studio props panel (hot-reload); apply his change requests, re-run `npm run check -- <id>`, then render. This applies even with `auto`.
 
 ## Long videos (`/long brand [auto] [browser] [topic]`)
 16:9 documentaries, **8–12 min**, brand channel only (`channels/brand/config.json → long`). Full flow: `.claude/commands/long.md`.
