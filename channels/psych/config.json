@@ -104,14 +104,19 @@
       "karaoke",
       "pop",
       "boxed",
-      "highlight"
+      "highlight",
+      "paper",
+      "cinema"
     ],
     "transitions": [
       "whip",
       "flash",
       "zoom",
       "glitch",
-      "cut"
+      "cut",
+      "slide",
+      "wipe",
+      "rise"
     ],
     "hookTypes": [
       "date-drop",
@@ -123,7 +128,21 @@
       "myth-bust",
       "cold-open"
     ],
-    "rule": "House style = vox (locked on purpose; see docs/vox-style.md). Still vary: hookType not in the last 2 Shorts, opening 3 scene types not in the last 5, music not in the last 5, accent colour may change per story.",
-    "lockLook": "vox"
+    "rule": "House grammar = vox (docs/vox-style.md), art-directed per topic: backdrop, captions, entrance and camera come from `npm run direct` (docs/direction-guide.md). Still vary: hookType not in the last 2 Shorts, opening 3 scene types not in the last 5, music not in the last 5, accent colour may change per story.",
+    "lockLook": "vox",
+    "backdrops": [
+      "paper",
+      "blueprint",
+      "sunrise",
+      "concrete",
+      "newsprint",
+      "dots",
+      "sage"
+    ],
+    "motionStyles": [
+      "calm",
+      "punchy",
+      "cinematic"
+    ]
   }
 }

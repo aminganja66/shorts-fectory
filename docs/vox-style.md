@@ -1,7 +1,7 @@
 # Vox-style explainer look (reference: MoSidd, "I Made Vox-Style Motion Graphics Using Only Claude Code & Remotion")
 
 Analysed from https://www.youtube.com/watch?v=7wuYBfE131U (frames of the finished explainer 0:00–0:50 + the planning/building chapters).
-This is the house style for every Short from now on: `theme.look = "vox"`.
+This is the house grammar for every video: `theme.look = "vox"`. Since the art-direction update the background, caption style, entrances and camera are chosen per topic (`npm run direct`, docs/direction-guide.md); the paper-grid described below is the `paper` backdrop, the default.
 
 ## What the finished piece looks like
 - **One locked background**: warm grey paper with a faint square grid + grain. Never changes between scenes, so ten scenes feel like one film.

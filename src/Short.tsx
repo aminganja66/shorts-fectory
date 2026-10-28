@@ -1,11 +1,13 @@
 import React from 'react';
 import {AbsoluteFill, Sequence, Audio, staticFile, useVideoConfig, useCurrentFrame} from 'remotion';
-import {ShortProps, Line, Scene, Timing, Storyboard} from './types';
+import {ShortProps, Line, Scene, Timing, Storyboard, Motion} from './types';
 import {EpisodeCtx} from './scenes/common';
 import {Collage, Kinetic, Chart, Versus, Stack, End} from './scenes/Scenes';
 import {Vox, Typewriter, Counter, LineChart, ChapterCard, Timeline} from './scenes/Vox';
 import {headlineFont} from './fonts';
-import {FilmOverlay, GateWeave, gradeFilter} from './film/FilmLook';
+import {FilmOverlay, GateWeave, gradeFilter, FilmFinish, FILM_GRADE} from './film/FilmLook';
+import {SceneCtx} from './scenes/Backdrop';
+import {autoEnter, autoMotion, isFilm} from './film/direction';
 import {Captions} from './Captions';
 import {BeatCamera} from './film/Beats';
 import {FxLayer} from './film/Fx';
@@ -30,7 +32,9 @@ export const estimateTiming = (sb: Storyboard): Timing => {
   return {words, lines, duration: t};
 };
 
-const renderScene = (s: Scene, dur: number) => {
+const renderScene = (scene: Scene, dur: number, motion?: Motion) => {
+  // theme.motion hands collage/vox scenes a varied camera move unless the scene sets its own
+  const s = motion && (scene.type === 'vox' || scene.type === 'collage') && !scene.motion ? {...scene, motion} : scene;
   switch (s.type) {
     case 'collage':
       return <Collage s={s} dur={dur} />;
@@ -117,12 +121,18 @@ export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing, thum
               const from = starts[i];
               const to = i < starts.length - 1 ? starts[i + 1] : durationInFrames;
               const dur = Math.max(1, to - from);
+              const theme = storyboard.theme ?? {};
+              // Directed videos (theme.direction set): photo/AI-place scenes get a film finish, vox scenes stay flat paper
+              const film = isFilm(l, storyboard.theme ?? {});
               return (
-                <Sequence key={l.id} from={from} durationInFrames={dur} name={`Scene ${l.id} · ${l.scene.type}`}>
-                  <BeatCamera beats={l.beats} dur={dur}>
-                    {renderScene(l.scene, dur)}
-                    <FxLayer fx={l.fx} />
-                  </BeatCamera>
+                <Sequence key={l.id} from={from} durationInFrames={dur} name={`Scene ${l.id} · ${l.scene.type}${film ? ' · film' : ''}`}>
+                  <SceneCtx.Provider value={{backdrop: l.backdrop ?? theme.backdrop ?? 'paper'}}>
+                    <BeatCamera beats={l.beats} dur={dur} enter={autoEnter(l, i, theme)}>
+                      <AbsoluteFill style={film ? {filter: FILM_GRADE} : undefined}>{renderScene(l.scene, dur, autoMotion(theme.motion, i))}</AbsoluteFill>
+                      {film && <FilmFinish />}
+                      <FxLayer fx={l.fx} />
+                    </BeatCamera>
+                  </SceneCtx.Provider>
                   {l.sfx && (
                     <Sequence from={Math.round((l.sfxAt ?? 0) * FPS)}>
                       <Audio src={staticFile(`sfx/${l.sfx}`)} volume={0.5} />
@@ -136,7 +146,7 @@ export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing, thum
         <FilmOverlay look={storyboard.theme?.look} />
         {(storyboard.theme?.progressBar ?? storyboard.theme?.look === 'vox') && <ProgressBar color={accent} ticks={chapterStarts} />}
         {!thumb && <ChapterTag label={chapterLabel} color={accent} />}
-        {!thumb && <Captions words={tm.words} style={storyboard.theme?.captionStyle} />}
+        {!thumb && cur?.captions !== 'off' && <Captions words={tm.words} style={cur?.captions ?? storyboard.theme?.captionStyle} onDark={isFilm(cur, storyboard.theme ?? {})} />}
         {timing && storyboard.voice?.file && <Audio src={staticFile(`episodes/${episodeId}/${storyboard.voice.file}`)} />}
         {storyboard.music?.file && <Music file={storyboard.music.file} volume={storyboard.music.volume ?? 0.16} timing={tm} total={durationInFrames} />}
       </AbsoluteFill>

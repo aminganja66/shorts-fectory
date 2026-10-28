@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, useCurrentFrame, random} from 'remotion';
+import {AbsoluteFill, useCurrentFrame, random, staticFile} from 'remotion';
 import type {Look} from '../types';
 
 // The "texture sandwich" that turns flat digital images into a documentary look:
@@ -153,3 +153,13 @@ export const FilmOverlay: React.FC<{look?: Look}> = ({look = 'archive'}) => {
       );
   }
 };
+
+// Finish for a single "film" scene inside a flat vox video: soft documentary grade + vignette + static grain tile.
+// (Cheap on purpose: no per-frame SVG filters. The whole-video looks above stay as they are.)
+export const FILM_GRADE = 'contrast(1.1) saturate(0.88) sepia(0.12) brightness(0.97)';
+export const FilmFinish: React.FC = () => (
+  <>
+    <AbsoluteFill style={{pointerEvents: 'none', mixBlendMode: 'multiply', opacity: 0.14, backgroundImage: `url(${staticFile('textures/paper-noise.png')})`, backgroundSize: '512px 512px'}} />
+    <Vignette />
+  </>
+);

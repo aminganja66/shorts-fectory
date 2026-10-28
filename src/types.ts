@@ -74,7 +74,7 @@ export type Scene = CollageScene | KineticScene | ChartScene | VersusScene | Sta
 // Frame-exact moments inside a scene (frame 0 = scene start)
 export type Beat = {
   at: number; // frame inside the scene; negative = counted from the scene end (-12 = last 12 frames)
-  do: 'zoom-through' | 'punch' | 'shake' | 'flash' | 'whip-out' | 'blur-in' | 'zoom-in' | 'glitch-in';
+  do: 'zoom-through' | 'punch' | 'shake' | 'flash' | 'whip-out' | 'blur-in' | 'zoom-in' | 'glitch-in' | 'slide-in' | 'wipe-in' | 'rise-in';
   len?: number; // frames (default depends on effect)
 };
 export type Fx = 'smoke' | 'dust' | 'lightleak' | 'embers' | 'glitch';
@@ -89,6 +89,10 @@ export type Line = {
   fx?: Fx[]; // atmosphere layers
   beats?: Beat[]; // frame-wise camera moments
   // Scene script (documentation shown in the plan file)
+  look?: SceneLook; // per-scene finish override (default: vox scenes = vox, photo scenes in a vox video = film)
+  backdrop?: Backdrop; // per-scene background override for vox scenes
+  captions?: 'off' | CaptionStyle; // hide or restyle the captions on this line only (e.g. 'off' when a typewriter quote IS the narration)
+  enter?: Transition; // per-scene entrance override
   chapter?: string; // long videos: id of the chapter this line belongs to (storyboard.chapters[].id)
   visual?: string; // what the viewer sees
   onScreen?: string; // on-screen text
@@ -115,8 +119,14 @@ export type Chapter = {id: string; kind: ChapterKind; title: string};
 
 // ---- Variety system: every episode gets its own combination (checked by `npm run check`) ----
 export type Look = 'archive' | 'noir' | 'neon' | 'paper' | 'gold' | 'clean' | 'vox';
-export type CaptionStyle = 'highlight' | 'outline' | 'pop' | 'boxed' | 'karaoke';
-export type Transition = 'whip' | 'flash' | 'zoom' | 'glitch' | 'cut';
+export type CaptionStyle = 'highlight' | 'outline' | 'pop' | 'boxed' | 'karaoke' | 'paper' | 'cinema';
+export type Transition = 'whip' | 'flash' | 'zoom' | 'glitch' | 'cut' | 'slide' | 'wipe' | 'rise';
+// Light backgrounds for the vox scenes (ink text stays readable on all of them). Picked per topic: see docs/direction-guide.md
+export type Backdrop = 'paper' | 'blueprint' | 'sunrise' | 'concrete' | 'newsprint' | 'dots' | 'sage';
+// How the camera and the entrances behave across the whole video (scene motions are chosen automatically from it)
+export type MotionStyle = 'calm' | 'punchy' | 'cinematic';
+// Per-scene finish: vox = flat paper explainer · film = graded, vignetted, grainy "documentary" scene (photo/AI-place backgrounds) · clean = no finish
+export type SceneLook = 'vox' | 'film' | 'clean';
 export type HookType = 'date-drop' | 'shock-number' | 'question' | 'contradiction' | 'quote' | 'what-if' | 'myth-bust' | 'cold-open';
 export type Theme = {
   accent?: string;
@@ -125,6 +135,9 @@ export type Theme = {
   captionStyle?: CaptionStyle;
   transition?: Transition;
   progressBar?: boolean; // thin accent-colour progress bar along the bottom (default on for the vox look)
+  backdrop?: Backdrop; // default background of the vox scenes (default 'paper')
+  motion?: MotionStyle; // auto camera/entrance variety (unset = every scene pushes in and uses `transition`)
+  direction?: string; // name of the art-direction preset that produced these fields (docs/direction-guide.md)
 };
 
 export type Word = {text: string; start: number; end: number};

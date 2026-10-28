@@ -13,9 +13,12 @@ const ENTRANCES: Record<string, Beat[]> = {
   zoom: [{at: 0, do: 'zoom-in', len: 12}],
   glitch: [{at: 0, do: 'glitch-in', len: 7}],
   cut: [],
+  slide: [{at: 0, do: 'slide-in', len: 10}],
+  wipe: [{at: 0, do: 'wipe-in', len: 11}],
+  rise: [{at: 0, do: 'rise-in', len: 11}],
 };
 
-const DEFAULT_LEN: Record<Beat['do'], number> = {'zoom-through': 12, punch: 6, shake: 8, flash: 5, 'whip-out': 7, 'blur-in': 8, 'zoom-in': 10, 'glitch-in': 7};
+const DEFAULT_LEN: Record<Beat['do'], number> = {'zoom-through': 12, punch: 6, shake: 8, flash: 5, 'whip-out': 7, 'blur-in': 8, 'zoom-in': 10, 'glitch-in': 7, 'slide-in': 10, 'wipe-in': 11, 'rise-in': 11};
 
 const camFor = (beats: Beat[], frame: number) => {
   let scale = 1;
@@ -23,6 +26,8 @@ const camFor = (beats: Beat[], frame: number) => {
   let y = 0;
   let blurPx = 0;
   let flash = 0;
+  let clip = 0; // 0 = fully visible, 1 = fully hidden (wipe from the left edge)
+  let fade = 1;
   for (const b of beats) {
     const len = b.len ?? DEFAULT_LEN[b.do];
     const t = frame - b.at;
@@ -40,6 +45,17 @@ const camFor = (beats: Beat[], frame: number) => {
       case 'zoom-in': // starts close and pulls back into place
         scale *= interpolate(t, [0, len], [1.35, 1], {...c, easing: Easing.out(Easing.cubic)});
         blurPx += interpolate(t, [0, len * 0.6], [8, 0], c);
+        break;
+      case 'slide-in': // calm: glides in from the right with a soft fade
+        x += interpolate(t, [0, len], [140, 0], {...c, easing: Easing.out(Easing.cubic)});
+        fade *= interpolate(t, [0, len * 0.6], [0, 1], c);
+        break;
+      case 'rise-in': // gentle lift from below
+        y += interpolate(t, [0, len], [90, 0], {...c, easing: Easing.out(Easing.cubic)});
+        fade *= interpolate(t, [0, len * 0.6], [0, 1], c);
+        break;
+      case 'wipe-in': // clean reveal, left to right
+        clip = Math.max(clip, interpolate(t, [0, len], [1, 0], {...c, easing: Easing.inOut(Easing.cubic)}));
         break;
       case 'glitch-in':
         if (t < len) {
@@ -67,21 +83,21 @@ const camFor = (beats: Beat[], frame: number) => {
         break;
     }
   }
-  return {scale, x, y, blurPx, flash};
+  return {scale, x, y, blurPx, flash, clip, fade};
 };
 
 // True motion blur only while something fast is happening (it's expensive to render).
 const inFastWindow = (beats: Beat[], frame: number) =>
   beats.some((b) => ['blur-in', 'zoom-through', 'whip-out', 'zoom-in'].includes(b.do) && frame >= b.at && frame < b.at + (b.len ?? DEFAULT_LEN[b.do]));
 
-export const BeatCamera: React.FC<{beats?: Beat[]; dur: number; children: React.ReactNode}> = ({beats = [], dur, children}) => {
+export const BeatCamera: React.FC<{beats?: Beat[]; dur: number; enter?: string; children: React.ReactNode}> = ({beats = [], dur, enter, children}) => {
   const frame = useCurrentFrame();
   // negative "at" counts back from the scene end: {at: -12, do: 'zoom-through'} = dive into the next scene
   const {theme} = useEpisode();
-  const all = [...(ENTRANCES[theme.transition ?? 'whip'] ?? ENTRANCES.whip), ...beats.map((b) => (b.at < 0 ? {...b, at: Math.max(0, dur + b.at)} : b))];
+  const all = [...(ENTRANCES[enter ?? theme.transition ?? 'whip'] ?? ENTRANCES.whip), ...beats.map((b) => (b.at < 0 ? {...b, at: Math.max(0, dur + b.at)} : b))];
   const k = camFor(all, frame);
   const content = (
-    <AbsoluteFill style={{transform: `translate(${k.x}px, ${k.y}px) scale(${k.scale})`, filter: k.blurPx > 0.3 ? `blur(${k.blurPx}px)` : undefined}}>
+    <AbsoluteFill style={{transform: `translate(${k.x}px, ${k.y}px) scale(${k.scale})`, filter: k.blurPx > 0.3 ? `blur(${k.blurPx}px)` : undefined, opacity: k.fade < 1 ? k.fade : undefined, clipPath: k.clip > 0.001 ? `inset(0 0 0 ${k.clip * 100}%)` : undefined}}>
       {children}
     </AbsoluteFill>
   );

@@ -5,6 +5,7 @@ tools: Read, Write, Edit, Bash, Glob
 ---
 Skills to load: `remotion-best-practices`, `remotion-markup`, `remotion-captions`, `remotion-render`, `remotion-studio`.
 
+0. Camera and entrances come from `theme.motion` (calm/punchy/cinematic) after `npm run direct`; only set a scene's `motion`, a line's `enter` or `beats` where the story needs something specific. Use `captions:"off"` only where a typewriter quote IS the narration; check light vs dark (film) scenes keep the captions readable.
 1. For each line set `scene.type` + options, `motion`, `beats`, `fx`, `sfx` (+ optional `sfxAt` = seconds from scene start so the sound lands on its key word), and write `onScreen` + `motionNotes` (frame-by-frame in plain words). Grammar is in CLAUDE.md → "Motion grammar".
 2. Variety: opening 3 scene types must differ from the last 5 Shorts; never 3 same types in a row; mix motions (push/pull/pan/drift); max 2 beats + 2 fx per scene; one "big moment" per Short (zoom-through, flash+shake) on the most surprising line.
 3. Before the voice: estimate 0.5 s/word + 0.8 s per line. After the voice: read `timing.json` and move every beat onto its key word: frame = (word.start − scene.start) × 30.

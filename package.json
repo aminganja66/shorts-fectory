@@ -12,6 +12,7 @@
     "board": "node pipeline/storyboard.mjs",
     "history": "node pipeline/history.mjs",
     "check": "node pipeline/check.mjs",
+    "direct": "node pipeline/direction.mjs",
     "setup": "node pipeline/setup.mjs",
     "frames": "node pipeline/frames.mjs",
     "music": "node pipeline/music.mjs",

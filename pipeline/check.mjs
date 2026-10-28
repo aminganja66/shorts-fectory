@@ -108,6 +108,39 @@ if (sb.music?.file && !fs.existsSync(path.join(ROOT, 'public/music', sb.music.fi
 const types = sb.lines.map((l) => l.scene.type);
 for (let i = 2; i < types.length; i++) if (types[i] === types[i - 1] && types[i] === types[i - 2]) warn.push(`3 "${types[i]}" scenes in a row — vary them`);
 
+// Art direction (npm run direct): valid names, film-scene budget, captions not hidden for long
+if (sb.theme?.direction) {
+  const dirs = readJSON(path.join(ROOT, 'pipeline/directions.json'), {presets: {}}).presets;
+  const BACKDROPS = ['paper', 'blueprint', 'sunrise', 'concrete', 'newsprint', 'dots', 'sage'];
+  const CAPS = ['highlight', 'outline', 'pop', 'boxed', 'karaoke', 'paper', 'cinema'];
+  const ENTER = ['whip', 'flash', 'zoom', 'glitch', 'cut', 'slide', 'wipe', 'rise'];
+  if (!dirs[sb.theme.direction]) warn.push(`theme.direction "${sb.theme.direction}" is not a preset in pipeline/directions.json`);
+  if (sb.theme.backdrop && !BACKDROPS.includes(sb.theme.backdrop)) problems.push(`theme.backdrop "${sb.theme.backdrop}" (one of ${BACKDROPS.join(', ')})`);
+  if (sb.theme.captionStyle && !CAPS.includes(sb.theme.captionStyle)) problems.push(`theme.captionStyle "${sb.theme.captionStyle}" (one of ${CAPS.join(', ')})`);
+  if (sb.theme.motion && !['calm', 'punchy', 'cinematic'].includes(sb.theme.motion)) problems.push(`theme.motion "${sb.theme.motion}" (calm | punchy | cinematic)`);
+  sb.lines.forEach((l, i) => {
+    if (l.backdrop && !BACKDROPS.includes(l.backdrop)) problems.push(`line ${i + 1}: backdrop "${l.backdrop}" is not valid`);
+    if (l.captions && l.captions !== 'off' && !CAPS.includes(l.captions)) problems.push(`line ${i + 1}: captions "${l.captions}" is not valid`);
+    if (l.enter && !ENTER.includes(l.enter)) problems.push(`line ${i + 1}: enter "${l.enter}" is not valid`);
+    if (l.look && !['vox', 'film', 'clean'].includes(l.look)) problems.push(`line ${i + 1}: look "${l.look}" is not valid`);
+  });
+  const VOX = new Set(['vox', 'typewriter', 'counter', 'line', 'chapter', 'timeline']);
+  const filmIdx = sb.lines.map((l, i) => (l.look === 'film' || (!l.look && !VOX.has(l.scene.type)) ? i : -1)).filter((i) => i >= 0);
+  const fb = dirs[sb.theme.direction]?.filmBudget ?? 0.2;
+  const budget = Math.max(long ? (sb.chapters?.length ?? 1) : 1, Math.round(sb.lines.length * fb));
+  if (filmIdx.length > budget) warn.push(`${filmIdx.length} film (photo/place) scenes — budget ≈ ${budget} for "${sb.theme.direction}"; keep film for emotional peaks, vox for explaining (docs/direction-guide.md)`);
+  if (filmIdx.some((i, k) => k && filmIdx[k - 1] === i - 1)) warn.push('two film scenes in a row — alternate with a vox/data scene');
+  if (sb.lines.filter((l) => l.scene.type === 'counter' || l.scene.type === 'line').some((l) => (l.look ?? 'vox') === 'film')) warn.push('numbers/charts on a film scene — keep data on vox scenes');
+  let off = 0;
+  for (const l of sb.lines) {
+    off = l.captions === 'off' ? off + 1 : 0;
+    if (off >= 3) {
+      warn.push('captions are off for 3+ lines in a row — turn them back on (captions off is for typewriter quotes and short pauses)');
+      break;
+    }
+  }
+}
+
 // long videos are their own series (house look locked); variety rules compare Shorts with Shorts
 const v = long ? {problems: [], warn: [], recent: []} : varietyCheck(sb);
 problems.push(...v.problems);

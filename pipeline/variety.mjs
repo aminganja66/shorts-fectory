@@ -6,6 +6,9 @@ import {chDir, epDir, readJSON} from './lib.mjs';
 
 export const signature = (sb) => ({
   look: sb.theme?.look,
+  backdrop: sb.theme?.backdrop,
+  motion: sb.theme?.motion,
+  direction: sb.theme?.direction,
   captionStyle: sb.theme?.captionStyle,
   transition: sb.theme?.transition,
   accent: sb.theme?.accent,
@@ -16,7 +19,7 @@ export const signature = (sb) => ({
 });
 
 // Previous episodes of the same channel, newest first (excluding this one)
-const previous = (sb, n = 6) =>
+export const previous = (sb, n = 6) =>
   readJSON(path.join(chDir(sb.channel), 'history.json'), [])
     .filter((h) => h.episodeId !== sb.id && h.status !== 'dropped')
     .reverse()
@@ -42,6 +45,7 @@ export const varietyCheck = (sb) => {
   // A language edition of an existing Short (storyboard.variantOf = <episode id>) intentionally reuses its look/music/scenes.
   if (sb.variantOf) return {problems, warn, recent: [`(language edition of ${sb.variantOf}: variety rules skipped)`]};
   const me = signature(sb);
+  if (me.look === 'vox' && !sb.theme?.direction) warn.push('direction: no art direction yet; run `npm run direct -- ' + sb.id + '` (backdrop, captions, camera and entrances chosen from the topic)');
   for (const k of ['look', 'captionStyle', 'transition', 'hookType']) if (!me[k]) problems.push(`variety: set ${k === 'hookType' ? 'hookType' : `theme.${k}`} (pick one different from recent episodes)`);
   const prev = previous(sb);
   const last = prev[0];
@@ -56,6 +60,7 @@ export const varietyCheck = (sb) => {
     const twin = prev.slice(0, 5).find((p) => p.scenes.slice(0, 3).join('>') === head);
     if (twin) problems.push(`variety: opening scene order ${head} is the same as ${twin.id}`);
     if (me.accent && me.accent === last.accent) warn.push('variety: same accent colour as the previous Short');
+    if (me.backdrop && me.backdrop === last.backdrop && me.captionStyle === last.captionStyle) warn.push(`variety: backdrop + captions "${me.backdrop}/${me.captionStyle}" are the same as the previous Short (${last.id}); \`npm run direct\` picks a fresh combination`);
     if (!locked && prev.slice(0, 3).filter((p) => p.look === me.look).length >= 1) warn.push(`variety: look "${me.look}" appeared in the last 3 Shorts`);
   }
   return {problems, warn, recent: prev.map((p) => `${p.id}: ${p.look}/${p.captionStyle}/${p.transition}/${p.hookType} · ${p.scenes.join('>')}`)};

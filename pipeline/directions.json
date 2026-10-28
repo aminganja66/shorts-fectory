@@ -1,0 +1,97 @@
+{
+  "_doc": "Art-direction presets, chosen per topic by `npm run direct`. Every backdrop is light (ink text stays readable). See docs/direction-guide.md.",
+  "presets": {
+    "explainer": {
+      "mood": "neutral business explainer, no strong emotion",
+      "keywords": ["company", "brand", "strategy", "product", "launch", "how", "why"],
+      "backdrops": ["paper", "concrete"],
+      "captions": ["highlight", "paper"],
+      "transitions": ["whip", "slide"],
+      "motion": "punchy",
+      "accents": ["#FF5A1F", "#FFB000"],
+      "filmBudget": 0.15
+    },
+    "drama": {
+      "mood": "collapse, scandal, failure, a decision that backfired: serious, no cheerfulness",
+      "keywords": ["collapse", "bankrupt", "bankruptcy", "fraud", "scandal", "fail", "failed", "failure", "shut", "closure", "closed", "crash", "lawsuit", "fired", "recall", "disaster", "crisis", "banned", "lost", "decline", "sank", "wiped", "mistake", "refused", "rejected"],
+      "backdrops": ["concrete", "newsprint"],
+      "captions": ["cinema", "paper"],
+      "transitions": ["rise", "wipe"],
+      "motion": "cinematic",
+      "accents": ["#D62828", "#B5251B"],
+      "filmBudget": 0.3
+    },
+    "comeback": {
+      "mood": "growth, revival, record numbers, hope",
+      "keywords": ["comeback", "turnaround", "revival", "record", "grew", "growth", "launched", "saved", "rescued", "biggest", "first", "breakthrough", "boom", "surge", "success", "winning", "won"],
+      "backdrops": ["sunrise", "paper"],
+      "captions": ["paper", "highlight"],
+      "transitions": ["slide", "whip"],
+      "motion": "punchy",
+      "accents": ["#FF7A00", "#F2A900"],
+      "filmBudget": 0.15
+    },
+    "turnaround": {
+      "mood": "a full arc: heritage, rise, near-death, recovery. The backdrop follows the chapter's emotion",
+      "keywords": [],
+      "backdrops": ["newsprint", "paper"],
+      "captions": ["paper", "highlight"],
+      "transitions": ["slide", "rise"],
+      "motion": "cinematic",
+      "accents": ["#E8590C", "#C2410C"],
+      "chapterBackdrops": {"open": "newsprint", "idea": "newsprint", "rise": "paper", "downfall": "concrete", "recovery": "sunrise", "today": "paper"},
+      "chapterCaptions": {"downfall": "cinema"},
+      "filmBudget": 0.2
+    },
+    "tech": {
+      "mood": "software, hardware, internet, how a technology works",
+      "keywords": ["app", "software", "chip", "processor", "internet", "digital", "smartphone", "phone", "computer", "code", "data", "battery", "electric", "engine", "robot", "satellite", "network", "platform", "algorithm", "online", "android", "ios"],
+      "backdrops": ["blueprint", "paper"],
+      "captions": ["karaoke", "outline"],
+      "transitions": ["whip", "zoom"],
+      "motion": "punchy",
+      "accents": ["#0A6CFF", "#00A3E0"],
+      "filmBudget": 0.15
+    },
+    "heritage": {
+      "mood": "old companies, history, craft, founders, \"how it started\"",
+      "keywords": ["founded", "history", "empire", "colonial", "royal", "legacy", "vintage", "war", "factory", "handmade", "british", "century", "heritage", "era", "decades", "originally"],
+      "backdrops": ["newsprint", "paper"],
+      "captions": ["cinema", "paper"],
+      "transitions": ["rise", "wipe"],
+      "motion": "calm",
+      "accents": ["#B5651D", "#C2410C"],
+      "filmBudget": 0.3
+    },
+    "finance": {
+      "mood": "money, markets, numbers, valuations",
+      "keywords": ["stock", "shares", "market", "revenue", "profit", "valuation", "ipo", "investor", "bank", "loan", "debt", "crore", "billion", "trillion", "price", "margin", "cash", "funding", "sales"],
+      "backdrops": ["concrete", "paper"],
+      "captions": ["paper", "karaoke"],
+      "transitions": ["slide", "whip"],
+      "motion": "punchy",
+      "accents": ["#0B8F5B", "#0F766E"],
+      "filmBudget": 0.1
+    },
+    "mind": {
+      "mood": "psychology effects, studies, behaviour",
+      "keywords": ["bias", "effect", "brain", "memory", "study", "experiment", "psychology", "behavior", "behaviour", "emotion", "attention", "habit", "cognitive", "participants", "researchers"],
+      "backdrops": ["dots", "paper"],
+      "captions": ["pop", "karaoke"],
+      "transitions": ["zoom", "slide"],
+      "motion": "calm",
+      "accents": ["#7C5CFF", "#9B5DE5"],
+      "filmBudget": 0.1
+    },
+    "calm": {
+      "mood": "health, food, nature, sustainability, gentle explainers",
+      "keywords": ["health", "sleep", "food", "diet", "nature", "climate", "green", "organic", "farm", "water", "energy", "wellness"],
+      "backdrops": ["sage", "paper"],
+      "captions": ["paper", "cinema"],
+      "transitions": ["slide", "rise"],
+      "motion": "calm",
+      "accents": ["#2E9E5B", "#15803D"],
+      "filmBudget": 0.15
+    }
+  }
+}

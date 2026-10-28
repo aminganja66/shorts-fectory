@@ -1,9 +1,10 @@
 import React from 'react';
-import {AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, Easing, spring, staticFile} from 'remotion';
+import {AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, Easing, spring} from 'remotion';
 import type {VoxScene, TypewriterScene, CounterScene, LineScene, ChapterScene, TimelineScene} from '../types';
 import {Photo, useAsset, useEpisode} from './common';
 import {boil, camera, fadeIn} from '../film/motion';
 import {headlineFont} from '../fonts';
+import {BackdropLayer} from './Backdrop';
 
 // "Vox-style" explainer scenes: locked paper-grid background, cut-out cards with a marker outline,
 // halftone newsprint portraits, typewriter text, counters and self-drawing charts.
@@ -12,20 +13,8 @@ import {headlineFont} from '../fonts';
 export const INK = '#16120d';
 const CLAMP = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
-// Locked, continuous paper background shared by every scene.
-export const VoxBg: React.FC = () => (
-  <AbsoluteFill style={{background: '#e4e0d5'}}>
-    <AbsoluteFill
-      style={{
-        backgroundImage: 'linear-gradient(rgba(70,58,35,0.075) 2px, transparent 2px), linear-gradient(90deg, rgba(70,58,35,0.075) 2px, transparent 2px)',
-        backgroundSize: '108px 108px',
-      }}
-    />
-    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 38%, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 62%)'}} />
-    {/* paper grain = a static noise tile (an SVG feTurbulence filter was re-rasterised every frame and made renders ~slow) */}
-    <AbsoluteFill style={{mixBlendMode: 'multiply', opacity: 0.16, backgroundImage: `url(${staticFile('textures/paper-noise.png')})`, backgroundSize: '512px 512px'}} />
-  </AbsoluteFill>
-);
+// Background shared by the vox scenes: the episode's backdrop (default: the original warm paper grid), see scenes/Backdrop.tsx.
+export const VoxBg: React.FC = () => <BackdropLayer />;
 
 const outline = (c: string, w: number) =>
   [
