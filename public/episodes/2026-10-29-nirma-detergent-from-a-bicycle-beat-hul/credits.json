@@ -1,0 +1,82 @@
+{
+  "assets/a1-cyclist.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "zz-a1.png"
+  },
+  "assets/a2-packet.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Orange Cream Detergent Bag with Bubbles.png"
+  },
+  "assets/a4-powder.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "a4-powder-dl.png"
+  },
+  "assets/a4b-houses.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "a4b-houses-dl.png"
+  },
+  "assets/a5-bucket.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "a5-bucket-dl.png"
+  },
+  "assets/a6-trophy.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "a6-trophy-dl.png"
+  },
+  "assets/a8-packet-blue.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "a8-packet-blue-dl.png"
+  },
+  "assets/a10-coins.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "a10-coins-dl.png"
+  },
+  "assets/s7-laundry.jpg": {
+    "provider": "manual",
+    "author": "unknown",
+    "license": "AI-generated (ChatGPT image), no real person or logo",
+    "page": "",
+    "url": "",
+    "importedFrom": "s7-dl.png"
+  }
+}

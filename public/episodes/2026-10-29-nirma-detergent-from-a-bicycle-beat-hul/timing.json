@@ -1,0 +1,562 @@
+{
+  "words": [
+    {
+      "text": "A",
+      "start": 0,
+      "end": 0.12
+    },
+    {
+      "text": "government",
+      "start": 0.079,
+      "end": 0.554
+    },
+    {
+      "text": "chemist",
+      "start": 0.554,
+      "end": 0.897
+    },
+    {
+      "text": "beat",
+      "start": 0.897,
+      "end": 1.108
+    },
+    {
+      "text": "India's",
+      "start": 1.108,
+      "end": 1.451
+    },
+    {
+      "text": "biggest",
+      "start": 1.451,
+      "end": 1.795
+    },
+    {
+      "text": "detergent.",
+      "start": 1.795,
+      "end": 2.336
+    },
+    {
+      "text": "With",
+      "start": 2.336,
+      "end": 2.547
+    },
+    {
+      "text": "what?",
+      "start": 3.173,
+      "end": 3.552
+    },
+    {
+      "text": "A",
+      "start": 4.668,
+      "end": 4.788
+    },
+    {
+      "text": "price.",
+      "start": 4.772,
+      "end": 5.252
+    },
+    {
+      "text": "Karsanbhai",
+      "start": 5.823,
+      "end": 6.432
+    },
+    {
+      "text": "Patel",
+      "start": 6.432,
+      "end": 6.758
+    },
+    {
+      "text": "sold",
+      "start": 6.758,
+      "end": 7.029
+    },
+    {
+      "text": "his",
+      "start": 7.029,
+      "end": 7.243
+    },
+    {
+      "text": "detergent",
+      "start": 7.243,
+      "end": 7.795
+    },
+    {
+      "text": "for",
+      "start": 7.795,
+      "end": 8.009
+    },
+    {
+      "text": "about",
+      "start": 8.009,
+      "end": 8.336
+    },
+    {
+      "text": "3",
+      "start": 8.336,
+      "end": 8.652
+    },
+    {
+      "text": "rupees",
+      "start": 8.652,
+      "end": 9.035
+    },
+    {
+      "text": "a",
+      "start": 9.035,
+      "end": 9.155
+    },
+    {
+      "text": "kilo.",
+      "start": 9.136,
+      "end": 9.548
+    },
+    {
+      "text": "Hindustan",
+      "start": 10.676,
+      "end": 11.235
+    },
+    {
+      "text": "Unilever's",
+      "start": 11.235,
+      "end": 11.85
+    },
+    {
+      "text": "Surf",
+      "start": 11.85,
+      "end": 12.123
+    },
+    {
+      "text": "cost",
+      "start": 12.123,
+      "end": 12.397
+    },
+    {
+      "text": "about",
+      "start": 12.397,
+      "end": 12.727
+    },
+    {
+      "text": "13.",
+      "start": 12.727,
+      "end": 13.428
+    },
+    {
+      "text": "He'd",
+      "start": 14.53,
+      "end": 14.815
+    },
+    {
+      "text": "started",
+      "start": 14.815,
+      "end": 15.279
+    },
+    {
+      "text": "in",
+      "start": 15.279,
+      "end": 15.445
+    },
+    {
+      "text": "1969,",
+      "start": 15.445,
+      "end": 16.443
+    },
+    {
+      "text": "selling",
+      "start": 16.443,
+      "end": 16.906
+    },
+    {
+      "text": "homemade",
+      "start": 16.906,
+      "end": 17.428
+    },
+    {
+      "text": "powder",
+      "start": 17.428,
+      "end": 17.832
+    },
+    {
+      "text": "door",
+      "start": 17.832,
+      "end": 18.117
+    },
+    {
+      "text": "to",
+      "start": 18.117,
+      "end": 18.284
+    },
+    {
+      "text": "door",
+      "start": 18.284,
+      "end": 18.569
+    },
+    {
+      "text": "in",
+      "start": 18.569,
+      "end": 18.735
+    },
+    {
+      "text": "Ahmedabad.",
+      "start": 18.735,
+      "end": 19.465
+    },
+    {
+      "text": "So",
+      "start": 20.535,
+      "end": 20.674
+    },
+    {
+      "text": "did",
+      "start": 20.674,
+      "end": 20.863
+    },
+    {
+      "text": "people",
+      "start": 20.863,
+      "end": 21.202
+    },
+    {
+      "text": "actually",
+      "start": 21.202,
+      "end": 21.64
+    },
+    {
+      "text": "switch?",
+      "start": 21.64,
+      "end": 22.103
+    },
+    {
+      "text": "They",
+      "start": 23.168,
+      "end": 23.524
+    },
+    {
+      "text": "did.",
+      "start": 24.105,
+      "end": 24.453
+    },
+    {
+      "text": "Around",
+      "start": 24.453,
+      "end": 24.829
+    },
+    {
+      "text": "1985,",
+      "start": 24.829,
+      "end": 25.758
+    },
+    {
+      "text": "Nirma",
+      "start": 25.758,
+      "end": 26.079
+    },
+    {
+      "text": "reportedly",
+      "start": 26.079,
+      "end": 26.677
+    },
+    {
+      "text": "passed",
+      "start": 26.677,
+      "end": 27.053
+    },
+    {
+      "text": "Surf",
+      "start": 27.053,
+      "end": 27.318
+    },
+    {
+      "text": "as",
+      "start": 27.318,
+      "end": 27.473
+    },
+    {
+      "text": "India's",
+      "start": 27.473,
+      "end": 27.904
+    },
+    {
+      "text": "top",
+      "start": 27.904,
+      "end": 28.115
+    },
+    {
+      "text": "detergent.",
+      "start": 28.115,
+      "end": 28.795
+    },
+    {
+      "text": "At",
+      "start": 29.865,
+      "end": 29.996
+    },
+    {
+      "text": "its",
+      "start": 29.996,
+      "end": 30.174
+    },
+    {
+      "text": "peak,",
+      "start": 30.174,
+      "end": 30.484
+    },
+    {
+      "text": "it",
+      "start": 30.484,
+      "end": 30.615
+    },
+    {
+      "text": "reportedly",
+      "start": 30.615,
+      "end": 31.122
+    },
+    {
+      "text": "held",
+      "start": 31.122,
+      "end": 31.347
+    },
+    {
+      "text": "more",
+      "start": 31.347,
+      "end": 31.572
+    },
+    {
+      "text": "than",
+      "start": 31.572,
+      "end": 31.798
+    },
+    {
+      "text": "half",
+      "start": 31.798,
+      "end": 32.023
+    },
+    {
+      "text": "the",
+      "start": 32.023,
+      "end": 32.201
+    },
+    {
+      "text": "market.",
+      "start": 32.201,
+      "end": 32.637
+    },
+    {
+      "text": "Hindustan",
+      "start": 33.691,
+      "end": 34.314
+    },
+    {
+      "text": "Unilever",
+      "start": 34.314,
+      "end": 34.873
+    },
+    {
+      "text": "hit",
+      "start": 34.873,
+      "end": 35.114
+    },
+    {
+      "text": "back",
+      "start": 35.114,
+      "end": 35.419
+    },
+    {
+      "text": "with",
+      "start": 35.419,
+      "end": 35.724
+    },
+    {
+      "text": "its",
+      "start": 35.724,
+      "end": 35.966
+    },
+    {
+      "text": "own",
+      "start": 35.966,
+      "end": 36.207
+    },
+    {
+      "text": "cheap",
+      "start": 36.207,
+      "end": 36.576
+    },
+    {
+      "text": "brand,",
+      "start": 36.576,
+      "end": 37.059
+    },
+    {
+      "text": "Wheel.",
+      "start": 37.059,
+      "end": 37.586
+    },
+    {
+      "text": "By",
+      "start": 38.789,
+      "end": 38.949
+    },
+    {
+      "text": "2014,",
+      "start": 38.949,
+      "end": 39.908
+    },
+    {
+      "text": "Nirma's",
+      "start": 39.908,
+      "end": 40.354
+    },
+    {
+      "text": "detergent",
+      "start": 40.354,
+      "end": 40.914
+    },
+    {
+      "text": "share",
+      "start": 40.914,
+      "end": 41.245
+    },
+    {
+      "text": "was",
+      "start": 41.245,
+      "end": 41.462
+    },
+    {
+      "text": "about",
+      "start": 41.462,
+      "end": 41.794
+    },
+    {
+      "text": "10%,",
+      "start": 41.794,
+      "end": 42.605
+    },
+    {
+      "text": "among",
+      "start": 42.605,
+      "end": 42.936
+    },
+    {
+      "text": "roughly",
+      "start": 42.936,
+      "end": 43.382
+    },
+    {
+      "text": "400",
+      "start": 43.382,
+      "end": 43.999
+    },
+    {
+      "text": "brands.",
+      "start": 43.999,
+      "end": 44.53
+    },
+    {
+      "text": "Would",
+      "start": 45.616,
+      "end": 45.873
+    },
+    {
+      "text": "you",
+      "start": 45.873,
+      "end": 46.042
+    },
+    {
+      "text": "switch",
+      "start": 46.042,
+      "end": 46.343
+    },
+    {
+      "text": "your",
+      "start": 46.343,
+      "end": 46.556
+    },
+    {
+      "text": "detergent",
+      "start": 46.556,
+      "end": 46.991
+    },
+    {
+      "text": "to",
+      "start": 46.991,
+      "end": 47.115
+    },
+    {
+      "text": "save",
+      "start": 47.115,
+      "end": 47.328
+    },
+    {
+      "text": "10",
+      "start": 47.328,
+      "end": 47.692
+    },
+    {
+      "text": "rupees",
+      "start": 47.692,
+      "end": 47.994
+    },
+    {
+      "text": "a",
+      "start": 47.994,
+      "end": 48.114
+    },
+    {
+      "text": "kilo?",
+      "start": 48.074,
+      "end": 48.398
+    }
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 3.552
+    },
+    {
+      "id": 2,
+      "start": 4.668,
+      "end": 9.548
+    },
+    {
+      "id": 3,
+      "start": 10.676,
+      "end": 13.428
+    },
+    {
+      "id": 4,
+      "start": 14.53,
+      "end": 19.465
+    },
+    {
+      "id": 5,
+      "start": 20.535,
+      "end": 22.103
+    },
+    {
+      "id": 6,
+      "start": 23.168,
+      "end": 28.795
+    },
+    {
+      "id": 7,
+      "start": 29.865,
+      "end": 32.637
+    },
+    {
+      "id": 8,
+      "start": 33.691,
+      "end": 37.586
+    },
+    {
+      "id": 9,
+      "start": 38.789,
+      "end": 44.53
+    },
+    {
+      "id": 10,
+      "start": 45.616,
+      "end": 48.398
+    }
+  ],
+  "duration": 48.398
+}

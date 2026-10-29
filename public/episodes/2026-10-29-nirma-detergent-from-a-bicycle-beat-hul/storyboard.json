@@ -3,27 +3,429 @@
   "channel": "brand",
   "language": "en",
   "topic": "Nirma detergent from a bicycle beat HUL",
-  "title": "",
+  "title": "How a government chemist beat Surf at a fraction of the price",
   "theme": {
-    "accent": "#F26A1B",
+    "accent": "#0B8F5B",
     "look": "vox",
-    "captionStyle": "pop",
-    "transition": "zoom",
-    "progressBar": true
+    "captionStyle": "karaoke",
+    "transition": "whip",
+    "progressBar": true,
+    "backdrop": "concrete",
+    "motion": "punchy",
+    "direction": "finance"
   },
-  "facts": [],
-  "lines": [],
-  "assets": [],
+  "facts": [
+    {
+      "claim": "Karsanbhai Patel started selling homemade detergent door to door in Ahmedabad in 1969.",
+      "source": [
+        "https://en.wikipedia.org/wiki/Karsanbhai_Patel",
+        "https://www.retail4growth.com/news/40-years-agoand-now-nirma-girl-endears-but-brands-seen-better-days-1147"
+      ]
+    },
+    {
+      "claim": "Before that he worked as a chemist in the Gujarat government's Department of Mining and Geology (some sources say lab technician/assistant).",
+      "source": [
+        "https://en.wikipedia.org/wiki/Nirma",
+        "https://www.thebetterindia.com/171504/gujarat-nirma-karsanbhai-patel-make-in-india/"
+      ]
+    },
+    {
+      "claim": "Nirma sold at about Rs 3 per kg while HUL's Surf cost roughly Rs 13 (sources vary: Rs 3 to 3.50 vs Rs 10 to 15). Use 'about 3 rupees vs about 13'.",
+      "source": [
+        "https://en.wikipedia.org/wiki/Nirma",
+        "https://www.retail4growth.com/news/40-years-agoand-now-nirma-girl-endears-but-brands-seen-better-days-1147"
+      ]
+    },
+    {
+      "claim": "The name Nirma comes from his daughter Nirupama (her death in an accident is reported only by The Better India / IMPACT).",
+      "source": [
+        "https://www.thebetterindia.com/171504/gujarat-nirma-karsanbhai-patel-make-in-india/",
+        "https://www.retail4growth.com/news/40-years-agoand-now-nirma-girl-endears-but-brands-seen-better-days-1147"
+      ]
+    },
+    {
+      "claim": "Nirma reportedly passed Surf as India's top detergent around 1985, with an estimated share of about 60% (reported, secondary sources).",
+      "source": [
+        "https://www.retail4growth.com/news/40-years-agoand-now-nirma-girl-endears-but-brands-seen-better-days-1147",
+        "https://www.storyboard18.com/quantum-brief/huls-surf-excel-becomes-1-billion-brand-5629.htm"
+      ]
+    },
+    {
+      "claim": "HUL responded by launching the low-priced Wheel detergent, reportedly in 1988 (single-source date; 'Operation STING').",
+      "source": [
+        "https://www.retail4growth.com/news/40-years-agoand-now-nirma-girl-endears-but-brands-seen-better-days-1147"
+      ]
+    },
+    {
+      "claim": "By 2014 Nirma's detergent share was about 10% among roughly 400 brands (Business Standard, market estimates).",
+      "source": [
+        "https://www.retail4growth.com/news/40-years-agoand-now-nirma-girl-endears-but-brands-seen-better-days-1147"
+      ]
+    },
+    {
+      "claim": "The Nirma group later moved into cement (Lafarge India for $1.4 billion in 2016) and in Sept 2023 bought 75% of Glenmark Life Sciences for Rs 5,652 crore (about $680 million).",
+      "source": [
+        "https://en.wikipedia.org/wiki/Nirma"
+      ]
+    }
+  ],
+  "length": "story",
+  "lengthReason": "It needs a setup (the price gap), a turn (Nirma passes Surf, HUL hits back) and a result (about 10% in 2014), which won't fit in one twist.",
+  "hookType": "contradiction",
+  "hookCandidates": [
+    "A government chemist beat India's biggest detergent. With what?",
+    "One man went door to door and humbled HUL. What did he cut?",
+    "Surf cost 13 rupees a kilo. How did a rival win at 3?"
+  ],
+  "lines": [
+    {
+      "id": 1,
+      "text": "A government chemist beat India's biggest detergent. With what?",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a1-cyclist.png",
+        "mid2": "assets/a2-packet.png",
+        "headline": "A CHEMIST BEAT|SURF. WITH WHAT?",
+        "sub": "INDIA, 1969",
+        "halftone": false,
+        "stroke": true,
+        "motion": "push",
+        "instant": true,
+        "boxes": {
+          "mid": {
+            "left": "0%",
+            "width": "58%",
+            "top": "29%",
+            "height": "36%"
+          },
+          "mid2": {
+            "left": "54%",
+            "width": "42%",
+            "top": "36%",
+            "height": "26%"
+          }
+        }
+      },
+      "visual": "BG: paper. MID: flat editorial back-view figure in a plain kurta on an old bicycle with a sack of powder (NO face, not a likeness of Karsanbhai Patel). MID2: generic unbranded detergent packet. Headline top from frame 0 with the hook question.",
+      "onScreen": "A CHEMIST BEAT SURF. WITH WHAT? / INDIA, 1969",
+      "motionNotes": "Hard cut, headline and cyclist on screen from f0, slow push. Punch at f100 on \"With what?\".",
+      "beats": [
+        {
+          "at": 95,
+          "do": "punch"
+        }
+      ],
+      "fx": [],
+      "sfx": "whoosh.mp3",
+      "sfxAt": 0
+    },
+    {
+      "id": 2,
+      "text": "A price. Karsanbhai Patel sold his detergent for about 3 rupees a kilo.",
+      "voice": "A price. Karsanbhai Patel sold his detergent for about three rupees a kilo.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 3,
+        "prefix": "₹",
+        "suffix": " /KG",
+        "decimals": 0,
+        "label": "NIRMA, PER KILO",
+        "icon": "assets/a2-packet.png"
+      },
+      "visual": "BG: paper. TOP: generic packet drops in. CENTER: big counter 0 to 3 with rupee sign. LABEL: NIRMA, PER KILO.",
+      "onScreen": "₹3 /KG / NIRMA, PER KILO",
+      "motionNotes": "Packet drops in f0-10 with a small bounce; counter ticks up and lands on 3 at \"three rupees\".",
+      "beats": [],
+      "fx": [],
+      "sfx": "cash.mp3",
+      "sfxAt": 3.67
+    },
+    {
+      "id": 3,
+      "text": "Hindustan Unilever's Surf cost about 13.",
+      "voice": "Hindustan Unilever's Surf cost about thirteen.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 13,
+        "prefix": "₹",
+        "suffix": " /KG",
+        "decimals": 0,
+        "label": "SURF, PER KILO",
+        "icon": "assets/a8-packet-blue.png"
+      },
+      "visual": "BG: paper. TOP: generic blue packet drops in. CENTER: big counter 0 to 13 with rupee sign (about 13, Wikipedia / Business Standard). LABEL: SURF, PER KILO. Same layout as the previous counter so the 3 vs 13 gap reads instantly.",
+      "onScreen": "₹13 /KG / SURF, PER KILO",
+      "motionNotes": "Packet drops in f0-10; counter runs 0 to 13 and lands on \"thirteen\". No beat.",
+      "beats": [],
+      "fx": [],
+      "sfx": "stamp.mp3",
+      "sfxAt": 2.05
+    },
+    {
+      "id": 4,
+      "text": "He'd started in 1969, selling homemade powder door to door in Ahmedabad.",
+      "voice": "He'd started in nineteen sixty-nine, selling homemade powder door to door in Ahmedabad.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a4-powder.png",
+        "fg": "assets/a4b-houses.png",
+        "headline": "1969:|DOOR TO DOOR",
+        "sub": "Ahmedabad",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pull",
+        "boxes": {
+          "mid": {
+            "left": "12%",
+            "width": "76%",
+            "top": "30%",
+            "height": "30%"
+          },
+          "fg": {
+            "left": "0%",
+            "width": "100%",
+            "top": "72%",
+            "height": "20%"
+          }
+        }
+      },
+      "visual": "BG: paper. MID: bowl of homemade white powder with a scoop and plain packets. FG: strip of old Ahmedabad houses anchoring the bottom. Headline above.",
+      "onScreen": "1969: DOOR TO DOOR / Ahmedabad",
+      "motionNotes": "Powder rises f0-10, houses slide up f12, slow pull. Punch at f95 on \"door to door\".",
+      "beats": [
+        {
+          "at": 99,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "dust"
+      ],
+      "sfx": "bell.mp3",
+      "sfxAt": 3.3
+    },
+    {
+      "id": 5,
+      "text": "So did people actually switch?",
+      "scene": {
+        "type": "typewriter",
+        "text": "DID PEOPLE|ACTUALLY SWITCH?",
+        "sub": "cheaper powder, same wash",
+        "prop": "assets/a5-bucket.png"
+      },
+      "visual": "BG: paper. Typewriter types the question; a bucket of foamy laundry rises behind it as the prop.",
+      "onScreen": "DID PEOPLE ACTUALLY SWITCH?",
+      "motionNotes": "Text types in on the narration, bucket rises slowly; calm beat before the answer.",
+      "beats": [],
+      "fx": [],
+      "captions": "off",
+      "sfx": "bloop.mp3",
+      "sfxAt": 1.1
+    },
+    {
+      "id": 6,
+      "text": "They did. Around 1985, Nirma reportedly passed Surf as India's top detergent.",
+      "voice": "They did. Around nineteen eighty-five, Nirma reportedly passed Surf as India's top detergent.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a6-trophy.png",
+        "headline": "1985:|NIRMA PASSES SURF",
+        "sub": "reportedly",
+        "halftone": false,
+        "stroke": true,
+        "motion": "pan-left",
+        "boxes": {
+          "mid": {
+            "left": "14%",
+            "width": "72%",
+            "top": "30%",
+            "height": "34%"
+          }
+        }
+      },
+      "visual": "BG: paper. MID: golden trophy on a stack of banknotes, orange marker outline. Headline above; 'reportedly' as the sub.",
+      "onScreen": "1985: NIRMA PASSES SURF / reportedly",
+      "motionNotes": "Trophy pops in f0-10 with a bounce; punch at f60 on \"passed Surf\".",
+      "beats": [
+        {
+          "at": 105,
+          "do": "punch"
+        }
+      ],
+      "fx": [
+        "lightleak"
+      ],
+      "sfx": "chime.mp3",
+      "sfxAt": 3.5
+    },
+    {
+      "id": 7,
+      "text": "At its peak, it reportedly held more than half the market.",
+      "scene": {
+        "type": "collage",
+        "bg": "assets/s7-laundry.jpg",
+        "headline": "MORE THAN|HALF THE MARKET",
+        "motion": "pan-right"
+      },
+      "visual": "FULL-BLEED FILM SCENE (the one emotional peak, no numbers): photoreal AI image of a 1980s Indian washing ghat in golden light, bright white laundry drying, nobody facing camera. Short headline only, white captions.",
+      "onScreen": "MORE THAN HALF THE MARKET",
+      "motionNotes": "Soft entrance, slow pan right across the laundry; graded, grain, vignette. No beats.",
+      "beats": [],
+      "fx": [],
+      "look": "film",
+      "sfx": "splash.mp3",
+      "sfxAt": 0.3
+    },
+    {
+      "id": 8,
+      "text": "Hindustan Unilever hit back with its own cheap brand, Wheel.",
+      "scene": {
+        "type": "vox",
+        "mid": "assets/a8-packet-blue.png",
+        "headline": "HUL HITS BACK|WITH WHEEL",
+        "sub": "a cheap brand of its own",
+        "halftone": false,
+        "stroke": true,
+        "motion": "drift",
+        "boxes": {
+          "mid": {
+            "left": "18%",
+            "width": "64%",
+            "top": "31%",
+            "height": "32%"
+          }
+        }
+      },
+      "visual": "BG: paper. MID: generic unbranded blue packet cut-out. Headline: HUL HITS BACK WITH WHEEL (name in words only, no logo).",
+      "onScreen": "HUL HITS BACK WITH WHEEL",
+      "motionNotes": "Packet slides in from the right f0-10, light drift; punch at f55 on \"Wheel\".",
+      "beats": [
+        {
+          "at": 101,
+          "do": "punch"
+        }
+      ],
+      "fx": [],
+      "sfx": "whoosh.mp3",
+      "sfxAt": 1.2
+    },
+    {
+      "id": 9,
+      "text": "By 2014, Nirma's detergent share was about 10%, among roughly 400 brands.",
+      "voice": "By twenty fourteen, Nirma's detergent share was about ten percent, among roughly four hundred brands.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 10,
+        "suffix": "%",
+        "decimals": 0,
+        "label": "NIRMA DETERGENT SHARE, 2014"
+      },
+      "visual": "BG: paper. Big counter 0 to 10 percent, label NIRMA DETERGENT SHARE, 2014; small sub 'among roughly 400 brands' in the label.",
+      "onScreen": "10% / NIRMA DETERGENT SHARE, 2014",
+      "motionNotes": "Counter runs and settles on 10 at \"ten percent\". Calm, no beat.",
+      "beats": [],
+      "fx": [],
+      "sfx": "tick.mp3",
+      "sfxAt": 0
+    },
+    {
+      "id": 10,
+      "text": "Would you switch your detergent to save 10 rupees a kilo?",
+      "voice": "Would you switch your detergent to save ten rupees a kilo?",
+      "scene": {
+        "type": "typewriter",
+        "text": "SAVE ₹10 A KILO.|WOULD YOU SWITCH?",
+        "sub": "your call",
+        "prop": "assets/a10-coins.png"
+      },
+      "visual": "BG: paper. Typewriter punchline looping to the hook; coins rise as prop.",
+      "onScreen": "SAVE ₹10 A KILO. WOULD YOU SWITCH?",
+      "motionNotes": "Types out with the narration; coins rise slowly. Ends on the question.",
+      "beats": [],
+      "fx": [],
+      "captions": "off",
+      "sfx": "cash.mp3",
+      "sfxAt": 1.5
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/a1-cyclist.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a man in a simple kurta riding an old black bicycle seen from behind, a sack of white powder tied to the back carrier, 1970s India, flat silhouette-like figure with no visible face, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a2-packet.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of one generic plain paper packet of white washing powder, orange and cream colours with a simple soap-bubble graphic, three-quarter view, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a4-powder.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a steel bowl of white washing powder with a scoop and three small plain paper packets beside it, jute mat underneath, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a4b-houses.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a wide horizontal strip of old Ahmedabad pol-style wooden-balcony houses seen front-on, warm sandy colours, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a5-bucket.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a steel bucket of foamy laundry with a wet white shirt draped over the rim and a bar of plain soap, bubbles, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a6-trophy.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a golden winner's trophy cup standing on a small stack of crumpled banknotes, no text, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a8-packet-blue.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of one generic plain paper packet of washing powder, blue and white colours with a simple wheel-shaped swirl graphic, three-quarter view, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a10-coins.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a small stack of ten coins with one banknote folded beside it, marigold and warm black, bold outline, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/s7-laundry.jpg",
+      "orientation": "portrait",
+      "generate": "1980s India, a sunlit riverside washing ghat in Gujarat seen from a distance, several women in colourful saris washing and wringing clothes, lines of bright white laundry drying on the stones, soft golden morning light, documentary photograph, nobody facing the camera, no text, no logos",
+      "license": "AI-generated (OpenAI image), no real person or logo"
+    }
+  ],
   "music": {
-    "file": "",
+    "file": "warm-reflection.mp3",
     "volume": 0.16
   },
   "voice": {
-    "file": "voice.mp3"
+    "file": "voice.mp3",
+    "source": "elevenlabs-web"
   },
   "upload": {
-    "title": "",
-    "description": "",
+    "title": "A government chemist beat Surf with one thing. What was it?",
+    "description": "In 1969 a government chemist started selling detergent door to door in Ahmedabad. Within about 16 years Nirma reportedly passed HUL's Surf.\nSources: Business Standard (2014), Wikipedia, The Better India.",
     "hashtags": [
       "#shorts",
       "#businessstory",
@@ -31,5 +433,6 @@
       "#business",
       "#storytime"
     ]
-  }
+  },
+  "directionReason": "finance: money, markets, numbers, valuations"
 }
