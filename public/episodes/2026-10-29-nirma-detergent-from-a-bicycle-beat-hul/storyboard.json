@@ -1,0 +1,35 @@
+{
+  "id": "2026-10-29-nirma-detergent-from-a-bicycle-beat-hul",
+  "channel": "brand",
+  "language": "en",
+  "topic": "Nirma detergent from a bicycle beat HUL",
+  "title": "",
+  "theme": {
+    "accent": "#F26A1B",
+    "look": "vox",
+    "captionStyle": "pop",
+    "transition": "zoom",
+    "progressBar": true
+  },
+  "facts": [],
+  "lines": [],
+  "assets": [],
+  "music": {
+    "file": "",
+    "volume": 0.16
+  },
+  "voice": {
+    "file": "voice.mp3"
+  },
+  "upload": {
+    "title": "",
+    "description": "",
+    "hashtags": [
+      "#shorts",
+      "#businessstory",
+      "#brandstory",
+      "#business",
+      "#storytime"
+    ]
+  }
+}
