@@ -30,7 +30,7 @@ export const Root: React.FC = () => (
       height={1920}
       fps={FPS}
       durationInFrames={900}
-      defaultProps={{episodeId: 'demo-netflix'} as ShortProps}
+      defaultProps={{episodeId: '2026-10-30-zomato-started-as-menu-card-scanning'} as ShortProps}
       calculateMetadata={calc}
     />
     {/* Long videos (storyboard.format = "long"): same scenes in 16:9 layouts (useWide in scenes/Vox.tsx) */}

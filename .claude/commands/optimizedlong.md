@@ -16,7 +16,7 @@ Same product as `/long` (read `.claude/commands/long.md` and CLAUDE.md → "Long
 2. **Fewer assets**: aim for ~20–25 unique assets (not 25–40). Reuse cut-outs/logos across chapters. Prefer logos, stock, Commons and free scene types (`timeline`, `counter`, `line`, `typewriter`) over new ChatGPT cut-outs. Max ~10 ChatGPT cut-outs.
 3. **Voice early**: as soon as the script + `npm run spoken` are final, start the voice parts (API: `npm run voice`; browser: part by part) while assets/scenes are being built. If the script changes later, re-voice only the affected part.
 4. **Frame checks sampled**: `npm run frames -- <id> --chapter N`, but look at ONE frame per scene TYPE per chapter plus every beat/flash scene, not every frame. Studio preview catches the rest.
-5. If an ElevenLabs/OpenAI key exists, use the API scripts (`npm run voice`, `npm run music`, `npm run assets` generate) instead of browser tabs.
+5. If an ElevenLabs/OpenAI key exists, use the API scripts (`npm run voice`, `npm run assets` generate); music + SFX come from the local library (`npm run music`, `npm run sfx`), never generated instead of browser tabs.
 
 **Art direction stays**: run `npm run direct -- <id>` after the scenes (as `/long` step 6b); it is one command and costs no extra assets. Keep film scenes to the budget it prints (≈ 1 per chapter, ≤ ~10 % of scenes in this lean mode).
 

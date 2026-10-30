@@ -58,5 +58,40 @@
     "license": "ElevenLabs SFX",
     "url": "",
     "author": ""
+  },
+  {
+    "file": "foley_misc_1019.mp3",
+    "license": "Downloaded under my active subscription; use only per the provider's current terms.",
+    "url": "",
+    "author": "local_pack",
+    "libraryId": "foley_misc_1019"
+  },
+  {
+    "file": "anim-type.mp3",
+    "license": "Downloaded under my active subscription; use only per the provider's current terms.",
+    "url": "",
+    "author": "local_pack",
+    "libraryId": "ui_keyboard_013"
+  },
+  {
+    "file": "anim-tick.mp3",
+    "license": "Downloaded under my active subscription; use only per the provider's current terms.",
+    "url": "",
+    "author": "local_pack",
+    "libraryId": "foley_misc_476"
+  },
+  {
+    "file": "anim-whoosh.mp3",
+    "license": "Downloaded under my active subscription; use only per the provider's current terms.",
+    "url": "",
+    "author": "local_pack",
+    "libraryId": "whoosh_general_022"
+  },
+  {
+    "file": "sting-marimba.mp3",
+    "license": "Downloaded under my active subscription; use only per the provider's current terms.",
+    "url": "",
+    "author": "local_pack",
+    "libraryId": "cinematic_musical_034"
   }
 ]

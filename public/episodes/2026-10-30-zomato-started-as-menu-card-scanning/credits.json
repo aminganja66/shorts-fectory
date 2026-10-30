@@ -1,0 +1,109 @@
+{
+  "assets/logo-zomato.png": {
+    "query": "Zomato logo",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Zomato_Logo.svg/1280px-Zomato_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Zomato_Logo.svg/1280px-Zomato_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Zomato_Logo.svg",
+    "author": "Zomato",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 2500,
+    "h": 535
+  },
+  "assets/logo-infoedge.png": {
+    "query": "Info Edge India",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Flag_of_India_%28construction_sheet%29_%282-3%29.svg/1280px-Flag_of_India_%28construction_sheet%29_%282-3%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Flag_of_India_%28construction_sheet%29_%282-3%29.svg/1280px-Flag_of_India_%28construction_sheet%29_%282-3%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Flag_of_India_(construction_sheet)_(2-3).svg",
+    "author": "MapGrid",
+    "license": "Public domain",
+    "provider": "wikimedia",
+    "trademark": "Logo is a trademark of its owner; used for identification/commentary only",
+    "w": 1086,
+    "h": 754
+  },
+  "assets/p-goyal.png": {
+    "query": "Deepinder Goyal",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Plastic_holder_along_with_paper_bill_in_Zomato_order.jpg/1920px-Plastic_holder_along_with_paper_bill_in_Zomato_order.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Plastic_holder_along_with_paper_bill_in_Zomato_order.jpg/1920px-Plastic_holder_along_with_paper_bill_in_Zomato_order.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Plastic_holder_along_with_paper_bill_in_Zomato_order.jpg",
+    "author": "Mallikarjunasj",
+    "license": "CC BY-SA 3.0",
+    "provider": "wikimedia",
+    "w": 2288,
+    "h": 4080
+  },
+  "assets/a1-menus.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Ornamental Golden Menu Stack.png"
+  },
+  "assets/a2-office.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Modern Café Office Building Facade.png"
+  },
+  "assets/a3-scanner.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Isometric Scanner Scanning Illustrated Menu.png"
+  },
+  "assets/a4-laptop.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Isometric Laptop Dining App Illustration.png"
+  },
+  "assets/a5-gavel.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Golden Wooden Judge’s Gavel and Block.png"
+  },
+  "assets/a6-bell.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Golden Ceremonial Bell and Mallet.png"
+  },
+  "assets/a7-coffee.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Warm Coffee and Sandwich Still Life.png"
+  },
+  "assets/a8-cash.png": {
+    "provider": "chatgpt-web",
+    "author": "AI-generated",
+    "license": "AI-generated (ChatGPT) — owned by user per OpenAI terms",
+    "page": "",
+    "url": "",
+    "aiGenerated": true,
+    "importedFrom": "Golden Stack of Banknotes.png"
+  }
+}

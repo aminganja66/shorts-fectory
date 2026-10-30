@@ -3,33 +3,358 @@
   "channel": "brand",
   "language": "en",
   "topic": "Zomato started as menu-card scanning",
-  "title": "",
+  "title": "Stapled menus in a Delhi office became what?",
+  "hookType": "stake-question",
+  "hookCandidates": [
+    "A pile of stapled menus in a Delhi office cafe became what?",
+    "Two consultants scanned a stack of paper menus. What did they build?",
+    "This company reportedly began with a stapler. Which one?"
+  ],
+  "length": "story",
+  "lengthReason": "It needs a setup (the scan), a rename twist, first money, and the IPO result, four facts that each matter.",
   "theme": {
-    "accent": "#F26A1B",
+    "accent": "#0F766E",
     "look": "vox",
-    "captionStyle": "pop",
-    "transition": "zoom",
-    "progressBar": true
+    "captionStyle": "paper",
+    "transition": "slide",
+    "progressBar": true,
+    "backdrop": "paper",
+    "motion": "punchy",
+    "direction": "finance"
   },
-  "facts": [],
-  "lines": [],
-  "assets": [],
+  "facts": [
+    {
+      "claim": "Deepinder Goyal and Pankaj Chaddah were colleagues at Bain & Company in Delhi. The office cafe reportedly kept about 50 restaurant menu cards stapled together; they scanned them and put them on an intranet site for staff, and the traffic convinced them it could be a business.",
+      "source": [
+        "https://knowledge.wharton.upenn.edu/article/menu-and-restaurant-listing-sites-search-for-scale-in-india/"
+      ]
+    },
+    {
+      "claim": "Foodiebay launched in 2008 (exact day varies by source).",
+      "source": [
+        "https://en.wikipedia.org/wiki/Eternal_Limited"
+      ]
+    },
+    {
+      "claim": "Foodiebay was renamed Zomato in 2010; reportedly (Mint, 2015, via Wikipedia) to avoid a potential trademark conflict with eBay and to go beyond food.",
+      "source": [
+        "https://yourstory.com/2010/11/foodiebay-rebranded-as-zomato-com-plans-to-enter-nightlife-business/amp",
+        "https://en.wikipedia.org/wiki/Eternal_Limited"
+      ]
+    },
+    {
+      "claim": "Info Edge (Naukri.com) invested US$1 million in 2010, its first outside funding (some sources say July, some December).",
+      "source": [
+        "https://knowledge.wharton.upenn.edu/article/menu-and-restaurant-listing-sites-search-for-scale-in-india/"
+      ]
+    },
+    {
+      "claim": "Zomato's IPO in July 2021 raised Rs 9,375 crore, was subscribed about 38 times, listed 23 July 2021 and closed about 66% above the issue price on day one.",
+      "source": [
+        "https://www.business-standard.com/amp/article/companies/zomato-shares-zoom-66-on-listing-day-settle-at-126-apiece-at-closing-bell-121072301212_1.html"
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "text": "A pile of stapled menus in a Delhi office cafe became what?",
+      "scene": {
+        "halftone": false,
+        "stroke": true,
+        "type": "vox",
+        "mid": "assets/a1-menus.png",
+        "mid2": "assets/a7-coffee.png",
+        "headline": "STAPLED MENUS|BECAME WHAT?",
+        "sub": "DELHI OFFICE CAFE",
+        "motion": "push",
+        "instant": true
+      },
+      "visual": "BG: paper. MID: thick stack of stapled menu cards. MID2: office cafe coffee and sandwich. Headline with ? from frame 0.",
+      "onScreen": "STAPLED MENUS BECAME WHAT? / DELHI OFFICE CAFE",
+      "motionNotes": "Hard cut, menus and headline on screen from f0, slow push; punch on 'what?'.",
+      "beats": [
+        {
+          "at": 101,
+          "do": "punch"
+        }
+      ],
+      "fx": []
+    },
+    {
+      "text": "Zomato. It began inside Bain's Delhi office.",
+      "scene": {
+        "type": "typewriter",
+        "text": "ZOMATO.|BAIN & CO, DELHI",
+        "sub": "the office cafe",
+        "prop": "assets/a2-office.png"
+      },
+      "visual": "BG: paper. Typewriter types the answer; generic glass office building rises as the prop.",
+      "onScreen": "ZOMATO. BAIN & CO, DELHI / the office cafe",
+      "motionNotes": "Text types over the line; office rises f20.",
+      "beats": [],
+      "fx": [],
+      "sfx": "sting-marimba.mp3"
+    },
+    {
+      "text": "Deepinder Goyal and Pankaj Chaddah reportedly scanned about 50 cafe menus onto the intranet.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 50,
+        "prefix": "~",
+        "suffix": " MENUS",
+        "decimals": 0,
+        "label": "SCANNED ONTO AN INTRANET",
+        "icon": "assets/a3-scanner.png"
+      },
+      "visual": "BG: paper. TOP: scanner icon drops in. CENTER: counter 0 to about 50. LABEL below.",
+      "onScreen": "~50 MENUS / SCANNED ONTO AN INTRANET",
+      "motionNotes": "Scanner drops with a bounce, counter ticks up and lands on 'fifty'.",
+      "beats": [],
+      "fx": [],
+      "voice": "Deepinder Goyal and Pankaj Chaddah reportedly scanned about fifty cafe menus onto the intranet."
+    },
+    {
+      "text": "Coworkers kept using it. So in 2008: Foodiebay.",
+      "scene": {
+        "halftone": false,
+        "stroke": true,
+        "type": "vox",
+        "mid": "assets/a4-laptop.png",
+        "headline": "2008:|FOODIEBAY",
+        "sub": "THE WEBSITE",
+        "motion": "drift"
+      },
+      "visual": "BG: paper. MID: laptop with a plate icon. Headline year + name.",
+      "onScreen": "2008: FOODIEBAY / THE WEBSITE",
+      "motionNotes": "Laptop slides in f0-10, slow drift; punch on 'Foodiebay'.",
+      "beats": [
+        {
+          "at": 91,
+          "do": "punch"
+        }
+      ],
+      "fx": [],
+      "voice": "Coworkers kept using it. So in two thousand eight: Foodiebay."
+    },
+    {
+      "text": "But that name sounded a lot like eBay.",
+      "scene": {
+        "type": "typewriter",
+        "text": "TOO CLOSE|TO EBAY?",
+        "sub": "reportedly a trademark risk",
+        "prop": "assets/a5-gavel.png"
+      },
+      "visual": "BG: paper. Typewriter text types out; gavel rises as the prop.",
+      "onScreen": "TOO CLOSE TO EBAY? / reportedly a trademark risk",
+      "motionNotes": "Text types over the line; gavel rises f20.",
+      "beats": [],
+      "fx": [],
+      "sfx": "foley_misc_1019.mp3",
+      "sfxAt": 1.6
+    },
+    {
+      "text": "Reportedly to dodge a trademark fight, they renamed it Zomato in 2010.",
+      "voice": "Reportedly to dodge a trademark fight, they renamed it Zomato in twenty ten.",
+      "scene": {
+        "halftone": false,
+        "stroke": true,
+        "type": "vox",
+        "mid": "assets/logo-zomato.png",
+        "headline": "RENAMED:|ZOMATO",
+        "sub": "2010",
+        "motion": "push",
+        "boxes": {
+          "mid": {
+            "left": "15%",
+            "width": "70%",
+            "top": "34%",
+            "height": "22%"
+          }
+        }
+      },
+      "visual": "BG: paper. MID: big Zomato logo, unaltered. Headline with the year.",
+      "onScreen": "RENAMED: ZOMATO / 2010",
+      "motionNotes": "Logo scales in f0-12, slow push.",
+      "beats": [
+        {
+          "at": 88,
+          "do": "punch"
+        }
+      ],
+      "fx": []
+    },
+    {
+      "text": "That same year, Naukri's parent Info Edge put in $1 million.",
+      "voice": "That same year, Naukri's parent Info Edge put in one million dollars.",
+      "scene": {
+        "type": "counter",
+        "from": 0,
+        "to": 1,
+        "prefix": "$",
+        "suffix": " MILLION",
+        "decimals": 0,
+        "label": "FROM INFO EDGE, 2010",
+        "icon": "assets/a8-cash.png"
+      },
+      "visual": "BG: paper. TOP: banknote stack. CENTER: counter 0 to 1. LABEL.",
+      "onScreen": "$1 MILLION / FROM INFO EDGE, 2010",
+      "motionNotes": "Logo drops in; counter lands on 'one million'.",
+      "beats": [],
+      "fx": [],
+      "sfx": "cash.mp3",
+      "sfxAt": 2.95
+    },
+    {
+      "text": "In July 2021, Zomato went public and raised 9,375 crore rupees.",
+      "scene": {
+        "halftone": false,
+        "stroke": true,
+        "type": "vox",
+        "mid": "assets/a6-bell.png",
+        "headline": "JULY 2021:|IPO DAY",
+        "sub": "RS 9,375 CRORE RAISED",
+        "motion": "push"
+      },
+      "visual": "BG: paper. MID: stock exchange bell. Headline date + IPO; sub carries the raise.",
+      "onScreen": "JULY 2021: IPO DAY / RS 9,375 CRORE RAISED",
+      "motionNotes": "Bell drops with a bounce f0-10, slow push; punch on the amount.",
+      "beats": [
+        {
+          "at": 125,
+          "do": "punch"
+        }
+      ],
+      "fx": [],
+      "sfx": "bell.mp3",
+      "sfxAt": 2.8,
+      "voice": "In July twenty twenty-one, Zomato went public and raised nine thousand three hundred seventy-five crore rupees."
+    },
+    {
+      "text": "The offer was subscribed about 38 times, and the stock closed 66% up on day one.",
+      "voice": "The offer was subscribed about thirty-eight times, and the stock closed sixty-six percent up on day one.",
+      "scene": {
+        "type": "line",
+        "title": "ZOMATO SHARE PRICE, LISTING DAY",
+        "points": [
+          76,
+          126
+        ],
+        "labels": [
+          "Issue",
+          "Close"
+        ],
+        "callout": "+66%",
+        "unit": "Rs "
+      },
+      "visual": "BG: cream chart card. Line draws from issue price Rs 76 to close Rs 126 with +66% callout (close 126 per Business Standard; issue implied by +66%).",
+      "onScreen": "+66% / ISSUE Rs 76 TO CLOSE Rs 126",
+      "motionNotes": "Line draws over the sentence; callout pops on '66 percent'.",
+      "beats": [
+        {
+          "at": 132,
+          "do": "punch"
+        }
+      ],
+      "fx": []
+    },
+    {
+      "text": "What's your office cafe quietly sitting on?",
+      "scene": {
+        "type": "typewriter",
+        "text": "WHAT'S YOUR|OFFICE CAFE|SITTING ON?",
+        "sub": "stapled menus, 2008",
+        "prop": "assets/a7-coffee.png"
+      },
+      "visual": "BG: paper. Closing question types out; Info coffee prop rises. Loops to the hook image.",
+      "onScreen": "WHAT'S YOUR OFFICE CAFE SITTING ON?",
+      "motionNotes": "Types out on the last sentence; slow rise of the prop.",
+      "beats": [],
+      "fx": [],
+      "captions": "off"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/a1-menus.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a thick stack of paper restaurant menu cards stapled together at the corner, slightly fanned, marigold and warm black, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a2-office.png",
+      "cutout": true,
+      "generate": "Flat front-on editorial illustration of a generic glass office building with a small cafe on the ground floor, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a3-scanner.png",
+      "cutout": true,
+      "generate": "Flat isometric illustration of a flatbed office scanner with a paper menu on the glass, a green light line sweeping across, marigold and warm black, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a4-laptop.png",
+      "cutout": true,
+      "generate": "Flat isometric illustration of an open laptop showing a blank web page with a simple fork-and-plate icon, marigold and warm black, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a5-gavel.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a wooden judge's gavel on a small block, marigold and warm black, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a6-bell.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a brass stock exchange opening bell with a small hammer, marigold and warm black, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/a7-coffee.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a paper coffee cup and a small plate with a sandwich on an office cafe counter, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    },
+    {
+      "file": "assets/logo-zomato.png",
+      "query": "Zomato logo",
+      "kind": "logo"
+    },
+    {
+      "file": "assets/a8-cash.png",
+      "cutout": true,
+      "generate": "Flat editorial illustration of a neat stack of banknotes with a paper band, marigold and warm black, clean vector style, warm soft shadow, plain white background, no text, no letters, no numbers, no logos, no faces",
+      "orientation": "portrait",
+      "license": "AI-generated (OpenAI/ChatGPT image), no real person or logo"
+    }
+  ],
   "music": {
-    "file": "",
+    "file": "quiet-curiosity.mp3",
     "volume": 0.16
   },
   "voice": {
-    "file": "voice.mp3"
+    "file": "voice.mp3",
+    "source": "elevenlabs-web"
   },
   "upload": {
-    "title": "",
-    "description": "",
+    "title": "Stapled menus in a Delhi office became what?",
+    "description": "Zomato reportedly began with about 50 scanned cafe menus at Bain's Delhi office.\nFrom Foodiebay in 2008 to a 9,375 crore rupee IPO in 2021.",
     "hashtags": [
       "#shorts",
       "#businessstory",
-      "#brandstory",
-      "#business",
+      "#zomato",
+      "#startup",
       "#storytime"
     ]
-  }
+  },
+  "directionReason": "finance: money, markets, numbers, valuations"
 }

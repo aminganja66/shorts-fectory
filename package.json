@@ -16,6 +16,7 @@
     "setup": "node pipeline/setup.mjs",
     "frames": "node pipeline/frames.mjs",
     "music": "node pipeline/music.mjs",
+    "sfx": "node pipeline/sfx.mjs",
     "import": "node pipeline/import.mjs",
     "voice:local": "python pipeline/tts_local.py",
     "spoken": "node pipeline/spoken.mjs",

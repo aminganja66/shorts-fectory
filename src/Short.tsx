@@ -99,6 +99,21 @@ const ChapterTag: React.FC<{label?: string; color: string}> = ({label, color}) =
     <div style={{position: 'absolute', top: 36, left: 44, padding: '6px 18px', background: 'rgba(250,246,234,0.92)', borderLeft: `8px solid ${color}`, fontFamily: headlineFont, fontWeight: 700, fontSize: 30, letterSpacing: 2, color: '#16120d', textTransform: 'uppercase'}}>{label}</div>
   ) : null;
 
+// Animation-driven sound (library clips in public/sfx): clicks while text types, ticks while a number counts up,
+// a whoosh on every scene change. Timings mirror the scenes' own animation ranges (Typewriter: frames 6 → 0.68·dur, Counter: 4 → 0.7·dur).
+const autoSfx = (l: Line, i: number, dur: number) => {
+  const hit = (key: string, file: string, at: number, volume: number) => (
+    <Sequence key={key} from={at} durationInFrames={20}>
+      <Audio src={staticFile(`sfx/${file}`)} volume={volume} />
+    </Sequence>
+  );
+  const out: React.ReactNode[] = [];
+  if (i > 0) out.push(hit('w', 'anim-whoosh.mp3', 0, 0.3));
+  if (l.scene.type === 'typewriter') for (let f = 6; f < Math.max(20, dur * 0.68); f += 3) out.push(hit(`t${f}`, 'anim-type.mp3', f, 0.22));
+  if (l.scene.type === 'counter') for (let f = 4; f < Math.max(16, dur * 0.7); f += 4) out.push(hit(`c${f}`, 'anim-tick.mp3', f, 0.3));
+  return out;
+};
+
 export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing, thumb}) => {
   const {durationInFrames} = useVideoConfig();
   const frame = useCurrentFrame();
@@ -133,6 +148,7 @@ export const Short: React.FC<ShortProps> = ({episodeId, storyboard, timing, thum
                       <FxLayer fx={l.fx} />
                     </BeatCamera>
                   </SceneCtx.Provider>
+                  {storyboard.autoSfx !== false && autoSfx(l, i, dur)}
                   {l.sfx && (
                     <Sequence from={Math.round((l.sfxAt ?? 0) * FPS)}>
                       <Audio src={staticFile(`sfx/${l.sfx}`)} volume={0.5} />

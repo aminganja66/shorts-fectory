@@ -113,6 +113,7 @@ export type Storyboard = {
   chapters?: Chapter[];
   lines: Line[];
   music?: {file: string; volume?: number}; // file relative to public/music
+  autoSfx?: boolean; // default true: typing clicks, counter ticks and scene-change whooshes from public/sfx/anim-*.mp3 (set false to silence)
   voice?: {file: string}; // relative to episode folder
 };
 

@@ -1,0 +1,577 @@
+{
+  "words": [
+    {
+      "text": "A",
+      "start": 0,
+      "end": 0.12
+    },
+    {
+      "text": "pile",
+      "start": 0.118,
+      "end": 0.431
+    },
+    {
+      "text": "of",
+      "start": 0.431,
+      "end": 0.614
+    },
+    {
+      "text": "stapled",
+      "start": 0.614,
+      "end": 1.124
+    },
+    {
+      "text": "menus",
+      "start": 1.124,
+      "end": 1.503
+    },
+    {
+      "text": "in",
+      "start": 1.503,
+      "end": 1.686
+    },
+    {
+      "text": "a",
+      "start": 1.686,
+      "end": 1.806
+    },
+    {
+      "text": "Delhi",
+      "start": 1.804,
+      "end": 2.183
+    },
+    {
+      "text": "office",
+      "start": 2.183,
+      "end": 2.627
+    },
+    {
+      "text": "cafe",
+      "start": 2.627,
+      "end": 2.941
+    },
+    {
+      "text": "became",
+      "start": 2.941,
+      "end": 3.385
+    },
+    {
+      "text": "what?",
+      "start": 3.385,
+      "end": 3.862
+    },
+    {
+      "text": "Zomato.",
+      "start": 4.919,
+      "end": 5.433
+    },
+    {
+      "text": "It",
+      "start": 5.433,
+      "end": 5.587
+    },
+    {
+      "text": "began",
+      "start": 6.235,
+      "end": 6.593
+    },
+    {
+      "text": "inside",
+      "start": 6.593,
+      "end": 7.012
+    },
+    {
+      "text": "Bain's",
+      "start": 7.012,
+      "end": 7.432
+    },
+    {
+      "text": "Delhi",
+      "start": 7.432,
+      "end": 7.79
+    },
+    {
+      "text": "office.",
+      "start": 7.79,
+      "end": 8.364
+    },
+    {
+      "text": "Deepinder",
+      "start": 9.476,
+      "end": 10.036
+    },
+    {
+      "text": "Goyal",
+      "start": 10.036,
+      "end": 10.368
+    },
+    {
+      "text": "and",
+      "start": 10.368,
+      "end": 10.585
+    },
+    {
+      "text": "Pankaj",
+      "start": 10.585,
+      "end": 10.974
+    },
+    {
+      "text": "Chaddah",
+      "start": 10.974,
+      "end": 11.42
+    },
+    {
+      "text": "reportedly",
+      "start": 11.42,
+      "end": 12.037
+    },
+    {
+      "text": "scanned",
+      "start": 12.037,
+      "end": 12.483
+    },
+    {
+      "text": "about",
+      "start": 12.483,
+      "end": 12.815
+    },
+    {
+      "text": "50",
+      "start": 12.815,
+      "end": 13.284
+    },
+    {
+      "text": "cafe",
+      "start": 13.284,
+      "end": 13.558
+    },
+    {
+      "text": "menus",
+      "start": 13.558,
+      "end": 13.89
+    },
+    {
+      "text": "onto",
+      "start": 13.89,
+      "end": 14.164
+    },
+    {
+      "text": "the",
+      "start": 14.164,
+      "end": 14.381
+    },
+    {
+      "text": "intranet.",
+      "start": 14.381,
+      "end": 15.027
+    },
+    {
+      "text": "Coworkers",
+      "start": 16.247,
+      "end": 16.716
+    },
+    {
+      "text": "kept",
+      "start": 16.716,
+      "end": 16.945
+    },
+    {
+      "text": "using",
+      "start": 16.945,
+      "end": 17.223
+    },
+    {
+      "text": "it.",
+      "start": 17.223,
+      "end": 17.476
+    },
+    {
+      "text": "So",
+      "start": 18.04,
+      "end": 18.196
+    },
+    {
+      "text": "in",
+      "start": 18.196,
+      "end": 18.352
+    },
+    {
+      "text": "2008:",
+      "start": 18.352,
+      "end": 19.286
+    },
+    {
+      "text": "Foodiebay.",
+      "start": 19.286,
+      "end": 19.97
+    },
+    {
+      "text": "But",
+      "start": 21.087,
+      "end": 21.282
+    },
+    {
+      "text": "that",
+      "start": 21.282,
+      "end": 21.528
+    },
+    {
+      "text": "name",
+      "start": 21.528,
+      "end": 21.774
+    },
+    {
+      "text": "sounded",
+      "start": 21.774,
+      "end": 22.175
+    },
+    {
+      "text": "a",
+      "start": 22.175,
+      "end": 22.295
+    },
+    {
+      "text": "lot",
+      "start": 22.267,
+      "end": 22.462
+    },
+    {
+      "text": "like",
+      "start": 22.462,
+      "end": 22.708
+    },
+    {
+      "text": "eBay.",
+      "start": 22.708,
+      "end": 23.083
+    },
+    {
+      "text": "Reportedly",
+      "start": 24.151,
+      "end": 24.741
+    },
+    {
+      "text": "to",
+      "start": 24.741,
+      "end": 24.894
+    },
+    {
+      "text": "dodge",
+      "start": 24.894,
+      "end": 25.211
+    },
+    {
+      "text": "a",
+      "start": 25.211,
+      "end": 25.331
+    },
+    {
+      "text": "trademark",
+      "start": 25.309,
+      "end": 25.845
+    },
+    {
+      "text": "fight,",
+      "start": 25.845,
+      "end": 26.26
+    },
+    {
+      "text": "they",
+      "start": 26.26,
+      "end": 26.522
+    },
+    {
+      "text": "renamed",
+      "start": 26.522,
+      "end": 26.949
+    },
+    {
+      "text": "it",
+      "start": 26.949,
+      "end": 27.102
+    },
+    {
+      "text": "Zomato",
+      "start": 27.102,
+      "end": 27.473
+    },
+    {
+      "text": "in",
+      "start": 27.473,
+      "end": 27.626
+    },
+    {
+      "text": "2010.",
+      "start": 27.626,
+      "end": 28.582
+    },
+    {
+      "text": "That",
+      "start": 29.618,
+      "end": 29.914
+    },
+    {
+      "text": "same",
+      "start": 29.914,
+      "end": 30.209
+    },
+    {
+      "text": "year,",
+      "start": 30.209,
+      "end": 30.615
+    },
+    {
+      "text": "Naukri's",
+      "start": 30.615,
+      "end": 31.156
+    },
+    {
+      "text": "parent",
+      "start": 31.156,
+      "end": 31.575
+    },
+    {
+      "text": "Info",
+      "start": 31.575,
+      "end": 31.87
+    },
+    {
+      "text": "Edge",
+      "start": 31.87,
+      "end": 32.165
+    },
+    {
+      "text": "put",
+      "start": 32.165,
+      "end": 32.399
+    },
+    {
+      "text": "in",
+      "start": 32.399,
+      "end": 32.571
+    },
+    {
+      "text": "$1",
+      "start": 32.571,
+      "end": 33.076
+    },
+    {
+      "text": "million.",
+      "start": 33.076,
+      "end": 33.709
+    },
+    {
+      "text": "In",
+      "start": 34.822,
+      "end": 35.041
+    },
+    {
+      "text": "July",
+      "start": 35.041,
+      "end": 35.415
+    },
+    {
+      "text": "2021,",
+      "start": 35.415,
+      "end": 36.724
+    },
+    {
+      "text": "Zomato",
+      "start": 36.724,
+      "end": 37.255
+    },
+    {
+      "text": "went",
+      "start": 37.255,
+      "end": 37.629
+    },
+    {
+      "text": "public",
+      "start": 37.629,
+      "end": 38.159
+    },
+    {
+      "text": "and",
+      "start": 38.159,
+      "end": 38.455
+    },
+    {
+      "text": "raised",
+      "start": 38.455,
+      "end": 38.985
+    },
+    {
+      "text": "9,375",
+      "start": 38.985,
+      "end": 40.233
+    },
+    {
+      "text": "crore",
+      "start": 40.233,
+      "end": 40.685
+    },
+    {
+      "text": "rupees.",
+      "start": 40.685,
+      "end": 41.41
+    },
+    {
+      "text": "The",
+      "start": 42.533,
+      "end": 42.783
+    },
+    {
+      "text": "offer",
+      "start": 42.783,
+      "end": 43.166
+    },
+    {
+      "text": "was",
+      "start": 43.166,
+      "end": 43.417
+    },
+    {
+      "text": "subscribed",
+      "start": 43.417,
+      "end": 44.13
+    },
+    {
+      "text": "about",
+      "start": 44.13,
+      "end": 44.513
+    },
+    {
+      "text": "38",
+      "start": 44.513,
+      "end": 45.054
+    },
+    {
+      "text": "times,",
+      "start": 45.367,
+      "end": 45.794
+    },
+    {
+      "text": "and",
+      "start": 45.794,
+      "end": 46.008
+    },
+    {
+      "text": "the",
+      "start": 46.008,
+      "end": 46.222
+    },
+    {
+      "text": "stock",
+      "start": 46.222,
+      "end": 46.548
+    },
+    {
+      "text": "closed",
+      "start": 46.548,
+      "end": 46.931
+    },
+    {
+      "text": "66%",
+      "start": 46.931,
+      "end": 47.539
+    },
+    {
+      "text": "up",
+      "start": 47.539,
+      "end": 47.696
+    },
+    {
+      "text": "on",
+      "start": 47.696,
+      "end": 47.854
+    },
+    {
+      "text": "day",
+      "start": 47.854,
+      "end": 48.067
+    },
+    {
+      "text": "one.",
+      "start": 48.067,
+      "end": 48.422
+    },
+    {
+      "text": "What's",
+      "start": 49.54,
+      "end": 49.852
+    },
+    {
+      "text": "your",
+      "start": 49.852,
+      "end": 50.073
+    },
+    {
+      "text": "office",
+      "start": 50.073,
+      "end": 50.386
+    },
+    {
+      "text": "cafe",
+      "start": 50.386,
+      "end": 50.607
+    },
+    {
+      "text": "quietly",
+      "start": 50.607,
+      "end": 50.966
+    },
+    {
+      "text": "sitting",
+      "start": 50.966,
+      "end": 51.325
+    },
+    {
+      "text": "on?",
+      "start": 51.325,
+      "end": 51.569
+    }
+  ],
+  "lines": [
+    {
+      "start": 0,
+      "end": 3.862
+    },
+    {
+      "start": 4.919,
+      "end": 8.364
+    },
+    {
+      "start": 9.476,
+      "end": 15.027
+    },
+    {
+      "start": 16.247,
+      "end": 19.97
+    },
+    {
+      "start": 21.087,
+      "end": 23.083
+    },
+    {
+      "start": 24.151,
+      "end": 28.582
+    },
+    {
+      "start": 29.618,
+      "end": 33.709
+    },
+    {
+      "start": 34.822,
+      "end": 41.41
+    },
+    {
+      "start": 42.533,
+      "end": 48.422
+    },
+    {
+      "start": 49.54,
+      "end": 51.569
+    }
+  ],
+  "duration": 51.569
+}

@@ -1,48 +1,33 @@
-// npm run music -- <episodeId> "<prompt>" [seconds]
-// Generates an ORIGINAL instrumental track for this episode with ElevenLabs Music (no copyright claims),
-// saves it to public/music/<episodeId>.mp3, registers it in library.json and sets storyboard.music.file.
-//   e.g. npm run music -- <id> "dark documentary underscore, low strings, ticking clock, slow build, tension, no vocals" 45
-// Also: npm run music -- <id> --sfx "<prompt>" <name> [seconds]  → public/sfx/<name>.mp3 (sound effect)
+// Music is NOT generated any more — beds come from public/music/library.json (tracks we already own).
+//   npm run music -- <episodeId> [mood words]   → picks the best-fitting track not used in the last 5 Shorts
+//        and sets storyboard.music.file (add --file <name.mp3> to force one, --list to just print the ranking).
+// New tracks: drop them in via `npm run import -- <id> music --title .. --mood .. --license ..`.
+// Sound effects: `npm run sfx` (library/ + index/). Only the voice-over still uses ElevenLabs.
 import fs from 'node:fs';
 import path from 'node:path';
 import {loadEpisode, readJSON, writeJSON, ROOT, die, ok} from './lib.mjs';
+import {previous} from './variety.mjs';
 
 const args = process.argv.slice(2);
-const id = args[0];
-const {dir, sb} = loadEpisode(id);
-const key = process.env.ELEVENLABS_API_KEY;
-if (!key) die('ELEVENLABS_API_KEY missing — use Browser mode (Pixabay Music) or the YouTube Audio Library instead.');
+const {dir, sb} = loadEpisode(args[0]);
+const flag = (k) => args.indexOf(`--${k}`);
+const forced = flag('file') > -1 ? args[flag('file') + 1] : null;
+const words = args.slice(1).filter((a, i, all) => !a.startsWith('--') && !all[i - 1]?.startsWith('--file')).join(' ').toLowerCase().split(/\W+/).filter(Boolean);
 
-if (args[1] === '--sfx') {
-  const [, , prompt, name, secs] = args;
-  const r = await fetch('https://api.elevenlabs.io/v1/sound-generation', {
-    method: 'POST',
-    headers: {'xi-api-key': key, 'Content-Type': 'application/json'},
-    body: JSON.stringify({text: prompt, duration_seconds: secs ? Number(secs) : null, prompt_influence: 0.6}),
-  });
-  if (!r.ok) die(`ElevenLabs SFX ${r.status}: ${await r.text()}`);
-  const out = path.join(ROOT, 'public/sfx', `${name}.mp3`);
-  fs.writeFileSync(out, Buffer.from(await r.arrayBuffer()));
-  ok(`SFX → public/sfx/${name}.mp3`);
+const lib = readJSON(path.join(ROOT, 'public/music/library.json'), []).filter((m) => fs.existsSync(path.join(ROOT, 'public/music', m.file)));
+if (!lib.length) die('public/music/library.json has no usable tracks — import one with `npm run import -- <id> music ...`');
+const recent = new Set(previous(sb, 5).map((p) => p.music).filter(Boolean));
+const rank = lib
+  .map((m) => ({m, used: recent.has(m.file), s: words.reduce((n, w) => n + (`${m.title} ${m.mood}`.toLowerCase().includes(w) ? 1 : 0), 0)}))
+  .sort((a, b) => a.used - b.used || b.s - a.s);
+
+if (flag('list') > -1) {
+  for (const r of rank) console.log(`${r.used ? '✖ used ' : '✔ free '} ${r.s}  ${r.m.file.padEnd(28)} ${r.m.mood}`);
   process.exit(0);
 }
-
-const prompt = args[1];
-if (!prompt) die('Give a music prompt: mood, instruments, tempo, energy curve, "no vocals"');
-const seconds = Number(args[2] ?? 45);
-const r = await fetch('https://api.elevenlabs.io/v1/music?output_format=mp3_44100_128', {
-  method: 'POST',
-  headers: {'xi-api-key': key, 'Content-Type': 'application/json'},
-  body: JSON.stringify({prompt, music_length_ms: Math.round(seconds * 1000), model_id: process.env.ELEVENLABS_MUSIC_MODEL ?? 'music_v2_5', force_instrumental: true}),
-});
-if (!r.ok) die(`ElevenLabs Music ${r.status}: ${await r.text()}`);
-const file = `${id}.mp3`;
-fs.writeFileSync(path.join(ROOT, 'public/music', file), Buffer.from(await r.arrayBuffer()));
-
-const libPath = path.join(ROOT, 'public/music/library.json');
-const lib = readJSON(libPath, []).filter((m) => m.file !== file);
-lib.push({file, title: `Original score · ${sb.topic}`, author: 'ElevenLabs Music (generated)', mood: prompt.slice(0, 80), license: 'Generated with ElevenLabs Music on a paid plan (commercial use per ElevenLabs terms)', url: '', generated: true});
-writeJSON(libPath, lib);
-sb.music = {...(sb.music ?? {}), file};
+const pick = forced ? rank.find((r) => r.m.file === forced) : rank[0];
+if (!pick) die(`Track not found: ${forced}`);
+if (pick.used) console.log(`⚠ every fitting track was used in the last 5 Shorts — "${pick.m.file}" repeats; import a new one if you can.`);
+sb.music = {...(sb.music ?? {}), file: pick.m.file};
 writeJSON(path.join(dir, 'storyboard.json'), sb);
-ok(`Music → public/music/${file} (${seconds}s) and set in storyboard`);
+ok(`Music → ${pick.m.file} (${pick.m.mood}) set in storyboard`);
